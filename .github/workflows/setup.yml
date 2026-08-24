@@ -18,7 +18,7 @@ name: Setup CI
 permissions:
   contents: write     # required to push commits/files
   issues: write       # Upptime opens/updates issues
-  workflows: write    # allow creating/updating workflow files
+  #workflows: write    # allow creating/updating workflow files
   checks: write       # optional: allow creating checks
 
 on:
