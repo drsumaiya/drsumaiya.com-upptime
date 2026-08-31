@@ -25,30 +25,53 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ secrets.GH_PAT || github.token }}
 
-      - name: Run PageSpeed Insights (Mobile)
+      - name: Run PageSpeed Insights / Lighthouse (Mobile)
         id: psi_mobile
         run: |
-          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('${{ matrix.url }}', safe=''))")
-          RESPONSE=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED_URL}&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO&strategy=MOBILE")
-          echo "$RESPONSE" > /tmp/psi_mobile.json
+          URL="${{ matrix.url }}"
+          API_KEY="${{ secrets.PAGESPEED_API_KEY }}"
+          SUCCESS=false
 
-          # Extract scores (multiply by 100 to get 0-100 scale)
-          PERF=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.performance.score * 100 | round // 0')
-          A11Y=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.accessibility.score * 100 | round // 0')
-          BP=$(echo "$RESPONSE" | jq '.lighthouseResult.categories["best-practices"].score * 100 | round // 0')
-          SEO=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.seo.score * 100 | round // 0')
+          if [ -n "$API_KEY" ]; then
+            echo "Attempting PageSpeed Insights API with key..."
+            ENCODED_URL=$(jq -rn --arg u "$URL" '$u|@uri')
+            RESPONSE=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED_URL}&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO&strategy=MOBILE&key=${API_KEY}")
+            if echo "$RESPONSE" | jq -e '.lighthouseResult.categories' > /dev/null 2>&1; then
+              echo "$RESPONSE" | jq '.lighthouseResult' > /tmp/psi_mobile.json
+              SUCCESS=true
+            else
+              echo "PageSpeed API returned an error or quota limit. Falling back to runner Lighthouse CLI."
+            fi
+          fi
 
-          # Core Web Vitals
-          FCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["first-contentful-paint"].displayValue // "N/A"')
-          LCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["largest-contentful-paint"].displayValue // "N/A"')
-          TBT=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["total-blocking-time"].displayValue // "N/A"')
-          CLS=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["cumulative-layout-shift"].displayValue // "N/A"')
-          SI=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["speed-index"].displayValue // "N/A"')
+          if [ "$SUCCESS" = false ]; then
+            echo "Running Lighthouse CLI (Mobile) via Chrome headless..."
+            npx lighthouse "$URL" \
+              --output=json \
+              --output-path=/tmp/psi_mobile.json \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --form-factor=mobile \
+              --screenEmulation.mobile \
+              --throttling-method=simulate \
+              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage"
+          fi
+
+          DATA=$(cat /tmp/psi_mobile.json)
+          PERF=$(echo "$DATA" | jq '((.categories.performance.score // 0) * 100) | round')
+          A11Y=$(echo "$DATA" | jq '((.categories.accessibility.score // 0) * 100) | round')
+          BP=$(echo "$DATA" | jq '((.categories["best-practices"].score // 0) * 100) | round')
+          SEO=$(echo "$DATA" | jq '((.categories.seo.score // 0) * 100) | round')
+
+          FCP=$(echo "$DATA" | jq -r '.audits["first-contentful-paint"].displayValue // "N/A"')
+          LCP=$(echo "$DATA" | jq -r '.audits["largest-contentful-paint"].displayValue // "N/A"')
+          TBT=$(echo "$DATA" | jq -r '.audits["total-blocking-time"].displayValue // "N/A"')
+          CLS=$(echo "$DATA" | jq -r '.audits["cumulative-layout-shift"].displayValue // "N/A"')
+          SI=$(echo "$DATA" | jq -r '.audits["speed-index"].displayValue // "N/A"')
 
           echo "perf=$PERF" >> "$GITHUB_OUTPUT"
           echo "a11y=$A11Y" >> "$GITHUB_OUTPUT"
@@ -60,23 +83,46 @@ jobs:
           echo "cls=$CLS" >> "$GITHUB_OUTPUT"
           echo "si=$SI" >> "$GITHUB_OUTPUT"
 
-      - name: Run PageSpeed Insights (Desktop)
+      - name: Run PageSpeed Insights / Lighthouse (Desktop)
         id: psi_desktop
         run: |
-          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('${{ matrix.url }}', safe=''))")
-          RESPONSE=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED_URL}&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO&strategy=DESKTOP")
-          echo "$RESPONSE" > /tmp/psi_desktop.json
+          URL="${{ matrix.url }}"
+          API_KEY="${{ secrets.PAGESPEED_API_KEY }}"
+          SUCCESS=false
 
-          PERF=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.performance.score * 100 | round // 0')
-          A11Y=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.accessibility.score * 100 | round // 0')
-          BP=$(echo "$RESPONSE" | jq '.lighthouseResult.categories["best-practices"].score * 100 | round // 0')
-          SEO=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.seo.score * 100 | round // 0')
+          if [ -n "$API_KEY" ]; then
+            echo "Attempting PageSpeed Insights API with key..."
+            ENCODED_URL=$(jq -rn --arg u "$URL" '$u|@uri')
+            RESPONSE=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED_URL}&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO&strategy=DESKTOP&key=${API_KEY}")
+            if echo "$RESPONSE" | jq -e '.lighthouseResult.categories' > /dev/null 2>&1; then
+              echo "$RESPONSE" | jq '.lighthouseResult' > /tmp/psi_desktop.json
+              SUCCESS=true
+            else
+              echo "PageSpeed API returned an error or quota limit. Falling back to runner Lighthouse CLI."
+            fi
+          fi
 
-          FCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["first-contentful-paint"].displayValue // "N/A"')
-          LCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["largest-contentful-paint"].displayValue // "N/A"')
-          TBT=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["total-blocking-time"].displayValue // "N/A"')
-          CLS=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["cumulative-layout-shift"].displayValue // "N/A"')
-          SI=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["speed-index"].displayValue // "N/A"')
+          if [ "$SUCCESS" = false ]; then
+            echo "Running Lighthouse CLI (Desktop) via Chrome headless..."
+            npx lighthouse "$URL" \
+              --output=json \
+              --output-path=/tmp/psi_desktop.json \
+              --only-categories=performance,accessibility,best-practices,seo \
+              --preset=desktop \
+              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage"
+          fi
+
+          DATA=$(cat /tmp/psi_desktop.json)
+          PERF=$(echo "$DATA" | jq '((.categories.performance.score // 0) * 100) | round')
+          A11Y=$(echo "$DATA" | jq '((.categories.accessibility.score // 0) * 100) | round')
+          BP=$(echo "$DATA" | jq '((.categories["best-practices"].score // 0) * 100) | round')
+          SEO=$(echo "$DATA" | jq '((.categories.seo.score // 0) * 100) | round')
+
+          FCP=$(echo "$DATA" | jq -r '.audits["first-contentful-paint"].displayValue // "N/A"')
+          LCP=$(echo "$DATA" | jq -r '.audits["largest-contentful-paint"].displayValue // "N/A"')
+          TBT=$(echo "$DATA" | jq -r '.audits["total-blocking-time"].displayValue // "N/A"')
+          CLS=$(echo "$DATA" | jq -r '.audits["cumulative-layout-shift"].displayValue // "N/A"')
+          SI=$(echo "$DATA" | jq -r '.audits["speed-index"].displayValue // "N/A"')
 
           echo "perf=$PERF" >> "$GITHUB_OUTPUT"
           echo "a11y=$A11Y" >> "$GITHUB_OUTPUT"
@@ -137,7 +183,7 @@ jobs:
           HISTORY_LINE=$(jq -c '.' "pagespeed/${SLUG}/latest.json")
           echo "$HISTORY_LINE" >> "pagespeed/history/${SLUG}.jsonl"
 
-          # Save full API responses for detailed analysis
+          # Save full responses for detailed analysis
           cp /tmp/psi_mobile.json "pagespeed/${SLUG}/raw/mobile-${DATE}.json"
           cp /tmp/psi_desktop.json "pagespeed/${SLUG}/raw/desktop-${DATE}.json"
 
@@ -212,7 +258,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ secrets.GH_PAT || github.token }}
@@ -225,7 +271,7 @@ jobs:
           cat > pagespeed/README.md << 'HEADER'
           # PageSpeed Insights Results
 
-          Automated daily performance tracking via [Google PageSpeed Insights API v5](https://developers.google.com/speed/docs/insights/v5/get-started).
+          Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse](https://pagespeed.web.dev/).
 
           HEADER
 
@@ -239,7 +285,7 @@ jobs:
 
           cat >> pagespeed/README.md << 'FOOTER'
 
-          *Powered by GitHub Actions + [Google PageSpeed Insights API v5](https://developers.google.com/speed/docs/insights/v5/get-started)*
+          *Powered by GitHub Actions + Lighthouse / PageSpeed Insights*
           FOOTER
 
       - name: Commit README
