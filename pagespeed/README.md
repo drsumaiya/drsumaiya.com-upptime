@@ -1,35 +1,90 @@
 # PageSpeed Insights Results
 
-Automated daily performance tracking via [Google PageSpeed Insights API v5](https://developers.google.com/speed/docs/insights/v5/get-started).
+Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse](https://pagespeed.web.dev/).
 
-Results will be populated after the first workflow run.
+## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-## Tracked Sites
+> Last updated: `2026-08-31T21:55:47Z`
 
-- **DrSumaiya.com** — `https://drsumaiya.com/`
-- **IQS** — `https://iqs.org.in/`
+### 📱 Mobile
 
-## Structure
+| Category | Score |
+| --- | --- |
+| Performance | 0 |
+| Accessibility | 0 |
+| Best Practices | 0 |
+| SEO | 0 |
 
-- `<slug>/latest.json` — Latest scores (mobile + desktop)
-- `<slug>/raw/` — Full API responses per day
-- `<slug>/summary.md` — Per-site markdown summary
-- `history/<slug>.jsonl` — Historical scores log (JSONL, one entry per day)
+**Core Web Vitals (Mobile)**
+| Metric | Value |
+| --- | --- |
+| First Contentful Paint | N/A |
+| Largest Contentful Paint | N/A |
+| Total Blocking Time | N/A |
+| Cumulative Layout Shift | N/A |
+| Speed Index | N/A |
 
-## How to Trigger
+### 🖥️ Desktop
 
-- **Automatic**: Runs daily at 06:00 UTC (11:30 AM IST)
-- **Manual**: Go to Actions → "PageSpeed Insights CI" → "Run workflow"
+| Category | Score |
+| --- | --- |
+| Performance | 0 |
+| Accessibility | 0 |
+| Best Practices | 0 |
+| SEO | 0 |
 
-## Adding a New Site
-
-Edit `.github/workflows/pagespeed.yml` and add an entry to the matrix:
-
-```yaml
-- name: My New Site
-  url: https://example.com/
-  slug: my-new-site
-```
+**Core Web Vitals (Desktop)**
+| Metric | Value |
+| --- | --- |
+| First Contentful Paint | N/A |
+| Largest Contentful Paint | N/A |
+| Total Blocking Time | N/A |
+| Cumulative Layout Shift | N/A |
+| Speed Index | N/A |
 
 ---
-*Powered by GitHub Actions + [Google PageSpeed Insights API v5](https://developers.google.com/speed/docs/insights/v5/get-started)*
+
+## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
+
+> Last updated: `2026-08-31T21:48:53Z`
+
+### 📱 Mobile
+
+| Category | Score |
+| --- | --- |
+| Performance | 35 |
+| Accessibility | 85 |
+| Best Practices | 69 |
+| SEO | 85 |
+
+**Core Web Vitals (Mobile)**
+| Metric | Value |
+| --- | --- |
+| First Contentful Paint | 6.1 s |
+| Largest Contentful Paint | 9.9 s |
+| Total Blocking Time | 570 ms |
+| Cumulative Layout Shift | 0.217 |
+| Speed Index | 6.1 s |
+
+### 🖥️ Desktop
+
+| Category | Score |
+| --- | --- |
+| Performance | 55 |
+| Accessibility | 80 |
+| Best Practices | 69 |
+| SEO | 77 |
+
+**Core Web Vitals (Desktop)**
+| Metric | Value |
+| --- | --- |
+| First Contentful Paint | 1.5 s |
+| Largest Contentful Paint | 2.8 s |
+| Total Blocking Time | 0 ms |
+| Cumulative Layout Shift | 0.732 |
+| Speed Index | 1.5 s |
+
+---
+
+
+*Powered by GitHub Actions + Lighthouse / PageSpeed Insights*
