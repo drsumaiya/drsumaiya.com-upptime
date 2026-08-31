@@ -1,0 +1,255 @@
+name: PageSpeed Insights CI
+on:
+  schedule:
+    # Run daily at 06:00 UTC (11:30 AM IST)
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pagespeed:
+    name: "PSI: ${{ matrix.name }}"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: DrSumaiya.com
+            url: https://drsumaiya.com/
+            slug: dr-sumaiya-com
+          - name: IQS
+            url: https://iqs.org.in/
+            slug: iqs
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Run PageSpeed Insights (Mobile)
+        id: psi_mobile
+        run: |
+          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('${{ matrix.url }}', safe=''))")
+          RESPONSE=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED_URL}&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO&strategy=MOBILE")
+          echo "$RESPONSE" > /tmp/psi_mobile.json
+
+          # Extract scores (multiply by 100 to get 0-100 scale)
+          PERF=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.performance.score * 100 | round // 0')
+          A11Y=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.accessibility.score * 100 | round // 0')
+          BP=$(echo "$RESPONSE" | jq '.lighthouseResult.categories["best-practices"].score * 100 | round // 0')
+          SEO=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.seo.score * 100 | round // 0')
+
+          # Core Web Vitals
+          FCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["first-contentful-paint"].displayValue // "N/A"')
+          LCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["largest-contentful-paint"].displayValue // "N/A"')
+          TBT=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["total-blocking-time"].displayValue // "N/A"')
+          CLS=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["cumulative-layout-shift"].displayValue // "N/A"')
+          SI=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["speed-index"].displayValue // "N/A"')
+
+          echo "perf=$PERF" >> "$GITHUB_OUTPUT"
+          echo "a11y=$A11Y" >> "$GITHUB_OUTPUT"
+          echo "bp=$BP" >> "$GITHUB_OUTPUT"
+          echo "seo=$SEO" >> "$GITHUB_OUTPUT"
+          echo "fcp=$FCP" >> "$GITHUB_OUTPUT"
+          echo "lcp=$LCP" >> "$GITHUB_OUTPUT"
+          echo "tbt=$TBT" >> "$GITHUB_OUTPUT"
+          echo "cls=$CLS" >> "$GITHUB_OUTPUT"
+          echo "si=$SI" >> "$GITHUB_OUTPUT"
+
+      - name: Run PageSpeed Insights (Desktop)
+        id: psi_desktop
+        run: |
+          ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('${{ matrix.url }}', safe=''))")
+          RESPONSE=$(curl -s "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${ENCODED_URL}&category=PERFORMANCE&category=ACCESSIBILITY&category=BEST_PRACTICES&category=SEO&strategy=DESKTOP")
+          echo "$RESPONSE" > /tmp/psi_desktop.json
+
+          PERF=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.performance.score * 100 | round // 0')
+          A11Y=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.accessibility.score * 100 | round // 0')
+          BP=$(echo "$RESPONSE" | jq '.lighthouseResult.categories["best-practices"].score * 100 | round // 0')
+          SEO=$(echo "$RESPONSE" | jq '.lighthouseResult.categories.seo.score * 100 | round // 0')
+
+          FCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["first-contentful-paint"].displayValue // "N/A"')
+          LCP=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["largest-contentful-paint"].displayValue // "N/A"')
+          TBT=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["total-blocking-time"].displayValue // "N/A"')
+          CLS=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["cumulative-layout-shift"].displayValue // "N/A"')
+          SI=$(echo "$RESPONSE" | jq -r '.lighthouseResult.audits["speed-index"].displayValue // "N/A"')
+
+          echo "perf=$PERF" >> "$GITHUB_OUTPUT"
+          echo "a11y=$A11Y" >> "$GITHUB_OUTPUT"
+          echo "bp=$BP" >> "$GITHUB_OUTPUT"
+          echo "seo=$SEO" >> "$GITHUB_OUTPUT"
+          echo "fcp=$FCP" >> "$GITHUB_OUTPUT"
+          echo "lcp=$LCP" >> "$GITHUB_OUTPUT"
+          echo "tbt=$TBT" >> "$GITHUB_OUTPUT"
+          echo "cls=$CLS" >> "$GITHUB_OUTPUT"
+          echo "si=$SI" >> "$GITHUB_OUTPUT"
+
+      - name: Save results
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          DATE=$(date -u +"%Y-%m-%d")
+          SLUG="${{ matrix.slug }}"
+
+          # Create directories
+          mkdir -p "pagespeed/${SLUG}/raw"
+          mkdir -p pagespeed/history
+
+          # Save latest results as JSON
+          cat > "pagespeed/${SLUG}/latest.json" << EOF
+          {
+            "name": "${{ matrix.name }}",
+            "url": "${{ matrix.url }}",
+            "timestamp": "$TIMESTAMP",
+            "mobile": {
+              "performance": ${{ steps.psi_mobile.outputs.perf }},
+              "accessibility": ${{ steps.psi_mobile.outputs.a11y }},
+              "bestPractices": ${{ steps.psi_mobile.outputs.bp }},
+              "seo": ${{ steps.psi_mobile.outputs.seo }},
+              "coreWebVitals": {
+                "firstContentfulPaint": "${{ steps.psi_mobile.outputs.fcp }}",
+                "largestContentfulPaint": "${{ steps.psi_mobile.outputs.lcp }}",
+                "totalBlockingTime": "${{ steps.psi_mobile.outputs.tbt }}",
+                "cumulativeLayoutShift": "${{ steps.psi_mobile.outputs.cls }}",
+                "speedIndex": "${{ steps.psi_mobile.outputs.si }}"
+              }
+            },
+            "desktop": {
+              "performance": ${{ steps.psi_desktop.outputs.perf }},
+              "accessibility": ${{ steps.psi_desktop.outputs.a11y }},
+              "bestPractices": ${{ steps.psi_desktop.outputs.bp }},
+              "seo": ${{ steps.psi_desktop.outputs.seo }},
+              "coreWebVitals": {
+                "firstContentfulPaint": "${{ steps.psi_desktop.outputs.fcp }}",
+                "largestContentfulPaint": "${{ steps.psi_desktop.outputs.lcp }}",
+                "totalBlockingTime": "${{ steps.psi_desktop.outputs.tbt }}",
+                "cumulativeLayoutShift": "${{ steps.psi_desktop.outputs.cls }}",
+                "speedIndex": "${{ steps.psi_desktop.outputs.si }}"
+              }
+            }
+          }
+          EOF
+
+          # Append to history log (JSONL format - one JSON object per line)
+          HISTORY_LINE=$(jq -c '.' "pagespeed/${SLUG}/latest.json")
+          echo "$HISTORY_LINE" >> "pagespeed/history/${SLUG}.jsonl"
+
+          # Save full API responses for detailed analysis
+          cp /tmp/psi_mobile.json "pagespeed/${SLUG}/raw/mobile-${DATE}.json"
+          cp /tmp/psi_desktop.json "pagespeed/${SLUG}/raw/desktop-${DATE}.json"
+
+      - name: Generate site summary
+        run: |
+          SLUG="${{ matrix.slug }}"
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          # Write per-site summary markdown fragment (used by the collect job)
+          cat > "pagespeed/${SLUG}/summary.md" << EOF
+          ## ${{ matrix.name }} — [\`${{ matrix.url }}\`](${{ matrix.url }})
+
+          > Last updated: \`${TIMESTAMP}\`
+
+          ### 📱 Mobile
+
+          | Category | Score |
+          | --- | --- |
+          | Performance | ${{ steps.psi_mobile.outputs.perf }} |
+          | Accessibility | ${{ steps.psi_mobile.outputs.a11y }} |
+          | Best Practices | ${{ steps.psi_mobile.outputs.bp }} |
+          | SEO | ${{ steps.psi_mobile.outputs.seo }} |
+
+          **Core Web Vitals (Mobile)**
+          | Metric | Value |
+          | --- | --- |
+          | First Contentful Paint | ${{ steps.psi_mobile.outputs.fcp }} |
+          | Largest Contentful Paint | ${{ steps.psi_mobile.outputs.lcp }} |
+          | Total Blocking Time | ${{ steps.psi_mobile.outputs.tbt }} |
+          | Cumulative Layout Shift | ${{ steps.psi_mobile.outputs.cls }} |
+          | Speed Index | ${{ steps.psi_mobile.outputs.si }} |
+
+          ### 🖥️ Desktop
+
+          | Category | Score |
+          | --- | --- |
+          | Performance | ${{ steps.psi_desktop.outputs.perf }} |
+          | Accessibility | ${{ steps.psi_desktop.outputs.a11y }} |
+          | Best Practices | ${{ steps.psi_desktop.outputs.bp }} |
+          | SEO | ${{ steps.psi_desktop.outputs.seo }} |
+
+          **Core Web Vitals (Desktop)**
+          | Metric | Value |
+          | --- | --- |
+          | First Contentful Paint | ${{ steps.psi_desktop.outputs.fcp }} |
+          | Largest Contentful Paint | ${{ steps.psi_desktop.outputs.lcp }} |
+          | Total Blocking Time | ${{ steps.psi_desktop.outputs.tbt }} |
+          | Cumulative Layout Shift | ${{ steps.psi_desktop.outputs.cls }} |
+          | Speed Index | ${{ steps.psi_desktop.outputs.si }} |
+
+          ---
+          EOF
+
+      - name: Commit site results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase
+          git add "pagespeed/${{ matrix.slug }}/" "pagespeed/history/"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 PageSpeed results: ${{ matrix.name }} [$(date -u +%Y-%m-%d)]"
+            git push
+          fi
+
+  # Collect all site summaries into a single README
+  collect:
+    name: Generate combined README
+    runs-on: ubuntu-latest
+    needs: pagespeed
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Pull latest results
+        run: git pull --rebase
+
+      - name: Build README
+        run: |
+          cat > pagespeed/README.md << 'HEADER'
+          # PageSpeed Insights Results
+
+          Automated daily performance tracking via [Google PageSpeed Insights API v5](https://developers.google.com/speed/docs/insights/v5/get-started).
+
+          HEADER
+
+          # Concatenate all site summaries in alphabetical order
+          for summary in pagespeed/*/summary.md; do
+            if [ -f "$summary" ]; then
+              cat "$summary" >> pagespeed/README.md
+              echo "" >> pagespeed/README.md
+            fi
+          done
+
+          cat >> pagespeed/README.md << 'FOOTER'
+
+          *Powered by GitHub Actions + [Google PageSpeed Insights API v5](https://developers.google.com/speed/docs/insights/v5/get-started)*
+          FOOTER
+
+      - name: Commit README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add pagespeed/README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update PageSpeed Insights summary [$(date -u +%Y-%m-%d)]"
+            git push
+          fi
