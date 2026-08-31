@@ -247,22 +247,15 @@ jobs:
           ---
           EOF
 
-      - name: Commit site results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase
-          git add "pagespeed/${{ matrix.slug }}/" "pagespeed/history/"
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📊 PageSpeed results: ${{ matrix.name }} [$(date -u +%Y-%m-%d)]"
-            git push
-          fi
+      - name: Upload site artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pagespeed-${{ matrix.slug }}
+          path: pagespeed/
 
-  # Collect all site summaries into a single README
+  # Collect all site summaries into a single README and commit once
   collect:
-    name: Generate combined README
+    name: Generate combined README & Commit
     runs-on: ubuntu-latest
     needs: pagespeed
 
@@ -273,8 +266,15 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ secrets.GH_PAT || github.token }}
 
-      - name: Pull latest results
+      - name: Pull latest changes
         run: git pull --rebase
+
+      - name: Download all site artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: pagespeed-*
+          merge-multiple: true
+          path: pagespeed
 
       - name: Build README
         run: |
@@ -298,14 +298,15 @@ jobs:
           *Powered by GitHub Actions + Lighthouse / PageSpeed Insights*
           FOOTER
 
-      - name: Commit README
+      - name: Commit all results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add pagespeed/README.md
+          git add pagespeed/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "📊 Update PageSpeed Insights summary [$(date -u +%Y-%m-%d)]"
+            git commit -m "📊 Update PageSpeed Insights results & summary [$(date -u +%Y-%m-%d)]"
+            git pull --rebase
             git push
           fi
