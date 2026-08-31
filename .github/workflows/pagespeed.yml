@@ -58,7 +58,12 @@ jobs:
               --form-factor=mobile \
               --screenEmulation.mobile \
               --throttling-method=simulate \
-              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage"
+              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage" || true
+          fi
+
+          if [ ! -f /tmp/psi_mobile.json ] || ! jq -e '.categories' /tmp/psi_mobile.json > /dev/null 2>&1; then
+            echo "Warning: Valid Lighthouse report not generated (site may be blocking runner IP or rate limited)."
+            echo '{"categories": {}, "audits": {}}' > /tmp/psi_mobile.json
           fi
 
           DATA=$(cat /tmp/psi_mobile.json)
@@ -109,7 +114,12 @@ jobs:
               --output-path=/tmp/psi_desktop.json \
               --only-categories=performance,accessibility,best-practices,seo \
               --preset=desktop \
-              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage"
+              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage" || true
+          fi
+
+          if [ ! -f /tmp/psi_desktop.json ] || ! jq -e '.categories' /tmp/psi_desktop.json > /dev/null 2>&1; then
+            echo "Warning: Valid Lighthouse report not generated (site may be blocking runner IP or rate limited)."
+            echo '{"categories": {}, "audits": {}}' > /tmp/psi_desktop.json
           fi
 
           DATA=$(cat /tmp/psi_desktop.json)
