@@ -4,7 +4,7 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-08-31T21:55:47Z`
+> Last updated: `2026-09-02T10:56:03Z`
 
 ### 📱 Mobile
 
