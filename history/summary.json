@@ -4,17 +4,17 @@
     "url": "https://DrSumaiya.com",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-com",
-    "status": "down",
-    "uptime": "94.23%",
-    "uptimeDay": "89.74%",
-    "uptimeWeek": "91.64%",
-    "uptimeMonth": "94.23%",
-    "uptimeYear": "94.23%",
-    "time": 571,
-    "timeDay": 193,
-    "timeWeek": 582,
-    "timeMonth": 571,
-    "timeYear": 571,
+    "status": "up",
+    "uptime": "94.03%",
+    "uptimeDay": "87.13%",
+    "uptimeWeek": "91.27%",
+    "uptimeMonth": "94.03%",
+    "uptimeYear": "94.03%",
+    "time": 566,
+    "timeDay": 241,
+    "timeWeek": 572,
+    "timeMonth": 566,
+    "timeYear": 566,
     "dailyMinutesDown": {
       "2026-08-24": 50,
       "2026-08-25": 80,
@@ -23,7 +23,8 @@
       "2026-09-03": 154,
       "2026-09-02": 80,
       "2026-09-04": 299,
-      "2026-09-05": 147
+      "2026-09-05": 153,
+      "2026-09-06": 32
     }
   },
   {
@@ -31,17 +32,17 @@
     "url": "https://iqs.org.in",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs",
-    "status": "down",
-    "uptime": "94.48%",
-    "uptimeDay": "89.77%",
-    "uptimeWeek": "91.84%",
-    "uptimeMonth": "94.48%",
-    "uptimeYear": "94.48%",
-    "time": 846,
-    "timeDay": 269,
-    "timeWeek": 729,
-    "timeMonth": 846,
-    "timeYear": 846,
+    "status": "up",
+    "uptime": "94.27%",
+    "uptimeDay": "87.15%",
+    "uptimeWeek": "91.46%",
+    "uptimeMonth": "94.27%",
+    "uptimeYear": "94.27%",
+    "time": 833,
+    "timeDay": 301,
+    "timeWeek": 710,
+    "timeMonth": 833,
+    "timeYear": 833,
     "dailyMinutesDown": {
       "2026-08-24": 40,
       "2026-08-25": 71,
@@ -50,7 +51,8 @@
       "2026-09-03": 149,
       "2026-09-02": 75,
       "2026-09-04": 295,
-      "2026-09-05": 147
+      "2026-09-05": 153,
+      "2026-09-06": 32
     }
   }
 ]
