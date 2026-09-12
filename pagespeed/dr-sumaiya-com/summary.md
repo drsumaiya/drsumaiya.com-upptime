@@ -1,6 +1,6 @@
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-09-10T10:56:24Z`
+> Last updated: `2026-09-12T10:21:41Z`
 
 ### 📱 Mobile
 
