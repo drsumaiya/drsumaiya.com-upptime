@@ -51,6 +51,15 @@ jobs:
 
           if [ "$SUCCESS" = false ]; then
             echo "Running Lighthouse CLI (Mobile) via Chrome headless..."
+            MOBILE_UA="Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
+            WAF_TOKEN="${{ secrets.UPPTIME_WAF_SECRET }}"
+            if [ -n "$WAF_TOKEN" ]; then
+              EXTRA_HEADERS="{\"X-Upptime-Token\":\"${WAF_TOKEN}\",\"Accept-Language\":\"en-US,en;q=0.9\"}"
+            else
+              EXTRA_HEADERS='{"Accept-Language":"en-US,en;q=0.9"}'
+            fi
+            CHROME_FLAGS="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --disable-blink-features=AutomationControlled --user-agent=\"${MOBILE_UA}\""
+
             npx lighthouse "$URL" \
               --output=json \
               --output-path=/tmp/psi_mobile.json \
@@ -58,11 +67,27 @@ jobs:
               --form-factor=mobile \
               --screenEmulation.mobile \
               --throttling-method=simulate \
-              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage" || true
+              --extra-headers="${EXTRA_HEADERS}" \
+              --chrome-flags="${CHROME_FLAGS}" || true
+
+            # If attempt 1 returned invalid or empty categories, wait 5s and retry once
+            if [ ! -f /tmp/psi_mobile.json ] || ! jq -e '.categories.performance' /tmp/psi_mobile.json > /dev/null 2>&1; then
+              echo "Lighthouse Mobile attempt 1 failed or returned empty categories. Retrying in 5 seconds..."
+              sleep 5
+              npx lighthouse "$URL" \
+                --output=json \
+                --output-path=/tmp/psi_mobile.json \
+                --only-categories=performance,accessibility,best-practices,seo \
+                --form-factor=mobile \
+                --screenEmulation.mobile \
+                --throttling-method=simulate \
+                --extra-headers="${EXTRA_HEADERS}" \
+                --chrome-flags="${CHROME_FLAGS}" || true
+            fi
           fi
 
           if [ ! -f /tmp/psi_mobile.json ] || ! jq -e '.categories' /tmp/psi_mobile.json > /dev/null 2>&1; then
-            echo "Warning: Valid Lighthouse report not generated (site may be blocking runner IP or rate limited)."
+            echo "Warning: Valid Lighthouse report not generated for Mobile."
             echo '{"categories": {}, "audits": {}}' > /tmp/psi_mobile.json
           fi
 
@@ -109,16 +134,39 @@ jobs:
 
           if [ "$SUCCESS" = false ]; then
             echo "Running Lighthouse CLI (Desktop) via Chrome headless..."
+            DESKTOP_UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+            WAF_TOKEN="${{ secrets.UPPTIME_WAF_SECRET }}"
+            if [ -n "$WAF_TOKEN" ]; then
+              EXTRA_HEADERS="{\"X-Upptime-Token\":\"${WAF_TOKEN}\",\"Accept-Language\":\"en-US,en;q=0.9\"}"
+            else
+              EXTRA_HEADERS='{"Accept-Language":"en-US,en;q=0.9"}'
+            fi
+            CHROME_FLAGS="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage --disable-blink-features=AutomationControlled --user-agent=\"${DESKTOP_UA}\""
+
             npx lighthouse "$URL" \
               --output=json \
               --output-path=/tmp/psi_desktop.json \
               --only-categories=performance,accessibility,best-practices,seo \
               --preset=desktop \
-              --chrome-flags="--headless=new --no-sandbox --disable-gpu --disable-dev-shm-usage" || true
+              --extra-headers="${EXTRA_HEADERS}" \
+              --chrome-flags="${CHROME_FLAGS}" || true
+
+            # If attempt 1 returned invalid or empty categories, wait 5s and retry once
+            if [ ! -f /tmp/psi_desktop.json ] || ! jq -e '.categories.performance' /tmp/psi_desktop.json > /dev/null 2>&1; then
+              echo "Lighthouse Desktop attempt 1 failed or returned empty categories. Retrying in 5 seconds..."
+              sleep 5
+              npx lighthouse "$URL" \
+                --output=json \
+                --output-path=/tmp/psi_desktop.json \
+                --only-categories=performance,accessibility,best-practices,seo \
+                --preset=desktop \
+                --extra-headers="${EXTRA_HEADERS}" \
+                --chrome-flags="${CHROME_FLAGS}" || true
+            fi
           fi
 
           if [ ! -f /tmp/psi_desktop.json ] || ! jq -e '.categories' /tmp/psi_desktop.json > /dev/null 2>&1; then
-            echo "Warning: Valid Lighthouse report not generated (site may be blocking runner IP or rate limited)."
+            echo "Warning: Valid Lighthouse report not generated for Desktop."
             echo '{"categories": {}, "audits": {}}' > /tmp/psi_desktop.json
           fi
 
@@ -150,16 +198,27 @@ jobs:
           DATE=$(date -u +"%Y-%m-%d")
           SLUG="${{ matrix.slug }}"
 
-          # Create directories
           mkdir -p "pagespeed/${SLUG}/raw"
           mkdir -p pagespeed/history
 
-          # Save latest results as JSON
-          cat > "pagespeed/${SLUG}/latest.json" << EOF
+          M_PERF=${{ steps.psi_mobile.outputs.perf }}
+          M_A11Y=${{ steps.psi_mobile.outputs.a11y }}
+          D_PERF=${{ steps.psi_desktop.outputs.perf }}
+          D_A11Y=${{ steps.psi_desktop.outputs.a11y }}
+
+          # Check if the audit produced valid categories
+          IS_VALID=true
+          if [ "$M_PERF" -eq 0 ] && [ "$M_A11Y" -eq 0 ] && [ "$D_PERF" -eq 0 ] && [ "$D_A11Y" -eq 0 ]; then
+            IS_VALID=false
+            echo "::warning::Audit for ${{ matrix.name }} produced 0 scores across all categories."
+          fi
+
+          NEW_DATA=$(cat << EOF
           {
             "name": "${{ matrix.name }}",
             "url": "${{ matrix.url }}",
             "timestamp": "$TIMESTAMP",
+            "auditStatus": "$([ "$IS_VALID" = true ] && echo "success" || echo "failed")",
             "mobile": {
               "performance": ${{ steps.psi_mobile.outputs.perf }},
               "accessibility": ${{ steps.psi_mobile.outputs.a11y }},
@@ -188,10 +247,24 @@ jobs:
             }
           }
           EOF
+          )
 
-          # Append to history log (JSONL format - one JSON object per line)
-          HISTORY_LINE=$(jq -c '.' "pagespeed/${SLUG}/latest.json")
-          echo "$HISTORY_LINE" >> "pagespeed/history/${SLUG}.jsonl"
+          # Only overwrite latest.json if this audit is valid OR no valid prior latest.json exists
+          if [ "$IS_VALID" = true ] || [ ! -f "pagespeed/${SLUG}/latest.json" ]; then
+            echo "$NEW_DATA" > "pagespeed/${SLUG}/latest.json"
+          elif [ -f "pagespeed/${SLUG}/latest.json" ] && jq -e '(.mobile.performance // 0) > 0 or (.desktop.performance // 0) > 0' "pagespeed/${SLUG}/latest.json" > /dev/null 2>&1; then
+            echo "Preserving prior valid latest.json to prevent corrupting status dashboard."
+          else
+            echo "$NEW_DATA" > "pagespeed/${SLUG}/latest.json"
+          fi
+
+          # Only append to history if valid (never pollute time series with 0-score failed runs)
+          if [ "$IS_VALID" = true ]; then
+            HISTORY_LINE=$(echo "$NEW_DATA" | jq -c '.')
+            echo "$HISTORY_LINE" >> "pagespeed/history/${SLUG}.jsonl"
+          else
+            echo "Skipping history append for failed audit."
+          fi
 
           # Save full responses for detailed analysis
           cp /tmp/psi_mobile.json "pagespeed/${SLUG}/raw/mobile-${DATE}.json"
@@ -202,8 +275,15 @@ jobs:
           SLUG="${{ matrix.slug }}"
           TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-          # Write per-site summary markdown fragment (used by the collect job)
-          cat > "pagespeed/${SLUG}/summary.md" << EOF
+          M_PERF=${{ steps.psi_mobile.outputs.perf }}
+          M_A11Y=${{ steps.psi_mobile.outputs.a11y }}
+          D_PERF=${{ steps.psi_desktop.outputs.perf }}
+          D_A11Y=${{ steps.psi_desktop.outputs.a11y }}
+
+          if [ "$M_PERF" -eq 0 ] && [ "$M_A11Y" -eq 0 ] && [ "$D_PERF" -eq 0 ] && [ "$D_A11Y" -eq 0 ] && [ -f "pagespeed/${SLUG}/summary.md" ]; then
+            echo "Audit failed; keeping previous summary.md if it had valid scores."
+          else
+            cat > "pagespeed/${SLUG}/summary.md" << EOF
           ## ${{ matrix.name }} — [\`${{ matrix.url }}\`](${{ matrix.url }})
 
           > Last updated: \`${TIMESTAMP}\`
@@ -246,6 +326,7 @@ jobs:
 
           ---
           EOF
+          fi
 
       - name: Upload site artifacts
         uses: actions/upload-artifact@v4
