@@ -1,3 +1,7 @@
+/**
+ * PageSpeed Insights & Core Web Vitals Dashboard for Upptime
+ * Version 1.1.0 - Dynamically mounted before footer
+ */
 (function () {
   const SITES = [
     {
@@ -409,7 +413,7 @@
   }
 
   function renderDashboard() {
-    const container = document.getElementById("pagespeed-container");
+    const container = ensureContainer();
     if (!container) return;
 
     const currentSite = SITES[currentSiteIndex];
@@ -610,14 +614,25 @@
     }
   }
 
-  async function init() {
+  function ensureContainer() {
     let container = document.getElementById("pagespeed-container");
     if (!container) {
       container = document.createElement("div");
       container.id = "pagespeed-container";
-      const main = document.querySelector("main") || document.body;
-      main.appendChild(container);
+      container.className = "container";
+      const footer = document.querySelector("footer");
+      if (footer && footer.parentNode) {
+        footer.parentNode.insertBefore(container, footer);
+      } else {
+        const target = document.querySelector("main") || document.body;
+        target.appendChild(container);
+      }
     }
+    return container;
+  }
+
+  async function init() {
+    ensureContainer();
 
     // Load latest data and history for all monitored sites in parallel
     await Promise.all([
@@ -625,7 +640,34 @@
       ...SITES.map(fetchSiteHistory)
     ]);
 
+    // Fallback: If siteData[slug] has 0 performance, but siteHistory[slug] has valid audits, use the latest from history!
+    SITES.forEach(site => {
+      const current = siteData[site.slug];
+      const mScore = current?.mobile?.performance || 0;
+      const dScore = current?.desktop?.performance || 0;
+      if (mScore === 0 && dScore === 0) {
+        const hist = siteHistory[site.slug] || [];
+        if (hist.length > 0) {
+          siteData[site.slug] = hist[hist.length - 1];
+        }
+      }
+    });
+
     renderDashboard();
+
+    // Re-inject if Svelte/Sapper re-renders layout or changes routes
+    if (window.MutationObserver) {
+      let debounceTimer;
+      const observer = new MutationObserver(() => {
+        if (!document.getElementById("pagespeed-container")) {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(() => {
+            renderDashboard();
+          }, 100);
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    }
   }
 
   if (document.readyState === "loading") {
