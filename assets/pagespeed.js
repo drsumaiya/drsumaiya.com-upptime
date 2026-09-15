@@ -1,3 +1,7 @@
+/**
+ * PageSpeed Insights & Core Web Vitals Dashboard for Upptime
+ * Version 1.1.0 - Dynamically mounted before footer
+ */
 (function () {
   const SITES = [
     {

@@ -17,7 +17,7 @@ status-website:
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
   introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  customHeadHtml: '<link rel="stylesheet" href="/pagespeed.css"><script src="/pagespeed.js" defer></script>'
+  customHeadHtml: '<script>(function(){if(typeof document!=="undefined"){var l=document.createElement("link");l.rel="stylesheet";l.href="/pagespeed.css";document.head.appendChild(l);var s=document.createElement("script");s.src="/pagespeed.js";s.defer=true;document.head.appendChild(s);}})();</script>'
   navbar:
     - title: Status
       href: /
