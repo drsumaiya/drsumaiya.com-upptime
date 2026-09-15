@@ -6,6 +6,7 @@ This repository contains the open-source uptime monitor and status page for [drs
 [![Response Time CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Response%20Time%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/response-time.yml)
 [![Graphs CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/graphs.yml)
 [![Static Site CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/site.yml)
+[![PageSpeed Insights CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml)
 [![Summary CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Summary%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/summary.yml)
 
 With [Upptime](https://upptime.js.org), you can get your own unlimited and free uptime monitor and status page, powered entirely by a GitHub repository. We use [Issues](https://github.com/drsumaiya/drsumaiya.com-upptime/issues) as incident reports, [Actions](https://github.com/drsumaiya/drsumaiya.com-upptime/actions) as uptime monitors, and [Pages](https://drsumaiya.github.io/drsumaiya.com-upptime) for the status page.
@@ -21,7 +22,144 @@ With [Upptime](https://upptime.js.org), you can get your own unlimited and free 
 
 <!--end: status pages-->
 
-[**Visit our status website →**](https://drsumaiya.github.io/drsumaiya.com-upptime)
+[**Visit our live status website →**](https://status.drsumaiya.com)
+
+---
+
+## ⚡ Key Features
+
+### 1. 24/7 Availability & Latency Monitoring
+* **5-Minute Health Checks**: Pings monitored endpoints every 5 minutes to verify HTTP status.
+* **Automated Incident Reports**: Automatically creates and tags GitHub Issues on downtime and auto-closes them upon recovery.
+* **Rolling Latency Analytics**: Tracks daily, weekly, monthly, and yearly response times with automated PNG graphs.
+
+### 2. Google PageSpeed & Core Web Vitals Tracking
+* **Daily Automated Audits**: Runs Lighthouse / Google PageSpeed Insights every morning for both **Mobile** and **Desktop**.
+* **Key Metrics Monitored**: Performance Score, First Contentful Paint (FCP), Largest Contentful Paint (LCP), Total Blocking Time (TBT), Cumulative Layout Shift (CLS), and Speed Index.
+* **Anti-Bot Stealth Hardening**: Runs headless Chrome with `--disable-blink-features=AutomationControlled`, realistic browser user agents, and automatic 5-second retries.
+* **Zero-Score Pollution Guard**: Prevents runner network failures or 403 blocks from corrupting `latest.json` or skewing historical trend lines.
+
+### 3. Interactive Historical Trend Charts (Status Page Widget)
+* **Smooth SVG Curves**: Responsive spline chart with gradient underfill plotting score and timing progression over time.
+* **Multi-Metric Switcher**: Toggle between **⚡ Score**, **⏱️ LCP**, **📐 CLS**, and **🎨 FCP**.
+* **KPI Stat Pills**: Displays real-time Current, Period Average, All-time Best, and Trajectory indicators (▲ Up / ▼ Down / ▬ Steady).
+* **Hover Tooltips**: Floating detailed card displaying timestamps and full Core Web Vitals breakdowns per audit.
+* **Dark & Light Mode**: Built directly into the custom Upptime dashboard with native system theme support.
+
+### 4. Security-Hardened WAF Bypass
+* **Cryptographic Token Verification**: The CI workflow authenticates against Wordfence WAF using a private 64-character token (`X-Upptime-Token`) validated via timing-safe `hash_equals()`.
+* **Strict Method & Path Scoping**: The bypass is strictly limited to `GET` requests on the homepage root (`/`). It **never** applies to `POST`, `/wp-admin/`, `/wp-login.php`, or REST APIs.
+* **Safe for Public Repos**: The token is stored purely in GitHub Actions Secrets (`UPPTIME_WAF_SECRET`) and is never committed to repo files.
+
+---
+
+## 🕒 GitHub Actions Workflows & Schedule
+
+| Workflow | File | Interval / Trigger | Schedule (UTC / IST) | Purpose |
+| :--- | :--- | :--- | :--- | :--- |
+| **Uptime CI** | [uptime.yml](.github/workflows/uptime.yml) | **Every 5 minutes** | Continuous (`*/5 * * * *`) | Pings URLs for HTTP 200; opens/closes incident issues on downtime. |
+| **PageSpeed Insights CI** | [pagespeed.yml](.github/workflows/pagespeed.yml) | **Daily** + Manual Trigger | `06:00 UTC` (**11:30 AM IST**) | Runs Lighthouse / PageSpeed audits (Mobile + Desktop) and updates history. |
+| **Response Time CI** | [response-time.yml](.github/workflows/response-time.yml) | **Daily** | `23:00 UTC` (**04:30 AM IST**) | Measures latency and calculates rolling 24h, 7d, 30d, 1y response time statistics. |
+| **Graphs CI** | [graphs.yml](.github/workflows/graphs.yml) | **Daily** | `00:00 UTC` (**05:30 AM IST**) | Generates response-time PNG charts committed to the `graphs/` folder. |
+| **Summary CI** | [summary.yml](.github/workflows/summary.yml) | **Daily** | `00:00 UTC` (**05:30 AM IST**) | Updates the live status table, uptime percentages, and badges in this README. |
+| **Static Site CI** | [site.yml](.github/workflows/site.yml) | **Daily** + On Push to `assets/**` | `01:00 UTC` (**06:30 AM IST**) | Builds and deploys the status website to GitHub Pages ([status.drsumaiya.com](https://status.drsumaiya.com)). |
+| **Updates CI** | [updates.yml](.github/workflows/updates.yml) | **Daily** | `03:00 UTC` (**08:30 AM IST**) | Syncs incident issues and maintenance updates into status history. |
+| **Update Template CI** | [update-template.yml](.github/workflows/update-template.yml) | **Daily** | `00:00 UTC` (**05:30 AM IST**) | Synchronizes upstream template updates from core Upptime. |
+| **Setup CI** | [setup.yml](.github/workflows/setup.yml) | **On Push to `.upptimerc.yml`** | Event-driven | Updates repository settings, labels, and issue templates when config changes. |
+
+---
+
+## 🔐 Repository Secrets Configuration
+
+To ensure all automated workflows run with full capabilities, configure the following secrets under **Settings > Secrets and variables > Actions**:
+
+| Secret Name | Required | Description |
+| :--- | :--- | :--- |
+| `UPPTIME_WAF_SECRET` | **Yes** | 64-character private cryptographic token used by `pagespeed.yml` to authenticate audits through Wordfence WAF without false positive 403 blocks. |
+| `PAGESPEED_API_KEY` | Optional | Free Google Cloud PageSpeed Insights API key. When present, audits use Google's official crawler infrastructure. |
+| `GH_PAT` | Optional | GitHub Personal Access Token (repo + workflow scope) for automated pushes and GitHub Pages releases. |
+
+---
+
+## 🏗️ Architecture & Data Flow
+
+```
+                  ┌─────────────────────────────────────────┐
+                  │ GitHub Actions: pagespeed.yml           │
+                  │ (Daily 06:00 UTC / 11:30 AM IST)        │
+                  └────────────────────┬────────────────────┘
+                                       │
+                ┌──────────────────────┴──────────────────────┐
+                ▼                                             ▼
+     [Engine A: Google API]                        [Engine B: Lighthouse CLI]
+  (Requires PAGESPEED_API_KEY)                 (Anti-Bot Flags + Stealth Chrome)
+                │                                             │
+                │        Sends 'X-Upptime-Token' Header       │
+                └──────────────────────┬──────────────────────┘
+                                       │
+                                       ▼
+                       ┌───────────────────────────────┐
+                       │   Target Web Server / WAF     │
+                       │   (Hostinger CDN + Wordfence) │
+                       └───────────────┬───────────────┘
+                                       │
+                         [Zero-Score Pollution Guard]
+                                       │
+                                       ▼
+                  ┌─────────────────────────────────────────┐
+                  │ Commit & Push Audit Results             │
+                  │ ├── pagespeed/latest.json               │
+                  │ └── pagespeed/history/<site-slug>.jsonl │
+                  └────────────────────┬────────────────────┘
+                                       │
+                                       ▼
+                  ┌─────────────────────────────────────────┐
+                  │ GitHub Pages Frontend                   │
+                  │ (assets/pagespeed.js + pagespeed.css)   │
+                  │ ├── Hydrates Latest Scores & CWV        │
+                  │ └── Renders Interactive SVG Spline Chart│
+                  └─────────────────────────────────────────┘
+```
+
+### File Hierarchy
+
+* **`pagespeed/latest.json`**: Current snapshot containing the most recent valid performance score, FCP, LCP, CLS, TBT, and Speed Index for both Mobile and Desktop.
+* **`pagespeed/history/<slug>.jsonl`**: Append-only line-delimited JSON log tracking the chronological progression of audits for each monitored website.
+* **`assets/pagespeed.js`**: Client-side widget logic that fetches audit data asynchronously, computes statistical KPIs (Average, Best, Trajectory), and renders responsive SVG Bezier curve charts.
+* **`assets/pagespeed.css`**: Design tokens, glassmorphism styling, metric tab switchers, and dark/light mode rules for the PageSpeed dashboard.
+* **`.github/workflows/pagespeed.yml`**: Resilient GitHub Actions workflow orchestrating audits, retries, zero-score guards, and automated repository commits.
+
+---
+
+## 🚀 Triggering Audits Manually
+
+Audits run automatically every day at **06:00 UTC (11:30 AM IST)**. You can also trigger an immediate on-demand audit:
+
+### Option 1: Via GitHub Web Interface
+1. Go to the **Actions** tab in this repository.
+2. Select **PageSpeed Insights CI** from the left sidebar.
+3. Click the **Run workflow** dropdown on the right and confirm by clicking **Run workflow**.
+
+### Option 2: Via GitHub CLI (`gh`)
+```bash
+gh workflow run pagespeed.yml
+```
+
+---
+
+## 🛡️ Security Architecture: Wordfence WAF Bypass
+
+Sites hosted behind WordPress application firewalls (such as Wordfence on Hostinger) frequently block headless Chrome runners executing from public cloud runner IPs (Azure/AWS), resulting in false-positive `403 Forbidden` responses.
+
+This repository uses a zero-trust cryptographic bypass deployed to the origin server's `wordfence-waf.php`:
+
+1. **Timing-Safe Token Matching**: The incoming request header `X-Upptime-Token` is verified against the private secret using PHP's `hash_equals()` to prevent timing attacks.
+2. **Strict Request Scoping**:
+   * **Method-Restricted**: Only `GET` requests are eligible for bypass. Any `POST`, `PUT`, or `DELETE` requests are processed by Wordfence with full WAF inspection.
+   * **Path-Restricted**: Only requests to the homepage root (`/`) can bypass. Sensitive paths such as `/wp-admin/`, `/wp-login.php`, XML-RPC, and `/wp-json/` remain under complete Wordfence protection.
+3. **Public Repository Safety**: The cryptographic token exists exclusively in GitHub Actions encrypted secrets (`UPPTIME_WAF_SECRET`) and on the private server filesystem. No secrets or static bypass tokens are exposed in public Git commits.
+
+---
 
 ## 📄 License
 
