@@ -216,6 +216,257 @@
 }
 
 /* Core Web Vitals */
+/* Historical Trend Section */
+.psi-history-section {
+  background: var(--psi-card-bg);
+  border: 1px solid var(--psi-card-border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--psi-shadow);
+  backdrop-filter: blur(10px);
+}
+
+.psi-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--psi-card-border);
+}
+
+.psi-history-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--psi-text);
+  margin: 0 0 4px 0;
+}
+
+.psi-history-subtitle {
+  font-size: 13px;
+  color: var(--psi-text-muted);
+  margin: 0;
+}
+
+.psi-metric-tabs {
+  display: flex;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .psi-metric-tabs {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.psi-metric-btn {
+  border: none;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--psi-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.psi-metric-btn:hover {
+  color: var(--psi-text);
+}
+
+.psi-metric-btn.active {
+  background: var(--psi-bg);
+  color: var(--psi-accent);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.psi-chart-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.psi-stat-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--psi-card-border);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .psi-stat-pill {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.psi-stat-label {
+  color: var(--psi-text-muted);
+  font-size: 12px;
+}
+
+.psi-stat-val {
+  color: var(--psi-text);
+  font-weight: 700;
+}
+
+.trend-up {
+  color: var(--psi-good) !important;
+}
+
+.trend-down {
+  color: var(--psi-poor) !important;
+}
+
+.trend-flat {
+  color: var(--psi-text-muted) !important;
+}
+
+.psi-chart-svg-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 8px;
+}
+
+.psi-trend-svg {
+  width: 100%;
+  height: 220px;
+  overflow: visible;
+}
+
+.psi-chart-grid {
+  stroke: var(--psi-card-border);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  opacity: 0.7;
+}
+
+.psi-chart-axis-label {
+  font-size: 11px;
+  fill: var(--psi-text-muted);
+  font-family: inherit;
+}
+
+.psi-chart-date-label {
+  font-size: 11px;
+  fill: var(--psi-text-muted);
+  font-family: inherit;
+}
+
+.psi-chart-line {
+  fill: none;
+  stroke: var(--psi-accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.psi-chart-point-group {
+  cursor: pointer;
+}
+
+.psi-chart-dot {
+  fill: var(--psi-bg);
+  stroke: var(--psi-accent);
+  stroke-width: 3;
+  transition: all 0.2s ease;
+}
+
+.psi-chart-dot-ring {
+  fill: var(--psi-accent);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.psi-chart-point-group:hover .psi-chart-dot {
+  r: 6.5;
+  fill: var(--psi-accent);
+  stroke: #ffffff;
+}
+
+.psi-chart-point-group:hover .psi-chart-dot-ring {
+  opacity: 0.25;
+}
+
+.psi-chart-tooltip {
+  position: absolute;
+  z-index: 50;
+  pointer-events: none;
+  background: var(--psi-bg);
+  border: 1px solid var(--psi-card-border);
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  color: var(--psi-text);
+  min-width: 170px;
+  transition: left 0.05s ease, top 0.05s ease;
+}
+
+.psi-tip-date {
+  font-size: 11px;
+  color: var(--psi-text-muted);
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--psi-card-border);
+  padding-bottom: 4px;
+}
+
+.psi-tip-main {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--psi-accent);
+  margin-bottom: 6px;
+}
+
+.psi-tip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 3px;
+  color: var(--psi-text-muted);
+  font-size: 11px;
+}
+
+.psi-tip-row strong {
+  color: var(--psi-text);
+}
+
+.psi-chart-empty {
+  text-align: center;
+  padding: 36px 16px;
+  color: var(--psi-text-muted);
+}
+
+.psi-chart-empty-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.psi-chart-empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--psi-text);
+  margin-bottom: 6px;
+}
+
+.psi-chart-empty-desc {
+  font-size: 13px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
 .psi-vitals-section {
   background: var(--psi-card-bg);
   border: 1px solid var(--psi-card-border);
