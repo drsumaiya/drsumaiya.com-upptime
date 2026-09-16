@@ -59,12 +59,16 @@ With [Upptime](https://upptime.js.org), you get a 100% serverless, zero-maintena
 - **Dual-Site Switching**: Tab switcher between `DrSumaiya.com` and `IQS`.
 - **Dark & Light Mode**: Built directly into the custom Upptime dashboard with native system theme support.
 
-### 4. Automated Performance Incident Management (GitHub Issues)
+### 4. Automated Performance & Core Web Vitals Incident Management (GitHub Issues)
 
-- **Threshold-Triggered Alerts**: Automatically raises a GitHub Issue tagged `performance-degradation`, `incident`, and `{site-slug}` whenever Performance Score drops below **60/100** or an audit fails.
-- **Status Page Surfacing**: Because issues carry the `incident` label, ongoing performance degradations are reflected on the status page for transparent communication.
-- **Anti-Spam Deduplication**: Searches for existing open performance issues and posts daily status updates to the existing thread instead of spamming duplicates.
-- **Automated Recovery**: Automatically comments with recovery metrics and closes the issue as soon as scores recover to **≥ 60/100**.
+- **Multi-Factor Degradation Alerts**: Automatically raises a GitHub Issue tagged `performance-degradation`, `incident`, and `{site-slug}` (plus `cwv-budget-exceeded` when applicable) whenever:
+  - **Performance Score** drops below **60/100** (Mobile or Desktop),
+  - **Largest Contentful Paint (LCP)** exceeds **4.0s** (Google Poor UX threshold),
+  - **Cumulative Layout Shift (CLS)** exceeds **0.25** (Severe layout jumping), or
+  - An audit fails to execute.
+- **Status Page Surfacing**: Because issues carry the `incident` label, ongoing performance and CWV degradations are reflected on the status page for transparent communication.
+- **Anti-Spam Deduplication**: Searches for existing open performance issues and posts daily status updates with active violation lists to the existing thread instead of spamming duplicates.
+- **Automated Recovery**: Automatically comments with recovery metrics and closes the issue only when **all** metrics recover within target budgets (Score ≥ 60, LCP ≤ 4.0s, CLS ≤ 0.25).
 
 ### 5. Security-Hardened WAF Bypass
 
