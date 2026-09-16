@@ -5,8 +5,20 @@ repo: drsumaiya.com-upptime # The name of this repository
 sites:
   - name: DrSumaiya.com
     url: https://DrSumaiya.com
+  - name: DrSumaiya - Inquiry Form
+    url: https://drsumaiya.com/inquiry-form/
+  - name: DrSumaiya - Booking Form
+    url: https://drsumaiya.com/form/
+  - name: DrSumaiya - Success Stories Post
+    url: https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/
   - name: IQS
     url: https://iqs.org.in
+  - name: IQS - Islamic Courses
+    url: https://iqs.org.in/islamic-courses/
+  - name: IQS - Admissions & Inquiry
+    url: https://iqs.org.in/inquiry/
+  - name: IQS - Sidr Leaves Remedy Post
+    url: https://iqs.org.in/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
