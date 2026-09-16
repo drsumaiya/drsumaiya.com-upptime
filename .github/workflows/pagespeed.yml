@@ -104,6 +104,9 @@ jobs:
           CLS=$(echo "$DATA" | jq -r '.audits["cumulative-layout-shift"].displayValue // "N/A"')
           SI=$(echo "$DATA" | jq -r '.audits["speed-index"].displayValue // "N/A"')
 
+          LCP_MS=$(echo "$DATA" | jq '(.audits["largest-contentful-paint"].numericValue // 0) | round')
+          CLS_X1000=$(echo "$DATA" | jq '((.audits["cumulative-layout-shift"].numericValue // 0) * 1000) | round')
+
           echo "perf=$PERF" >> "$GITHUB_OUTPUT"
           echo "a11y=$A11Y" >> "$GITHUB_OUTPUT"
           echo "bp=$BP" >> "$GITHUB_OUTPUT"
@@ -113,6 +116,8 @@ jobs:
           echo "tbt=$TBT" >> "$GITHUB_OUTPUT"
           echo "cls=$CLS" >> "$GITHUB_OUTPUT"
           echo "si=$SI" >> "$GITHUB_OUTPUT"
+          echo "lcp_ms=$LCP_MS" >> "$GITHUB_OUTPUT"
+          echo "cls_x1000=$CLS_X1000" >> "$GITHUB_OUTPUT"
 
       - name: Run PageSpeed Insights / Lighthouse (Desktop)
         id: psi_desktop
@@ -183,6 +188,9 @@ jobs:
           CLS=$(echo "$DATA" | jq -r '.audits["cumulative-layout-shift"].displayValue // "N/A"')
           SI=$(echo "$DATA" | jq -r '.audits["speed-index"].displayValue // "N/A"')
 
+          LCP_MS=$(echo "$DATA" | jq '(.audits["largest-contentful-paint"].numericValue // 0) | round')
+          CLS_X1000=$(echo "$DATA" | jq '((.audits["cumulative-layout-shift"].numericValue // 0) * 1000) | round')
+
           echo "perf=$PERF" >> "$GITHUB_OUTPUT"
           echo "a11y=$A11Y" >> "$GITHUB_OUTPUT"
           echo "bp=$BP" >> "$GITHUB_OUTPUT"
@@ -192,6 +200,8 @@ jobs:
           echo "tbt=$TBT" >> "$GITHUB_OUTPUT"
           echo "cls=$CLS" >> "$GITHUB_OUTPUT"
           echo "si=$SI" >> "$GITHUB_OUTPUT"
+          echo "lcp_ms=$LCP_MS" >> "$GITHUB_OUTPUT"
+          echo "cls_x1000=$CLS_X1000" >> "$GITHUB_OUTPUT"
 
       - name: Save results
         run: |
@@ -338,30 +348,91 @@ jobs:
           URL="${{ matrix.url }}"
           M_PERF="${{ steps.psi_mobile.outputs.perf }}"
           D_PERF="${{ steps.psi_desktop.outputs.perf }}"
+          M_LCP="${{ steps.psi_mobile.outputs.lcp }}"
+          D_LCP="${{ steps.psi_desktop.outputs.lcp }}"
+          M_CLS="${{ steps.psi_mobile.outputs.cls }}"
+          D_CLS="${{ steps.psi_desktop.outputs.cls }}"
+          M_FCP="${{ steps.psi_mobile.outputs.fcp }}"
+          D_FCP="${{ steps.psi_desktop.outputs.fcp }}"
+          M_TBT="${{ steps.psi_mobile.outputs.tbt }}"
+          D_TBT="${{ steps.psi_desktop.outputs.tbt }}"
+
+          M_LCP_MS="${{ steps.psi_mobile.outputs.lcp_ms }}"
+          M_CLS_X1000="${{ steps.psi_mobile.outputs.cls_x1000 }}"
+          D_LCP_MS="${{ steps.psi_desktop.outputs.lcp_ms }}"
+          D_CLS_X1000="${{ steps.psi_desktop.outputs.cls_x1000 }}"
+
           M_PERF="${M_PERF:-0}"
           D_PERF="${D_PERF:-0}"
+          M_LCP_MS="${M_LCP_MS:-0}"
+          M_CLS_X1000="${M_CLS_X1000:-0}"
+          D_LCP_MS="${D_LCP_MS:-0}"
+          D_CLS_X1000="${D_CLS_X1000:-0}"
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-          THRESHOLD=60
 
-          # Degradation condition: Mobile < 60, Desktop < 60, or complete audit failure (0 and 0)
+          # Budget Thresholds
+          PERF_THRESHOLD=60
+          LCP_BUDGET_MS=4000     # 4.0s (Google Poor threshold)
+          CLS_BUDGET_X1000=250   # 0.25 (Google Poor threshold)
+
           IS_DEGRADED=false
-          if [ "$M_PERF" -lt "$THRESHOLD" ] || [ "$D_PERF" -lt "$THRESHOLD" ]; then
+          VIOLATIONS_LIST=""
+          VIOLATIONS_SUMMARY=""
+
+          # 1. Performance Score Check (< 60)
+          if [ "$M_PERF" -lt "$PERF_THRESHOLD" ]; then
             IS_DEGRADED=true
+            VIOLATIONS_LIST="${VIOLATIONS_LIST}* ❌ **Mobile Performance Score**: \`${M_PERF}/100\` *(Budget: ≥ ${PERF_THRESHOLD}/100)*"$'\n'
+            VIOLATIONS_SUMMARY="${VIOLATIONS_SUMMARY}Mobile Score (${M_PERF} < ${PERF_THRESHOLD}), "
           fi
+          if [ "$D_PERF" -lt "$PERF_THRESHOLD" ]; then
+            IS_DEGRADED=true
+            VIOLATIONS_LIST="${VIOLATIONS_LIST}* ❌ **Desktop Performance Score**: \`${D_PERF}/100\` *(Budget: ≥ ${PERF_THRESHOLD}/100)*"$'\n'
+            VIOLATIONS_SUMMARY="${VIOLATIONS_SUMMARY}Desktop Score (${D_PERF} < ${PERF_THRESHOLD}), "
+          fi
+
+          # 2. Core Web Vitals LCP Check (> 4.0s)
+          if [ "$M_LCP_MS" -gt "$LCP_BUDGET_MS" ]; then
+            IS_DEGRADED=true
+            VIOLATIONS_LIST="${VIOLATIONS_LIST}* ❌ **Mobile Largest Contentful Paint (LCP)**: \`${M_LCP}\` *(Budget: ≤ 4.0s)*"$'\n'
+            VIOLATIONS_SUMMARY="${VIOLATIONS_SUMMARY}Mobile LCP (${M_LCP} > 4.0s), "
+          fi
+
+          # 3. Core Web Vitals CLS Check (> 0.25)
+          if [ "$M_CLS_X1000" -gt "$CLS_BUDGET_X1000" ]; then
+            IS_DEGRADED=true
+            VIOLATIONS_LIST="${VIOLATIONS_LIST}* ❌ **Mobile Cumulative Layout Shift (CLS)**: \`${M_CLS}\` *(Budget: ≤ 0.25)*"$'\n'
+            VIOLATIONS_SUMMARY="${VIOLATIONS_SUMMARY}Mobile CLS (${M_CLS} > 0.25), "
+          fi
+
+          # 4. Complete Audit Failure Guard
           if [ "$M_PERF" -eq 0 ] && [ "$D_PERF" -eq 0 ]; then
             IS_DEGRADED=true
+            VIOLATIONS_LIST="${VIOLATIONS_LIST}* ❌ **Audit Failure**: Unable to complete Lighthouse audit."$'\n'
+            VIOLATIONS_SUMMARY="${VIOLATIONS_SUMMARY}Audit Failure, "
           fi
 
-          if [ "$M_PERF" -lt "$THRESHOLD" ]; then
-            M_STATUS="⚠️ Below 60"
+          # Strip trailing comma
+          VIOLATIONS_SUMMARY="${VIOLATIONS_SUMMARY%, }"
+
+          # Metric status labels for breakdown table
+          [ "$M_PERF" -lt "$PERF_THRESHOLD" ] && M_STATUS="❌ Below ${PERF_THRESHOLD}" || M_STATUS="✅ OK"
+          [ "$D_PERF" -lt "$PERF_THRESHOLD" ] && D_STATUS="❌ Below ${PERF_THRESHOLD}" || D_STATUS="✅ OK"
+
+          if [ "$M_LCP_MS" -gt 4000 ]; then
+            M_LCP_STATUS="❌ Poor (> 4.0s)"
+          elif [ "$M_LCP_MS" -gt 2500 ]; then
+            M_LCP_STATUS="⚠️ Needs Work (> 2.5s)"
           else
-            M_STATUS="✅ OK"
+            M_LCP_STATUS="✅ Good (≤ 2.5s)"
           fi
 
-          if [ "$D_PERF" -lt "$THRESHOLD" ]; then
-            D_STATUS="⚠️ Below 60"
+          if [ "$M_CLS_X1000" -gt 250 ]; then
+            M_CLS_STATUS="❌ Poor (> 0.25)"
+          elif [ "$M_CLS_X1000" -gt 100 ]; then
+            M_CLS_STATUS="⚠️ Needs Work (> 0.10)"
           else
-            D_STATUS="✅ OK"
+            M_CLS_STATUS="✅ Good (≤ 0.10)"
           fi
 
           # Search for existing open performance issue for this site
@@ -374,62 +445,72 @@ jobs:
             --jq '.[0].number' 2>/dev/null || true)
 
           if [ "$IS_DEGRADED" = true ]; then
-            TITLE="⚡ Performance Degraded: ${NAME} (Mobile: ${M_PERF}/100, Desktop: ${D_PERF}/100)"
+            TITLE="⚡ Performance / CWV Alert: ${NAME} (Score: ${M_PERF}/100, LCP: ${M_LCP}, CLS: ${M_CLS})"
+
+            LABELS="performance-degradation,incident,$SLUG"
+            if [ "$M_LCP_MS" -gt "$LCP_BUDGET_MS" ] || [ "$M_CLS_X1000" -gt "$CLS_BUDGET_X1000" ]; then
+              LABELS="${LABELS},cwv-budget-exceeded"
+            fi
 
             cat > /tmp/issue_body.md << EOF
-          ### ⚠️ Performance Degradation Alert for [${NAME}](${URL})
+          ### ⚠️ Performance & Core Web Vitals Budget Alert for [${NAME}](${URL})
 
-          An automated Google PageSpeed Insights audit detected performance below the alert threshold (**< ${THRESHOLD}/100**).
+          An automated Google PageSpeed Insights audit detected metric violations against target budgets:
 
-          | Category | Mobile | Desktop |
-          | :--- | :---: | :---: |
-          | **Performance** | **${M_PERF}/100** (${M_STATUS}) | **${D_PERF}/100** (${D_STATUS}) |
-          | Accessibility | ${{ steps.psi_mobile.outputs.a11y }}/100 | ${{ steps.psi_desktop.outputs.a11y }}/100 |
-          | Best Practices | ${{ steps.psi_mobile.outputs.bp }}/100 | ${{ steps.psi_desktop.outputs.bp }}/100 |
-          | SEO | ${{ steps.psi_mobile.outputs.seo }}/100 | ${{ steps.psi_desktop.outputs.seo }}/100 |
+          #### 🚨 Active Budget Violations:
+          ${VIOLATIONS_LIST}
 
-          #### Core Web Vitals (Mobile):
-          * **Largest Contentful Paint (LCP)**: \`${{ steps.psi_mobile.outputs.lcp }}\` *(Target: ≤ 2.5s)*
-          * **First Contentful Paint (FCP)**: \`${{ steps.psi_mobile.outputs.fcp }}\` *(Target: ≤ 1.8s)*
-          * **Total Blocking Time (TBT)**: \`${{ steps.psi_mobile.outputs.tbt }}\` *(Target: ≤ 200ms)*
-          * **Cumulative Layout Shift (CLS)**: \`${{ steps.psi_mobile.outputs.cls }}\` *(Target: ≤ 0.1)*
-          * **Speed Index**: \`${{ steps.psi_mobile.outputs.si }}\`
+          #### 📊 Core Web Vitals & Performance Breakdown:
+          | Metric | Mobile | Desktop | Budget Target | Status |
+          | :--- | :---: | :---: | :---: | :---: |
+          | **Performance Score** | **${M_PERF}/100** | **${D_PERF}/100** | ≥ ${PERF_THRESHOLD}/100 | ${M_STATUS} |
+          | **Largest Contentful Paint (LCP)** | **${M_LCP}** | **${D_LCP}** | ≤ 2.5s (Good) / ≤ 4.0s (Budget) | ${M_LCP_STATUS} |
+          | **Cumulative Layout Shift (CLS)** | **${M_CLS}** | **${D_CLS}** | ≤ 0.10 (Good) / ≤ 0.25 (Budget) | ${M_CLS_STATUS} |
+          | First Contentful Paint (FCP) | \`${M_FCP}\` | \`${D_FCP}\` | ≤ 1.8s (Good) | - |
+          | Total Blocking Time (TBT) | \`${M_TBT}\` | \`${D_TBT}\` | ≤ 200ms (Good) | - |
+          | Speed Index | \`${{ steps.psi_mobile.outputs.si }}\` | \`${{ steps.psi_desktop.outputs.si }}\` | - | - |
+
+          #### Additional Lighthouse Categories:
+          * **Accessibility**: Mobile \`${{ steps.psi_mobile.outputs.a11y }}/100\` | Desktop \`${{ steps.psi_desktop.outputs.a11y }}/100\`
+          * **Best Practices**: Mobile \`${{ steps.psi_mobile.outputs.bp }}/100\` | Desktop \`${{ steps.psi_desktop.outputs.bp }}/100\`
+          * **SEO**: Mobile \`${{ steps.psi_mobile.outputs.seo }}/100\` | Desktop \`${{ steps.psi_desktop.outputs.seo }}/100\`
 
           [🔍 Run Live PageSpeed Analysis](https://pagespeed.web.dev/analysis?url=$(jq -rn --arg u "$URL" '$u|@uri'))
 
           ---
-          *Reported at \`${TIMESTAMP}\` by PageSpeed CI. This issue will automatically be resolved and closed once scores recover to ≥ ${THRESHOLD}/100.*
+          *Reported at \`${TIMESTAMP}\` by PageSpeed CI. This issue will automatically be resolved and closed once scores recover to ≥ ${PERF_THRESHOLD}/100, LCP ≤ 4.0s, and CLS ≤ 0.25.*
           EOF
 
             if [ -n "$EXISTING_ISSUE" ] && [ "$EXISTING_ISSUE" != "null" ]; then
               echo "Updating existing open performance issue #${EXISTING_ISSUE}..."
               cat > /tmp/issue_comment.md << EOF
           **Daily Audit Update (\`${TIMESTAMP}\`):**
-          - Mobile Performance: **${M_PERF}/100** (${M_STATUS})
-          - Desktop Performance: **${D_PERF}/100** (${D_STATUS})
-          - Mobile LCP: \`${{ steps.psi_mobile.outputs.lcp }}\` | CLS: \`${{ steps.psi_mobile.outputs.cls }}\`
-          - Current status: **Performance remains below threshold (< ${THRESHOLD}). Issue remains open.**
+          - **Performance Score**: Mobile **${M_PERF}/100** (${M_STATUS}) | Desktop **${D_PERF}/100** (${D_STATUS})
+          - **Largest Contentful Paint (LCP)**: **${M_LCP}** (${M_LCP_STATUS})
+          - **Cumulative Layout Shift (CLS)**: **${M_CLS}** (${M_CLS_STATUS})
+          - **Active Violations**: ${VIOLATIONS_SUMMARY}
+          - **Current Status**: **Metrics remain outside budget. Issue remains open.**
           EOF
               gh issue comment "$EXISTING_ISSUE" --repo "${{ github.repository }}" --body-file /tmp/issue_comment.md || true
             else
-              echo "Opening new performance issue for ${NAME}..."
+              echo "Opening new performance / CWV issue for ${NAME}..."
               gh issue create \
                 --repo "${{ github.repository }}" \
                 --title "$TITLE" \
                 --body-file /tmp/issue_body.md \
-                --label "performance-degradation,incident,$SLUG" || true
+                --label "$LABELS" || true
             fi
           else
-            echo "Performance is healthy (Mobile: ${M_PERF}/100, Desktop: ${D_PERF}/100, Threshold: ${THRESHOLD})."
+            echo "All Performance & Core Web Vitals metrics are healthy (Score: ${M_PERF}/100, LCP: ${M_LCP}, CLS: ${M_CLS})."
             if [ -n "$EXISTING_ISSUE" ] && [ "$EXISTING_ISSUE" != "null" ]; then
               echo "Resolving and closing performance issue #${EXISTING_ISSUE}..."
               cat > /tmp/resolve_comment.md << EOF
-          **✅ Resolved:** Performance for [${NAME}](${URL}) has recovered above the threshold (≥ ${THRESHOLD}/100)!
+          **✅ Resolved:** Performance & Core Web Vitals for [${NAME}](${URL}) have fully recovered within target budgets!
 
-          - **Mobile Performance**: **${M_PERF}/100**
-          - **Desktop Performance**: **${D_PERF}/100**
-          - **Largest Contentful Paint (LCP)**: \`${{ steps.psi_mobile.outputs.lcp }}\`
-          - **Cumulative Layout Shift (CLS)**: \`${{ steps.psi_mobile.outputs.cls }}\`
+          - **Mobile Performance**: **${M_PERF}/100** (Budget: ≥ ${PERF_THRESHOLD})
+          - **Desktop Performance**: **${D_PERF}/100** (Budget: ≥ ${PERF_THRESHOLD})
+          - **Largest Contentful Paint (LCP)**: **\`${M_LCP}\`** (Budget: ≤ 4.0s)
+          - **Cumulative Layout Shift (CLS)**: **\`${M_CLS}\`** (Budget: ≤ 0.25)
 
           *Closed automatically by PageSpeed CI at \`${TIMESTAMP}\`.*
           EOF
