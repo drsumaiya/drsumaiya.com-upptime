@@ -1,0 +1,50 @@
+name: SEO & Indexing Health CI
+on:
+  schedule:
+    # Run daily at 05:00 UTC (10:30 AM IST) - 1h before PageSpeed CI
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  seo-health:
+    name: "Audit: Sitemaps & robots.txt"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Setup Python & uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run SEO & Indexing Verification
+        env:
+          UPPTIME_WAF_SECRET: ${{ secrets.UPPTIME_WAF_SECRET }}
+        run: |
+          uv run python scripts/verify_seo_health.py
+
+      - name: Manage SEO Incident Issues
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: |
+          uv run python scripts/manage_seo_issues.py "${{ github.repository }}"
+
+      - name: Commit SEO Reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seo/
+          if git diff --staged --quiet; then
+            echo "No SEO changes to commit"
+          else
+            git commit -m "🤖 Update SEO & Indexing Health Report [$(date -u +%Y-%m-%d)]"
+            git pull --rebase
+            git push
+          fi

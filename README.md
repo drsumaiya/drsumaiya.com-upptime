@@ -7,6 +7,7 @@ This repository contains the open-source uptime monitor, Core Web Vitals trackin
 [![Graphs CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Graphs%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/graphs.yml)
 [![Static Site CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/site.yml)
 [![PageSpeed Insights CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml)
+[![SEO Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml)
 [![Summary CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Summary%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/summary.yml)
 
 With [Upptime](https://upptime.js.org), you get a 100% serverless, zero-maintenance uptime monitor and status page powered entirely by GitHub infrastructure:
@@ -70,7 +71,14 @@ With [Upptime](https://upptime.js.org), you get a 100% serverless, zero-maintena
 - **Anti-Spam Deduplication**: Searches for existing open performance issues and posts daily status updates with active violation lists to the existing thread instead of spamming duplicates.
 - **Automated Recovery**: Automatically comments with recovery metrics and closes the issue only when **all** metrics recover within target budgets (Score ≥ 60, LCP ≤ 4.0s, CLS ≤ 0.25).
 
-### 5. Security-Hardened WAF Bypass
+### 5. Automated SEO & Indexing Health Verification (Robots.txt & Sitemaps)
+
+- **Catastrophic De-Indexing Guard**: Probes `robots.txt` daily to guarantee that accidental `Disallow: /` directives (e.g. from staging WordPress pushes or misconfigured plugins) never hide the site from Google.
+- **Sitemap Index & Hierarchy Integrity**: Verifies that `sitemap_index.xml` (DrSumaiya.com) and `wp-sitemap.xml` (IQS) return `HTTP 200`, contain well-formed XML, and all declared child sub-sitemaps are reachable.
+- **Automated Incident Management**: Opens a GitHub Issue tagged `seo-incident`, `incident`, and `{site-slug}` if indexing is blocked, a sitemap returns 404, or XML syntax is broken; auto-closes the issue upon recovery.
+- **Reporting & Telemetry**: Generates daily Markdown reports ([`seo/summary.md`](seo/summary.md)) and JSON history logs ([`seo/history.jsonl`](seo/history.jsonl)).
+
+### 6. Security-Hardened WAF Bypass
 
 - **Cryptographic Token Verification**: The CI workflow authenticates against Wordfence WAF using a private 64-character token (`X-Upptime-Token`) validated via timing-safe `hash_equals()`.
 - **Strict Method & Path Scoping**: The bypass is strictly limited to `GET` requests on the homepage root (`/`). It **never** applies to `POST`, `/wp-admin/`, `/wp-login.php`, or REST APIs.
@@ -100,6 +108,7 @@ Keeping this uptime monitoring repository **public** is the recommended best pra
 | Workflow                  | File                                                         | Interval / Trigger                 | Schedule (UTC / IST)           | Purpose                                                                                                       |
 | :------------------------ | :----------------------------------------------------------- | :--------------------------------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
 | **Uptime CI**             | [uptime.yml](.github/workflows/uptime.yml)                   | **Every 5 minutes**                | Continuous (`*/5 * * * *`)     | Pings URLs for HTTP 200; opens/closes incident issues on downtime.                                            |
+| **SEO Health CI**         | [seo-health.yml](.github/workflows/seo-health.yml)           | **Daily** + Manual Trigger         | `05:00 UTC` (**10:30 AM IST**) | Audits robots.txt directives and XML sitemap integrity; manages SEO incident issues.          |
 | **PageSpeed Insights CI** | [pagespeed.yml](.github/workflows/pagespeed.yml)             | **Daily** + Manual Trigger         | `06:00 UTC` (**11:30 AM IST**) | Runs Lighthouse / PageSpeed audits (Mobile + Desktop) and updates history.                                    |
 | **Response Time CI**      | [response-time.yml](.github/workflows/response-time.yml)     | **Daily**                          | `23:00 UTC` (**04:30 AM IST**) | Measures latency and calculates rolling 24h, 7d, 30d, 1y response time statistics.                            |
 | **Graphs CI**             | [graphs.yml](.github/workflows/graphs.yml)                   | **Daily**                          | `00:00 UTC` (**05:30 AM IST**) | Generates response-time PNG charts committed to the `graphs/` folder.                                         |
