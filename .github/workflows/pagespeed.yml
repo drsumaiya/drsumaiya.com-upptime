@@ -336,20 +336,32 @@ jobs:
           SLUG="${{ matrix.slug }}"
           NAME="${{ matrix.name }}"
           URL="${{ matrix.url }}"
-          M_PERF=${{ steps.psi_mobile.outputs.perf }}
-          D_PERF=${{ steps.psi_desktop.outputs.perf }}
-          M_A11Y=${{ steps.psi_mobile.outputs.a11y }}
-          D_A11Y=${{ steps.psi_desktop.outputs.a11y }}
+          M_PERF="${{ steps.psi_mobile.outputs.perf }}"
+          D_PERF="${{ steps.psi_desktop.outputs.perf }}"
+          M_PERF="${M_PERF:-0}"
+          D_PERF="${D_PERF:-0}"
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
           THRESHOLD=60
 
-          # Degradation condition: Mobile < 60, Desktop < 60, or complete audit failure
+          # Degradation condition: Mobile < 60, Desktop < 60, or complete audit failure (0 and 0)
           IS_DEGRADED=false
           if [ "$M_PERF" -lt "$THRESHOLD" ] || [ "$D_PERF" -lt "$THRESHOLD" ]; then
             IS_DEGRADED=true
           fi
-          if [ "$M_PERF" -eq 0 ] && [ "$M_A11Y" -eq 0 ]; then
+          if [ "$M_PERF" -eq 0 ] && [ "$D_PERF" -eq 0 ]; then
             IS_DEGRADED=true
+          fi
+
+          if [ "$M_PERF" -lt "$THRESHOLD" ]; then
+            M_STATUS="⚠️ Below 60"
+          else
+            M_STATUS="✅ OK"
+          fi
+
+          if [ "$D_PERF" -lt "$THRESHOLD" ]; then
+            D_STATUS="⚠️ Below 60"
+          else
+            D_STATUS="✅ OK"
           fi
 
           # Search for existing open performance issue for this site
@@ -359,65 +371,69 @@ jobs:
             --label "performance-degradation" \
             --label "$SLUG" \
             --json number \
-            --jq '.[0].number' || true)
+            --jq '.[0].number' 2>/dev/null || true)
 
           if [ "$IS_DEGRADED" = true ]; then
             TITLE="⚡ Performance Degraded: ${NAME} (Mobile: ${M_PERF}/100, Desktop: ${D_PERF}/100)"
-            BODY=$(cat << EOF
-### ⚠️ Performance Degradation Alert for [${NAME}](${URL})
 
-An automated Google PageSpeed Insights audit detected performance below the alert threshold (**< ${THRESHOLD}/100**).
+            cat > /tmp/issue_body.md << EOF
+          ### ⚠️ Performance Degradation Alert for [${NAME}](${URL})
 
-| Category | Mobile | Desktop | Status |
-| :--- | :---: | :---: | :---: |
-| **Performance** | **${M_PERF}/100** | **${D_PERF}/100** | $([ "$M_PERF" -lt "$THRESHOLD" ] && echo "⚠️ Below Threshold" || echo "✅ Good") |
-| Accessibility | ${{ steps.psi_mobile.outputs.a11y }}/100 | ${{ steps.psi_desktop.outputs.a11y }}/100 | - |
-| Best Practices | ${{ steps.psi_mobile.outputs.bp }}/100 | ${{ steps.psi_desktop.outputs.bp }}/100 | - |
-| SEO | ${{ steps.psi_mobile.outputs.seo }}/100 | ${{ steps.psi_desktop.outputs.seo }}/100 | - |
+          An automated Google PageSpeed Insights audit detected performance below the alert threshold (**< ${THRESHOLD}/100**).
 
-#### Core Web Vitals (Mobile):
-* **Largest Contentful Paint (LCP)**: \`${{ steps.psi_mobile.outputs.lcp }}\` *(Target: ≤ 2.5s)*
-* **First Contentful Paint (FCP)**: \`${{ steps.psi_mobile.outputs.fcp }}\` *(Target: ≤ 1.8s)*
-* **Total Blocking Time (TBT)**: \`${{ steps.psi_mobile.outputs.tbt }}\` *(Target: ≤ 200ms)*
-* **Cumulative Layout Shift (CLS)**: \`${{ steps.psi_mobile.outputs.cls }}\` *(Target: ≤ 0.1)*
-* **Speed Index**: \`${{ steps.psi_mobile.outputs.si }}\`
+          | Category | Mobile | Desktop |
+          | :--- | :---: | :---: |
+          | **Performance** | **${M_PERF}/100** (${M_STATUS}) | **${D_PERF}/100** (${D_STATUS}) |
+          | Accessibility | ${{ steps.psi_mobile.outputs.a11y }}/100 | ${{ steps.psi_desktop.outputs.a11y }}/100 |
+          | Best Practices | ${{ steps.psi_mobile.outputs.bp }}/100 | ${{ steps.psi_desktop.outputs.bp }}/100 |
+          | SEO | ${{ steps.psi_mobile.outputs.seo }}/100 | ${{ steps.psi_desktop.outputs.seo }}/100 |
 
-[🔍 Run Live PageSpeed Analysis](https://pagespeed.web.dev/analysis?url=$(jq -rn --arg u "$URL" '$u|@uri'))
+          #### Core Web Vitals (Mobile):
+          * **Largest Contentful Paint (LCP)**: \`${{ steps.psi_mobile.outputs.lcp }}\` *(Target: ≤ 2.5s)*
+          * **First Contentful Paint (FCP)**: \`${{ steps.psi_mobile.outputs.fcp }}\` *(Target: ≤ 1.8s)*
+          * **Total Blocking Time (TBT)**: \`${{ steps.psi_mobile.outputs.tbt }}\` *(Target: ≤ 200ms)*
+          * **Cumulative Layout Shift (CLS)**: \`${{ steps.psi_mobile.outputs.cls }}\` *(Target: ≤ 0.1)*
+          * **Speed Index**: \`${{ steps.psi_mobile.outputs.si }}\`
 
----
-*Reported at \`${TIMESTAMP}\` by PageSpeed CI. This issue will automatically be resolved and closed once scores recover to ≥ ${THRESHOLD}/100.*
-EOF
-)
+          [🔍 Run Live PageSpeed Analysis](https://pagespeed.web.dev/analysis?url=$(jq -rn --arg u "$URL" '$u|@uri'))
+
+          ---
+          *Reported at \`${TIMESTAMP}\` by PageSpeed CI. This issue will automatically be resolved and closed once scores recover to ≥ ${THRESHOLD}/100.*
+          EOF
 
             if [ -n "$EXISTING_ISSUE" ] && [ "$EXISTING_ISSUE" != "null" ]; then
               echo "Updating existing open performance issue #${EXISTING_ISSUE}..."
-              COMMENT="**Daily Audit Update (\`${TIMESTAMP}\`):**
-- Mobile Performance: **${M_PERF}/100**
-- Desktop Performance: **${D_PERF}/100**
-- Mobile LCP: \`${{ steps.psi_mobile.outputs.lcp }}\` | CLS: \`${{ steps.psi_mobile.outputs.cls }}\`
-- Current status: **Performance remains below threshold (< ${THRESHOLD}). Issue remains open.**"
-              gh issue comment "$EXISTING_ISSUE" --repo "${{ github.repository }}" --body "$COMMENT" || true
+              cat > /tmp/issue_comment.md << EOF
+          **Daily Audit Update (\`${TIMESTAMP}\`):**
+          - Mobile Performance: **${M_PERF}/100** (${M_STATUS})
+          - Desktop Performance: **${D_PERF}/100** (${D_STATUS})
+          - Mobile LCP: \`${{ steps.psi_mobile.outputs.lcp }}\` | CLS: \`${{ steps.psi_mobile.outputs.cls }}\`
+          - Current status: **Performance remains below threshold (< ${THRESHOLD}). Issue remains open.**
+          EOF
+              gh issue comment "$EXISTING_ISSUE" --repo "${{ github.repository }}" --body-file /tmp/issue_comment.md || true
             else
               echo "Opening new performance issue for ${NAME}..."
               gh issue create \
                 --repo "${{ github.repository }}" \
                 --title "$TITLE" \
-                --body "$BODY" \
+                --body-file /tmp/issue_body.md \
                 --label "performance-degradation,incident,$SLUG" || true
             fi
           else
             echo "Performance is healthy (Mobile: ${M_PERF}/100, Desktop: ${D_PERF}/100, Threshold: ${THRESHOLD})."
             if [ -n "$EXISTING_ISSUE" ] && [ "$EXISTING_ISSUE" != "null" ]; then
               echo "Resolving and closing performance issue #${EXISTING_ISSUE}..."
-              RESOLVE_MSG="**✅ Resolved:** Performance for [${NAME}](${URL}) has recovered above the threshold (≥ ${THRESHOLD}/100)!
+              cat > /tmp/resolve_comment.md << EOF
+          **✅ Resolved:** Performance for [${NAME}](${URL}) has recovered above the threshold (≥ ${THRESHOLD}/100)!
 
-- **Mobile Performance**: **${M_PERF}/100**
-- **Desktop Performance**: **${D_PERF}/100**
-- **Largest Contentful Paint (LCP)**: \`${{ steps.psi_mobile.outputs.lcp }}\`
-- **Cumulative Layout Shift (CLS)**: \`${{ steps.psi_mobile.outputs.cls }}\`
+          - **Mobile Performance**: **${M_PERF}/100**
+          - **Desktop Performance**: **${D_PERF}/100**
+          - **Largest Contentful Paint (LCP)**: \`${{ steps.psi_mobile.outputs.lcp }}\`
+          - **Cumulative Layout Shift (CLS)**: \`${{ steps.psi_mobile.outputs.cls }}\`
 
-*Closed automatically by PageSpeed CI at \`${TIMESTAMP}\`.*"
-              gh issue close "$EXISTING_ISSUE" --repo "${{ github.repository }}" --comment "$RESOLVE_MSG" || true
+          *Closed automatically by PageSpeed CI at \`${TIMESTAMP}\`.*
+          EOF
+              gh issue close "$EXISTING_ISSUE" --repo "${{ github.repository }}" --comment "$(cat /tmp/resolve_comment.md)" || true
             fi
           fi
 
