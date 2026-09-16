@@ -55,6 +55,14 @@ With [Upptime](https://upptime.js.org), you can get your own unlimited and free 
 - **Strict Method & Path Scoping**: The bypass is strictly limited to `GET` requests on the homepage root (`/`). It **never** applies to `POST`, `/wp-admin/`, `/wp-login.php`, or REST APIs.
 - **Safe for Public Repos**: The token is stored purely in GitHub Actions Secrets (`UPPTIME_WAF_SECRET`) and is never committed to repo files.
 
+### 5. Automated Performance Incident Management (GitHub Issues)
+
+- **Automatic Alert Issues**: Opens a detailed incident issue (tagged `performance-degradation`, `incident`, and site slug) whenever Performance Score drops below **60/100** or an audit fails.
+- **Diagnostics in Issue Body**: Full Core Web Vitals breakdown (LCP, FCP, TBT, CLS, Speed Index) with a direct link to live Google PageSpeed analysis.
+- **Anti-Spam Deduplication**: Searches for existing open performance issues and posts daily status updates to the existing thread instead of spamming duplicates.
+- **Automatic Recovery**: Automatically comments with recovery metrics and closes the issue as soon as scores recover to **≥ 60/100**.
+- **Status Page Integration**: Because issues carry the `incident` label, ongoing performance degradations are reflected on the status page for transparent communication.
+
 ---
 
 ## 🕒 GitHub Actions Workflows & Schedule
