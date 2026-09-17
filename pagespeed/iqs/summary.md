@@ -1,41 +1,41 @@
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-09-17T21:47:57Z`
+> Last updated: `2026-09-17T21:55:35Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 59 |
-| Accessibility | 91 |
-| Best Practices | 69 |
+| Performance | 95 |
+| Accessibility | 94 |
+| Best Practices | 100 |
 | SEO | 100 |
 
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 6.2 s |
-| Largest Contentful Paint | 6.4 s |
-| Total Blocking Time | 180 ms |
-| Cumulative Layout Shift | 0 |
-| Speed Index | 6.2 s |
+| First Contentful Paint | 2.3 s |
+| Largest Contentful Paint | 2.3 s |
+| Total Blocking Time | 0 ms |
+| Cumulative Layout Shift | 0.01 |
+| Speed Index | 2.3 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 99 |
+| Performance | 83 |
 | Accessibility | 94 |
-| Best Practices | 96 |
+| Best Practices | 69 |
 | SEO | 100 |
 
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.6 s |
-| Largest Contentful Paint | 0.8 s |
-| Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.004 |
-| Speed Index | 0.7 s |
+| First Contentful Paint | 1.7 s |
+| Largest Contentful Paint | 1.8 s |
+| Total Blocking Time | 70 ms |
+| Cumulative Layout Shift | 0.006 |
+| Speed Index | 1.7 s |
 
 ---
