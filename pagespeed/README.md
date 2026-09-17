@@ -4,31 +4,31 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-09-16T20:08:11Z`
+> Last updated: `2026-09-17T10:48:40Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 70 |
+| Performance | 76 |
 | Accessibility | 93 |
 | Best Practices | 100 |
-| SEO | 100 |
+| SEO | 92 |
 
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 3.5 s |
+| First Contentful Paint | 3.3 s |
 | Largest Contentful Paint | 4.8 s |
 | Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0 |
-| Speed Index | 6.8 s |
+| Cumulative Layout Shift | 0.002 |
+| Speed Index | 3.3 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 91 |
+| Performance | 98 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -40,19 +40,19 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Largest Contentful Paint | 1.0 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.001 |
-| Speed Index | 2.9 s |
+| Speed Index | 1.1 s |
 
 ---
 
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-09-16T20:07:13Z`
+> Last updated: `2026-09-17T10:48:29Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 96 |
+| Performance | 91 |
 | Accessibility | 94 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -60,17 +60,17 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 2.0 s |
-| Largest Contentful Paint | 2.4 s |
+| First Contentful Paint | 2.3 s |
+| Largest Contentful Paint | 3.1 s |
 | Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0 |
-| Speed Index | 2.0 s |
+| Cumulative Layout Shift | 0.01 |
+| Speed Index | 2.5 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 100 |
+| Performance | 98 |
 | Accessibility | 94 |
 | Best Practices | 96 |
 | SEO | 100 |
@@ -78,11 +78,11 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.5 s |
+| First Contentful Paint | 0.7 s |
 | Largest Contentful Paint | 0.7 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.003 |
-| Speed Index | 0.7 s |
+| Speed Index | 1.4 s |
 
 ---
 
