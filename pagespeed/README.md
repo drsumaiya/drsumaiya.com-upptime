@@ -4,13 +4,13 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-09-17T10:48:40Z`
+> Last updated: `2026-09-17T20:56:44Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 76 |
+| Performance | 73 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -18,41 +18,41 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 3.3 s |
-| Largest Contentful Paint | 4.8 s |
+| First Contentful Paint | 3.5 s |
+| Largest Contentful Paint | 5.1 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.002 |
-| Speed Index | 3.3 s |
+| Speed Index | 4.1 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 98 |
+| Performance | 73 |
 | Accessibility | 93 |
 | Best Practices | 100 |
-| SEO | 100 |
+| SEO | 92 |
 
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 0.8 s |
-| Largest Contentful Paint | 1.0 s |
-| Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.001 |
-| Speed Index | 1.1 s |
+| Largest Contentful Paint | 1.1 s |
+| Total Blocking Time | 30 ms |
+| Cumulative Layout Shift | 1.35 |
+| Speed Index | 0.9 s |
 
 ---
 
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-09-17T10:48:29Z`
+> Last updated: `2026-09-17T20:56:01Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 91 |
+| Performance | 90 |
 | Accessibility | 94 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -61,28 +61,28 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.3 s |
-| Largest Contentful Paint | 3.1 s |
+| Largest Contentful Paint | 3.2 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.01 |
-| Speed Index | 2.5 s |
+| Speed Index | 2.3 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 98 |
-| Accessibility | 94 |
-| Best Practices | 96 |
-| SEO | 100 |
+| Performance | 0 |
+| Accessibility | 0 |
+| Best Practices | 0 |
+| SEO | 0 |
 
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.7 s |
-| Largest Contentful Paint | 0.7 s |
-| Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.003 |
-| Speed Index | 1.4 s |
+| First Contentful Paint | N/A |
+| Largest Contentful Paint | N/A |
+| Total Blocking Time | N/A |
+| Cumulative Layout Shift | N/A |
+| Speed Index | N/A |
 
 ---
 
