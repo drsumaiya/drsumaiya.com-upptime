@@ -23,6 +23,9 @@ jobs:
           - name: IQS
             url: https://iqs.org.in/
             slug: iqs
+          - name: IQS - Hifz Focus
+            url: https://hifz.iqs.org.in/
+            slug: iqs-hifz
 
     steps:
       - name: Checkout

@@ -19,6 +19,8 @@ sites:
     url: https://iqs.org.in/inquiry/
   - name: IQS - Sidr Leaves Remedy Post
     url: https://iqs.org.in/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/
+  - name: IQS - Hifz Focus
+    url: https://hifz.iqs.org.in/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain

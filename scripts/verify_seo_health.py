@@ -28,6 +28,13 @@ TARGETS = [
         "robots_url": "https://iqs.org.in/robots.txt",
         "sitemap_url": "https://iqs.org.in/wp-sitemap.xml",
         "slug": "iqs"
+    },
+    {
+        "name": "IQS - Hifz Focus",
+        "domain": "https://hifz.iqs.org.in",
+        "robots_url": "https://hifz.iqs.org.in/robots.txt",
+        "sitemap_url": "https://hifz.iqs.org.in/sitemap.xml",
+        "slug": "iqs-hifz"
     }
 ]
 
@@ -72,6 +79,8 @@ def verify_robots(target):
                     raw_sitemap = line.split(":", 1)[1].strip()
                     if "http" in line:
                         raw_sitemap = line[line.find("http"):].strip()
+                    elif raw_sitemap.startswith("/"):
+                        raw_sitemap = target["domain"].rstrip("/") + raw_sitemap
                     result["sitemap_directive"] = raw_sitemap
 
             if not result["sitemap_directive"]:
@@ -176,7 +185,13 @@ def main():
             
         status_badge = "🟩 Healthy" if is_ok else "🟥 Degraded"
         robots_badge = "✅ OK" if robots_res["valid"] and not robots_res["disallow_all"] else "❌ Failed"
-        sitemap_badge = f"✅ Valid ({sitemap_res['child_sitemaps_count']} sub-sitemaps)" if sitemap_res["valid"] else "❌ Broken"
+        if sitemap_res["valid"]:
+            if sitemap_res["child_sitemaps_count"] > 0:
+                sitemap_badge = f"✅ Valid ({sitemap_res['child_sitemaps_count']} sub-sitemaps)"
+            else:
+                sitemap_badge = f"✅ Valid ({sitemap_res['urls_count']} URLs)"
+        else:
+            sitemap_badge = "❌ Broken"
         
         detail_msg = []
         if robots_res["disallow_all"]:
