@@ -9,6 +9,7 @@ This repository contains the uptime monitoring system, Core Web Vitals tracking 
 [![PageSpeed Insights CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml)
 [![SEO Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml)
 [![Email & DNS Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/email-dns-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/email-dns-health.yml)
+[![Lead Intake & Form Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/forms-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/forms-health.yml)
 [![Summary CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Summary%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/summary.yml)
 
 A 100% serverless, zero-maintenance uptime monitor and status page powered entirely by GitHub infrastructure:
@@ -91,7 +92,16 @@ A 100% serverless, zero-maintenance uptime monitor and status page powered entir
 - **Automated Incident Lifecycle**: Opens and closes GitHub incident issues tagged `email-dns-incident` upon DNS changes or degradation.
 - **Reporting & Telemetry**: Generates daily Markdown reports ([`dns/summary.md`](dns/summary.md)) and JSON history logs ([`dns/history.jsonl`](dns/history.jsonl)).
 
-### 7. Security-Hardened WAF Bypass
+### 7. Automated Lead Intake & Form Submission Endpoints Monitoring
+
+- **Safe Synthetic REST Probes**: Pings custom REST API submission routes (`/wp-json/nutricare/v1/submit`, `/wp-json/iqs/v1/inquiry`) using HTTP `OPTIONS` method negotiation. Validates PHP execution and route readiness without generating dummy inquiries, spamming patient databases, or triggering staff notifications.
+- **DOM & Input Field Verification**: Audits the live DOM of consultation and onboarding forms (`/inquiry-form/`, `/form/`, `/inquiry/`, `/onboarding`) to verify form containers (`.nutricareLeadForm`, `.iqs-inq-form`, `#formIframe`, Next.js onboarding `<form>`) and essential inputs (`name`, `phone`, `email`, `lead_id`) are actively rendering.
+- **Critical Asset Integrity Probing**: Verifies that required form stylesheets (`basic_form_styling.css`, `portal-common.css`, `badge-styles.css`) and client-side JavaScript script chunks respond with valid `HTTP 200` and non-zero payloads.
+- **Embedded Booking Form Validation**: Probes embedded Google Form iframe endpoints to confirm the target form is accessible and has not expired or ceased accepting responses.
+- **Automated Incident Lifecycle**: Raises incident issues tagged `form-incident`, `incident`, and `{target-slug}` upon form degradation or missing assets, and automatically closes them upon verified recovery.
+- **Reporting & Telemetry**: Generates Markdown summaries ([`forms/summary.md`](forms/summary.md)) and JSON telemetry logs ([`forms/latest.json`](forms/latest.json)).
+
+### 8. Security-Hardened WAF Bypass
 
 - **Cryptographic Token Verification**: The CI workflow authenticates against Wordfence WAF using a private 64-character token (`X-Upptime-Token`) validated via timing-safe `hash_equals()`.
 - **Strict Method & Path Scoping**: The bypass is strictly limited to `GET` requests on the homepage root (`/`). It **never** applies to `POST`, `/wp-admin/`, `/wp-login.php`, or REST APIs.
@@ -100,8 +110,6 @@ A 100% serverless, zero-maintenance uptime monitor and status page powered entir
 ---
 
 ## 🌐 Public Repository Architecture & Cost Economics
-
-Keeping this uptime monitoring repository **public** is the recommended best practice for technical, operational, and financial reasons:
 
 | Factor                             | Public Repository (Current)                                                                               | Private Repository                                                                  |
 | :--------------------------------- | :-------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
@@ -121,6 +129,7 @@ Keeping this uptime monitoring repository **public** is the recommended best pra
 | Workflow                  | File                                                         | Interval / Trigger                 | Schedule (UTC / IST)           | Purpose                                                                                                       |
 | :------------------------ | :----------------------------------------------------------- | :--------------------------------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
 | **Uptime CI**             | [uptime.yml](.github/workflows/uptime.yml)                   | **Every 5 minutes**                | Continuous (`*/5 * * * *`)     | Pings URLs for HTTP 200; opens/closes incident issues on downtime.                                            |
+| **Lead Intake & Form CI** | [forms-health.yml](.github/workflows/forms-health.yml)       | **Every 2 hours** + Manual Trigger | `0 */2 * * *`                  | Probes booking forms, REST submission endpoints, and form CSS/JS assets; manages form incident issues.         |
 | **Email & DNS Health CI** | [email-dns-health.yml](.github/workflows/email-dns-health.yml) | **Daily** + Manual Trigger         | `04:30 UTC` (**10:00 AM IST**) | Audits SPF, DKIM, DMARC, MX records; manages DNS deliverability incident issues.                          |
 | **SEO Health CI**         | [seo-health.yml](.github/workflows/seo-health.yml)           | **Daily** + Manual Trigger         | `05:00 UTC` (**10:30 AM IST**) | Audits robots.txt directives and XML sitemap integrity; manages SEO incident issues.                          |
 | **PageSpeed Insights CI** | [pagespeed.yml](.github/workflows/pagespeed.yml)             | **Daily** + Manual Trigger         | `06:00 UTC` (**11:30 AM IST**) | Runs Lighthouse / PageSpeed audits (Mobile + Desktop) and updates history.                                    |
