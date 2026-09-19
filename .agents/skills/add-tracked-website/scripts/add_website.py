@@ -17,7 +17,7 @@ from urllib.parse import urlparse
 
 def probe_url(url, timeout=10):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Upptime-Probe/1.0'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Site-Probe/1.0'
     }
     req = urllib.request.Request(url, headers=headers)
     try:
@@ -143,7 +143,7 @@ def update_verify_seo_health(name, domain, robots_url, sitemap_url, slug, filepa
         return False
 
 def main():
-    parser = argparse.ArgumentParser(description="Add website to Upptime & PageSpeed & SEO")
+    parser = argparse.ArgumentParser(description="Add website to Uptime, PageSpeed & SEO tracking")
     parser.add_argument("--name", required=True, help="Display name of the website")
     parser.add_argument("--url", required=True, help="Full URL of the website")
     parser.add_argument("--slug", required=True, help="Unique kebab-case slug (e.g. iqs-hifz)")
