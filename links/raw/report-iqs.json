@@ -1,1 +1,228 @@
-[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35455412210?check_suite_focus=true)
+{
+  "total": 98,
+  "unique": 60,
+  "successful": 81,
+  "unknown": 0,
+  "unsupported": 5,
+  "timeouts": 0,
+  "redirects": 12,
+  "remaps": 0,
+  "excludes": 10,
+  "errors": 2,
+  "cached": 31,
+  "success_map": {},
+  "error_map": {
+    "https://iqs.org.in/": [
+      {
+        "url": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/flags.webp",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/flags.webp",
+          "redirects": [
+            {
+              "url": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/flags.webp/",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 54,
+          "column": 4192
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 527256701
+        }
+      },
+      {
+        "url": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/globe.webp",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/globe.webp",
+          "redirects": [
+            {
+              "url": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/globe.webp/",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 54,
+          "column": 4367
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 478192310
+        }
+      }
+    ]
+  },
+  "timeout_map": {},
+  "suggestion_map": {},
+  "redirect_map": {},
+  "excluded_map": {
+    "https://iqs.org.in/": [
+      {
+        "url": "mailto:salam@iqs.org.in;",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1220,
+          "column": 7
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 681
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2005,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 20211
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20would%20like%20to%20visit%20the%20IQS%20Frazer%20Town%20campus.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2048,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 13671
+        }
+      },
+      {
+        "url": "mailto:/wp-content/plugins/events-manager/includes/img/globe@2x.webp",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 54,
+          "column": 4453
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 681
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1235,
+          "column": 7
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 220
+        }
+      },
+      {
+        "url": "tel:+917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2047,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 270
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2047,
+          "column": 107
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 120
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20am%20interested%20in%20courses%20at%20IQS%20Bangalore.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1985,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 30726
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2065,
+          "column": 609
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 120
+        }
+      },
+      {
+        "url": "mailto:/wp-content/plugins/events-manager/includes/img/flags@2x.webp",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 54,
+          "column": 4278
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 1112
+        }
+      }
+    ]
+  },
+  "duration": {
+    "secs": 5,
+    "nanos": 18172241
+  },
+  "detailed_stats": false
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35455534407?check_suite_focus=true)
