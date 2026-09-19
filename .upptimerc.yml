@@ -11,6 +11,8 @@ sites:
     url: https://drsumaiya.com/form/
   - name: DrSumaiya - Success Stories Post
     url: https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/
+  - name: DrSumaiya - DB & REST API
+    url: https://drsumaiya.com/wp-json/
   - name: IQS
     url: https://iqs.org.in
   - name: IQS - Islamic Courses
@@ -21,6 +23,8 @@ sites:
     url: https://iqs.org.in/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/
   - name: IQS - Hifz Focus
     url: https://hifz.iqs.org.in/
+  - name: IQS - DB & REST API
+    url: https://iqs.org.in/wp-json/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
