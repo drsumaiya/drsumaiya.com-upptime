@@ -1,32 +1,32 @@
 {
   "name": "DrSumaiya.com",
   "url": "https://drsumaiya.com/",
-  "timestamp": "2026-09-18T10:27:24Z",
+  "timestamp": "2026-09-19T10:09:42Z",
   "auditStatus": "success",
   "mobile": {
-    "performance": 77,
+    "performance": 74,
     "accessibility": 93,
-    "bestPractices": 96,
-    "seo": 100,
+    "bestPractices": 100,
+    "seo": 92,
     "coreWebVitals": {
-      "firstContentfulPaint": "2.9 s",
-      "largestContentfulPaint": "4.8 s",
-      "totalBlockingTime": "100 ms",
+      "firstContentfulPaint": "3.5 s",
+      "largestContentfulPaint": "5.0 s",
+      "totalBlockingTime": "0 ms",
       "cumulativeLayoutShift": "0",
-      "speedIndex": "2.9 s"
+      "speedIndex": "3.5 s"
     }
   },
   "desktop": {
-    "performance": 97,
+    "performance": 98,
     "accessibility": 93,
-    "bestPractices": 96,
+    "bestPractices": 100,
     "seo": 100,
     "coreWebVitals": {
-      "firstContentfulPaint": "0.7 s",
-      "largestContentfulPaint": "1.2 s",
+      "firstContentfulPaint": "0.8 s",
+      "largestContentfulPaint": "1.0 s",
       "totalBlockingTime": "0 ms",
-      "cumulativeLayoutShift": "0",
-      "speedIndex": "0.7 s"
+      "cumulativeLayoutShift": "0.001",
+      "speedIndex": "0.8 s"
     }
   }
 }
