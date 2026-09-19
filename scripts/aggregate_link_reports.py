@@ -44,7 +44,14 @@ def parse_lychee_json(file_path):
     """Parse raw JSON output from lychee."""
     try:
         with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+            content = f.read().strip()
+
+        # lychee-action appends markdown link after JSON: `}[Full Github Actions output](...)`
+        idx = content.rfind("}")
+        if idx != -1:
+            content = content[:idx + 1]
+
+        data = json.loads(content)
 
         total = data.get("total", 0)
         successful = data.get("successful", 0)

@@ -20,13 +20,13 @@ jobs:
       matrix:
         site:
           - name: "DrSumaiya.com"
-            urls: "https://drsumaiya.com https://drsumaiya.com/sitemap_index.xml"
+            url: "https://drsumaiya.com"
             slug: "dr-sumaiya-com"
           - name: "IQS"
-            urls: "https://iqs.org.in https://iqs.org.in/wp-sitemap.xml"
+            url: "https://iqs.org.in"
             slug: "iqs"
           - name: "IQS - Hifz Focus"
-            urls: "https://hifz.iqs.org.in https://hifz.iqs.org.in/sitemap.xml"
+            url: "https://hifz.iqs.org.in"
             slug: "iqs-hifz"
 
     steps:
@@ -50,7 +50,7 @@ jobs:
             --exclude "(linkedin\.com|instagram\.com|twitter\.com|x\.com|facebook\.com|wa\.me|t\.me)"
             --header "X-Upptime-Token: ${{ secrets.UPPTIME_WAF_SECRET }}"
             --header "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Lychee-Sentinel/1.0"
-            ${{ matrix.site.urls }}
+            "${{ matrix.site.url }}"
           output: "links/raw/report-${{ matrix.site.slug }}.json"
           fail: false
 

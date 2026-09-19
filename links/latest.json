@@ -1,22 +1,30 @@
 {
-  "timestamp": "2026-09-19T16:35:21.749617+00:00",
-  "timestamp_human": "2026-09-19 16:35:21 UTC",
-  "total_checked": 0,
-  "total_broken": 0,
-  "overall_clean": true,
+  "timestamp": "2026-09-19T16:36:27.740589+00:00",
+  "timestamp_human": "2026-09-19 16:36:27 UTC",
+  "total_checked": 164,
+  "total_broken": 1,
+  "overall_clean": false,
   "results": [
     {
       "site": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "url": "https://drsumaiya.com",
-      "total_checked": 0,
-      "successful": 0,
-      "failed": 0,
+      "total_checked": 123,
+      "successful": 94,
+      "failed": 1,
       "timeouts": 0,
-      "redirects": 0,
-      "excludes": 0,
-      "is_clean": true,
-      "broken_links": []
+      "redirects": 1,
+      "excludes": 16,
+      "is_clean": false,
+      "broken_links": [
+        {
+          "url": "https://maps.app.goo.gl/ULJKgWjvx1FCLf2WA",
+          "source": "https://drsumaiya.com/",
+          "line": 145,
+          "status": 404,
+          "error": "Rejected status code: 404 Not Found"
+        }
+      ]
     },
     {
       "site": "IQS",
@@ -35,12 +43,12 @@
       "site": "IQS - Hifz Focus",
       "slug": "iqs-hifz",
       "url": "https://hifz.iqs.org.in",
-      "total_checked": 0,
-      "successful": 0,
+      "total_checked": 41,
+      "successful": 39,
       "failed": 0,
       "timeouts": 0,
       "redirects": 0,
-      "excludes": 0,
+      "excludes": 2,
       "is_clean": true,
       "broken_links": []
     }
