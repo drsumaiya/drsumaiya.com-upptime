@@ -13,6 +13,11 @@
       name: "IQS",
       slug: "iqs",
       url: "https://iqs.org.in/"
+    },
+    {
+      name: "IQS - Hifz Focus",
+      slug: "iqs-hifz",
+      url: "https://hifz.iqs.org.in/"
     }
   ];
 
