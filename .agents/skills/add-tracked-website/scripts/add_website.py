@@ -142,8 +142,38 @@ def update_verify_seo_health(name, domain, robots_url, sitemap_url, slug, filepa
         print(f"[!] Could not match TARGETS list in {filepath}")
         return False
 
+def update_verify_ssl_health(name, domain_or_url, slug, filepath="scripts/verify_ssl_health.py"):
+    if not os.path.exists(filepath):
+        return False
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    parsed = urlparse(domain_or_url)
+    hostname = parsed.netloc if parsed.netloc else domain_or_url.replace("https://", "").replace("http://", "").split("/")[0]
+
+    if f'"slug": "{slug}"' in content or f'"hostname": "{hostname}"' in content:
+        print(f"[-] Target '{hostname}' / '{slug}' already present in {filepath}")
+        return False
+
+    pattern = r"(\s*\{\s*\"name\":\s*\"[^\"]+\",\s*\"hostname\":\s*\"[^\"]+\",\s*\"port\":\s*\d+,\s*\"slug\":\s*\"[^\"]+\"\s*\})\s*\]"
+    new_content, count = re.subn(
+        pattern,
+        rf'\1,\n    {{\n        "name": "{name}",\n        "hostname": "{hostname}",\n        "port": 443,\n        "slug": "{slug}"\n    }}\n]',
+        content,
+        count=1
+    )
+
+    if count > 0:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"[+] Added '{hostname}' to {filepath}")
+        return True
+    else:
+        print(f"[!] Could not match TARGETS list in {filepath}")
+        return False
+
 def main():
-    parser = argparse.ArgumentParser(description="Add website to Uptime, PageSpeed & SEO tracking")
+    parser = argparse.ArgumentParser(description="Add website to Uptime, PageSpeed, SEO & SSL tracking")
     parser.add_argument("--name", required=True, help="Display name of the website")
     parser.add_argument("--url", required=True, help="Full URL of the website")
     parser.add_argument("--slug", required=True, help="Unique kebab-case slug (e.g. iqs-hifz)")
@@ -174,8 +204,9 @@ def main():
     update_pagespeed_workflow(args.name, clean_url, args.slug)
     update_pagespeed_js(args.name, clean_url, args.slug)
     update_verify_seo_health(args.name, domain, robots_url, sitemap_url, args.slug)
+    update_verify_ssl_health(args.name, clean_url, args.slug)
 
-    print("\n[✓] All configurations updated! Run verify_seo_health.py to test.")
+    print("\n[✓] All configurations updated! Run verify_ssl_health.py and verify_seo_health.py to test.")
 
 if __name__ == "__main__":
     main()

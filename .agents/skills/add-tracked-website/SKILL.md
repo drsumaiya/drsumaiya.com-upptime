@@ -12,12 +12,13 @@ description: >-
 
 # Add Tracked Website Skill
 
-This skill provides automated and manual procedures to register a website or URL across the four core tracking systems in `drsumaiya.com-upptime`:
+This skill provides automated and manual procedures to register a website or URL across the core tracking systems in `drsumaiya.com-upptime`:
 
 1. **Uptime & Response Time Tracking** (`.upptimerc.yml`)
 2. **PageSpeed Insights & Core Web Vitals CI** (`.github/workflows/pagespeed.yml`)
 3. **Frontend PageSpeed Dashboard** (`assets/pagespeed.js`)
 4. **SEO & Indexing Health CI** (`scripts/verify_seo_health.py`)
+5. **SSL/TLS Certificate Expiry & Health CI** (`scripts/verify_ssl_health.py`)
 
 ---
 

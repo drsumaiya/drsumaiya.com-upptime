@@ -10,6 +10,7 @@ This repository contains the uptime monitoring system, Core Web Vitals tracking 
 [![SEO Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml)
 [![Email & DNS Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/email-dns-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/email-dns-health.yml)
 [![Lead Intake & Form Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/forms-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/forms-health.yml)
+[![SSL/TLS Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/ssl-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/ssl-health.yml)
 [![Summary CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Summary%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/summary.yml)
 
 A 100% serverless, zero-maintenance uptime monitor and status page powered entirely by GitHub infrastructure:

@@ -1,0 +1,48 @@
+name: SSL/TLS Expiry & Health CI
+on:
+  schedule:
+    # Run daily at 04:00 UTC (09:30 AM IST) - 1h before SEO CI (05:00 UTC)
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  ssl-health:
+    name: "Audit: SSL/TLS Expiry & Certificate Health"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Setup Python & uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run SSL/TLS Certificate Verification
+        run: |
+          uv run python scripts/verify_ssl_health.py
+
+      - name: Manage SSL Incident Issues
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: |
+          uv run python scripts/manage_ssl_issues.py "${{ github.repository }}"
+
+      - name: Commit SSL Reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ssl/
+          if git diff --staged --quiet; then
+            echo "No SSL changes to commit"
+          else
+            git commit -m "🔒 Update SSL/TLS Certificate Health Report [$(date -u +%Y-%m-%d)]"
+            git pull --rebase
+            git push
+          fi
