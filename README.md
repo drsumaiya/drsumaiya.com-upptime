@@ -8,6 +8,7 @@ This repository contains the uptime monitoring system, Core Web Vitals tracking 
 [![Static Site CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Static%20Site%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/site.yml)
 [![PageSpeed Insights CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/pagespeed.yml)
 [![SEO Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/seo-health.yml)
+[![Email & DNS Health CI](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/email-dns-health.yml/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/email-dns-health.yml)
 [![Summary CI](https://github.com/drsumaiya/drsumaiya.com-upptime/workflows/Summary%20CI/badge.svg)](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/workflows/summary.yml)
 
 A 100% serverless, zero-maintenance uptime monitor and status page powered entirely by GitHub infrastructure:
@@ -79,7 +80,16 @@ A 100% serverless, zero-maintenance uptime monitor and status page powered entir
 - **Automated Incident Management**: Opens a GitHub Issue tagged `seo-incident`, `incident`, and `{site-slug}` if indexing is blocked, a sitemap returns 404, or XML syntax is broken; auto-closes the issue upon recovery.
 - **Reporting & Telemetry**: Generates daily Markdown reports ([`seo/summary.md`](seo/summary.md)) and JSON history logs ([`seo/history.jsonl`](seo/history.jsonl)).
 
-### 6. Security-Hardened WAF Bypass
+### 6. Automated Email Deliverability & DNS Health (SPF, DMARC, MX, DKIM)
+
+- **SPF Verification**: Validates single `v=spf1` record on root domains, confirms authorized mail relays (`_spf.mail.hostinger.com`), and prevents PermError or permissive `+all` rules.
+- **DMARC Compliance**: Audits `_dmarc` records for active policy tags (`p=none`, `quarantine`, or `reject`) complying with modern Gmail/Yahoo anti-spam mandates.
+- **MX Infrastructure**: Verifies mail server priority, TTL, and reachability without DNS timeouts.
+- **DKIM Cryptographic Key Audit**: Probes DKIM selector records (e.g. `iqs_newsletter._domainkey.iqs.org.in`) ensuring outbound mail signatures are valid.
+- **Automated Incident Lifecycle**: Opens and closes GitHub incident issues tagged `email-dns-incident` upon DNS changes or degradation.
+- **Reporting & Telemetry**: Generates daily Markdown reports ([`dns/summary.md`](dns/summary.md)) and JSON history logs ([`dns/history.jsonl`](dns/history.jsonl)).
+
+### 7. Security-Hardened WAF Bypass
 
 - **Cryptographic Token Verification**: The CI workflow authenticates against Wordfence WAF using a private 64-character token (`X-Upptime-Token`) validated via timing-safe `hash_equals()`.
 - **Strict Method & Path Scoping**: The bypass is strictly limited to `GET` requests on the homepage root (`/`). It **never** applies to `POST`, `/wp-admin/`, `/wp-login.php`, or REST APIs.
@@ -109,6 +119,7 @@ Keeping this uptime monitoring repository **public** is the recommended best pra
 | Workflow                  | File                                                         | Interval / Trigger                 | Schedule (UTC / IST)           | Purpose                                                                                                       |
 | :------------------------ | :----------------------------------------------------------- | :--------------------------------- | :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
 | **Uptime CI**             | [uptime.yml](.github/workflows/uptime.yml)                   | **Every 5 minutes**                | Continuous (`*/5 * * * *`)     | Pings URLs for HTTP 200; opens/closes incident issues on downtime.                                            |
+| **Email & DNS Health CI** | [email-dns-health.yml](.github/workflows/email-dns-health.yml) | **Daily** + Manual Trigger         | `04:30 UTC` (**10:00 AM IST**) | Audits SPF, DKIM, DMARC, MX records; manages DNS deliverability incident issues.                          |
 | **SEO Health CI**         | [seo-health.yml](.github/workflows/seo-health.yml)           | **Daily** + Manual Trigger         | `05:00 UTC` (**10:30 AM IST**) | Audits robots.txt directives and XML sitemap integrity; manages SEO incident issues.                          |
 | **PageSpeed Insights CI** | [pagespeed.yml](.github/workflows/pagespeed.yml)             | **Daily** + Manual Trigger         | `06:00 UTC` (**11:30 AM IST**) | Runs Lighthouse / PageSpeed audits (Mobile + Desktop) and updates history.                                    |
 | **Response Time CI**      | [response-time.yml](.github/workflows/response-time.yml)     | **Daily**                          | `23:00 UTC` (**04:30 AM IST**) | Measures latency and calculates rolling 24h, 7d, 30d, 1y response time statistics.                            |
