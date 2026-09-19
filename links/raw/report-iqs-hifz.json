@@ -1,1 +1,57 @@
-[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35455218479?check_suite_focus=true)
+{
+  "total": 41,
+  "unique": 37,
+  "successful": 39,
+  "unknown": 0,
+  "unsupported": 0,
+  "timeouts": 0,
+  "redirects": 0,
+  "remaps": 0,
+  "excludes": 2,
+  "errors": 0,
+  "cached": 1,
+  "success_map": {},
+  "error_map": {},
+  "timeout_map": {},
+  "suggestion_map": {},
+  "redirect_map": {},
+  "excluded_map": {
+    "https://hifz.iqs.org.in/": [
+      {
+        "url": "tel:+917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1,
+          "column": 20429
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 361
+        }
+      },
+      {
+        "url": "tel:+917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1,
+          "column": 23754
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 781
+        }
+      }
+    ]
+  },
+  "duration": {
+    "secs": 1,
+    "nanos": 802542137
+  },
+  "detailed_stats": false
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35455412210?check_suite_focus=true)
