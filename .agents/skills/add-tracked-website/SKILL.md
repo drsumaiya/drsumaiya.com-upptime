@@ -19,6 +19,7 @@ This skill provides automated and manual procedures to register a website or URL
 3. **Frontend PageSpeed Dashboard** (`assets/pagespeed.js`)
 4. **SEO & Indexing Health CI** (`scripts/verify_seo_health.py`)
 5. **SSL/TLS Certificate Expiry & Health CI** (`scripts/verify_ssl_health.py`)
+6. **Broken Link & 404 Sentinel CI** (`.github/workflows/link-sentinel.yml` & `scripts/aggregate_link_reports.py`)
 
 ---
 

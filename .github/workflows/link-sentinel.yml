@@ -1,0 +1,107 @@
+name: 🛡️ Broken Link & 404 Sentinel
+
+on:
+  schedule:
+    # Runs every Sunday at 00:00 UTC (05:30 AM IST)
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  crawl-properties:
+    name: "Crawl: ${{ matrix.site.name }}"
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        site:
+          - name: "DrSumaiya.com"
+            url: "https://drsumaiya.com"
+            slug: "dr-sumaiya-com"
+          - name: "IQS"
+            url: "https://iqs.org.in"
+            slug: "iqs"
+          - name: "IQS - Hifz Focus"
+            url: "https://hifz.iqs.org.in"
+            slug: "iqs-hifz"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Prepare Workspace Directory
+        run: mkdir -p links/raw
+
+      - name: Run Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2
+        id: lychee
+        with:
+          args: >-
+            --format json
+            --max-depth 2
+            --max-concurrency 6
+            --timeout 15
+            --max-retries 2
+            --accept 200,301,302,403
+            --exclude "(linkedin\.com|instagram\.com|twitter\.com|x\.com|facebook\.com|wa\.me|t\.me)"
+            --header "X-Upptime-Token=${{ secrets.UPPTIME_WAF_SECRET }}"
+            --header "User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Lychee-Sentinel/1.0"
+            "${{ matrix.site.url }}"
+          output: "links/raw/report-${{ matrix.site.slug }}.json"
+          fail: false
+
+      - name: Upload Raw Scan Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-${{ matrix.site.slug }}
+          path: links/raw/report-${{ matrix.site.slug }}.json
+          if-no-files-found: warn
+
+  publish-and-alert:
+    name: "Aggregate Reports & Manage Incidents"
+    needs: crawl-properties
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Download Raw Scan Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: links/raw
+          pattern: lychee-*
+          merge-multiple: true
+
+      - name: Setup Python & uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Aggregate Scan Telemetry
+        run: |
+          uv run python scripts/aggregate_link_reports.py
+
+      - name: Manage Broken Link Incident Issues
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: |
+          uv run python scripts/manage_link_issues.py "${{ github.repository }}"
+
+      - name: Commit & Push Sentinel Telemetry
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add links/
+          if git diff --staged --quiet; then
+            echo "No sentinel changes to commit."
+          else
+            git commit -m "🤖 Update Broken Link & 404 Sentinel Report [$(date -u +%Y-%m-%d)]"
+            git pull --rebase
+            git push
+          fi

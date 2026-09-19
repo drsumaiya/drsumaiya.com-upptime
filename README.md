@@ -104,7 +104,15 @@ A 100% serverless, zero-maintenance uptime monitor and status page powered entir
 - **Automated Incident Lifecycle**: Raises incident issues tagged `form-incident`, `incident`, and `{target-slug}` upon form degradation or missing assets, and automatically closes them upon verified recovery.
 - **Reporting & Telemetry**: Generates Markdown summaries ([`forms/summary.md`](forms/summary.md)) and JSON telemetry logs ([`forms/latest.json`](forms/latest.json)).
 
-### 8. Security-Hardened WAF Bypass
+### 8. Continuous Broken Link & 404 Sentinel (Lychee-Powered Engine)
+
+- **Autonomous Deep Crawling**: Runs weekly automated stress-tests using the high-performance Rust link checker **Lychee** (`lycheeverse/lychee-action@v2`) across all live web properties (DrSumaiya.com, IQS, and IQS - Hifz Focus).
+- **Internal & Outbound Verification**: Crawls internal navigation paths up to 2 hops deep and validates external citations, references, and outbound hyperlinks to catch dead pages, broken redirects, and server faults before visitors encounter them.
+- **Anti-Bot False Alarm Shield**: Pre-configured to bypass bot-blocking platforms (LinkedIn, Twitter/X, Instagram, WhatsApp, Telegram) that intentionally return HTTP 403 or 999 to automated crawlers.
+- **Automated Incident Lifecycle**: Opens a GitHub incident issue tagged `link-incident`, `incident`, and `{site-slug}` when broken links or 404s are discovered; deduplicates across weekly runs, and automatically closes the issue once all links are verified healthy.
+- **Reporting & Telemetry**: Commits weekly Markdown reports ([`links/summary.md`](links/summary.md)), structured JSON records ([`links/latest.json`](links/latest.json)), and audit logs ([`links/history.jsonl`](links/history.jsonl)), rendered directly on the live status dashboard ([status.drsumaiya.com](https://status.drsumaiya.com)).
+
+### 9. Security-Hardened WAF Bypass
 
 - **Cryptographic Token Verification**: The CI workflow authenticates against Wordfence WAF using a private 64-character token (`X-Upptime-Token`) validated via timing-safe `hash_equals()`.
 - **Strict Method & Path Scoping**: The bypass is strictly limited to `GET` requests on the homepage root (`/`). It **never** applies to `POST`, `/wp-admin/`, `/wp-login.php`, or REST APIs.
@@ -136,6 +144,7 @@ A 100% serverless, zero-maintenance uptime monitor and status page powered entir
 | **Email & DNS Health CI** | [email-dns-health.yml](.github/workflows/email-dns-health.yml) | **Daily** + Manual Trigger         | `04:30 UTC` (**10:00 AM IST**) | Audits SPF, DKIM, DMARC, MX records; manages DNS deliverability incident issues.                              |
 | **SEO Health CI**         | [seo-health.yml](.github/workflows/seo-health.yml)             | **Daily** + Manual Trigger         | `05:00 UTC` (**10:30 AM IST**) | Audits robots.txt directives and XML sitemap integrity; manages SEO incident issues.                          |
 | **PageSpeed Insights CI** | [pagespeed.yml](.github/workflows/pagespeed.yml)               | **Daily** + Manual Trigger         | `06:00 UTC` (**11:30 AM IST**) | Runs Lighthouse / PageSpeed audits (Mobile + Desktop) and updates history.                                    |
+| **Broken Link Sentinel**  | [link-sentinel.yml](.github/workflows/link-sentinel.yml)       | **Weekly** + Manual Trigger        | `00:00 UTC` Sun (**05:30 AM IST**) | Deep-crawls web properties with Lychee; audits internal and outbound links; manages link incident issues. |
 | **Response Time CI**      | [response-time.yml](.github/workflows/response-time.yml)       | **Daily**                          | `23:00 UTC` (**04:30 AM IST**) | Measures latency and calculates rolling 24h, 7d, 30d, 1y response time statistics.                            |
 | **Graphs CI**             | [graphs.yml](.github/workflows/graphs.yml)                     | **Daily**                          | `00:00 UTC` (**05:30 AM IST**) | Generates response-time PNG charts committed to the `graphs/` folder.                                         |
 | **Summary CI**            | [summary.yml](.github/workflows/summary.yml)                   | **Daily**                          | `00:00 UTC` (**05:30 AM IST**) | Updates the live status table, uptime percentages, and badges in this README.                                 |

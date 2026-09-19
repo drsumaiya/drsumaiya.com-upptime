@@ -50,6 +50,8 @@ status-website:
       href: /
     - title: Performance
       href: "#pagespeed-section"
+    - title: Broken Links
+      href: "#broken-links-section"
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 

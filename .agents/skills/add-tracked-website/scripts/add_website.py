@@ -172,8 +172,55 @@ def update_verify_ssl_health(name, domain_or_url, slug, filepath="scripts/verify
         print(f"[!] Could not match TARGETS list in {filepath}")
         return False
 
+def update_link_sentinel_workflow(name, url, slug, filepath=".github/workflows/link-sentinel.yml"):
+    if not os.path.exists(filepath):
+        return False
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    if f'slug: "{slug}"' in content or f"slug: {slug}" in content:
+        print(f"[-] Slug '{slug}' already present in {filepath}")
+        return False
+
+    clean = url.rstrip("/")
+    entry = f'          - name: "{name}"\n            url: "{clean}"\n            slug: "{slug}"\n'
+    marker = "    steps:"
+    if marker in content:
+        idx = content.find(marker)
+        new_content = content[:idx] + entry + content[idx:]
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"[+] Added '{slug}' to {filepath}")
+        return True
+    return False
+
+def update_aggregate_link_reports(name, url, slug, filepath="scripts/aggregate_link_reports.py"):
+    if not os.path.exists(filepath):
+        return False
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    if f'"slug": "{slug}"' in content:
+        print(f"[-] Slug '{slug}' already present in {filepath}")
+        return False
+
+    clean = url.rstrip("/")
+    pattern = r'(\s*\{\s*"name":\s*"[^"]+",\s*"slug":\s*"[^"]+",\s*"url":\s*"[^"]+"\s*\}\s*)\]'
+    new_content, count = re.subn(
+        pattern,
+        rf'\1,\n    {{\n        "name": "{name}",\n        "slug": "{slug}",\n        "url": "{clean}"\n    }}\n]',
+        content,
+        count=1
+    )
+    if count > 0:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"[+] Added '{slug}' to {filepath}")
+        return True
+    return False
+
 def main():
-    parser = argparse.ArgumentParser(description="Add website to Uptime, PageSpeed, SEO & SSL tracking")
+    parser = argparse.ArgumentParser(description="Add website to Uptime, PageSpeed, SEO, SSL & Broken Link tracking")
     parser.add_argument("--name", required=True, help="Display name of the website")
     parser.add_argument("--url", required=True, help="Full URL of the website")
     parser.add_argument("--slug", required=True, help="Unique kebab-case slug (e.g. iqs-hifz)")
@@ -205,8 +252,10 @@ def main():
     update_pagespeed_js(args.name, clean_url, args.slug)
     update_verify_seo_health(args.name, domain, robots_url, sitemap_url, args.slug)
     update_verify_ssl_health(args.name, clean_url, args.slug)
+    update_link_sentinel_workflow(args.name, clean_url, args.slug)
+    update_aggregate_link_reports(args.name, clean_url, args.slug)
 
-    print("\n[✓] All configurations updated! Run verify_ssl_health.py and verify_seo_health.py to test.")
+    print("\n[✓] All configurations updated! Run verify_ssl_health.py, verify_seo_health.py and aggregate_link_reports.py to test.")
 
 if __name__ == "__main__":
     main()
