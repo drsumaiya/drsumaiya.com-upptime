@@ -48,14 +48,33 @@ def parse_lychee_json(file_path):
 
         total = data.get("total", 0)
         successful = data.get("successful", 0)
-        failures = data.get("failures", 0)
+        failures = data.get("errors", data.get("failures", 0))
         timeouts = data.get("timeouts", 0)
         redirects = data.get("redirects", 0)
         excludes = data.get("excludes", 0)
 
         broken_links = []
+        # Lychee 0.24+ error_map: key is source URL, value is list of broken targets
+        error_map = data.get("error_map", {})
+        if isinstance(error_map, dict) and error_map:
+            for source_url, err_list in error_map.items():
+                if isinstance(err_list, list):
+                    for item in err_list:
+                        target = item.get("url")
+                        status_obj = item.get("status", {})
+                        status_code = status_obj.get("code") if isinstance(status_obj, dict) else 404
+                        err_text = status_obj.get("text") if isinstance(status_obj, dict) else str(status_obj)
+                        line = item.get("span", {}).get("line") if isinstance(item.get("span"), dict) else None
+                        broken_links.append({
+                            "url": target,
+                            "source": source_url,
+                            "line": line,
+                            "status": status_code or 404,
+                            "error": err_text or "Dead Link"
+                        })
+        # Legacy fail_map fallback
         fail_map = data.get("fail_map", {})
-        if isinstance(fail_map, dict):
+        if isinstance(fail_map, dict) and not broken_links:
             for target_url, details in fail_map.items():
                 if isinstance(details, list):
                     for detail in details:

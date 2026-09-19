@@ -20,13 +20,13 @@ jobs:
       matrix:
         site:
           - name: "DrSumaiya.com"
-            url: "https://drsumaiya.com"
+            urls: "https://drsumaiya.com https://drsumaiya.com/sitemap_index.xml"
             slug: "dr-sumaiya-com"
           - name: "IQS"
-            url: "https://iqs.org.in"
+            urls: "https://iqs.org.in https://iqs.org.in/wp-sitemap.xml"
             slug: "iqs"
           - name: "IQS - Hifz Focus"
-            url: "https://hifz.iqs.org.in"
+            urls: "https://hifz.iqs.org.in https://hifz.iqs.org.in/sitemap.xml"
             slug: "iqs-hifz"
 
     steps:
@@ -42,15 +42,15 @@ jobs:
         with:
           args: >-
             --format json
-            --max-depth 2
+            --no-progress
             --max-concurrency 6
             --timeout 15
             --max-retries 2
             --accept 200,301,302,403
             --exclude "(linkedin\.com|instagram\.com|twitter\.com|x\.com|facebook\.com|wa\.me|t\.me)"
-            --header "X-Upptime-Token=${{ secrets.UPPTIME_WAF_SECRET }}"
-            --header "User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Lychee-Sentinel/1.0"
-            "${{ matrix.site.url }}"
+            --header "X-Upptime-Token: ${{ secrets.UPPTIME_WAF_SECRET }}"
+            --header "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Lychee-Sentinel/1.0"
+            ${{ matrix.site.urls }}
           output: "links/raw/report-${{ matrix.site.slug }}.json"
           fail: false
 
