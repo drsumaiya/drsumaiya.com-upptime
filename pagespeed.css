@@ -571,3 +571,179 @@
 .dot-good { background: var(--psi-good); }
 .dot-average { background: var(--psi-average); }
 .dot-poor { background: var(--psi-poor); }
+
+/* ==========================================================================
+   Continuous Broken Link & 404 Sentinel Dashboard Styles
+   ========================================================================== */
+
+.sentinel-section {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.sentinel-card {
+  background: var(--psi-card-bg);
+  border: 1px solid var(--psi-card-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--psi-shadow);
+  backdrop-filter: blur(10px);
+  margin-bottom: 24px;
+}
+
+.sentinel-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--psi-card-border);
+}
+
+.sentinel-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--psi-text);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sentinel-subtitle {
+  font-size: 13px;
+  color: var(--psi-text-muted);
+  margin-top: 4px;
+}
+
+.sentinel-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.sentinel-pill-clean {
+  background: rgba(12, 206, 107, 0.12);
+  color: #0cce6b;
+  border: 1px solid rgba(12, 206, 107, 0.25);
+}
+
+.sentinel-pill-fault {
+  background: rgba(255, 78, 66, 0.12);
+  color: #ff4e42;
+  border: 1px solid rgba(255, 78, 66, 0.25);
+}
+
+.sentinel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.sentinel-site-card {
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--psi-card-border);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.2s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .sentinel-site-card {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+.sentinel-site-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--psi-text);
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sentinel-site-meta {
+  font-size: 13px;
+  color: var(--psi-text-muted);
+}
+
+.sentinel-table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--psi-card-border);
+  margin-top: 16px;
+}
+
+.sentinel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.sentinel-table th {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--psi-text);
+  padding: 10px 14px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--psi-card-border);
+}
+
+@media (prefers-color-scheme: dark) {
+  .sentinel-table th {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.sentinel-table td {
+  padding: 10px 14px;
+  color: var(--psi-text);
+  border-bottom: 1px solid var(--psi-card-border);
+  word-break: break-all;
+}
+
+.sentinel-table tr:last-child td {
+  border-bottom: none;
+}
+
+.sentinel-tag-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.tag-404 {
+  background: rgba(255, 78, 66, 0.15);
+  color: #ff4e42;
+}
+
+.tag-500 {
+  background: rgba(255, 164, 0, 0.15);
+  color: #ffa400;
+}
+
+.sentinel-clean-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(12, 206, 107, 0.08);
+  border: 1px solid rgba(12, 206, 107, 0.2);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: var(--psi-text);
+  font-size: 14px;
+}
+

@@ -26,6 +26,7 @@
   let currentMetric = "performance"; // 'performance' | 'fcp' | 'lcp' | 'cls'
   const siteData = {};
   const siteHistory = {};
+  let sentinelData = null;
 
   const METRIC_CONFIG = {
     performance: {
@@ -167,6 +168,18 @@
     } catch (e) {
       console.warn(`Could not fetch history for ${site.name}:`, e);
       siteHistory[site.slug] = [];
+    }
+  }
+
+  async function fetchSentinelData() {
+    const rawUrl = "https://raw.githubusercontent.com/drsumaiya/drsumaiya.com-upptime/master/links/latest.json";
+    try {
+      const res = await fetch(rawUrl, { cache: "no-store" });
+      if (!res.ok) throw new Error("Fetch failed");
+      sentinelData = await res.json();
+    } catch (e) {
+      console.warn("Could not fetch Broken Link Sentinel data:", e);
+      sentinelData = null;
     }
   }
 
@@ -636,13 +649,136 @@
     return container;
   }
 
+  function ensureSentinelContainer() {
+    let container = document.getElementById("broken-links-container");
+    if (!container) {
+      container = document.createElement("div");
+      container.id = "broken-links-container";
+      container.className = "container";
+      const psiContainer = document.getElementById("pagespeed-container");
+      if (psiContainer && psiContainer.nextSibling) {
+        psiContainer.parentNode.insertBefore(container, psiContainer.nextSibling);
+      } else {
+        const footer = document.querySelector("footer");
+        if (footer && footer.parentNode) {
+          footer.parentNode.insertBefore(container, footer);
+        } else {
+          const target = document.querySelector("main") || document.body;
+          target.appendChild(container);
+        }
+      }
+    }
+    return container;
+  }
+
+  function renderSentinelDashboard() {
+    const container = ensureSentinelContainer();
+    if (!sentinelData) {
+      container.innerHTML = "";
+      return;
+    }
+
+    const isClean = sentinelData.overall_clean;
+    const totalChecked = (sentinelData.total_checked || 0).toLocaleString();
+    const totalBroken = sentinelData.total_broken || 0;
+    const timeHuman = sentinelData.timestamp_human || "Recently";
+
+    const statusPill = isClean
+      ? '<span class="sentinel-status-pill sentinel-pill-clean">✅ All Links Healthy (0 Dead)</span>'
+      : `<span class="sentinel-status-pill sentinel-pill-fault">🚨 ${totalBroken} Dead Link(s) Detected</span>`;
+
+    let siteCards = "";
+    const allBroken = [];
+    (sentinelData.results || []).forEach(site => {
+      const failed = site.failed || 0;
+      const checked = (site.total_checked || 0).toLocaleString();
+      const badge = failed === 0
+        ? '<span style="color: #0cce6b; font-weight: 700;">✅ 0 Faults</span>'
+        : `<span style="color: #ff4e42; font-weight: 700;">🚨 ${failed} Broken</span>`;
+
+      siteCards += `
+        <div class="sentinel-site-card">
+          <div class="sentinel-site-name">
+            <a href="${site.url}" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">${site.site}</a>
+            ${badge}
+          </div>
+          <div class="sentinel-site-meta">${checked} hyperlinks audited</div>
+        </div>
+      `;
+
+      (site.broken_links || []).forEach(b => {
+        allBroken.push({ site: site.site, ...b });
+      });
+    });
+
+    let trackingLog = "";
+    if (allBroken.length > 0) {
+      let rows = allBroken.map(item => `
+        <tr>
+          <td><strong>${item.site}</strong></td>
+          <td><a href="${item.source}" target="_blank" rel="noopener">${item.source}</a></td>
+          <td><code>${item.url}</code></td>
+          <td><span class="sentinel-tag-status tag-404">${item.status || 404}</span></td>
+          <td>${item.error || 'Not Found'}</td>
+        </tr>
+      `).join("");
+
+      trackingLog = `
+        <div class="sentinel-table-wrapper">
+          <table class="sentinel-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Source Page</th>
+                <th>Broken Destination</th>
+                <th>Status</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else {
+      trackingLog = `
+        <div class="sentinel-clean-banner">
+          <span style="font-size: 20px;">🛡️</span>
+          <div>
+            <strong>Zero Broken Links Detected:</strong> All internal navigation, redirects, and outbound hyperlinks resolved successfully across ${totalChecked} checked endpoints.
+          </div>
+        </div>
+      `;
+    }
+
+    container.innerHTML = `
+      <section id="broken-links-section" class="sentinel-section">
+        <div class="sentinel-card">
+          <div class="sentinel-header">
+            <div>
+              <h2 class="sentinel-title">🛡️ Broken Link & 404 Sentinel</h2>
+              <div class="sentinel-subtitle">Weekly deep-crawl and stress-test of internal navigation and external outbound hyperlinks • Audited ${timeHuman}</div>
+            </div>
+            ${statusPill}
+          </div>
+          <div class="sentinel-grid">
+            ${siteCards}
+          </div>
+          ${trackingLog}
+        </div>
+      </section>
+    `;
+  }
+
   async function init() {
     ensureContainer();
 
-    // Load latest data and history for all monitored sites in parallel
+    // Load latest data, history, and sentinel data for all monitored sites in parallel
     await Promise.all([
       ...SITES.map(fetchSiteData),
-      ...SITES.map(fetchSiteHistory)
+      ...SITES.map(fetchSiteHistory),
+      fetchSentinelData()
     ]);
 
     // Fallback: If siteData[slug] has 0 performance, but siteHistory[slug] has valid audits, use the latest from history!
@@ -659,15 +795,17 @@
     });
 
     renderDashboard();
+    renderSentinelDashboard();
 
     // Re-inject if Svelte/Sapper re-renders layout or changes routes
     if (window.MutationObserver) {
       let debounceTimer;
       const observer = new MutationObserver(() => {
-        if (!document.getElementById("pagespeed-container")) {
+        if (!document.getElementById("pagespeed-container") || !document.getElementById("broken-links-container")) {
           clearTimeout(debounceTimer);
           debounceTimer = setTimeout(() => {
             renderDashboard();
+            renderSentinelDashboard();
           }, 100);
         }
       });
@@ -681,3 +819,4 @@
     init();
   }
 })();
+
