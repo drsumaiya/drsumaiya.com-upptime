@@ -25,11 +25,11 @@
         },
         "span": {
           "line": 1,
-          "column": 20429
+          "column": 23754
         },
         "duration": {
           "secs": 0,
-          "nanos": 722
+          "nanos": 471
         }
       },
       {
@@ -40,18 +40,18 @@
         },
         "span": {
           "line": 1,
-          "column": 23754
+          "column": 20429
         },
         "duration": {
           "secs": 0,
-          "nanos": 561
+          "nanos": 672
         }
       }
     ]
   },
   "duration": {
-    "secs": 0,
-    "nanos": 909608884
+    "secs": 2,
+    "nanos": 804683579
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35455534407?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35486885230?check_suite_focus=true)

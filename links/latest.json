@@ -1,58 +1,35 @@
 {
-  "timestamp": "2026-09-19T16:37:31.258545+00:00",
-  "timestamp_human": "2026-09-19 16:37:31 UTC",
-  "total_checked": 236,
-  "total_broken": 3,
-  "overall_clean": false,
+  "timestamp": "2026-09-20T03:34:07.496259+00:00",
+  "timestamp_human": "2026-09-20 03:34:07 UTC",
+  "total_checked": 232,
+  "total_broken": 0,
+  "overall_clean": true,
   "results": [
     {
       "site": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "url": "https://drsumaiya.com",
       "total_checked": 120,
-      "successful": 91,
-      "failed": 1,
+      "successful": 92,
+      "failed": 0,
       "timeouts": 0,
-      "redirects": 1,
+      "redirects": 2,
       "excludes": 16,
-      "is_clean": false,
-      "broken_links": [
-        {
-          "url": "https://maps.app.goo.gl/ULJKgWjvx1FCLf2WA",
-          "source": "https://drsumaiya.com/",
-          "line": 145,
-          "status": 404,
-          "error": "Rejected status code: 404 Not Found"
-        }
-      ]
+      "is_clean": true,
+      "broken_links": []
     },
     {
       "site": "IQS",
       "slug": "iqs",
       "url": "https://iqs.org.in",
-      "total_checked": 98,
+      "total_checked": 94,
       "successful": 81,
-      "failed": 2,
+      "failed": 0,
       "timeouts": 0,
-      "redirects": 12,
-      "excludes": 10,
-      "is_clean": false,
-      "broken_links": [
-        {
-          "url": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/flags.webp",
-          "source": "https://iqs.org.in/",
-          "line": 54,
-          "status": 404,
-          "error": "Rejected status code: 404 Not Found"
-        },
-        {
-          "url": "https://iqs.org.in/wp-content/plugins/events-manager/includes/img/globe.webp",
-          "source": "https://iqs.org.in/",
-          "line": 54,
-          "status": 404,
-          "error": "Rejected status code: 404 Not Found"
-        }
-      ]
+      "redirects": 9,
+      "excludes": 8,
+      "is_clean": true,
+      "broken_links": []
     },
     {
       "site": "IQS - Hifz Focus",
