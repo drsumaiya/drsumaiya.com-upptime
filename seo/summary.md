@@ -1,5 +1,5 @@
 # 🤖 Search Engine Indexing & SEO Health Report
-> Last updated: `2026-09-19 09:12:44 UTC`
+> Last updated: `2026-09-20 09:37:00 UTC`
 
 Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sitemaps.
 
@@ -7,6 +7,7 @@ Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sit
 | :--- | :---: | :---: | :---: | :--- |
 | **DrSumaiya.com** | ✅ OK | ✅ Valid (3 sub-sitemaps) | 🟩 Healthy | XML Sitemap has leading whitespace/newline before '<?xml'. Strict XML parsers or Google Search Console may flag this. |
 | **IQS** | ✅ OK | ✅ Valid (6 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
+| **IQS - Hifz Focus** | ✅ OK | ✅ Valid (23 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
 
 ### Diagnostic Rules:
 * **Robots.txt De-Indexing Guard**: Verifies that `Disallow: /` is NOT present for `User-agent: *`.
