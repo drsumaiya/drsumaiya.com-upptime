@@ -1,0 +1,51 @@
+name: Page Views & Content Popularity CI
+on:
+  schedule:
+    # Run daily at 01:30 UTC (07:00 AM IST)
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  popularity:
+    name: "Audit: Daily Page Views & Content Popularity"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Setup Python & uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run Page Popularity Telemetry
+        env:
+          UPPTIME_WAF_SECRET: ${{ secrets.UPPTIME_WAF_SECRET }}
+        run: |
+          uv run python scripts/record_page_popularity.py
+
+      - name: Add Step Summary
+        if: always()
+        run: |
+          if [ -f popularity/summary.md ]; then
+            cat popularity/summary.md >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Commit Popularity Reports
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add popularity/
+          if git diff --staged --quiet; then
+            echo "No popularity changes to commit"
+          else
+            git commit -m "📈 Update Content Popularity & Views Report [$(date -u +%Y-%m-%d)]"
+            git pull --rebase
+            git push
+          fi

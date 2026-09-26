@@ -143,6 +143,7 @@ A 100% serverless, zero-maintenance uptime monitor and status page powered entir
 | **Lead Intake & Form CI** | [forms-health.yml](.github/workflows/forms-health.yml)         | **Every 2 hours** + Manual Trigger | `0 */2 * * *`                      | Probes booking forms, REST submission endpoints, and form CSS/JS assets; manages form incident issues.        |
 | **Email & DNS Health CI** | [email-dns-health.yml](.github/workflows/email-dns-health.yml) | **Daily** + Manual Trigger         | `04:30 UTC` (**10:00 AM IST**)     | Audits SPF, DKIM, DMARC, MX records; manages DNS deliverability incident issues.                              |
 | **SEO Health CI**         | [seo-health.yml](.github/workflows/seo-health.yml)             | **Daily** + Manual Trigger         | `05:00 UTC` (**10:30 AM IST**)     | Audits robots.txt directives and XML sitemap integrity; manages SEO incident issues.                          |
+| **Page Popularity CI**    | [page-popularity.yml](.github/workflows/page-popularity.yml)   | **Daily** + Manual Trigger         | `01:30 UTC` (**07:00 AM IST**)     | Queries secure origin telemetry for daily views per blog post and page; tracks content popularity trends.      |
 | **PageSpeed Insights CI** | [pagespeed.yml](.github/workflows/pagespeed.yml)               | **Daily** + Manual Trigger         | `06:00 UTC` (**11:30 AM IST**)     | Runs Lighthouse / PageSpeed audits (Mobile + Desktop) and updates history.                                    |
 | **Broken Link Sentinel**  | [link-sentinel.yml](.github/workflows/link-sentinel.yml)       | **Weekly** + Manual Trigger        | `00:00 UTC` Sun (**05:30 AM IST**) | Deep-crawls web properties with Lychee; audits internal and outbound links; manages link incident issues.     |
 | **Response Time CI**      | [response-time.yml](.github/workflows/response-time.yml)       | **Daily**                          | `23:00 UTC` (**04:30 AM IST**)     | Measures latency and calculates rolling 24h, 7d, 30d, 1y response time statistics.                            |
@@ -316,7 +317,7 @@ This repository uses a zero-trust cryptographic bypass deployed to the origin se
 
 ```php
 // Server-side wordfence-waf.php bypass implementation
-$upptime_token = '172ae70046e20229ae608515820837c0a8f11eabc325513097ce4ced82644cab';
+$upptime_token = defined('UPPTIME_WAF_SECRET') ? UPPTIME_WAF_SECRET : 'YOUR_PRIVATE_TOKEN';
 $req_uri = strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
 if (
     ($_SERVER['REQUEST_METHOD'] ?? '') === 'GET' &&
