@@ -25,8 +25,9 @@
   let currentStrategy = "mobile"; // 'mobile' | 'desktop'
   let currentMetric = "performance"; // 'performance' | 'fcp' | 'lcp' | 'cls'
   const siteData = {};
-  const siteHistory = {};
   let sentinelData = null;
+  let popularityData = null;
+  let currentPopularitySiteIndex = 0;
 
   const METRIC_CONFIG = {
     performance: {
@@ -180,6 +181,18 @@
     } catch (e) {
       console.warn("Could not fetch Broken Link Sentinel data:", e);
       sentinelData = null;
+    }
+  }
+
+  async function fetchPopularityData() {
+    const rawUrl = "https://raw.githubusercontent.com/drsumaiya/drsumaiya.com-upptime/master/popularity/latest.json";
+    try {
+      const res = await fetch(rawUrl, { cache: "no-store" });
+      if (!res.ok) throw new Error("Fetch failed");
+      popularityData = await res.json();
+    } catch (e) {
+      console.warn("Could not fetch page views popularity data:", e);
+      popularityData = null;
     }
   }
 
@@ -771,14 +784,199 @@
     `;
   }
 
+  function ensurePopularityContainer() {
+    let container = document.getElementById("popularity-container");
+    if (!container) {
+      container = document.createElement("div");
+      container.id = "popularity-container";
+      container.className = "container";
+      const sentinelContainer = document.getElementById("broken-links-container");
+      if (sentinelContainer && sentinelContainer.nextSibling) {
+        sentinelContainer.parentNode.insertBefore(container, sentinelContainer.nextSibling);
+      } else {
+        const psiContainer = document.getElementById("pagespeed-container");
+        if (psiContainer && psiContainer.nextSibling) {
+          psiContainer.parentNode.insertBefore(container, psiContainer.nextSibling);
+        } else {
+          const footer = document.querySelector("footer");
+          if (footer && footer.parentNode) {
+            footer.parentNode.insertBefore(container, footer);
+          } else {
+            const target = document.querySelector("main") || document.body;
+            target.appendChild(container);
+          }
+        }
+      }
+    }
+    return container;
+  }
+
+  function renderPopularityDashboard() {
+    const container = ensurePopularityContainer();
+    if (!popularityData || !popularityData.sites || popularityData.sites.length === 0) {
+      container.innerHTML = "";
+      return;
+    }
+
+    const sites = popularityData.sites;
+    if (currentPopularitySiteIndex >= sites.length) {
+      currentPopularitySiteIndex = 0;
+    }
+    const currentSite = sites[currentPopularitySiteIndex];
+    const timeHuman = popularityData.timestamp || "Recently";
+
+    const siteTabs = sites.map((s, idx) => `
+      <button class="psi-tab-btn ${idx === currentPopularitySiteIndex ? "active" : ""}" data-popularity-site-idx="${idx}">
+        ${s.name}
+      </button>
+    `).join("");
+
+    const posts = currentSite.posts_24h || [];
+    let postsTable = "";
+    if (posts.length > 0) {
+      const rows = posts.slice(0, 10).map((p, idx) => `
+        <tr>
+          <td style="width: 45px; text-align: center; font-weight: 700;">#${idx + 1}</td>
+          <td><a href="${p.url}" target="_blank" rel="noopener" style="color: var(--psi-accent); font-weight: 600; text-decoration: none;">${p.title}</a></td>
+          <td style="text-align: right; font-weight: 700;"><span class="popularity-badge-views">${p.views.toLocaleString()}</span></td>
+        </tr>
+      `).join("");
+      postsTable = `
+        <div class="sentinel-table-wrapper" style="margin-top: 8px;">
+          <table class="sentinel-table">
+            <thead>
+              <tr>
+                <th style="width: 45px; text-align: center;">Rank</th>
+                <th>Blog Post Title</th>
+                <th style="text-align: right;">24h Views</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else {
+      postsTable = `
+        <div style="padding: 24px; text-align: center; color: var(--psi-text-muted); font-size: 14px;">
+          No blog post views recorded in the last 24h window.
+        </div>
+      `;
+    }
+
+    const pages = currentSite.pages_24h || [];
+    let pagesTable = "";
+    if (pages.length > 0) {
+      const rows = pages.slice(0, 10).map((p, idx) => `
+        <tr>
+          <td style="width: 45px; text-align: center; font-weight: 700;">#${idx + 1}</td>
+          <td><a href="${p.url}" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">${p.title}</a></td>
+          <td style="text-align: right; font-weight: 700;"><span class="popularity-badge-views">${p.views.toLocaleString()}</span></td>
+        </tr>
+      `).join("");
+      pagesTable = `
+        <div class="sentinel-table-wrapper" style="margin-top: 8px;">
+          <table class="sentinel-table">
+            <thead>
+              <tr>
+                <th style="width: 45px; text-align: center;">Rank</th>
+                <th>Page / Form Name</th>
+                <th style="text-align: right;">24h Views</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>
+      `;
+    } else {
+      pagesTable = `
+        <div style="padding: 24px; text-align: center; color: var(--psi-text-muted); font-size: 14px;">
+          No core page views recorded in the last 24h window.
+        </div>
+      `;
+    }
+
+    const v24 = (currentSite.views_24h || 0).toLocaleString();
+    const v7 = (currentSite.views_7d || 0).toLocaleString();
+
+    container.innerHTML = `
+      <section id="popularity-section" class="sentinel-section">
+        <div class="sentinel-card">
+          <div class="sentinel-header" style="flex-wrap: wrap; gap: 16px;">
+            <div>
+              <h2 class="sentinel-title">📈 Content Popularity & Page Views</h2>
+              <div class="sentinel-subtitle">Real-time visitor counts and trending articles • Audited ${timeHuman}</div>
+            </div>
+            <div class="psi-tabs">
+              ${siteTabs}
+            </div>
+          </div>
+
+          <div class="sentinel-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 24px;">
+            <div class="sentinel-site-card">
+              <div class="sentinel-site-name">
+                <span>🔥 Last 24 Hours</span>
+                <span style="color: var(--psi-accent); font-weight: 800; font-size: 18px;">${v24} views</span>
+              </div>
+              <div class="sentinel-site-meta">Daily traffic across all tracked endpoints</div>
+            </div>
+            <div class="sentinel-site-card">
+              <div class="sentinel-site-name">
+                <span>📅 Last 7 Days</span>
+                <span style="color: #0cce6b; font-weight: 800; font-size: 18px;">${v7} views</span>
+              </div>
+              <div class="sentinel-site-meta">Weekly rolling visitor volume</div>
+            </div>
+            <div class="sentinel-site-card">
+              <div class="sentinel-site-name">
+                <span>🌐 Target Domain</span>
+                <span style="font-weight: 700;"><a href="${currentSite.domain}" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">${currentSite.name}</a></span>
+              </div>
+              <div class="sentinel-site-meta">WordPress Origin telemetry active</div>
+            </div>
+          </div>
+
+          <div class="popularity-tables-grid">
+            <div class="popularity-column">
+              <h3 style="font-size: 15px; font-weight: 700; margin: 0 0 8px 0; color: var(--psi-text); display: flex; align-items: center; gap: 8px;">
+                📝 Top Trending Blog Articles
+              </h3>
+              ${postsTable}
+            </div>
+            <div class="popularity-column">
+              <h3 style="font-size: 15px; font-weight: 700; margin: 0 0 8px 0; color: var(--psi-text); display: flex; align-items: center; gap: 8px;">
+                📄 Top Pages & Intake Forms
+              </h3>
+              ${pagesTable}
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+
+    container.querySelectorAll("[data-popularity-site-idx]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const idx = parseInt(btn.getAttribute("data-popularity-site-idx"), 10);
+        if (!isNaN(idx) && idx !== currentPopularitySiteIndex) {
+          currentPopularitySiteIndex = idx;
+          renderPopularityDashboard();
+        }
+      });
+    });
+  }
+
   async function init() {
     ensureContainer();
 
-    // Load latest data, history, and sentinel data for all monitored sites in parallel
+    // Load latest data, history, sentinel data, and popularity data in parallel
     await Promise.all([
       ...SITES.map(fetchSiteData),
       ...SITES.map(fetchSiteHistory),
-      fetchSentinelData()
+      fetchSentinelData(),
+      fetchPopularityData()
     ]);
 
     // Fallback: If siteData[slug] has 0 performance, but siteHistory[slug] has valid audits, use the latest from history!
@@ -796,16 +994,22 @@
 
     renderDashboard();
     renderSentinelDashboard();
+    renderPopularityDashboard();
 
     // Re-inject if Svelte/Sapper re-renders layout or changes routes
     if (window.MutationObserver) {
       let debounceTimer;
       const observer = new MutationObserver(() => {
-        if (!document.getElementById("pagespeed-container") || !document.getElementById("broken-links-container")) {
+        if (
+          !document.getElementById("pagespeed-container") ||
+          !document.getElementById("broken-links-container") ||
+          !document.getElementById("popularity-container")
+        ) {
           clearTimeout(debounceTimer);
           debounceTimer = setTimeout(() => {
             renderDashboard();
             renderSentinelDashboard();
+            renderPopularityDashboard();
           }, 100);
         }
       });
