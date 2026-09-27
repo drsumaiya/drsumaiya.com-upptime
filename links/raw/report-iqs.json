@@ -5,11 +5,11 @@
   "unknown": 0,
   "unsupported": 5,
   "timeouts": 0,
-  "redirects": 9,
+  "redirects": 11,
   "remaps": 0,
   "excludes": 8,
   "errors": 0,
-  "cached": 29,
+  "cached": 30,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -17,6 +17,21 @@
   "redirect_map": {},
   "excluded_map": {
     "https://iqs.org.in/": [
+      {
+        "url": "mailto:salam@iqs.org.in;",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1227,
+          "column": 7
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 942
+        }
+      },
       {
         "url": "tel:+917208660987",
         "status": {
@@ -29,82 +44,7 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 390
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20am%20interested%20in%20courses%20at%20IQS%20Bangalore.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 1992,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 10957
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2012,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 14932
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2054,
-          "column": 107
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 391
-        }
-      },
-      {
-        "url": "mailto: salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2072,
-          "column": 609
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 150
-        }
-      },
-      {
-        "url": "mailto: salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 1242,
-          "column": 7
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 160
+          "nanos": 451
         }
       },
       {
@@ -119,29 +59,89 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 3706
+          "nanos": 12949
         }
       },
       {
-        "url": "mailto:salam@iqs.org.in;",
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20am%20interested%20in%20courses%20at%20IQS%20Bangalore.",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 1227,
+          "line": 1992,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 12819
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2012,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 31177
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2054,
+          "column": 107
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 121
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2072,
+          "column": 609
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 110
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1242,
           "column": 7
         },
         "duration": {
           "secs": 0,
-          "nanos": 831
+          "nanos": 130
         }
       }
     ]
   },
   "duration": {
-    "secs": 15,
-    "nanos": 918395108
+    "secs": 8,
+    "nanos": 119273354
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/35486885230?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/36292529658?check_suite_focus=true)

@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-20T03:34:07.496259+00:00",
-  "timestamp_human": "2026-09-20 03:34:07 UTC",
-  "total_checked": 232,
+  "timestamp": "2026-09-27T03:50:07.704107+00:00",
+  "timestamp_human": "2026-09-27 03:50:07 UTC",
+  "total_checked": 225,
   "total_broken": 0,
   "overall_clean": true,
   "results": [
@@ -9,11 +9,11 @@
       "site": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "url": "https://drsumaiya.com",
-      "total_checked": 120,
-      "successful": 92,
+      "total_checked": 113,
+      "successful": 85,
       "failed": 0,
       "timeouts": 0,
-      "redirects": 2,
+      "redirects": 1,
       "excludes": 16,
       "is_clean": true,
       "broken_links": []
@@ -26,7 +26,7 @@
       "successful": 81,
       "failed": 0,
       "timeouts": 0,
-      "redirects": 9,
+      "redirects": 11,
       "excludes": 8,
       "is_clean": true,
       "broken_links": []
