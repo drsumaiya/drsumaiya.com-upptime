@@ -25,6 +25,7 @@
   let currentStrategy = "mobile"; // 'mobile' | 'desktop'
   let currentMetric = "performance"; // 'performance' | 'fcp' | 'lcp' | 'cls'
   const siteData = {};
+  const siteHistory = {};
   let sentinelData = null;
   let popularityData = null;
   let currentPopularitySiteIndex = 0;
@@ -970,6 +971,8 @@
 
   async function init() {
     ensureContainer();
+    ensureSentinelContainer();
+    ensurePopularityContainer();
 
     // Load latest data, history, sentinel data, and popularity data in parallel
     await Promise.all([
@@ -995,6 +998,43 @@
     renderDashboard();
     renderSentinelDashboard();
     renderPopularityDashboard();
+
+    // Smoothly scroll to hash anchor if present in URL (e.g. #popularity-section)
+    function scrollToHash() {
+      const hash = window.location.hash;
+      if (hash && hash.length > 1) {
+        try {
+          const target = document.querySelector(hash);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        } catch (e) {}
+      }
+    }
+
+    // Dynamic Sapper cards and graphs can expand page height over initial seconds
+    scrollToHash();
+    setTimeout(scrollToHash, 400);
+    setTimeout(scrollToHash, 1200);
+
+    window.addEventListener("hashchange", scrollToHash);
+
+    // Support in-page anchor clicks for dynamically mounted sections
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", e => {
+        const hash = link.getAttribute("href");
+        if (hash && hash.length > 1) {
+          const target = document.querySelector(hash);
+          if (target) {
+            e.preventDefault();
+            if (window.location.hash !== hash) {
+              history.pushState(null, "", hash);
+            }
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+      });
+    });
 
     // Re-inject if Svelte/Sapper re-renders layout or changes routes
     if (window.MutationObserver) {

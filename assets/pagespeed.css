@@ -671,6 +671,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .sentinel-site-meta {
@@ -785,4 +787,15 @@
     color: #60a5fa;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#pagespeed-section,
+#broken-links-section,
+#popularity-section {
+  scroll-margin-top: 80px;
+}
+
 
