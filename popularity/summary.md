@@ -1,59 +1,60 @@
 # 📈 Daily Page Views & Content Popularity Report
-*Audit Timestamp: `2026-09-29 07:06:11 UTC` • Automated telemetry via Origin Stats Engine*
+*Audit Timestamp: `2026-09-30 06:56:13 UTC` • Automated telemetry via Origin Stats Engine*
 
 | Monitored Property | Health Status | 24h Views | 7-Day Views | Top Performing Article (24h) |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | 🟢 Live | **40** | 538 | [Choosing the Right Rice for Blood Sugar Management: A D...](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) (9 views) |
-| **IQS** | 🟢 Live | **68** | 1,049 | [Salat al-Istikhara: How to Perform the Prayer for Guida...](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) (25 views) |
+| **DrSumaiya.com** | 🟢 Live | **40** | 549 | [Choosing the Right Rice for Blood Sugar Management: A D...](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) (5 views) |
+| **IQS** | 🟢 Live | **55** | 1,044 | [Salat al-Istikhara: How to Perform the Prayer for Guida...](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) (16 views) |
 
 ## 🏆 DrSumaiya.com — Top Performing Content
 
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **9** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
-| **#2** | Unlocking Fat Loss: Understanding Gut Digestion, Transit Time & Nutrient Absorption | **3** | [Read Post](https://drsumaiya.com/post/unlocking-the-secret-to-losing-fat-understanding-digestion-and-nutrient-absorption/) |
-| **#3** | Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic | **2** | [Read Post](https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/) |
-| **#4** | Mounjaro in India: A Dietitian’s Clinical Guide to Diet on Tirzepatide Injections | **2** | [Read Post](https://drsumaiya.com/post/mounjaro-in-india-a-nutritionists-deep-dive-into-the-new-weight-loss-diabetes-injection/) |
-| **#5** | The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide | **1** | [Read Post](https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/) |
-| **#6** | Wheatgrass vs. Other Fruits and Vegetables: Separating Fact from Fiction | **1** | [Read Post](https://drsumaiya.com/post/wheatgrass-juice-is-not-recommended/) |
-| **#7** | Food dehydration service | **1** | [Read Post](https://drsumaiya.com/post/food-dehydration-service/) |
-| **#8** | Grade 1 Fatty Liver (NAFLD) Reversal: Clinical Indian Diet Protocol & SGPT/ALT Guide | **1** | [Read Post](https://drsumaiya.com/post/grade-1-fatty-liver-diet-chart-indian-protocol/) |
-| **#9** | Chamomile Tea & Apigenin: Clinical Phytochemistry for Sleep, Anxiety & Gut Health | **1** | [Read Post](https://drsumaiya.com/post/chamomile-the-calming-herb/) |
-| **#10** | Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide | **1** | [Read Post](https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/) |
+| **#1** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **5** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
+| **#2** | 10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally | **4** | [Read Post](https://drsumaiya.com/post/10-foods-to-boost-your-fertility/) |
+| **#3** | Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation | **3** | [Read Post](https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/) |
+| **#4** | Ramadan Nutrition: 20 Mistakes to Avoid for a Healthy Fast | **2** | [Read Post](https://drsumaiya.com/post/ramadan-nutrition-20-mistakes-to-avoid-for-a-healthy-fast/) |
+| **#5** | Choosing the Right Salt: A Registered Dietitian's Complete Guide | **2** | [Read Post](https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/) |
+| **#6** | Flower Power: 10 Floral Ingredients That Beautify and Heal Skin | **1** | [Read Post](https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/) |
+| **#7** | Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works | **1** | [Read Post](https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/) |
+| **#8** | Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide | **1** | [Read Post](https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/) |
+| **#9** | Intermittent Fasting & Clinical Longevity: Which Fasting Protocol Fits Your Metabolic Health? | **1** | [Read Post](https://drsumaiya.com/post/choosing-the-right-fasting-method-various-forms-of-fasting-and-their-health-benefits/) |
+| **#10** | Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide | **1** | [Read Post](https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
 | **#1** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **6** | [Visit Page](https://drsumaiya.com/) |
-| **#2** | Patient History Form | **2** | [Visit Page](https://drsumaiya.com/form/) |
-| **#3** | Home page | **2** | [Visit Page](http://drsumaiya.com/) |
-| **#4** | Plans and Pricing | **2** | [Visit Page](https://drsumaiya.com/plans-pricing/) |
-| **#5** | About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru | **1** | [Visit Page](https://drsumaiya.com/about/) |
-| **#6** | Inquiry Form | **1** | [Visit Page](https://drsumaiya.com/inquiry-form/) |
+| **#2** | Home page | **3** | [Visit Page](http://drsumaiya.com/) |
+| **#3** | Patient History Form | **2** | [Visit Page](https://drsumaiya.com/form/) |
+| **#4** | Inquiry Form | **1** | [Visit Page](https://drsumaiya.com/inquiry-form/) |
 
 ## 🏆 IQS — Top Performing Content
 
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide) | **25** | [Read Post](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) |
-| **#2** | The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye | **6** | [Read Post](https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/) |
-| **#3** | The Islamic Obligation of Niqab: Understanding Face Covering in Islam | **5** | [Read Post](https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/) |
-| **#4** | Glad Tidings to the Strangers: Who Are the Ghuraba in Islam? | **5** | [Read Post](https://iqs.org.in/blog/2026/04/04/glad-tidings-to-the-strangers-who-are-the-ghuraba/) |
-| **#5** | Exploring Palindromes in the Quran: A Linguistic Miracle | **3** | [Read Post](https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/) |
-| **#6** | Alimiyat Course | **3** | [Read Post](https://iqs.org.in/courses/alimiyat-course/) |
-| **#7** | Embracing Abundance – The Benefits of Larger Families from an Islamic and Societal Perspective | **2** | [Read Post](https://iqs.org.in/blog/2024/04/20/embracing-abundance-the-benefits-of-larger-families-from-an-islamic-and-societal-perspective/) |
-| **#8** | Why Artificial Intelligence Chooses Islam: The Ultimate Proof of a Flawless System | **2** | [Read Post](https://iqs.org.in/blog/2026/06/03/why-artificial-intelligence-chooses-islam-the-ultimate-proof-of-a-flawless-system/) |
-| **#9** | Why Terms Like "Mohammedan" Are Considered Inappropriate in Islamic Discourse | **2** | [Read Post](https://iqs.org.in/blog/2025/04/04/why-terms-like-mohammedan-are-considered-inappropriate-in-islamic-discourse/) |
-| **#10** | Avoid use of abbreviations like "Md" or "Mohd" for the name "Muhammad" | **2** | [Read Post](https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/) |
+| **#1** | Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide) | **16** | [Read Post](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) |
+| **#2** | The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye | **13** | [Read Post](https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/) |
+| **#3** | Muslim Ladies Prayer Places in Bengaluru | **5** | [Read Post](https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/) |
+| **#4** | Mutawatir Hadiths | **2** | [Read Post](https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/) |
+| **#5** | When AI Can Think, What Is the Human Being For? | Islam's Answer | **2** | [Read Post](https://iqs.org.in/blog/2026/09/14/when-ai-can-think-what-is-the-human-being-for/) |
+| **#6** | The 33-Year Ramadan Cycle: A Journey Through Seasons | **1** | [Read Post](https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/) |
+| **#7** | The Islamic Obligation of Niqab: Understanding Face Covering in Islam | **1** | [Read Post](https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/) |
+| **#8** | Salat al-Khusuf Tonight in Bangalore | Lunar Eclipse Prayer Times | **1** | [Read Post](https://iqs.org.in/blog/2025/09/07/salat-al-khusuf-tonight-in-bangalore-lunar-eclipse-prayer-times/) |
+| **#9** | Self-Reflection Through the Lens of Surah Al-Hujurat: A Guide to Spiritual Growth | **1** | [Read Post](https://iqs.org.in/blog/2023/11/17/self-reflection-through-the-lens-of-surah-al-hujurat-a-guide-to-spiritual-growth/) |
+| **#10** | Avoid use of abbreviations like "Md" or "Mohd" for the name "Muhammad" | **1** | [Read Post](https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Home - Main | **2** | [Visit Page](https://iqs.org.in/) |
-| **#2** | Is it Shirk? A Practical Guide to Identifying and Avoiding Shirk in Islam | **2** | [Visit Page](https://iqs.org.in/is-it-shirk/) |
-| **#3** | Islamic Courses | **1** | [Visit Page](https://iqs.org.in/islamic-courses/) |
+| **#1** | Sharia Ruqyah Consultation & Spiritual Counseling | **2** | [Visit Page](https://iqs.org.in/ruqya/) |
+| **#2** | Home - Main | **2** | [Visit Page](https://iqs.org.in/) |
+| **#3** | IQS Academic Prospectus & Course Brochure | **1** | [Visit Page](https://iqs.org.in/brochure/) |
+| **#4** | Offered Services | **1** | [Visit Page](https://iqs.org.in/service-style-2/) |
+| **#5** | Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS | **1** | [Visit Page](https://iqs.org.in/ruqyah-bangalore/) |
+| **#6** | About Us | **1** | [Visit Page](https://iqs.org.in/about-us/) |
 
 ---
 *Telemetry gathered automatically via Upptime Content Popularity Engine.*
