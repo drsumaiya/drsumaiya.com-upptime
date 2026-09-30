@@ -1,12 +1,12 @@
 # 🤖 Search Engine Indexing & SEO Health Report
-> Last updated: `2026-09-29 11:09:51 UTC`
+> Last updated: `2026-09-30 10:55:34 UTC`
 
 Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sitemaps.
 
 | Site | robots.txt | Sitemap | Indexing Status | Details |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | ✅ OK | ✅ Valid (3 sub-sitemaps) | 🟩 Healthy | XML Sitemap has leading whitespace/newline before '<?xml'. Strict XML parsers or Google Search Console may flag this. |
-| **IQS** | ✅ OK | ✅ Valid (6 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
+| **DrSumaiya.com** | ❌ Failed | ❌ Broken | 🟥 Degraded | robots.txt fetch failed: <urlopen error [Errno 101] Network is unreachable> Sitemap fetch / parse failed: <urlopen error [Errno 101] Network is unreachable> |
+| **IQS** | ❌ Failed | ❌ Broken | 🟥 Degraded | robots.txt fetch failed: <urlopen error [Errno 101] Network is unreachable> Sitemap fetch / parse failed: <urlopen error [Errno 101] Network is unreachable> |
 | **IQS - Hifz Focus** | ✅ OK | ✅ Valid (23 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
 
 ### Diagnostic Rules:
