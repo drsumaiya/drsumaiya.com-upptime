@@ -1,6 +1,6 @@
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-09-30T11:45:14Z`
+> Last updated: `2026-10-01T12:13:55Z`
 
 ### 📱 Mobile
 
@@ -15,7 +15,7 @@
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.3 s |
-| Largest Contentful Paint | 2.3 s |
+| Largest Contentful Paint | 2.4 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.019 |
 | Speed Index | 2.3 s |
@@ -35,7 +35,7 @@
 | First Contentful Paint | 0.7 s |
 | Largest Contentful Paint | 0.7 s |
 | Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.005 |
+| Cumulative Layout Shift | 0.003 |
 | Speed Index | 0.7 s |
 
 ---
