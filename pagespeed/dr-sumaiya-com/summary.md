@@ -1,6 +1,6 @@
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-10-01T12:14:14Z`
+> Last updated: `2026-10-02T11:43:33Z`
 
 ### 📱 Mobile
 
@@ -14,17 +14,17 @@
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 1.7 s |
-| Largest Contentful Paint | 2.2 s |
-| Total Blocking Time | 10 ms |
+| First Contentful Paint | 2.0 s |
+| Largest Contentful Paint | 2.7 s |
+| Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 5.3 s |
+| Speed Index | 3.2 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 99 |
+| Performance | 98 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -32,8 +32,8 @@
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.5 s |
-| Largest Contentful Paint | 0.6 s |
+| First Contentful Paint | 0.8 s |
+| Largest Contentful Paint | 1.0 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.015 |
 | Speed Index | 1.0 s |
