@@ -1,14 +1,14 @@
 # 📋 Lead Intake & Form Health Summary
 
-**Last Probe Run:** `2026-10-02 19:02:32 UTC`  
+**Last Probe Run:** `2026-10-02 23:36:23 UTC`  
 **Total Targets:** 4 | **Passed:** 4 | **Failed:** 0
 
 | Form Target | Page Status | Submission Route | Assets Verified | Health |
 | :--- | :---: | :---: | :---: | :---: |
-| [DrSumaiya - Consultation Inquiry Form](https://drsumaiya.com/inquiry-form/) | HTTP 200 (418.35ms) | `OPTIONS` 200 | 3 assets | 🟢 **PASS** |
-| [DrSumaiya - Patient History Form](https://drsumaiya.com/form/) | HTTP 200 (298.47ms) | Iframe HTTP 200 | 1 assets | 🟢 **PASS** |
-| [IQS - Admissions & Course Inquiry Form](https://iqs.org.in/inquiry/) | HTTP 200 (468.65ms) | `OPTIONS` 200 | 0 assets | 🟢 **PASS** |
-| [Hifz Focus - Student Onboarding Form](https://hifz.iqs.org.in/onboarding) | HTTP 200 (46.74ms) | Client-side | 6 assets | 🟢 **PASS** |
+| [DrSumaiya - Consultation Inquiry Form](https://drsumaiya.com/inquiry-form/) | HTTP 200 (394.27ms) | `OPTIONS` 200 | 3 assets | 🟢 **PASS** |
+| [DrSumaiya - Patient History Form](https://drsumaiya.com/form/) | HTTP 200 (296.85ms) | Iframe HTTP 200 | 1 assets | 🟢 **PASS** |
+| [IQS - Admissions & Course Inquiry Form](https://iqs.org.in/inquiry/) | HTTP 200 (353.56ms) | `OPTIONS` 200 | 0 assets | 🟢 **PASS** |
+| [Hifz Focus - Student Onboarding Form](https://hifz.iqs.org.in/onboarding) | HTTP 200 (52.49ms) | Client-side | 6 assets | 🟢 **PASS** |
 
 ## Detailed Target Breakdown
 
