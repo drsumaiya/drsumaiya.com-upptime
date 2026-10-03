@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-02 10:38:05 UTC",
+  "timestamp": "2026-10-03 09:58:03 UTC",
   "has_critical_error": false,
   "results": [
     {
       "site": "DrSumaiya.com",
       "domain": "drsumaiya.com",
       "slug": "dr-sumaiya-com",
-      "timestamp": "2026-10-02 10:38:05 UTC",
+      "timestamp": "2026-10-03 09:58:03 UTC",
       "mx": {
         "status": "pass",
         "records": [
@@ -53,7 +53,7 @@
       "site": "IQS",
       "domain": "iqs.org.in",
       "slug": "iqs",
-      "timestamp": "2026-10-02 10:38:05 UTC",
+      "timestamp": "2026-10-03 09:58:03 UTC",
       "mx": {
         "status": "pass",
         "records": [
@@ -107,7 +107,7 @@
       "site": "IQS - Hifz Focus",
       "domain": "hifz.iqs.org.in",
       "slug": "iqs-hifz",
-      "timestamp": "2026-10-02 10:38:05 UTC",
+      "timestamp": "2026-10-03 09:58:03 UTC",
       "mx": {
         "status": "skipped",
         "records": [],
