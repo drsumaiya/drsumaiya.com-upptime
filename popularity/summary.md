@@ -1,62 +1,65 @@
 # 📈 Daily Page Views & Content Popularity Report
-*Audit Timestamp: `2026-10-02 07:10:01 UTC` • Automated telemetry via Origin Stats Engine*
+*Audit Timestamp: `2026-10-03 06:42:16 UTC` • Automated telemetry via Origin Stats Engine*
 
 | Monitored Property | Health Status | 24h Views | 7-Day Views | Top Performing Article (24h) |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | 🟢 Live | **43** | 596 | [Choosing the Right Rice for Blood Sugar Management: A D...](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) (10 views) |
-| **IQS** | 🟢 Live | **65** | 1,005 | [Salat al-Istikhara: How to Perform the Prayer for Guida...](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) (14 views) |
+| **DrSumaiya.com** | 🟢 Live | **82** | 698 | [Sitting More Than 10 Hours Daily Increases Heart Failur...](https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/) (24 views) |
+| **IQS** | 🟢 Live | **71** | 1,010 | [Salat al-Istikhara: How to Perform the Prayer for Guida...](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) (16 views) |
 
 ## 🏆 DrSumaiya.com — Top Performing Content
 
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **10** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
-| **#2** | Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home | **3** | [Read Post](https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/) |
-| **#3** | Unlocking Fat Loss: Understanding Gut Digestion, Transit Time & Nutrient Absorption | **1** | [Read Post](https://drsumaiya.com/post/unlocking-the-secret-to-losing-fat-understanding-digestion-and-nutrient-absorption/) |
-| **#4** | 20 Surprising Everyday Foods That Are Secretly High in Sugar | **1** | [Read Post](https://drsumaiya.com/post/20-surprising-foods-that-are-secretly-high-in-sugar/) |
-| **#5** | Choosing the Right Salt: A Registered Dietitian's Complete Guide | **1** | [Read Post](https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/) |
-| **#6** | 10 Quick Diet Tips for Breast Feeding Mothers | **1** | [Read Post](https://drsumaiya.com/post/10-quick-diet-tips-for-breast-feeding-mothers/) |
-| **#7** | The Power of Follow-Ups: Why Regular Visits with Your Registered Dietitian are Crucial for Weight Loss Success | **1** | [Read Post](https://drsumaiya.com/post/importance-of-regular-follow-ups-in-your-weight-loss-journey/) |
-| **#8** | Functional Foods for Quitting tobacco addiction | **1** | [Read Post](https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/) |
-| **#9** | 10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally | **1** | [Read Post](https://drsumaiya.com/post/10-foods-to-boost-your-fertility/) |
-| **#10** | Why Do You Still Crave Sweets After a Meal? The Hidden Link to Insulin Resistance | **1** | [Read Post](https://drsumaiya.com/post/why-do-you-still-crave-sweets-after-a-meal-the-hidden-link-to-insulin-resistance/) |
+| **#1** | Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% — Even With Regular Exercise | **24** | [Read Post](https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/) |
+| **#2** | Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD) | **5** | [Read Post](https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/) |
+| **#3** | Fibre: The Hero of Your Health | **5** | [Read Post](https://drsumaiya.com/post/fibre-the-hero-of-your-health/) |
+| **#4** | Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide | **3** | [Read Post](https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/) |
+| **#5** | Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide | **3** | [Read Post](https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/) |
+| **#6** | Why Do You Still Crave Sweets After a Meal? The Hidden Link to Insulin Resistance | **2** | [Read Post](https://drsumaiya.com/post/why-do-you-still-crave-sweets-after-a-meal-the-hidden-link-to-insulin-resistance/) |
+| **#7** | Optimum Health Series II: Effects of Glucose Spikes on Human Health | **2** | [Read Post](https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/) |
+| **#8** | Intermittent Fasting & Clinical Longevity: Which Fasting Protocol Fits Your Metabolic Health? | **2** | [Read Post](https://drsumaiya.com/post/choosing-the-right-fasting-method-various-forms-of-fasting-and-their-health-benefits/) |
+| **#9** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **2** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
+| **#10** | 30 Proven Tips to Lose 5 Kgs in a Month for Busy Professionals | **2** | [Read Post](https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **11** | [Visit Page](https://drsumaiya.com/) |
-| **#2** | Home page | **4** | [Visit Page](http://drsumaiya.com/) |
-| **#3** | Legal Terms & Clinical Governance Hub | **3** | [Visit Page](https://drsumaiya.com/legal/) |
-| **#4** | About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru | **1** | [Visit Page](https://drsumaiya.com/about/) |
-| **#5** | Plans and Pricing | **1** | [Visit Page](https://drsumaiya.com/plans-pricing/) |
-| **#6** | Inquiry Form | **1** | [Visit Page](https://drsumaiya.com/inquiry-form/) |
+| **#1** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **8** | [Visit Page](https://drsumaiya.com/) |
+| **#2** | Inquiry Form | **3** | [Visit Page](https://drsumaiya.com/inquiry-form/) |
+| **#3** | Home page | **3** | [Visit Page](http://drsumaiya.com/) |
+| **#4** | Plans and Pricing | **1** | [Visit Page](https://drsumaiya.com/plans-pricing/) |
+| **#5** | About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru | **1** | [Visit Page](https://drsumaiya.com/about/) |
+| **#6** | Patient History Form | **1** | [Visit Page](https://drsumaiya.com/form/) |
+| **#7** | Blog | **1** | [Visit Page](https://drsumaiya.com/blog/) |
+| **#8** | Newsletter | **1** | [Visit Page](https://drsumaiya.com/newsletter-signup/) |
 
 ## 🏆 IQS — Top Performing Content
 
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide) | **14** | [Read Post](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) |
-| **#2** | Marriage and General Counseling Service | **12** | [Read Post](https://iqs.org.in/blog/2024/06/05/marriage-and-general-counseling-service/) |
-| **#3** | Muslim Ladies Prayer Places in Bengaluru | **6** | [Read Post](https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/) |
-| **#4** | The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye | **3** | [Read Post](https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/) |
-| **#5** | Difference Between Performing and Establishing Prayer in Islam | **2** | [Read Post](https://iqs.org.in/blog/2024/07/28/difference-performing-establishing-prayer-islam/) |
-| **#6** | Why Artificial Intelligence Chooses Islam: The Ultimate Proof of a Flawless System | **2** | [Read Post](https://iqs.org.in/blog/2026/06/03/why-artificial-intelligence-chooses-islam-the-ultimate-proof-of-a-flawless-system/) |
-| **#7** | Mutawatir Hadiths | **2** | [Read Post](https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/) |
-| **#8** | Lying: A Prohibited Act in Islam | **2** | [Read Post](https://iqs.org.in/blog/2024/06/25/lying-a-prohibited-act-in-islam/) |
-| **#9** | Hifz Quran Memorization | **2** | [Read Post](https://iqs.org.in/courses/hifz-quran-memorization-course/) |
-| **#10** | Avoid use of abbreviations like "Md" or "Mohd" for the name "Muhammad" | **2** | [Read Post](https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/) |
+| **#1** | Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide) | **16** | [Read Post](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) |
+| **#2** | The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye | **10** | [Read Post](https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/) |
+| **#3** | 24 Reasons Why Instagram Facebook Might be Haram for You | **7** | [Read Post](https://iqs.org.in/blog/2023/11/29/why-instagram-and-facebook-might-be-haram-for-you/) |
+| **#4** | Avoid use of abbreviations like "Md" or "Mohd" for the name "Muhammad" | **4** | [Read Post](https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/) |
+| **#5** | Exploring Palindromes in the Quran: A Linguistic Miracle | **2** | [Read Post](https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/) |
+| **#6** | Mutawatir Hadiths | **2** | [Read Post](https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/) |
+| **#7** | Muslim Ladies Prayer Places in Bengaluru | **2** | [Read Post](https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/) |
+| **#8** | Hifz Quran Memorization | **2** | [Read Post](https://iqs.org.in/courses/hifz-quran-memorization-course/) |
+| **#9** | Full-Time Hifz Program: Complete Quran Memorization with IQS & Hifz Focus™ | **2** | [Read Post](https://iqs.org.in/blog/2024/07/20/full-time-hifz-program/) |
+| **#10** | The Worldly Benefits of Charity: 20 Reasons to Give Generously | **2** | [Read Post](https://iqs.org.in/blog/2024/08/03/the-worldly-benefits-of-charity-20-reasons-to-give-generously/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Home - Main | **3** | [Visit Page](https://iqs.org.in/) |
-| **#2** | Home page | **1** | [Visit Page](https://iqs.org.in/) |
-| **#3** | Hifz Focus™ — Intelligent Quran Memorization & Retention Platform | **1** | [Visit Page](https://iqs.org.in/tracker-app/) |
-| **#4** | Islamic Classes for Sisters in Bangalore | Advanced Studies & Tajweed | IQS | **1** | [Visit Page](https://iqs.org.in/islamic-classes-for-sisters-bangalore/) |
-| **#5** | Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS | **1** | [Visit Page](https://iqs.org.in/ruqyah-bangalore/) |
-| **#6** | Sharia Ruqyah Consultation & Spiritual Counseling | **1** | [Visit Page](https://iqs.org.in/ruqya/) |
+| **#1** | Admissions & Course Inquiry | Institute of Quran and Sunnah | **4** | [Visit Page](https://iqs.org.in/inquiry/) |
+| **#2** | Home - Main | **3** | [Visit Page](https://iqs.org.in/) |
+| **#3** | Islamic Courses | **2** | [Visit Page](https://iqs.org.in/islamic-courses/) |
+| **#4** | Is it Shirk? A Practical Guide to Identifying and Avoiding Shirk in Islam | **1** | [Visit Page](https://iqs.org.in/is-it-shirk/) |
+| **#5** | Offered Services | **1** | [Visit Page](https://iqs.org.in/service-style-2/) |
+| **#6** | Hifz Focus™ — Intelligent Quran Memorization & Retention Platform | **1** | [Visit Page](https://iqs.org.in/tracker-app/) |
+| **#7** | Hifz Quran Academy Bangalore | Full-Time & Online Memorization | IQS | **1** | [Visit Page](https://iqs.org.in/hifz-quran-bangalore/) |
 
 ---
 *Telemetry gathered automatically via Upptime Content Popularity Engine.*
