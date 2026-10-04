@@ -9,7 +9,7 @@
   "remaps": 0,
   "excludes": 8,
   "errors": 0,
-  "cached": 30,
+  "cached": 28,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -18,48 +18,18 @@
   "excluded_map": {
     "https://iqs.org.in/": [
       {
-        "url": "mailto:salam@iqs.org.in;",
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 1227,
-          "column": 7
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 942
-        }
-      },
-      {
-        "url": "tel:+917208660987",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2054,
+          "line": 2012,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 451
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20would%20like%20to%20visit%20the%20IQS%20Frazer%20Town%20campus.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2055,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 12949
+          "nanos": 17707
         }
       },
       {
@@ -74,52 +44,22 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 12819
+          "nanos": 15212
         }
       },
       {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20would%20like%20to%20visit%20the%20IQS%20Frazer%20Town%20campus.",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2012,
+          "line": 2055,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 31177
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2054,
-          "column": 107
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 121
-        }
-      },
-      {
-        "url": "mailto: salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2072,
-          "column": 609
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 110
+          "nanos": 27832
         }
       },
       {
@@ -134,14 +74,74 @@
         },
         "duration": {
           "secs": 0,
+          "nanos": 180
+        }
+      },
+      {
+        "url": "tel:+917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2054,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 1302
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2054,
+          "column": 107
+        },
+        "duration": {
+          "secs": 0,
           "nanos": 130
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2072,
+          "column": 609
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 211
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in;",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1227,
+          "column": 7
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 1272
         }
       }
     ]
   },
   "duration": {
-    "secs": 8,
-    "nanos": 119273354
+    "secs": 13,
+    "nanos": 184907814
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/36292529658?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/37177056390?check_suite_focus=true)
