@@ -4,16 +4,16 @@
     "url": "https://DrSumaiya.com",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-com",
-    "status": "up",
-    "uptime": "86.74%",
-    "uptimeDay": "72.43%",
-    "uptimeWeek": "96.06%",
-    "uptimeMonth": "83.68%",
-    "uptimeYear": "86.74%",
+    "status": "down",
+    "uptime": "86.77%",
+    "uptimeDay": "69.03%",
+    "uptimeWeek": "95.58%",
+    "uptimeMonth": "83.85%",
+    "uptimeYear": "86.77%",
     "time": 466,
     "timeDay": 133,
     "timeWeek": 452,
-    "timeMonth": 417,
+    "timeMonth": 418,
     "timeYear": 466,
     "dailyMinutesDown": {
       "2026-08-24": 50,
@@ -38,7 +38,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 397
+      "2026-10-06": 397,
+      "2026-10-07": 49
     }
   },
   {
@@ -46,12 +47,12 @@
     "url": "https://drsumaiya.com/inquiry-form/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-inquiry-form",
-    "status": "up",
-    "uptime": "80.32%",
-    "uptimeDay": "72.44%",
-    "uptimeWeek": "96.06%",
-    "uptimeMonth": "80.32%",
-    "uptimeYear": "80.32%",
+    "status": "down",
+    "uptime": "80.52%",
+    "uptimeDay": "69.38%",
+    "uptimeWeek": "95.63%",
+    "uptimeMonth": "80.52%",
+    "uptimeYear": "80.52%",
     "time": 661,
     "timeDay": 149,
     "timeWeek": 437,
@@ -66,7 +67,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 397
+      "2026-10-06": 397,
+      "2026-10-07": 44
     }
   },
   {
@@ -74,12 +76,12 @@
     "url": "https://drsumaiya.com/form/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-booking-form",
-    "status": "up",
-    "uptime": "80.34%",
-    "uptimeDay": "72.45%",
-    "uptimeWeek": "96.06%",
-    "uptimeMonth": "80.34%",
-    "uptimeYear": "80.34%",
+    "status": "down",
+    "uptime": "80.55%",
+    "uptimeDay": "69.73%",
+    "uptimeWeek": "95.68%",
+    "uptimeMonth": "80.55%",
+    "uptimeYear": "80.55%",
     "time": 534,
     "timeDay": 72,
     "timeWeek": 412,
@@ -94,7 +96,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 397
+      "2026-10-06": 397,
+      "2026-10-07": 39
     }
   },
   {
@@ -102,12 +105,12 @@
     "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-success-stories-post",
-    "status": "up",
-    "uptime": "80.36%",
-    "uptimeDay": "72.47%",
-    "uptimeWeek": "96.07%",
-    "uptimeMonth": "80.36%",
-    "uptimeYear": "80.36%",
+    "status": "down",
+    "uptime": "80.59%",
+    "uptimeDay": "70.09%",
+    "uptimeWeek": "95.73%",
+    "uptimeMonth": "80.59%",
+    "uptimeYear": "80.59%",
     "time": 599,
     "timeDay": 164,
     "timeWeek": 505,
@@ -122,7 +125,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 396
+      "2026-10-06": 396,
+      "2026-10-07": 34
     }
   },
   {
@@ -130,12 +134,12 @@
     "url": "https://drsumaiya.com/wp-json/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-db-and-rest-api",
-    "status": "up",
-    "uptime": "77.32%",
-    "uptimeDay": "72.48%",
-    "uptimeWeek": "96.07%",
-    "uptimeMonth": "77.32%",
-    "uptimeYear": "77.32%",
+    "status": "down",
+    "uptime": "77.68%",
+    "uptimeDay": "70.44%",
+    "uptimeWeek": "95.78%",
+    "uptimeMonth": "77.68%",
+    "uptimeYear": "77.68%",
     "time": 628,
     "timeDay": 188,
     "timeWeek": 453,
@@ -149,7 +153,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 396
+      "2026-10-06": 396,
+      "2026-10-07": 29
     }
   },
   {
@@ -157,12 +162,12 @@
     "url": "https://drsumaiya.com/wp-content/plugins/leadformplugin/basic_form_styling.css",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-form-assets-css",
-    "status": "up",
-    "uptime": "77.32%",
-    "uptimeDay": "72.49%",
-    "uptimeWeek": "96.07%",
-    "uptimeMonth": "77.32%",
-    "uptimeYear": "77.32%",
+    "status": "down",
+    "uptime": "77.71%",
+    "uptimeDay": "70.79%",
+    "uptimeWeek": "95.83%",
+    "uptimeMonth": "77.71%",
+    "uptimeYear": "77.71%",
     "time": 157,
     "timeDay": 46,
     "timeWeek": 222,
@@ -176,7 +181,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 396
+      "2026-10-06": 396,
+      "2026-10-07": 25
     }
   },
   {
@@ -184,16 +190,16 @@
     "url": "https://iqs.org.in",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs",
-    "status": "up",
-    "uptime": "86.88%",
-    "uptimeDay": "72.51%",
-    "uptimeWeek": "96.07%",
-    "uptimeMonth": "83.78%",
-    "uptimeYear": "86.88%",
+    "status": "down",
+    "uptime": "86.96%",
+    "uptimeDay": "71.14%",
+    "uptimeWeek": "95.88%",
+    "uptimeMonth": "84.01%",
+    "uptimeYear": "86.96%",
     "time": 707,
     "timeDay": 178,
     "timeWeek": 567,
-    "timeMonth": 645,
+    "timeMonth": 636,
     "timeYear": 707,
     "dailyMinutesDown": {
       "2026-08-24": 40,
@@ -218,7 +224,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 396
+      "2026-10-06": 396,
+      "2026-10-07": 20
     }
   },
   {
@@ -226,12 +233,12 @@
     "url": "https://iqs.org.in/islamic-courses/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-islamic-courses",
-    "status": "up",
-    "uptime": "80.43%",
-    "uptimeDay": "72.52%",
-    "uptimeWeek": "96.07%",
-    "uptimeMonth": "80.43%",
-    "uptimeYear": "80.43%",
+    "status": "down",
+    "uptime": "80.73%",
+    "uptimeDay": "71.49%",
+    "uptimeWeek": "95.93%",
+    "uptimeMonth": "80.73%",
+    "uptimeYear": "80.73%",
     "time": 553,
     "timeDay": 499,
     "timeWeek": 598,
@@ -246,7 +253,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 396
+      "2026-10-06": 396,
+      "2026-10-07": 15
     }
   },
   {
@@ -254,12 +262,12 @@
     "url": "https://iqs.org.in/inquiry/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-admissions-and-inquiry",
-    "status": "up",
-    "uptime": "80.45%",
-    "uptimeDay": "72.53%",
-    "uptimeWeek": "96.08%",
-    "uptimeMonth": "80.45%",
-    "uptimeYear": "80.45%",
+    "status": "down",
+    "uptime": "80.76%",
+    "uptimeDay": "71.84%",
+    "uptimeWeek": "95.98%",
+    "uptimeMonth": "80.76%",
+    "uptimeYear": "80.76%",
     "time": 534,
     "timeDay": 227,
     "timeWeek": 484,
@@ -274,7 +282,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 396
+      "2026-10-06": 396,
+      "2026-10-07": 10
     }
   },
   {
@@ -282,12 +291,12 @@
     "url": "https://iqs.org.in/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-sidr-leaves-remedy-post",
-    "status": "up",
-    "uptime": "80.47%",
-    "uptimeDay": "72.54%",
-    "uptimeWeek": "96.08%",
-    "uptimeMonth": "80.47%",
-    "uptimeYear": "80.47%",
+    "status": "down",
+    "uptime": "80.80%",
+    "uptimeDay": "72.19%",
+    "uptimeWeek": "96.03%",
+    "uptimeMonth": "80.80%",
+    "uptimeYear": "80.80%",
     "time": 730,
     "timeDay": 1028,
     "timeWeek": 909,
@@ -302,7 +311,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 395
+      "2026-10-06": 395,
+      "2026-10-07": 5
     }
   },
   {
@@ -346,12 +356,12 @@
     "url": "https://iqs.org.in/wp-json/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-db-and-rest-api",
-    "status": "up",
-    "uptime": "77.45%",
-    "uptimeDay": "72.55%",
+    "status": "down",
+    "uptime": "77.93%",
+    "uptimeDay": "72.54%",
     "uptimeWeek": "96.08%",
-    "uptimeMonth": "77.45%",
-    "uptimeYear": "77.45%",
+    "uptimeMonth": "77.93%",
+    "uptimeYear": "77.93%",
     "time": 513,
     "timeDay": 378,
     "timeWeek": 618,
@@ -365,7 +375,8 @@
       "2026-09-25": 1440,
       "2026-09-24": 1440,
       "2026-09-23": 1440,
-      "2026-10-06": 395
+      "2026-10-06": 395,
+      "2026-10-07": 0
     }
   }
 ]
