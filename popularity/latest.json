@@ -1,49 +1,42 @@
 {
-  "timestamp": "2026-10-07 07:23:51 UTC",
+  "timestamp": "2026-10-08 07:39:15 UTC",
   "sites": [
     {
       "name": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "domain": "https://drsumaiya.com",
       "status": "online",
-      "timestamp": "2026-10-07 07:23:51 UTC",
-      "views_24h": 56,
-      "views_7d": 985,
+      "timestamp": "2026-10-08 07:39:15 UTC",
+      "views_24h": 29,
+      "views_7d": 969,
       "pages_24h": [
         {
           "post_id": 1373,
           "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
           "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 8
-        },
-        {
-          "post_id": 1868,
-          "title": "Blog",
-          "url": "https://drsumaiya.com/blog/",
-          "type": "page",
-          "views": 3
+          "views": 4
         },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 2
-        },
-        {
-          "post_id": 2534,
-          "title": "Inquiry Form",
-          "url": "https://drsumaiya.com/inquiry-form/",
-          "type": "page",
-          "views": 2
+          "views": 3
         },
         {
           "post_id": 1839,
           "title": "Patient History Form",
           "url": "https://drsumaiya.com/form/",
           "type": "page",
-          "views": 2
+          "views": 1
+        },
+        {
+          "post_id": 1868,
+          "title": "Blog",
+          "url": "https://drsumaiya.com/blog/",
+          "type": "page",
+          "views": 1
         },
         {
           "post_id": 1943,
@@ -51,48 +44,27 @@
           "url": "https://drsumaiya.com/plans-pricing/",
           "type": "page",
           "views": 1
-        },
-        {
-          "post_id": 3227,
-          "title": "Edit Profile",
-          "url": "https://drsumaiya.com/edit-profile/",
-          "type": "page",
-          "views": 1
         }
       ],
       "posts_24h": [
         {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
+          "post_id": 3964,
+          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
+          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
           "type": "post",
-          "views": 8
+          "views": 3
         },
         {
-          "post_id": 4039,
-          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
-          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 3955,
-          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
+          "post_id": 4723,
+          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
+          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
           "type": "post",
           "views": 2
         },
         {
-          "post_id": 4081,
-          "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1587,
-          "title": "Quality Sleep & Metabolic Health: How Deep Rest Drives Fat Loss & Insulin Control",
-          "url": "https://drsumaiya.com/post/11-benefits-of-having-a-quality-sleep/",
+          "post_id": 1628,
+          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
+          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
           "type": "post",
           "views": 2
         },
@@ -101,47 +73,19 @@
           "title": "The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide",
           "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
           "type": "post",
-          "views": 1
+          "views": 2
         },
         {
-          "post_id": 1630,
-          "title": "The Vital Role of Iron in Your Body: Functions and Health",
-          "url": "https://drsumaiya.com/post/functions-of-iron/",
+          "post_id": 1656,
+          "title": "Ramadan Nutrition: 20 Mistakes to Avoid for a Healthy Fast",
+          "url": "https://drsumaiya.com/post/ramadan-nutrition-20-mistakes-to-avoid-for-a-healthy-fast/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4164,
-          "title": "A Family Affair: How to Help Your Teen Embrace a Healthy Lifestyle (Without the Drama)",
-          "url": "https://drsumaiya.com/post/a-family-affair-how-to-help-your-teen-embrace-a-healthy-lifestyle-without-the-drama/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1675,
-          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
-          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4715,
-          "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
-          "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4005,
-          "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
-          "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1642,
-          "title": "Decode Your Food Labels: The Power of Whole Food Ingredients",
-          "url": "https://drsumaiya.com/post/decode-your-food-labels-the-power-of-whole-food-ingredients/",
+          "post_id": 1679,
+          "title": "Functional Foods for Quitting tobacco addiction",
+          "url": "https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/",
           "type": "post",
           "views": 1
         },
@@ -153,55 +97,6 @@
           "views": 1
         },
         {
-          "post_id": 4723,
-          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
-          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1650,
-          "title": "All about Air frying (Part 1)",
-          "url": "https://drsumaiya.com/post/all-about-air-frying-part-1/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1677,
-          "title": "Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD)",
-          "url": "https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3732,
-          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
-          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1691,
-          "title": "20 Surprising Everyday Foods That Are Secretly High in Sugar",
-          "url": "https://drsumaiya.com/post/20-surprising-foods-that-are-secretly-high-in-sugar/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3964,
-          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
-          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
-          "type": "post",
-          "views": 1
-        },
-        {
           "post_id": 1723,
           "title": "30 Proven Tips to Lose 5 Kgs in a Month for Busy Professionals",
           "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
@@ -209,9 +104,9 @@
           "views": 1
         },
         {
-          "post_id": 1596,
-          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
-          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
+          "post_id": 1617,
+          "title": "Hidden Calories in the Indian Diet: Cooking Oils, Chai & Restaurant Sabzis Decoded",
+          "url": "https://drsumaiya.com/post/cracking-the-mystery-of-hidden-calories-tips-from-a-dietitian/",
           "type": "post",
           "views": 1
         },
@@ -223,9 +118,30 @@
           "views": 1
         },
         {
-          "post_id": 4348,
-          "title": "The Silent Power of Good Nutrition: How Clinical Nutrition Rebuilds Your Metabolic Health & Longevity",
-          "url": "https://drsumaiya.com/post/the-silent-power-of-good-nutrition-the-investment-that-pays-you-back-every-single-day/",
+          "post_id": 4172,
+          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
+          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1675,
+          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
+          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4672,
+          "title": "Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide",
+          "url": "https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1686,
+          "title": "Unlocking Fat Loss: Understanding Gut Digestion, Transit Time & Nutrient Absorption",
+          "url": "https://drsumaiya.com/post/unlocking-the-secret-to-losing-fat-understanding-digestion-and-nutrient-absorption/",
           "type": "post",
           "views": 1
         }
@@ -236,69 +152,34 @@
           "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
           "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 8
-        },
-        {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
-          "type": "post",
-          "views": 8
-        },
-        {
-          "post_id": 4039,
-          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
-          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
-          "type": "post",
           "views": 4
-        },
-        {
-          "post_id": 1868,
-          "title": "Blog",
-          "url": "https://drsumaiya.com/blog/",
-          "type": "page",
-          "views": 3
-        },
-        {
-          "post_id": 3955,
-          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
-          "type": "post",
-          "views": 2
         },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 2
+          "views": 3
         },
         {
-          "post_id": 4081,
-          "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
+          "post_id": 3964,
+          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
+          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 4723,
+          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
+          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
           "type": "post",
           "views": 2
         },
         {
-          "post_id": 2534,
-          "title": "Inquiry Form",
-          "url": "https://drsumaiya.com/inquiry-form/",
-          "type": "page",
-          "views": 2
-        },
-        {
-          "post_id": 1587,
-          "title": "Quality Sleep & Metabolic Health: How Deep Rest Drives Fat Loss & Insulin Control",
-          "url": "https://drsumaiya.com/post/11-benefits-of-having-a-quality-sleep/",
+          "post_id": 1628,
+          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
+          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
           "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1839,
-          "title": "Patient History Form",
-          "url": "https://drsumaiya.com/form/",
-          "type": "page",
           "views": 2
         },
         {
@@ -306,61 +187,19 @@
           "title": "The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide",
           "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
           "type": "post",
-          "views": 1
+          "views": 2
         },
         {
-          "post_id": 1630,
-          "title": "The Vital Role of Iron in Your Body: Functions and Health",
-          "url": "https://drsumaiya.com/post/functions-of-iron/",
+          "post_id": 1656,
+          "title": "Ramadan Nutrition: 20 Mistakes to Avoid for a Healthy Fast",
+          "url": "https://drsumaiya.com/post/ramadan-nutrition-20-mistakes-to-avoid-for-a-healthy-fast/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4164,
-          "title": "A Family Affair: How to Help Your Teen Embrace a Healthy Lifestyle (Without the Drama)",
-          "url": "https://drsumaiya.com/post/a-family-affair-how-to-help-your-teen-embrace-a-healthy-lifestyle-without-the-drama/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1675,
-          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
-          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4715,
-          "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
-          "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1943,
-          "title": "Plans and Pricing",
-          "url": "https://drsumaiya.com/plans-pricing/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 3227,
-          "title": "Edit Profile",
-          "url": "https://drsumaiya.com/edit-profile/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 4005,
-          "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
-          "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1642,
-          "title": "Decode Your Food Labels: The Power of Whole Food Ingredients",
-          "url": "https://drsumaiya.com/post/decode-your-food-labels-the-power-of-whole-food-ingredients/",
+          "post_id": 1679,
+          "title": "Functional Foods for Quitting tobacco addiction",
+          "url": "https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/",
           "type": "post",
           "views": 1
         },
@@ -372,55 +211,6 @@
           "views": 1
         },
         {
-          "post_id": 4723,
-          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
-          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1650,
-          "title": "All about Air frying (Part 1)",
-          "url": "https://drsumaiya.com/post/all-about-air-frying-part-1/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1677,
-          "title": "Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD)",
-          "url": "https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3732,
-          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
-          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1691,
-          "title": "20 Surprising Everyday Foods That Are Secretly High in Sugar",
-          "url": "https://drsumaiya.com/post/20-surprising-foods-that-are-secretly-high-in-sugar/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3964,
-          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
-          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
-          "type": "post",
-          "views": 1
-        },
-        {
           "post_id": 1723,
           "title": "30 Proven Tips to Lose 5 Kgs in a Month for Busy Professionals",
           "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
@@ -428,10 +218,31 @@
           "views": 1
         },
         {
-          "post_id": 1596,
-          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
-          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
+          "post_id": 1839,
+          "title": "Patient History Form",
+          "url": "https://drsumaiya.com/form/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 1617,
+          "title": "Hidden Calories in the Indian Diet: Cooking Oils, Chai & Restaurant Sabzis Decoded",
+          "url": "https://drsumaiya.com/post/cracking-the-mystery-of-hidden-calories-tips-from-a-dietitian/",
           "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1868,
+          "title": "Blog",
+          "url": "https://drsumaiya.com/blog/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 1943,
+          "title": "Plans and Pricing",
+          "url": "https://drsumaiya.com/plans-pricing/",
+          "type": "page",
           "views": 1
         },
         {
@@ -442,9 +253,30 @@
           "views": 1
         },
         {
-          "post_id": 4348,
-          "title": "The Silent Power of Good Nutrition: How Clinical Nutrition Rebuilds Your Metabolic Health & Longevity",
-          "url": "https://drsumaiya.com/post/the-silent-power-of-good-nutrition-the-investment-that-pays-you-back-every-single-day/",
+          "post_id": 4172,
+          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
+          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1675,
+          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
+          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4672,
+          "title": "Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide",
+          "url": "https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1686,
+          "title": "Unlocking Fat Loss: Understanding Gut Digestion, Transit Time & Nutrient Absorption",
+          "url": "https://drsumaiya.com/post/unlocking-the-secret-to-losing-fat-understanding-digestion-and-nutrient-absorption/",
           "type": "post",
           "views": 1
         }
@@ -469,21 +301,14 @@
           "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
           "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
           "type": "post",
-          "views": 100
+          "views": 105
         },
         {
           "post_id": 1866,
           "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
           "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
           "type": "post",
-          "views": 57
-        },
-        {
-          "post_id": 4081,
-          "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
-          "type": "post",
-          "views": 31
+          "views": 50
         },
         {
           "post_id": 4066,
@@ -497,41 +322,41 @@
           "title": "Patient History Form",
           "url": "https://drsumaiya.com/form/",
           "type": "page",
-          "views": 27
-        },
-        {
-          "post_id": 3955,
-          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
-          "type": "post",
-          "views": 26
+          "views": 29
         },
         {
           "post_id": 4039,
           "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
           "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
           "type": "post",
-          "views": 23
+          "views": 25
         },
         {
-          "post_id": 1677,
-          "title": "Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD)",
-          "url": "https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/",
+          "post_id": 3955,
+          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
           "type": "post",
-          "views": 20
+          "views": 24
         },
         {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
+          "post_id": 4081,
+          "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
+          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
           "type": "post",
-          "views": 20
+          "views": 22
         },
         {
           "post_id": 1943,
           "title": "Plans and Pricing",
           "url": "https://drsumaiya.com/plans-pricing/",
           "type": "page",
+          "views": 22
+        },
+        {
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
+          "type": "post",
           "views": 19
         },
         {
@@ -553,7 +378,7 @@
           "title": "30 Proven Tips to Lose 5 Kgs in a Month for Busy Professionals",
           "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
           "type": "post",
-          "views": 16
+          "views": 17
         },
         {
           "post_id": 1603,
@@ -563,23 +388,16 @@
           "views": 14
         },
         {
-          "post_id": 1868,
-          "title": "Blog",
-          "url": "https://drsumaiya.com/blog/",
-          "type": "page",
-          "views": 13
-        },
-        {
           "post_id": 4672,
           "title": "Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide",
           "url": "https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/",
           "type": "post",
-          "views": 13
+          "views": 14
         },
         {
-          "post_id": 1691,
-          "title": "20 Surprising Everyday Foods That Are Secretly High in Sugar",
-          "url": "https://drsumaiya.com/post/20-surprising-foods-that-are-secretly-high-in-sugar/",
+          "post_id": 3964,
+          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
+          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
           "type": "post",
           "views": 12
         },
@@ -591,31 +409,45 @@
           "views": 11
         },
         {
+          "post_id": 1868,
+          "title": "Blog",
+          "url": "https://drsumaiya.com/blog/",
+          "type": "page",
+          "views": 11
+        },
+        {
+          "post_id": 1691,
+          "title": "20 Surprising Everyday Foods That Are Secretly High in Sugar",
+          "url": "https://drsumaiya.com/post/20-surprising-foods-that-are-secretly-high-in-sugar/",
+          "type": "post",
+          "views": 10
+        },
+        {
           "post_id": 1628,
           "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
           "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
           "type": "post",
-          "views": 9
+          "views": 10
         },
         {
-          "post_id": 3964,
-          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
-          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
+          "post_id": 1677,
+          "title": "Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD)",
+          "url": "https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/",
           "type": "post",
           "views": 9
-        },
-        {
-          "post_id": 1606,
-          "title": "Intermittent Fasting & Clinical Longevity: Which Fasting Protocol Fits Your Metabolic Health?",
-          "url": "https://drsumaiya.com/post/choosing-the-right-fasting-method-various-forms-of-fasting-and-their-health-benefits/",
-          "type": "post",
-          "views": 7
         },
         {
           "post_id": 2320,
           "title": "Legal Terms & Clinical Governance Hub",
           "url": "https://drsumaiya.com/legal/",
           "type": "page",
+          "views": 7
+        },
+        {
+          "post_id": 4723,
+          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
+          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
+          "type": "post",
           "views": 7
         },
         {
@@ -633,11 +465,18 @@
           "views": 6
         },
         {
-          "post_id": 1734,
-          "title": "Measuring cups and spoons, a benifical tool to control your portion size.",
-          "url": "https://drsumaiya.com/post/measuring-cups-and-spoons-a-benifical-tool-to-control-your-portion-size/",
+          "post_id": 1606,
+          "title": "Intermittent Fasting & Clinical Longevity: Which Fasting Protocol Fits Your Metabolic Health?",
+          "url": "https://drsumaiya.com/post/choosing-the-right-fasting-method-various-forms-of-fasting-and-their-health-benefits/",
           "type": "post",
-          "views": 5
+          "views": 6
+        },
+        {
+          "post_id": 1675,
+          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
+          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
+          "type": "post",
+          "views": 6
         },
         {
           "post_id": 1679,
@@ -647,16 +486,16 @@
           "views": 5
         },
         {
-          "post_id": 1675,
-          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
-          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
+          "post_id": 4114,
+          "title": "Why Do You Still Crave Sweets After a Meal? The Hidden Link to Insulin Resistance",
+          "url": "https://drsumaiya.com/post/why-do-you-still-crave-sweets-after-a-meal-the-hidden-link-to-insulin-resistance/",
           "type": "post",
           "views": 5
         },
         {
-          "post_id": 4114,
-          "title": "Why Do You Still Crave Sweets After a Meal? The Hidden Link to Insulin Resistance",
-          "url": "https://drsumaiya.com/post/why-do-you-still-crave-sweets-after-a-meal-the-hidden-link-to-insulin-resistance/",
+          "post_id": 1685,
+          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
+          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
           "type": "post",
           "views": 5
         },
@@ -675,20 +514,6 @@
           "views": 5
         },
         {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
-          "type": "post",
-          "views": 5
-        },
-        {
-          "post_id": 4723,
-          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
-          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
-          "type": "post",
-          "views": 5
-        },
-        {
           "post_id": 4715,
           "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
           "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
@@ -696,16 +521,16 @@
           "views": 5
         },
         {
-          "post_id": 3906,
-          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
-          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
+          "post_id": 4130,
+          "title": "Top immunity boosting foods",
+          "url": "https://drsumaiya.com/post/top-immunity-boosting-foods/",
           "type": "post",
           "views": 4
         },
         {
-          "post_id": 4130,
-          "title": "Top immunity boosting foods",
-          "url": "https://drsumaiya.com/post/top-immunity-boosting-foods/",
+          "post_id": 1605,
+          "title": "How to Spot Fraudulent Weight Loss Programs in India: 10 Clinical Red Flags & Dietitian Guide",
+          "url": "https://drsumaiya.com/post/10-tips-to-catch-fraudulent-weight-loss-programs-in-india/",
           "type": "post",
           "views": 4
         },
@@ -731,30 +556,16 @@
           "views": 4
         },
         {
-          "post_id": 4625,
-          "title": "Grade 1 Fatty Liver (NAFLD) Reversal: Clinical Indian Diet Protocol & SGPT/ALT Guide",
-          "url": "https://drsumaiya.com/post/grade-1-fatty-liver-diet-chart-indian-protocol/",
+          "post_id": 1620,
+          "title": "The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide",
+          "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
           "type": "post",
-          "views": 3
+          "views": 4
         },
         {
-          "post_id": 4172,
-          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
-          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1641,
-          "title": "PCOS Diet & Metabolic Management: Reversing Insulin Resistance Naturally",
-          "url": "https://drsumaiya.com/post/the-role-of-weight-loss-and-healthy-lifestyle-in-managing-pcos/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1721,
-          "title": "Why You Should Eat the Rainbow: The Surprising Benefits of Colorful Eating",
-          "url": "https://drsumaiya.com/post/why-you-should-eat-the-rainbow-the-surprising-benefits-of-colorful-eating/",
+          "post_id": 1617,
+          "title": "Hidden Calories in the Indian Diet: Cooking Oils, Chai & Restaurant Sabzis Decoded",
+          "url": "https://drsumaiya.com/post/cracking-the-mystery-of-hidden-calories-tips-from-a-dietitian/",
           "type": "post",
           "views": 3
         },
@@ -766,13 +577,6 @@
           "views": 3
         },
         {
-          "post_id": 1605,
-          "title": "How to Spot Fraudulent Weight Loss Programs in India: 10 Clinical Red Flags & Dietitian Guide",
-          "url": "https://drsumaiya.com/post/10-tips-to-catch-fraudulent-weight-loss-programs-in-india/",
-          "type": "post",
-          "views": 3
-        },
-        {
           "post_id": 3911,
           "title": "The Ultimate Guide to Khapli Atta: Ancient Grain for Modern Health",
           "url": "https://drsumaiya.com/post/the-ultimate-guide-to-khapli-atta-ancient-grain-for-modern-health/",
@@ -780,9 +584,30 @@
           "views": 3
         },
         {
+          "post_id": 4172,
+          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
+          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 1734,
+          "title": "Measuring cups and spoons, a benifical tool to control your portion size.",
+          "url": "https://drsumaiya.com/post/measuring-cups-and-spoons-a-benifical-tool-to-control-your-portion-size/",
+          "type": "post",
+          "views": 3
+        },
+        {
           "post_id": 3970,
           "title": "Mounjaro in India: Diet Plan, Price, Side Effects & Complete Nutrition Guide (2026)",
           "url": "https://drsumaiya.com/post/mounjaro-in-india-a-nutritionists-deep-dive-into-the-new-weight-loss-diabetes-injection/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 3906,
+          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
+          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
           "type": "post",
           "views": 3
         },
@@ -799,41 +624,6 @@
           "url": "https://drsumaiya.com/post/the-pros-and-cons-of-popular-diets-keto-paleo-vegan-and-more/",
           "type": "post",
           "views": 3
-        },
-        {
-          "post_id": 3227,
-          "title": "Edit Profile",
-          "url": "https://drsumaiya.com/edit-profile/",
-          "type": "page",
-          "views": 2
-        },
-        {
-          "post_id": 1625,
-          "title": "Top 10 Supplements for Enhancing Health Span",
-          "url": "https://drsumaiya.com/post/top-10-supplements-for-enhancing-health-span/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1623,
-          "title": "Eating for Better Sleep: How Foods and Nutrients Support Rest",
-          "url": "https://drsumaiya.com/post/eating-for-better-sleep-how-certain-foods-and-nutrients-can-help-promote-better-sleep/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1670,
-          "title": "The Power of Follow-Ups: Why Regular Visits with Your Registered Dietitian are Crucial for Weight Loss Success",
-          "url": "https://drsumaiya.com/post/importance-of-regular-follow-ups-in-your-weight-loss-journey/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1630,
-          "title": "The Vital Role of Iron in Your Body: Functions and Health",
-          "url": "https://drsumaiya.com/post/functions-of-iron/",
-          "type": "post",
-          "views": 2
         },
         {
           "post_id": 1399,
@@ -869,6 +659,48 @@
           "url": "https://drsumaiya.com/post/a-family-affair-how-to-help-your-teen-embrace-a-healthy-lifestyle-without-the-drama/",
           "type": "post",
           "views": 2
+        },
+        {
+          "post_id": 1586,
+          "title": "Foods That Spike Blood Glucose: 15 Hidden High-Glycemic Indian Foods to Avoid",
+          "url": "https://drsumaiya.com/post/foods-that-spike-blood-glucose-what-to-avoid-for-better-health/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1699,
+          "title": "How do you train yourself to eat for nutrition and not for taste?",
+          "url": "https://drsumaiya.com/post/how-do-you-train-yourself-to-eat-for-nutrition-and-not-for-taste/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 4104,
+          "title": "Eating for Weight Loss: Nourish, Don\u2019t Starve",
+          "url": "https://drsumaiya.com/post/eating-for-weight-loss-nourish-dont-starve/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1641,
+          "title": "PCOS Diet & Metabolic Management: Reversing Insulin Resistance Naturally",
+          "url": "https://drsumaiya.com/post/the-role-of-weight-loss-and-healthy-lifestyle-in-managing-pcos/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 4035,
+          "title": "Beet the Odds: A Therapeutic Superfood Backed by Science",
+          "url": "https://drsumaiya.com/post/beet-the-odds-a-therapeutic-superfood-backed-by-science/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1597,
+          "title": "Clinical Nutrition Consultation with Dr. Sumaiya: Process, Biomarkers & Treatment FAQs",
+          "url": "https://drsumaiya.com/post/frequently-asked-questions-to-dr-sumaiya-petiwala/",
+          "type": "post",
+          "views": 2
         }
       ]
     },
@@ -877,7 +709,7 @@
       "slug": "iqs",
       "domain": "https://iqs.org.in",
       "status": "unavailable",
-      "timestamp": "2026-10-07 07:23:51 UTC",
+      "timestamp": "2026-10-08 07:39:15 UTC",
       "views_24h": 0,
       "views_7d": 0,
       "pages_24h": [],
