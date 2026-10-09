@@ -1,61 +1,152 @@
 {
-  "last_updated": "2026-10-09T05:08:34.748014+00:00",
+  "last_updated": "2026-10-09T12:47:22.183969+00:00",
   "total_targets": 4,
-  "passed": 1,
-  "failed": 3,
+  "passed": 4,
+  "failed": 0,
   "targets": [
     {
       "id": "drsumaiya-inquiry",
       "name": "DrSumaiya - Consultation Inquiry Form",
       "page_url": "https://drsumaiya.com/inquiry-form/",
-      "overall_status": "FAIL",
-      "failures": [
-        "Page returned HTTP 403 instead of 200"
-      ],
+      "overall_status": "PASS",
+      "failures": [],
       "checks": {
         "page": {
           "url": "https://drsumaiya.com/inquiry-form/",
-          "status_code": 403,
-          "latency_ms": 109.16,
-          "status": "FAIL",
-          "error": "HTTP 403: Forbidden"
-        }
+          "status_code": 200,
+          "latency_ms": 1232.1,
+          "status": "PASS",
+          "error": null
+        },
+        "dom_form": {
+          "status": "PASS",
+          "pattern": "<form\\b[^>]*class=[\"\\'][^\"\\']*nutricareLeadForm[^\"\\']*[\"\\']"
+        },
+        "dom_inputs": {
+          "status": "PASS",
+          "checked": [
+            "name",
+            "phone",
+            "email",
+            "lead_id"
+          ]
+        },
+        "submission_endpoint": {
+          "url": "https://drsumaiya.com/wp-json/nutricare/v1/submit",
+          "method": "OPTIONS",
+          "status_code": 200,
+          "latency_ms": 2909.85,
+          "allow_header": "POST",
+          "status": "PASS",
+          "error": null
+        },
+        "assets": [
+          {
+            "url": "https://drsumaiya.com/wp-content/plugins/badgeplugin/assets/css/badge-styles.css",
+            "status_code": 200,
+            "bytes": 1118,
+            "latency_ms": 799.32,
+            "status": "PASS",
+            "error": null
+          },
+          {
+            "url": "https://drsumaiya.com/wp-content/plugins/drsumaiyacoreplugin/assets/css/portal-common.css",
+            "status_code": 200,
+            "bytes": 5598,
+            "latency_ms": 837.98,
+            "status": "PASS",
+            "error": null
+          },
+          {
+            "url": "https://drsumaiya.com/wp-content/plugins/leadformplugin/basic_form_styling.css",
+            "status_code": 200,
+            "bytes": 8797,
+            "latency_ms": 790.19,
+            "status": "PASS",
+            "error": null
+          }
+        ]
       }
     },
     {
       "id": "drsumaiya-booking",
       "name": "DrSumaiya - Patient History Form",
       "page_url": "https://drsumaiya.com/form/",
-      "overall_status": "FAIL",
-      "failures": [
-        "Page returned HTTP 403 instead of 200"
-      ],
+      "overall_status": "PASS",
+      "failures": [],
       "checks": {
         "page": {
           "url": "https://drsumaiya.com/form/",
-          "status_code": 403,
-          "latency_ms": 59.58,
-          "status": "FAIL",
-          "error": "HTTP 403: Forbidden"
-        }
+          "status_code": 200,
+          "latency_ms": 1140.51,
+          "status": "PASS",
+          "error": null
+        },
+        "dom_form": {
+          "status": "PASS",
+          "pattern": "id=[\"\\']formIframe[\"\\']"
+        },
+        "dom_inputs": {
+          "status": "PASS",
+          "checked": []
+        },
+        "iframe_target": {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdOnU6NJUiOTLHouIEhRpnqIUiNV40TfUqFLdtuflvUulLkAg/viewform?embedded=true",
+          "status_code": 200,
+          "latency_ms": 336.68,
+          "disallowed_content_found": null,
+          "status": "PASS",
+          "error": null
+        },
+        "assets": [
+          {
+            "url": "https://drsumaiya.com/wp-content/plugins/leadformplugin/basic_form_styling.css",
+            "status_code": 200,
+            "bytes": 8797,
+            "latency_ms": 21.46,
+            "status": "PASS",
+            "error": null
+          }
+        ]
       }
     },
     {
       "id": "iqs-inquiry",
       "name": "IQS - Admissions & Course Inquiry Form",
       "page_url": "https://iqs.org.in/inquiry/",
-      "overall_status": "FAIL",
-      "failures": [
-        "Page returned HTTP 403 instead of 200"
-      ],
+      "overall_status": "PASS",
+      "failures": [],
       "checks": {
         "page": {
           "url": "https://iqs.org.in/inquiry/",
-          "status_code": 403,
-          "latency_ms": 93.89,
-          "status": "FAIL",
-          "error": "HTTP 403: Forbidden"
-        }
+          "status_code": 200,
+          "latency_ms": 1166.89,
+          "status": "PASS",
+          "error": null
+        },
+        "dom_form": {
+          "status": "PASS",
+          "pattern": "<form\\b[^>]*class=[\"\\'][^\"\\']*iqs-inq-form[^\"\\']*[\"\\']"
+        },
+        "dom_inputs": {
+          "status": "PASS",
+          "checked": [
+            "name",
+            "phone",
+            "email",
+            "lead_id"
+          ]
+        },
+        "submission_endpoint": {
+          "url": "https://iqs.org.in/wp-json/iqs/v1/inquiry",
+          "method": "OPTIONS",
+          "status_code": 200,
+          "latency_ms": 1061.24,
+          "allow_header": "POST",
+          "status": "PASS",
+          "error": null
+        },
+        "assets": []
       }
     },
     {
@@ -68,7 +159,7 @@
         "page": {
           "url": "https://hifz.iqs.org.in/onboarding",
           "status_code": 200,
-          "latency_ms": 199.96,
+          "latency_ms": 57.34,
           "status": "PASS",
           "error": null
         },
@@ -89,7 +180,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/07k99lghf4rn5.js",
             "status_code": 200,
             "bytes": 38720,
-            "latency_ms": 195.93,
+            "latency_ms": 57.3,
             "status": "PASS",
             "error": null
           },
@@ -97,7 +188,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/09dt24qk2jal7.js",
             "status_code": 200,
             "bytes": 27821,
-            "latency_ms": 185.15,
+            "latency_ms": 43.47,
             "status": "PASS",
             "error": null
           },
@@ -105,7 +196,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0_0khkb4at0iy.css",
             "status_code": 200,
             "bytes": 74963,
-            "latency_ms": 162.85,
+            "latency_ms": 86.33,
             "status": "PASS",
             "error": null
           },
@@ -113,7 +204,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0aqz5458p0_r4.js",
             "status_code": 200,
             "bytes": 30951,
-            "latency_ms": 194.47,
+            "latency_ms": 54.96,
             "status": "PASS",
             "error": null
           },
@@ -121,7 +212,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0cz1d0mv5g_q7.js",
             "status_code": 200,
             "bytes": 112594,
-            "latency_ms": 182.14,
+            "latency_ms": 17.98,
             "status": "PASS",
             "error": null
           },
@@ -129,7 +220,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0id6aevbwms6i.js",
             "status_code": 200,
             "bytes": 129047,
-            "latency_ms": 614.0,
+            "latency_ms": 49.85,
             "status": "PASS",
             "error": null
           }
