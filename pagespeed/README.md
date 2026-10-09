@@ -4,13 +4,13 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-10-08T12:38:23Z`
+> Last updated: `2026-10-09T12:25:26Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 94 |
+| Performance | 98 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -18,17 +18,17 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 2.0 s |
-| Largest Contentful Paint | 2.7 s |
-| Total Blocking Time | 30 ms |
-| Cumulative Layout Shift | 0 |
-| Speed Index | 2.9 s |
+| First Contentful Paint | 1.5 s |
+| Largest Contentful Paint | 2.1 s |
+| Total Blocking Time | 0 ms |
+| Cumulative Layout Shift | 0.003 |
+| Speed Index | 2.5 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 95 |
+| Performance | 99 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -37,22 +37,22 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 0.5 s |
-| Largest Contentful Paint | 0.6 s |
-| Total Blocking Time | 80 ms |
-| Cumulative Layout Shift | 0.108 |
-| Speed Index | 1.4 s |
+| Largest Contentful Paint | 0.7 s |
+| Total Blocking Time | 0 ms |
+| Cumulative Layout Shift | 0.015 |
+| Speed Index | 1.3 s |
 
 ---
 
 ## IQS - Hifz Focus — [`https://hifz.iqs.org.in/`](https://hifz.iqs.org.in/)
 
-> Last updated: `2026-10-08T12:38:11Z`
+> Last updated: `2026-10-09T12:25:37Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 79 |
+| Performance | 77 |
 | Accessibility | 89 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -61,16 +61,16 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.6 s |
-| Largest Contentful Paint | 4.5 s |
-| Total Blocking Time | 90 ms |
-| Cumulative Layout Shift | 0.078 |
+| Largest Contentful Paint | 4.7 s |
+| Total Blocking Time | 170 ms |
+| Cumulative Layout Shift | 0 |
 | Speed Index | 2.6 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 93 |
+| Performance | 91 |
 | Accessibility | 88 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -80,21 +80,21 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | --- | --- |
 | First Contentful Paint | 0.7 s |
 | Largest Contentful Paint | 1.1 s |
-| Total Blocking Time | 160 ms |
+| Total Blocking Time | 190 ms |
 | Cumulative Layout Shift | 0.08 |
-| Speed Index | 0.8 s |
+| Speed Index | 0.7 s |
 
 ---
 
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-10-08T12:37:59Z`
+> Last updated: `2026-10-09T12:25:26Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 96 |
+| Performance | 95 |
 | Accessibility | 91 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -103,9 +103,9 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.3 s |
-| Largest Contentful Paint | 2.3 s |
+| Largest Contentful Paint | 2.4 s |
 | Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0 |
+| Cumulative Layout Shift | 0.019 |
 | Speed Index | 2.3 s |
 
 ### 🖥️ Desktop
@@ -120,10 +120,10 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.6 s |
-| Largest Contentful Paint | 0.9 s |
+| First Contentful Paint | 0.7 s |
+| Largest Contentful Paint | 0.7 s |
 | Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.003 |
+| Cumulative Layout Shift | 0.005 |
 | Speed Index | 0.7 s |
 
 ---
