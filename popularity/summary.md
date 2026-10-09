@@ -1,9 +1,9 @@
 # 📈 Daily Page Views & Content Popularity Report
-*Audit Timestamp: `2026-10-08 07:39:15 UTC` • Automated telemetry via Origin Stats Engine*
+*Audit Timestamp: `2026-10-09 07:35:36 UTC` • Automated telemetry via Origin Stats Engine*
 
 | Monitored Property | Health Status | 24h Views | 7-Day Views | Top Performing Article (24h) |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | 🟢 Live | **29** | 969 | [Overcoming the Hard Gainer Challenge: Effective Weight ...](https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/) (3 views) |
+| **DrSumaiya.com** | 🟢 Live | **39** | 966 | [Mounjaro in India: Diet Plan, Price, Side Effects & Com...](https://drsumaiya.com/post/mounjaro-in-india-a-nutritionists-deep-dive-into-the-new-weight-loss-diabetes-injection/) (9 views) |
 | **IQS** | 🔴 Offline | **0** | 0 | None recorded |
 
 ## 🏆 DrSumaiya.com — Top Performing Content
@@ -11,25 +11,23 @@
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works | **3** | [Read Post](https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/) |
-| **#2** | How to Avoid Sweets in Festive Season: A Doctor’s Guide | **2** | [Read Post](https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/) |
-| **#3** | Optimum Health Series II: Effects of Glucose Spikes on Human Health | **2** | [Read Post](https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/) |
-| **#4** | The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide | **2** | [Read Post](https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/) |
-| **#5** | Ramadan Nutrition: 20 Mistakes to Avoid for a Healthy Fast | **1** | [Read Post](https://drsumaiya.com/post/ramadan-nutrition-20-mistakes-to-avoid-for-a-healthy-fast/) |
-| **#6** | Functional Foods for Quitting tobacco addiction | **1** | [Read Post](https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/) |
-| **#7** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **1** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
-| **#8** | 30 Proven Tips to Lose 5 Kgs in a Month for Busy Professionals | **1** | [Read Post](https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/) |
-| **#9** | Hidden Calories in the Indian Diet: Cooking Oils, Chai & Restaurant Sabzis Decoded | **1** | [Read Post](https://drsumaiya.com/post/cracking-the-mystery-of-hidden-calories-tips-from-a-dietitian/) |
-| **#10** | Mouth Ulcers: Causes and Management. | **1** | [Read Post](https://drsumaiya.com/post/mouth-ulcers-causes-and-management/) |
+| **#1** | Mounjaro in India: Diet Plan, Price, Side Effects & Complete Nutrition Guide (2026) | **9** | [Read Post](https://drsumaiya.com/post/mounjaro-in-india-a-nutritionists-deep-dive-into-the-new-weight-loss-diabetes-injection/) |
+| **#2** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **5** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
+| **#3** | Choosing the Right Salt: A Registered Dietitian's Complete Guide | **3** | [Read Post](https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/) |
+| **#4** | Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home | **2** | [Read Post](https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/) |
+| **#5** | Rethinking Protein Timing: A Smarter Way to Support Metabolic Health | **2** | [Read Post](https://drsumaiya.com/post/rethinking-protein-timing-a-smarter-way-to-support-metabolic-health/) |
+| **#6** | The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health | **1** | [Read Post](https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/) |
+| **#7** | Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide | **1** | [Read Post](https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/) |
+| **#8** | You Love Oats. But Have You Met Its Nutritional Competitor? | **1** | [Read Post](https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/) |
+| **#9** | Optimum Health Series II: Effects of Glucose Spikes on Human Health | **1** | [Read Post](https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/) |
+| **#10** | For Your Inspiration (2) | **1** | [Read Post](https://drsumaiya.com/post/for-your-inspiration-2/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **4** | [Visit Page](https://drsumaiya.com/) |
-| **#2** | Home page | **3** | [Visit Page](http://drsumaiya.com/) |
-| **#3** | Patient History Form | **1** | [Visit Page](https://drsumaiya.com/form/) |
-| **#4** | Blog | **1** | [Visit Page](https://drsumaiya.com/blog/) |
-| **#5** | Plans and Pricing | **1** | [Visit Page](https://drsumaiya.com/plans-pricing/) |
+| **#1** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **10** | [Visit Page](https://drsumaiya.com/) |
+| **#2** | Contact | **1** | [Visit Page](https://drsumaiya.com/contact/) |
+| **#3** | Home page | **1** | [Visit Page](http://drsumaiya.com/) |
 
 ## 🏆 IQS — Top Performing Content
 
