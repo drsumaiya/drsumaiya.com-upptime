@@ -4,16 +4,16 @@
     "url": "https://DrSumaiya.com",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-com",
-    "status": "up",
-    "uptime": "87.34%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.33%",
-    "uptimeMonth": "84.26%",
-    "uptimeYear": "87.34%",
+    "status": "down",
+    "uptime": "87.54%",
+    "uptimeDay": "96.61%",
+    "uptimeWeek": "94.85%",
+    "uptimeMonth": "84.77%",
+    "uptimeYear": "87.54%",
     "time": 471,
-    "timeDay": 389,
-    "timeWeek": 540,
-    "timeMonth": 409,
+    "timeDay": 0,
+    "timeWeek": 534,
+    "timeMonth": 411,
     "timeYear": 471,
     "dailyMinutesDown": {
       "2026-08-24": 50,
@@ -39,7 +39,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 397,
-      "2026-10-07": 73
+      "2026-10-07": 73,
+      "2026-10-10": 49
     }
   },
   {
@@ -47,15 +48,15 @@
     "url": "https://drsumaiya.com/inquiry-form/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-inquiry-form",
-    "status": "up",
-    "uptime": "82.19%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.38%",
-    "uptimeMonth": "82.19%",
-    "uptimeYear": "82.19%",
+    "status": "down",
+    "uptime": "82.79%",
+    "uptimeDay": "96.95%",
+    "uptimeWeek": "94.95%",
+    "uptimeMonth": "82.79%",
+    "uptimeYear": "82.79%",
     "time": 661,
-    "timeDay": 416,
-    "timeWeek": 533,
+    "timeDay": 0,
+    "timeWeek": 545,
     "timeMonth": 661,
     "timeYear": 661,
     "dailyMinutesDown": {
@@ -68,7 +69,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 397,
-      "2026-10-07": 68
+      "2026-10-07": 68,
+      "2026-10-10": 44
     }
   },
   {
@@ -76,15 +78,15 @@
     "url": "https://drsumaiya.com/form/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-booking-form",
-    "status": "up",
-    "uptime": "82.22%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.43%",
-    "uptimeMonth": "82.22%",
-    "uptimeYear": "82.22%",
+    "status": "down",
+    "uptime": "82.84%",
+    "uptimeDay": "97.28%",
+    "uptimeWeek": "95.05%",
+    "uptimeMonth": "82.84%",
+    "uptimeYear": "82.84%",
     "time": 538,
-    "timeDay": 366,
-    "timeWeek": 470,
+    "timeDay": 0,
+    "timeWeek": 480,
     "timeMonth": 538,
     "timeYear": 538,
     "dailyMinutesDown": {
@@ -97,7 +99,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 397,
-      "2026-10-07": 64
+      "2026-10-07": 64,
+      "2026-10-10": 39
     }
   },
   {
@@ -105,15 +108,15 @@
     "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-success-stories-post",
-    "status": "up",
-    "uptime": "82.25%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.48%",
-    "uptimeMonth": "82.25%",
-    "uptimeYear": "82.25%",
+    "status": "down",
+    "uptime": "82.88%",
+    "uptimeDay": "97.62%",
+    "uptimeWeek": "95.14%",
+    "uptimeMonth": "82.88%",
+    "uptimeYear": "82.88%",
     "time": 611,
-    "timeDay": 461,
-    "timeWeek": 611,
+    "timeDay": 0,
+    "timeWeek": 629,
     "timeMonth": 611,
     "timeYear": 611,
     "dailyMinutesDown": {
@@ -126,7 +129,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 396,
-      "2026-10-07": 59
+      "2026-10-07": 59,
+      "2026-10-10": 34
     }
   },
   {
@@ -134,15 +138,15 @@
     "url": "https://drsumaiya.com/wp-json/",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-db-and-rest-api",
-    "status": "up",
-    "uptime": "79.97%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.53%",
-    "uptimeMonth": "79.97%",
-    "uptimeYear": "79.97%",
+    "status": "down",
+    "uptime": "80.83%",
+    "uptimeDay": "97.96%",
+    "uptimeWeek": "95.24%",
+    "uptimeMonth": "80.83%",
+    "uptimeYear": "80.83%",
     "time": 639,
-    "timeDay": 303,
-    "timeWeek": 458,
+    "timeDay": 0,
+    "timeWeek": 453,
     "timeMonth": 639,
     "timeYear": 639,
     "dailyMinutesDown": {
@@ -154,7 +158,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 396,
-      "2026-10-07": 54
+      "2026-10-07": 54,
+      "2026-10-10": 29
     }
   },
   {
@@ -162,15 +167,15 @@
     "url": "https://drsumaiya.com/wp-content/plugins/leadformplugin/basic_form_styling.css",
     "icon": "https://icons.duckduckgo.com/ip3/drsumaiya.com.ico",
     "slug": "dr-sumaiya-form-assets-css",
-    "status": "up",
-    "uptime": "79.99%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.58%",
-    "uptimeMonth": "79.99%",
-    "uptimeYear": "79.99%",
+    "status": "down",
+    "uptime": "80.87%",
+    "uptimeDay": "98.30%",
+    "uptimeWeek": "95.34%",
+    "uptimeMonth": "80.87%",
+    "uptimeYear": "80.87%",
     "time": 172,
-    "timeDay": 101,
-    "timeWeek": 247,
+    "timeDay": 0,
+    "timeWeek": 265,
     "timeMonth": 172,
     "timeYear": 172,
     "dailyMinutesDown": {
@@ -182,7 +187,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 396,
-      "2026-10-07": 49
+      "2026-10-07": 49,
+      "2026-10-10": 25
     }
   },
   {
@@ -190,16 +196,16 @@
     "url": "https://iqs.org.in",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs",
-    "status": "up",
-    "uptime": "87.52%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.63%",
-    "uptimeMonth": "84.41%",
-    "uptimeYear": "87.52%",
+    "status": "down",
+    "uptime": "87.75%",
+    "uptimeDay": "98.64%",
+    "uptimeWeek": "95.44%",
+    "uptimeMonth": "84.99%",
+    "uptimeYear": "87.75%",
     "time": 707,
-    "timeDay": 314,
-    "timeWeek": 680,
-    "timeMonth": 618,
+    "timeDay": 0,
+    "timeWeek": 681,
+    "timeMonth": 621,
     "timeYear": 707,
     "dailyMinutesDown": {
       "2026-08-24": 40,
@@ -225,7 +231,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 396,
-      "2026-10-07": 44
+      "2026-10-07": 44,
+      "2026-10-10": 20
     }
   },
   {
@@ -233,15 +240,15 @@
     "url": "https://iqs.org.in/islamic-courses/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-islamic-courses",
-    "status": "up",
-    "uptime": "82.38%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.68%",
-    "uptimeMonth": "82.38%",
-    "uptimeYear": "82.38%",
+    "status": "down",
+    "uptime": "83.06%",
+    "uptimeDay": "98.97%",
+    "uptimeWeek": "95.54%",
+    "uptimeMonth": "83.06%",
+    "uptimeYear": "83.06%",
     "time": 567,
-    "timeDay": 445,
-    "timeWeek": 694,
+    "timeDay": 0,
+    "timeWeek": 723,
     "timeMonth": 567,
     "timeYear": 567,
     "dailyMinutesDown": {
@@ -254,7 +261,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 396,
-      "2026-10-07": 39
+      "2026-10-07": 39,
+      "2026-10-10": 15
     }
   },
   {
@@ -262,15 +270,15 @@
     "url": "https://iqs.org.in/inquiry/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-admissions-and-inquiry",
-    "status": "up",
-    "uptime": "82.41%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.73%",
-    "uptimeMonth": "82.41%",
-    "uptimeYear": "82.41%",
+    "status": "down",
+    "uptime": "83.10%",
+    "uptimeDay": "99.31%",
+    "uptimeWeek": "95.64%",
+    "uptimeMonth": "83.10%",
+    "uptimeYear": "83.10%",
     "time": 543,
-    "timeDay": 262,
-    "timeWeek": 561,
+    "timeDay": 0,
+    "timeWeek": 575,
     "timeMonth": 543,
     "timeYear": 543,
     "dailyMinutesDown": {
@@ -283,7 +291,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 396,
-      "2026-10-07": 34
+      "2026-10-07": 34,
+      "2026-10-10": 10
     }
   },
   {
@@ -291,15 +300,15 @@
     "url": "https://iqs.org.in/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-sidr-leaves-remedy-post",
-    "status": "up",
-    "uptime": "82.44%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "95.78%",
-    "uptimeMonth": "82.44%",
-    "uptimeYear": "82.44%",
+    "status": "down",
+    "uptime": "83.15%",
+    "uptimeDay": "99.65%",
+    "uptimeWeek": "95.73%",
+    "uptimeMonth": "83.15%",
+    "uptimeYear": "83.15%",
     "time": 733,
-    "timeDay": 455,
-    "timeWeek": 906,
+    "timeDay": 0,
+    "timeWeek": 961,
     "timeMonth": 733,
     "timeYear": 733,
     "dailyMinutesDown": {
@@ -312,7 +321,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 395,
-      "2026-10-07": 30
+      "2026-10-07": 30,
+      "2026-10-10": 5
     }
   },
   {
@@ -326,11 +336,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 159,
-    "timeDay": 192,
-    "timeWeek": 168,
-    "timeMonth": 159,
-    "timeYear": 159,
+    "time": 157,
+    "timeDay": 127,
+    "timeWeek": 160,
+    "timeMonth": 157,
+    "timeYear": 157,
     "dailyMinutesDown": {}
   },
   {
@@ -344,11 +354,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 124,
-    "timeDay": 220,
-    "timeWeek": 127,
-    "timeMonth": 124,
-    "timeYear": 124,
+    "time": 128,
+    "timeDay": 230,
+    "timeWeek": 132,
+    "timeMonth": 128,
+    "timeYear": 128,
     "dailyMinutesDown": {}
   },
   {
@@ -356,15 +366,15 @@
     "url": "https://iqs.org.in/wp-json/",
     "icon": "https://icons.duckduckgo.com/ip3/iqs.org.in.ico",
     "slug": "iqs-db-and-rest-api",
-    "status": "up",
-    "uptime": "80.19%",
-    "uptimeDay": "100.00%",
+    "status": "down",
+    "uptime": "81.14%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "95.83%",
-    "uptimeMonth": "80.19%",
-    "uptimeYear": "80.19%",
+    "uptimeMonth": "81.14%",
+    "uptimeYear": "81.14%",
     "time": 549,
-    "timeDay": 359,
-    "timeWeek": 742,
+    "timeDay": 0,
+    "timeWeek": 768,
     "timeMonth": 549,
     "timeYear": 549,
     "dailyMinutesDown": {
@@ -376,7 +386,8 @@
       "2026-09-24": 1440,
       "2026-09-23": 1440,
       "2026-10-06": 395,
-      "2026-10-07": 25
+      "2026-10-07": 25,
+      "2026-10-10": 0
     }
   }
 ]
