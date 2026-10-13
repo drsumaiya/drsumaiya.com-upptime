@@ -1,15 +1,15 @@
 # 🔒 SSL/TLS Certificate Health & Expiry Report
-> Last updated: `2026-10-12 11:40:10 UTC`
+> Last updated: `2026-10-13 11:25:37 UTC`
 
 Automated daily audit of TLS certificates, expiration countdowns, SAN coverage, and cipher suites.
 
 | Site | Hostname | Status | Days Left | Expires On | Issuer | TLS | Details |
 | :--- | :--- | :---: | :---: | :--- | :--- | :---: | :--- |
-| **DrSumaiya.com** | `drsumaiya.com` | 🟩 Healthy | **60.7d** | 2026-12-12 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
-| **DrSumaiya - Status** | `status.drsumaiya.com` | 🟩 Healthy | **41.2d** | 2026-11-22 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
-| **IQS** | `iqs.org.in` | 🟩 Healthy | **59.4d** | 2026-12-10 | Let's Encrypt (YE1) | TLSv1.3 | Certificate valid and trusted. |
-| **IQS - Hifz Focus** | `hifz.iqs.org.in` | 🟩 Healthy | **71.6d** | 2026-12-23 | Google Trust Services (WR3) | TLSv1.3 | Certificate valid and trusted. |
-| **Hifz Focus App** | `hifzfocus.com` | 🟩 Healthy | **69.1d** | 2026-12-20 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
+| **DrSumaiya.com** | `drsumaiya.com` | 🟩 Healthy | **59.7d** | 2026-12-12 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
+| **DrSumaiya - Status** | `status.drsumaiya.com` | 🟩 Healthy | **40.2d** | 2026-11-22 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
+| **IQS** | `iqs.org.in` | 🟩 Healthy | **58.4d** | 2026-12-10 | Let's Encrypt (YE1) | TLSv1.3 | Certificate valid and trusted. |
+| **IQS - Hifz Focus** | `hifz.iqs.org.in` | 🟩 Healthy | **70.6d** | 2026-12-23 | Google Trust Services (WR3) | TLSv1.3 | Certificate valid and trusted. |
+| **Hifz Focus App** | `hifzfocus.com` | 🟩 Healthy | **68.1d** | 2026-12-20 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
 
 ### Diagnostic Thresholds:
 * **🚨 Critical Alert (`<= 7 days` or expired):** Immediate action required. Potential outage imminent.
