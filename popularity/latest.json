@@ -1,63 +1,56 @@
 {
-  "timestamp": "2026-10-13 07:54:13 UTC",
+  "timestamp": "2026-10-14 06:20:41 UTC",
   "sites": [
     {
       "name": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "domain": "https://drsumaiya.com",
       "status": "online",
-      "timestamp": "2026-10-13 07:54:13 UTC",
-      "views_24h": 37,
-      "views_7d": 803,
+      "timestamp": "2026-10-14 06:20:41 UTC",
+      "views_24h": 43,
+      "views_7d": 787,
       "pages_24h": [
         {
           "post_id": 1373,
           "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
           "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 6
-        },
-        {
-          "post_id": 1839,
-          "title": "Patient History Form",
-          "url": "https://drsumaiya.com/form/",
-          "type": "page",
-          "views": 2
+          "views": 7
         },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 1
+          "views": 2
         },
         {
-          "post_id": 2534,
-          "title": "Inquiry Form",
-          "url": "https://drsumaiya.com/inquiry-form/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 1400,
-          "title": "Services",
-          "url": "https://drsumaiya.com/services/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 1399,
-          "title": "About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru",
-          "url": "https://drsumaiya.com/about/",
+          "post_id": 1839,
+          "title": "Patient History Form",
+          "url": "https://drsumaiya.com/form/",
           "type": "page",
           "views": 1
         }
       ],
       "posts_24h": [
         {
+          "post_id": 3955,
+          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
+          "type": "post",
+          "views": 5
+        },
+        {
           "post_id": 1866,
           "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
           "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
+          "type": "post",
+          "views": 5
+        },
+        {
+          "post_id": 4039,
+          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
+          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
           "type": "post",
           "views": 4
         },
@@ -66,47 +59,19 @@
           "title": "7 Types of Stool and What Each One Says About Your Gut",
           "url": "https://drsumaiya.com/post/7-types-of-stool-and-what-each-one-says-about-your-gut/",
           "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 3970,
-          "title": "Mounjaro in India: Diet Plan, Price, Side Effects & Complete Nutrition Guide (2026)",
-          "url": "https://drsumaiya.com/post/mounjaro-in-india-a-nutritionists-deep-dive-into-the-new-weight-loss-diabetes-injection/",
-          "type": "post",
           "views": 2
         },
         {
-          "post_id": 4723,
-          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
-          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1603,
-          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
+          "post_id": 1628,
+          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
+          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4039,
-          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
-          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3863,
-          "title": "Rain Therapy: The Science Behind Why Rainy Days Boost Your Mood",
-          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
+          "post_id": 1651,
+          "title": "Simple tips to enhance your dietary iron absorption",
+          "url": "https://drsumaiya.com/post/simple-tips-to-enhance-your-dietary-iron-absorption/",
           "type": "post",
           "views": 1
         },
@@ -118,27 +83,6 @@
           "views": 1
         },
         {
-          "post_id": 1596,
-          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
-          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1628,
-          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
-          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4107,
-          "title": "Importance of being healthy in Islam",
-          "url": "https://drsumaiya.com/post/importance-of-being-healthy-in-islam/",
-          "type": "post",
-          "views": 1
-        },
-        {
           "post_id": 1685,
           "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
           "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
@@ -146,9 +90,9 @@
           "views": 1
         },
         {
-          "post_id": 1701,
-          "title": "Food dehydration service",
-          "url": "https://drsumaiya.com/post/food-dehydration-service/",
+          "post_id": 1688,
+          "title": "My Reviews and Testimonials Collection",
+          "url": "https://drsumaiya.com/post/my-review-and-testimonial-collection/",
           "type": "post",
           "views": 1
         },
@@ -160,23 +104,79 @@
           "views": 1
         },
         {
-          "post_id": 1728,
-          "title": "Chronic Constipation Relief: High-Fiber Indian Diet, Causes & Clinical Remedies",
-          "url": "https://drsumaiya.com/post/evidence-based-constipation-relief-trust-the-experts-for-safe-and-effective-solutions/",
+          "post_id": 1596,
+          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
+          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 3978,
-          "title": "Protecting Your Knees: A Comprehensive Guide to Sports Injury Prevention and Recovery",
-          "url": "https://drsumaiya.com/post/protecting-your-knees-a-comprehensive-guide-to-sports-injury-prevention-and-recovery/",
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4081,
-          "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
+          "post_id": 1603,
+          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1620,
+          "title": "The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide",
+          "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4005,
+          "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
+          "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1588,
+          "title": "Registered Dietitian vs. Nutritionist in India: Qualifications, Medical Scope & How to Choose",
+          "url": "https://drsumaiya.com/post/choose-quality-care-trust-a-registered-dietitian-for-reliable-and-evidence-based-nutrition-advice/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4122,
+          "title": "The Truth About Ozempic for Weight Loss: Risks, Lawsuits, and What You Must Know",
+          "url": "https://drsumaiya.com/post/the-truth-about-ozempic-for-weight-loss-risks-lawsuits-and-what-you-must-know/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1679,
+          "title": "Functional Foods for Quitting tobacco addiction",
+          "url": "https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4672,
+          "title": "Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide",
+          "url": "https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3732,
+          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
+          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3863,
+          "title": "Rain Therapy: The Science Behind Why Rainy Days Boost Your Mood",
+          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
           "type": "post",
           "views": 1
         }
@@ -187,12 +187,26 @@
           "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
           "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 6
+          "views": 7
+        },
+        {
+          "post_id": 3955,
+          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
+          "type": "post",
+          "views": 5
         },
         {
           "post_id": 1866,
           "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
           "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
+          "type": "post",
+          "views": 5
+        },
+        {
+          "post_id": 4039,
+          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
+          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
           "type": "post",
           "views": 4
         },
@@ -201,91 +215,14 @@
           "title": "7 Types of Stool and What Each One Says About Your Gut",
           "url": "https://drsumaiya.com/post/7-types-of-stool-and-what-each-one-says-about-your-gut/",
           "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1839,
-          "title": "Patient History Form",
-          "url": "https://drsumaiya.com/form/",
-          "type": "page",
           "views": 2
-        },
-        {
-          "post_id": 3970,
-          "title": "Mounjaro in India: Diet Plan, Price, Side Effects & Complete Nutrition Guide (2026)",
-          "url": "https://drsumaiya.com/post/mounjaro-in-india-a-nutritionists-deep-dive-into-the-new-weight-loss-diabetes-injection/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 4723,
-          "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
-          "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1603,
-          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4039,
-          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
-          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
-          "type": "post",
-          "views": 1
         },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 1
-        },
-        {
-          "post_id": 2534,
-          "title": "Inquiry Form",
-          "url": "https://drsumaiya.com/inquiry-form/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 3863,
-          "title": "Rain Therapy: The Science Behind Why Rainy Days Boost Your Mood",
-          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1400,
-          "title": "Services",
-          "url": "https://drsumaiya.com/services/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 3964,
-          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
-          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1596,
-          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
-          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
-          "type": "post",
-          "views": 1
+          "views": 2
         },
         {
           "post_id": 1628,
@@ -295,9 +232,16 @@
           "views": 1
         },
         {
-          "post_id": 4107,
-          "title": "Importance of being healthy in Islam",
-          "url": "https://drsumaiya.com/post/importance-of-being-healthy-in-islam/",
+          "post_id": 1651,
+          "title": "Simple tips to enhance your dietary iron absorption",
+          "url": "https://drsumaiya.com/post/simple-tips-to-enhance-your-dietary-iron-absorption/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3964,
+          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
+          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
           "type": "post",
           "views": 1
         },
@@ -309,9 +253,9 @@
           "views": 1
         },
         {
-          "post_id": 1701,
-          "title": "Food dehydration service",
-          "url": "https://drsumaiya.com/post/food-dehydration-service/",
+          "post_id": 1688,
+          "title": "My Reviews and Testimonials Collection",
+          "url": "https://drsumaiya.com/post/my-review-and-testimonial-collection/",
           "type": "post",
           "views": 1
         },
@@ -323,30 +267,86 @@
           "views": 1
         },
         {
-          "post_id": 1728,
-          "title": "Chronic Constipation Relief: High-Fiber Indian Diet, Causes & Clinical Remedies",
-          "url": "https://drsumaiya.com/post/evidence-based-constipation-relief-trust-the-experts-for-safe-and-effective-solutions/",
+          "post_id": 1596,
+          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
+          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 3978,
-          "title": "Protecting Your Knees: A Comprehensive Guide to Sports Injury Prevention and Recovery",
-          "url": "https://drsumaiya.com/post/protecting-your-knees-a-comprehensive-guide-to-sports-injury-prevention-and-recovery/",
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 1399,
-          "title": "About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru",
-          "url": "https://drsumaiya.com/about/",
+          "post_id": 1603,
+          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1839,
+          "title": "Patient History Form",
+          "url": "https://drsumaiya.com/form/",
           "type": "page",
           "views": 1
         },
         {
-          "post_id": 4081,
-          "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
+          "post_id": 1620,
+          "title": "The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide",
+          "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4005,
+          "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
+          "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1588,
+          "title": "Registered Dietitian vs. Nutritionist in India: Qualifications, Medical Scope & How to Choose",
+          "url": "https://drsumaiya.com/post/choose-quality-care-trust-a-registered-dietitian-for-reliable-and-evidence-based-nutrition-advice/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4122,
+          "title": "The Truth About Ozempic for Weight Loss: Risks, Lawsuits, and What You Must Know",
+          "url": "https://drsumaiya.com/post/the-truth-about-ozempic-for-weight-loss-risks-lawsuits-and-what-you-must-know/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1679,
+          "title": "Functional Foods for Quitting tobacco addiction",
+          "url": "https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4672,
+          "title": "Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide",
+          "url": "https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3732,
+          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
+          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3863,
+          "title": "Rain Therapy: The Science Behind Why Rainy Days Boost Your Mood",
+          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
           "type": "post",
           "views": 1
         }
@@ -357,14 +357,14 @@
           "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
           "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 135
+          "views": 134
         },
         {
           "post_id": 1866,
           "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
           "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
           "type": "post",
-          "views": 51
+          "views": 54
         },
         {
           "post_id": 3970,
@@ -378,105 +378,105 @@
           "title": "Grade 1 Fatty Liver (NAFLD) Reversal: Clinical Indian Diet Protocol & SGPT/ALT Guide",
           "url": "https://drsumaiya.com/post/grade-1-fatty-liver-diet-chart-indian-protocol/",
           "type": "post",
-          "views": 39
-        },
-        {
-          "post_id": 1839,
-          "title": "Patient History Form",
-          "url": "https://drsumaiya.com/form/",
-          "type": "page",
-          "views": 36
+          "views": 40
         },
         {
           "post_id": 4723,
           "title": "How to Avoid Sweets in Festive Season: A Doctor\u2019s Guide",
           "url": "https://drsumaiya.com/post/how-to-avoid-sweets-in-festive-season/",
           "type": "post",
-          "views": 36
+          "views": 35
         },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 35
+          "views": 33
         },
         {
           "post_id": 4039,
           "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
           "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
           "type": "post",
-          "views": 31
+          "views": 32
+        },
+        {
+          "post_id": 1839,
+          "title": "Patient History Form",
+          "url": "https://drsumaiya.com/form/",
+          "type": "page",
+          "views": 32
         },
         {
           "post_id": 1868,
           "title": "Blog",
           "url": "https://drsumaiya.com/blog/",
           "type": "page",
-          "views": 27
+          "views": 25
         },
         {
           "post_id": 2534,
           "title": "Inquiry Form",
           "url": "https://drsumaiya.com/inquiry-form/",
           "type": "page",
-          "views": 26
-        },
-        {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
-          "type": "post",
           "views": 24
-        },
-        {
-          "post_id": 4005,
-          "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
-          "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
-          "type": "post",
-          "views": 23
         },
         {
           "post_id": 4081,
           "title": "Hong Thai Herbal Inhaler Recipe Disclosed: Traditional Thai Relief at Home",
           "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
           "type": "post",
-          "views": 23
+          "views": 22
         },
         {
           "post_id": 4344,
           "title": "7 Types of Stool and What Each One Says About Your Gut",
           "url": "https://drsumaiya.com/post/7-types-of-stool-and-what-each-one-says-about-your-gut/",
           "type": "post",
-          "views": 16
+          "views": 19
         },
         {
           "post_id": 3955,
           "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
           "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
           "type": "post",
-          "views": 14
+          "views": 18
+        },
+        {
+          "post_id": 4005,
+          "title": "Sitting More Than 10 Hours Daily Increases Heart Failure Risk By 60% \u2014 Even With Regular Exercise",
+          "url": "https://drsumaiya.com/post/sitting-more-than-10-hours-daily-increases-heart-failure-risk-by-60-even-with-regular-exercise/",
+          "type": "post",
+          "views": 18
+        },
+        {
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
+          "type": "post",
+          "views": 16
         },
         {
           "post_id": 1943,
           "title": "Plans and Pricing",
           "url": "https://drsumaiya.com/plans-pricing/",
           "type": "page",
-          "views": 14
+          "views": 12
         },
         {
           "post_id": 1628,
           "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
           "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
           "type": "post",
-          "views": 10
+          "views": 11
         },
         {
           "post_id": 4672,
           "title": "Frozen Food vs. Fresh: Which Is More Nutritious? A Clinical Dietitian's Guide",
           "url": "https://drsumaiya.com/post/frozen-food-vs-fresh-nutrition/",
           "type": "post",
-          "views": 10
+          "views": 11
         },
         {
           "post_id": 1641,
@@ -486,9 +486,16 @@
           "views": 8
         },
         {
-          "post_id": 4715,
-          "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
-          "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
+          "post_id": 4172,
+          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
+          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
+          "type": "post",
+          "views": 7
+        },
+        {
+          "post_id": 3732,
+          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
+          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
           "type": "post",
           "views": 7
         },
@@ -500,9 +507,9 @@
           "views": 7
         },
         {
-          "post_id": 3732,
-          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
-          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
+          "post_id": 3863,
+          "title": "Rain Therapy: The Science Behind Why Rainy Days Boost Your Mood",
+          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
           "type": "post",
           "views": 7
         },
@@ -521,23 +528,9 @@
           "views": 7
         },
         {
-          "post_id": 1630,
-          "title": "The Vital Role of Iron in Your Body: Functions and Health",
-          "url": "https://drsumaiya.com/post/functions-of-iron/",
-          "type": "post",
-          "views": 6
-        },
-        {
           "post_id": 3964,
           "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
           "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
-          "type": "post",
-          "views": 6
-        },
-        {
-          "post_id": 4172,
-          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
-          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
           "type": "post",
           "views": 6
         },
@@ -549,9 +542,23 @@
           "views": 6
         },
         {
-          "post_id": 3863,
-          "title": "Rain Therapy: The Science Behind Why Rainy Days Boost Your Mood",
-          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
+          "post_id": 4715,
+          "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
+          "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
+          "type": "post",
+          "views": 6
+        },
+        {
+          "post_id": 4066,
+          "title": "Fibre: The Hero of Your Health",
+          "url": "https://drsumaiya.com/post/fibre-the-hero-of-your-health/",
+          "type": "post",
+          "views": 6
+        },
+        {
+          "post_id": 1586,
+          "title": "Foods That Spike Blood Glucose: 15 Hidden High-Glycemic Indian Foods to Avoid",
+          "url": "https://drsumaiya.com/post/foods-that-spike-blood-glucose-what-to-avoid-for-better-health/",
           "type": "post",
           "views": 6
         },
@@ -563,24 +570,10 @@
           "views": 6
         },
         {
-          "post_id": 1675,
-          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
-          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
-          "type": "post",
-          "views": 5
-        },
-        {
           "post_id": 1399,
           "title": "About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru",
           "url": "https://drsumaiya.com/about/",
           "type": "page",
-          "views": 5
-        },
-        {
-          "post_id": 1586,
-          "title": "Foods That Spike Blood Glucose: 15 Hidden High-Glycemic Indian Foods to Avoid",
-          "url": "https://drsumaiya.com/post/foods-that-spike-blood-glucose-what-to-avoid-for-better-health/",
-          "type": "post",
           "views": 5
         },
         {
@@ -591,6 +584,13 @@
           "views": 5
         },
         {
+          "post_id": 1679,
+          "title": "Functional Foods for Quitting tobacco addiction",
+          "url": "https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/",
+          "type": "post",
+          "views": 4
+        },
+        {
           "post_id": 1620,
           "title": "The Science of Sunnah Foods: Clinical Phytochemistry, Nutritional Biochemistry & Health Guide",
           "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
@@ -598,16 +598,9 @@
           "views": 4
         },
         {
-          "post_id": 1587,
-          "title": "Quality Sleep & Metabolic Health: How Deep Rest Drives Fat Loss & Insulin Control",
-          "url": "https://drsumaiya.com/post/11-benefits-of-having-a-quality-sleep/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 1677,
-          "title": "Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD)",
-          "url": "https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/",
+          "post_id": 4130,
+          "title": "Top immunity boosting foods",
+          "url": "https://drsumaiya.com/post/top-immunity-boosting-foods/",
           "type": "post",
           "views": 4
         },
@@ -619,51 +612,30 @@
           "views": 4
         },
         {
-          "post_id": 4066,
-          "title": "Fibre: The Hero of Your Health",
-          "url": "https://drsumaiya.com/post/fibre-the-hero-of-your-health/",
+          "post_id": 1630,
+          "title": "The Vital Role of Iron in Your Body: Functions and Health",
+          "url": "https://drsumaiya.com/post/functions-of-iron/",
           "type": "post",
           "views": 4
         },
         {
-          "post_id": 1679,
-          "title": "Functional Foods for Quitting tobacco addiction",
-          "url": "https://drsumaiya.com/post/functional-foods-for-quitting-tobacco-addiction/",
+          "post_id": 4857,
+          "title": "Feeling Weak on Mounjaro? Indian Diet & Muscle Support",
+          "url": "https://drsumaiya.com/post/mounjaro-muscle-loss-low-appetite-indian-diet/",
+          "type": "post",
+          "views": 4
+        },
+        {
+          "post_id": 1675,
+          "title": "The Diet-Dental Connection: A Dietitian's Guide to Optimal Oral Health",
+          "url": "https://drsumaiya.com/post/the-diet-dental-connection-a-dietitians-guide-to-optimal-oral-health/",
           "type": "post",
           "views": 3
         },
         {
-          "post_id": 1636,
-          "title": "Mouth Ulcers: Causes and Management.",
-          "url": "https://drsumaiya.com/post/mouth-ulcers-causes-and-management/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1596,
-          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
-          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1709,
-          "title": "The Ultimate Guide to Mass Gainers: Benefits, Risks, and How to Choose the Right One",
-          "url": "https://drsumaiya.com/post/the-ultimate-guide-to-mass-gainers-benefits-risks-and-how-to-choose-the-right-one/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 2859,
-          "title": "Ramadan Diet Plan Consultation with Dr. Sumiaya's NutriCare",
-          "url": "https://drsumaiya.com/ramadan/",
-          "type": "page",
-          "views": 3
-        },
-        {
-          "post_id": 4130,
-          "title": "Top immunity boosting foods",
-          "url": "https://drsumaiya.com/post/top-immunity-boosting-foods/",
+          "post_id": 1677,
+          "title": "Why Indians Are More Vulnerable to Heart Attacks, Diabetes & Fatty Liver (MASLD)",
+          "url": "https://drsumaiya.com/post/why-indians-get-heart-attacks-diabetes-and-fatty-liver-disease/",
           "type": "post",
           "views": 3
         },
@@ -689,46 +661,11 @@
           "views": 3
         },
         {
-          "post_id": 4857,
-          "title": "Feeling Weak on Mounjaro? Indian Diet & Muscle Support",
-          "url": "https://drsumaiya.com/post/mounjaro-muscle-loss-low-appetite-indian-diet/",
+          "post_id": 1596,
+          "title": "Managing Knee Osteoarthritis in Seniors: Clinical Nutrition & Anti-Inflammatory Joint Guide",
+          "url": "https://drsumaiya.com/post/managing-knee-pain-in-seniors-a-comprehensive-guide-by-dr-sumaiya-nutricare/",
           "type": "post",
           "views": 3
-        },
-        {
-          "post_id": 3227,
-          "title": "Edit Profile",
-          "url": "https://drsumaiya.com/edit-profile/",
-          "type": "page",
-          "views": 2
-        },
-        {
-          "post_id": 3978,
-          "title": "Protecting Your Knees: A Comprehensive Guide to Sports Injury Prevention and Recovery",
-          "url": "https://drsumaiya.com/post/protecting-your-knees-a-comprehensive-guide-to-sports-injury-prevention-and-recovery/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1402,
-          "title": "Contact",
-          "url": "https://drsumaiya.com/contact/",
-          "type": "page",
-          "views": 2
-        },
-        {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1691,
-          "title": "20 Surprising Everyday Foods That Are Secretly High in Sugar",
-          "url": "https://drsumaiya.com/post/20-surprising-foods-that-are-secretly-high-in-sugar/",
-          "type": "post",
-          "views": 2
         },
         {
           "post_id": 1617,
@@ -741,6 +678,41 @@
           "post_id": 4179,
           "title": "Rethinking Protein Timing: A Smarter Way to Support Metabolic Health",
           "url": "https://drsumaiya.com/post/rethinking-protein-timing-a-smarter-way-to-support-metabolic-health/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1587,
+          "title": "Quality Sleep & Metabolic Health: How Deep Rest Drives Fat Loss & Insulin Control",
+          "url": "https://drsumaiya.com/post/11-benefits-of-having-a-quality-sleep/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1636,
+          "title": "Mouth Ulcers: Causes and Management.",
+          "url": "https://drsumaiya.com/post/mouth-ulcers-causes-and-management/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1592,
+          "title": "Nutritional Supplements vs. Whole Food: When Are Supplements Really Necessary? A Dietitian's Guide",
+          "url": "https://drsumaiya.com/post/nutritional-supplements-are-mostly-not-required/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1402,
+          "title": "Contact",
+          "url": "https://drsumaiya.com/contact/",
+          "type": "page",
+          "views": 2
+        },
+        {
+          "post_id": 1588,
+          "title": "Registered Dietitian vs. Nutritionist in India: Qualifications, Medical Scope & How to Choose",
+          "url": "https://drsumaiya.com/post/choose-quality-care-trust-a-registered-dietitian-for-reliable-and-evidence-based-nutrition-advice/",
           "type": "post",
           "views": 2
         },
@@ -759,6 +731,27 @@
           "views": 2
         },
         {
+          "post_id": 1701,
+          "title": "Food dehydration service",
+          "url": "https://drsumaiya.com/post/food-dehydration-service/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 2859,
+          "title": "Ramadan Diet Plan Consultation with Dr. Sumiaya's NutriCare",
+          "url": "https://drsumaiya.com/ramadan/",
+          "type": "page",
+          "views": 2
+        },
+        {
+          "post_id": 3227,
+          "title": "Edit Profile",
+          "url": "https://drsumaiya.com/edit-profile/",
+          "type": "page",
+          "views": 2
+        },
+        {
           "post_id": 1734,
           "title": "Measuring cups and spoons, a benifical tool to control your portion size.",
           "url": "https://drsumaiya.com/post/measuring-cups-and-spoons-a-benifical-tool-to-control-your-portion-size/",
@@ -766,9 +759,16 @@
           "views": 2
         },
         {
-          "post_id": 1701,
-          "title": "Food dehydration service",
-          "url": "https://drsumaiya.com/post/food-dehydration-service/",
+          "post_id": 1709,
+          "title": "The Ultimate Guide to Mass Gainers: Benefits, Risks, and How to Choose the Right One",
+          "url": "https://drsumaiya.com/post/the-ultimate-guide-to-mass-gainers-benefits-risks-and-how-to-choose-the-right-one/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1614,
+          "title": "Oat Flour vs. Coconut Flour for Blood Sugar: Glycemic Comparison & Baking Guide",
+          "url": "https://drsumaiya.com/post/oats-flour-verses-low-fat-10-coconut-flour-which-one-to-choose-to-add-in-your-regular-flour/",
           "type": "post",
           "views": 2
         }
@@ -779,7 +779,7 @@
       "slug": "iqs",
       "domain": "https://iqs.org.in",
       "status": "unavailable",
-      "timestamp": "2026-10-13 07:54:13 UTC",
+      "timestamp": "2026-10-14 06:20:41 UTC",
       "views_24h": 0,
       "views_7d": 0,
       "pages_24h": [],
