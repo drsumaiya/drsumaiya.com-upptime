@@ -1,30 +1,30 @@
 {
   "name": "IQS - Hifz Focus",
   "url": "https://hifz.iqs.org.in/",
-  "timestamp": "2026-10-14T11:00:35Z",
+  "timestamp": "2026-10-15T10:42:17Z",
   "auditStatus": "success",
   "mobile": {
-    "performance": 74,
-    "accessibility": 89,
+    "performance": 80,
+    "accessibility": 93,
     "bestPractices": 100,
     "seo": 83,
     "coreWebVitals": {
       "firstContentfulPaint": "2.6 s",
-      "largestContentfulPaint": "4.5 s",
-      "totalBlockingTime": "290 ms",
-      "cumulativeLayoutShift": "0",
+      "largestContentfulPaint": "4.4 s",
+      "totalBlockingTime": "50 ms",
+      "cumulativeLayoutShift": "0.078",
       "speedIndex": "2.6 s"
     }
   },
   "desktop": {
-    "performance": 95,
-    "accessibility": 88,
+    "performance": 97,
+    "accessibility": 93,
     "bestPractices": 100,
     "seo": 83,
     "coreWebVitals": {
       "firstContentfulPaint": "0.7 s",
       "largestContentfulPaint": "1.1 s",
-      "totalBlockingTime": "110 ms",
+      "totalBlockingTime": "10 ms",
       "cumulativeLayoutShift": "0.08",
       "speedIndex": "0.7 s"
     }
