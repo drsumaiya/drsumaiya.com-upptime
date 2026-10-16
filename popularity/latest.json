@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-10-16 14:59:23 UTC",
+  "timestamp": "2026-10-16 15:06:19 UTC",
   "sites": [
     {
       "name": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "domain": "https://drsumaiya.com",
       "status": "online",
-      "timestamp": "2026-10-16 14:59:23 UTC",
-      "views_24h": 164,
+      "timestamp": "2026-10-16 15:06:19 UTC",
+      "views_24h": 165,
       "views_7d": 946,
       "pages_24h": [
         {
@@ -52,7 +52,7 @@
           "title": "Top 10 Supplements for Enhancing Health Span",
           "url": "https://drsumaiya.com/post/top-10-supplements-for-enhancing-health-span/",
           "type": "post",
-          "views": 81
+          "views": 82
         },
         {
           "post_id": 4039,
@@ -243,7 +243,7 @@
           "title": "Top 10 Supplements for Enhancing Health Span",
           "url": "https://drsumaiya.com/post/top-10-supplements-for-enhancing-health-span/",
           "type": "post",
-          "views": 81
+          "views": 82
         },
         {
           "post_id": 1373,
@@ -891,8 +891,8 @@
       "slug": "iqs",
       "domain": "https://iqs.org.in",
       "status": "online",
-      "timestamp": "2026-10-16 14:59:23 UTC",
-      "views_24h": 97,
+      "timestamp": "2026-10-16 15:06:19 UTC",
+      "views_24h": 98,
       "views_7d": 954,
       "pages_24h": [
         {
@@ -938,20 +938,6 @@
           "views": 2
         },
         {
-          "post_id": 278,
-          "title": "Offered Services",
-          "url": "https://iqs.org.in/service-style-2/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 302,
-          "title": "About Us | Institute of Quran and Sunnah (IQS)",
-          "url": "https://iqs.org.in/about-us/",
-          "type": "page",
-          "views": 1
-        },
-        {
           "post_id": 324,
           "title": "Contact Us",
           "url": "https://iqs.org.in/contact-us/",
@@ -964,6 +950,20 @@
           "url": "https://iqs.org.in/ruqya/",
           "type": "page",
           "views": 1
+        },
+        {
+          "post_id": 278,
+          "title": "Offered Services",
+          "url": "https://iqs.org.in/service-style-2/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 302,
+          "title": "About Us | Institute of Quran and Sunnah (IQS)",
+          "url": "https://iqs.org.in/about-us/",
+          "type": "page",
+          "views": 1
         }
       ],
       "posts_24h": [
@@ -972,7 +972,7 @@
           "title": "Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide)",
           "url": "https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/",
           "type": "post",
-          "views": 23
+          "views": 24
         },
         {
           "post_id": 5125,
@@ -1010,6 +1010,20 @@
           "views": 2
         },
         {
+          "post_id": 2942,
+          "title": "Alimiyat Course",
+          "url": "https://iqs.org.in/courses/alimiyat-course/",
+          "type": "lp_course",
+          "views": 2
+        },
+        {
+          "post_id": 4190,
+          "title": "Full-Time Hifz Program: Complete Quran Memorization with IQS & Hifz Focus\u2122",
+          "url": "https://iqs.org.in/blog/2024/07/20/full-time-hifz-program/",
+          "type": "post",
+          "views": 2
+        },
+        {
           "post_id": 3465,
           "title": "Avoid use of abbreviations like \"Md\" or \"Mohd\" for the name \"Muhammad\"",
           "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
@@ -1031,20 +1045,6 @@
           "views": 2
         },
         {
-          "post_id": 2942,
-          "title": "Alimiyat Course",
-          "url": "https://iqs.org.in/courses/alimiyat-course/",
-          "type": "lp_course",
-          "views": 2
-        },
-        {
-          "post_id": 4190,
-          "title": "Full-Time Hifz Program: Complete Quran Memorization with IQS & Hifz Focus\u2122",
-          "url": "https://iqs.org.in/blog/2024/07/20/full-time-hifz-program/",
-          "type": "post",
-          "views": 2
-        },
-        {
           "post_id": 4183,
           "title": "Lessons from Surah al-Kahf: Understanding the Trial of Power",
           "url": "https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/",
@@ -1062,13 +1062,6 @@
           "post_id": 6584,
           "title": "Shawwal Fasting Timetable Bangalore 1447H 2026 | Sehri & Iftar",
           "url": "https://iqs.org.in/blog/2026/03/21/shawwal-fasting-timetable-bangalore-1447h-2026-sehri-iftar/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 6591,
-          "title": "The Unapologetic Athari Creed: Belief of the First Muslims",
-          "url": "https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/",
           "type": "post",
           "views": 1
         },
@@ -1141,6 +1134,13 @@
           "url": "https://iqs.org.in/blog/2026/01/26/authentic-islamic-books-on-marriage-and-the-duties-of-a-muslim-husbandquran-and-authentic-sunnah-only/",
           "type": "post",
           "views": 1
+        },
+        {
+          "post_id": 6591,
+          "title": "The Unapologetic Athari Creed: Belief of the First Muslims",
+          "url": "https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/",
+          "type": "post",
+          "views": 1
         }
       ],
       "all_items_24h": [
@@ -1149,7 +1149,7 @@
           "title": "Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide)",
           "url": "https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/",
           "type": "post",
-          "views": 23
+          "views": 24
         },
         {
           "post_id": 5125,
@@ -1159,17 +1159,17 @@
           "views": 10
         },
         {
-          "post_id": 3291,
-          "title": "The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye",
-          "url": "https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
-          "type": "post",
-          "views": 6
-        },
-        {
           "post_id": 6734,
           "title": "Admissions & Course Inquiry | Institute of Quran and Sunnah",
           "url": "https://iqs.org.in/inquiry/",
           "type": "page",
+          "views": 6
+        },
+        {
+          "post_id": 3291,
+          "title": "The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye",
+          "url": "https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
+          "type": "post",
           "views": 6
         },
         {
@@ -1187,13 +1187,6 @@
           "views": 4
         },
         {
-          "post_id": 4312,
-          "title": "Is it Shirk? A Practical Guide to Identifying and Avoiding Shirk in Islam",
-          "url": "https://iqs.org.in/is-it-shirk/",
-          "type": "page",
-          "views": 3
-        },
-        {
           "post_id": 4873,
           "title": "Mutawatir Hadiths",
           "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
@@ -1208,30 +1201,16 @@
           "views": 3
         },
         {
+          "post_id": 4312,
+          "title": "Is it Shirk? A Practical Guide to Identifying and Avoiding Shirk in Islam",
+          "url": "https://iqs.org.in/is-it-shirk/",
+          "type": "page",
+          "views": 3
+        },
+        {
           "post_id": 6634,
           "title": "Bangalore Eid ul Adha 2026 Full Prayer Timings List",
           "url": "https://iqs.org.in/blog/2026/05/27/bangalore-eid-ul-adha-2026-full-prayer-timings-list/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 3465,
-          "title": "Avoid use of abbreviations like \"Md\" or \"Mohd\" for the name \"Muhammad\"",
-          "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 4707,
-          "title": "The 33-Year Ramadan Cycle: A Journey Through Seasons",
-          "url": "https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 6597,
-          "title": "Biography of Imam Al-Tibrizi: Author of Mishkatul Masabeeh",
-          "url": "https://iqs.org.in/blog/2026/03/26/biography-of-imam-al-tibrizi-author-of-mishkatul-masabeeh/",
           "type": "post",
           "views": 2
         },
@@ -1264,6 +1243,27 @@
           "views": 2
         },
         {
+          "post_id": 3465,
+          "title": "Avoid use of abbreviations like \"Md\" or \"Mohd\" for the name \"Muhammad\"",
+          "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 4707,
+          "title": "The 33-Year Ramadan Cycle: A Journey Through Seasons",
+          "url": "https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 6597,
+          "title": "Biography of Imam Al-Tibrizi: Author of Mishkatul Masabeeh",
+          "url": "https://iqs.org.in/blog/2026/03/26/biography-of-imam-al-tibrizi-author-of-mishkatul-masabeeh/",
+          "type": "post",
+          "views": 2
+        },
+        {
           "post_id": 4183,
           "title": "Lessons from Surah al-Kahf: Understanding the Trial of Power",
           "url": "https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/",
@@ -1282,27 +1282,6 @@
           "title": "Shawwal Fasting Timetable Bangalore 1447H 2026 | Sehri & Iftar",
           "url": "https://iqs.org.in/blog/2026/03/21/shawwal-fasting-timetable-bangalore-1447h-2026-sehri-iftar/",
           "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 278,
-          "title": "Offered Services",
-          "url": "https://iqs.org.in/service-style-2/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 6591,
-          "title": "The Unapologetic Athari Creed: Belief of the First Muslims",
-          "url": "https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 302,
-          "title": "About Us | Institute of Quran and Sunnah (IQS)",
-          "url": "https://iqs.org.in/about-us/",
-          "type": "page",
           "views": 1
         },
         {
@@ -1387,6 +1366,27 @@
           "title": "Authentic Islamic Books on Marriage and the Duties of a Muslim Husband(Qur\u2019an and Authentic Sunnah Only)",
           "url": "https://iqs.org.in/blog/2026/01/26/authentic-islamic-books-on-marriage-and-the-duties-of-a-muslim-husbandquran-and-authentic-sunnah-only/",
           "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 278,
+          "title": "Offered Services",
+          "url": "https://iqs.org.in/service-style-2/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 6591,
+          "title": "The Unapologetic Athari Creed: Belief of the First Muslims",
+          "url": "https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 302,
+          "title": "About Us | Institute of Quran and Sunnah (IQS)",
+          "url": "https://iqs.org.in/about-us/",
+          "type": "page",
           "views": 1
         }
       ],
