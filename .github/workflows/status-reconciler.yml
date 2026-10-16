@@ -1,0 +1,51 @@
+name: Status Issue Watchdog & Reconciler
+on:
+  schedule:
+    # Run every 15 minutes to guarantee no false or zombie status issues linger
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  issues:
+    # Trigger immediately whenever ANY issue is opened or reopened
+    types: [opened, reopened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: ${{ github.repository }}-status-reconciler
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    name: Reconcile False & Stale Status Issues
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Setup Python & uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Reconcile Status Issues
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+        run: |
+          uv run python scripts/reconcile_status_issues.py "${{ github.repository }}"
+
+      - name: Commit Synchronized History
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add history/
+          if git diff --staged --quiet; then
+            echo "No history modifications to commit"
+          else
+            git commit -m "🔄 Synchronize history state via Status Watchdog"
+            git pull --rebase
+            git push
+          fi
