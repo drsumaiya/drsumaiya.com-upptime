@@ -54,6 +54,18 @@ TARGETS = [
         "hostname": "hifzfocus.com",
         "port": 443,
         "slug": "hifzfocus-com"
+    },
+    {
+        "name": "Crecomy",
+        "hostname": "crecomy.com",
+        "port": 443,
+        "slug": "crecomy"
+    },
+    {
+        "name": "Crecomy - WWW",
+        "hostname": "www.crecomy.com",
+        "port": 443,
+        "slug": "crecomy-www"
     }
 ]
 

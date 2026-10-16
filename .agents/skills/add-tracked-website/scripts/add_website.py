@@ -15,6 +15,11 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
+# Ensure UTF-8 output across all operating systems
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 def probe_url(url, timeout=10):
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Site-Probe/1.0'
@@ -111,7 +116,8 @@ def update_pagespeed_js(name, url, slug, filepath="assets/pagespeed.js"):
         return False
 
     pattern = r"(\s*\{\s*name:\s*\"[^\"]+\",\s*slug:\s*\"[^\"]+\",\s*url:\s*\"[^\"]+\"\s*\})\s*\];"
-    new_content, count = re.subn(pattern, rf"\1,\n    {{\n      name: \"{name}\",\n      slug: \"{slug}\",\n      url: \"{url}\"\n    }}\n  ];", content, count=1)
+    new_entry = f'\\1,\n    {{\n      name: "{name}",\n      slug: "{slug}",\n      url: "{url}"\n    }}\n  ];'
+    new_content, count = re.subn(pattern, new_entry, content, count=1)
 
     if count > 0:
         with open(filepath, "w", encoding="utf-8") as f:
@@ -131,7 +137,8 @@ def update_verify_seo_health(name, domain, robots_url, sitemap_url, slug, filepa
         return False
 
     pattern = r"(\s*\{\s*\"name\":\s*\"[^\"]+\",\s*\"domain\":\s*\"[^\"]+\",\s*\"robots_url\":\s*\"[^\"]+\",\s*\"sitemap_url\":\s*\"[^\"]+\",\s*\"slug\":\s*\"[^\"]+\"\s*\})\s*\]"
-    new_content, count = re.subn(pattern, rf"\1,\n    {{\n        \"name\": \"{name}\",\n        \"domain\": \"{domain}\",\n        \"robots_url\": \"{robots_url}\",\n        \"sitemap_url\": \"{sitemap_url}\",\n        \"slug\": \"{slug}\"\n    }}\n]", content, count=1)
+    new_entry = f'\\1,\n    {{\n        "name": "{name}",\n        "domain": "{domain}",\n        "robots_url": "{robots_url}",\n        "sitemap_url": "{sitemap_url}",\n        "slug": "{slug}"\n    }}\n]'
+    new_content, count = re.subn(pattern, new_entry, content, count=1)
 
     if count > 0:
         with open(filepath, "w", encoding="utf-8") as f:

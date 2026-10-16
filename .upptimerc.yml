@@ -31,6 +31,13 @@ sites:
   - name: IQS - DB & REST API
     url: https://iqs.org.in/wp-json/
 
+  - name: Crecomy
+    url: https://crecomy.com/
+  - name: Crecomy - Courses
+    url: https://www.crecomy.com/en/courses
+  - name: Crecomy - Pricing
+    url: https://www.crecomy.com/en/pricing
+
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there

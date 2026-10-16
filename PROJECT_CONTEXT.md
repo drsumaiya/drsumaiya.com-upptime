@@ -16,7 +16,7 @@ Automated uptime monitoring, synthetic latency benchmarking, Core Web Vitals tra
 ### Key Architecture & Services
 - **Platform**: Upptime (GitHub Actions-based synthetic monitoring) deployed to GitHub Pages.
 - **Monitored Endpoints**: Main site root, appointment booking funnel, lead capture webhooks, SSL expiration, HTTP response times.
-- **Recent Work**: Fixed 403 bot-protection false alarms by tuning request headers, added broken-link crawling action, deployed Origin Views API telemetry for IQS (iqs.org.in), and added automated Status Issue Watchdog & Reconciler (.github/workflows/status-reconciler.yml) to eliminate false-alarm / zombie issue desynchronization.
+- **Recent Work**: Fixed 403 bot-protection false alarms by tuning request headers, added broken-link crawling action, deployed Origin Views API telemetry for IQS (iqs.org.in), added automated Status Issue Watchdog & Reconciler (.github/workflows/status-reconciler.yml), and integrated Crecomy (crecomy.com) across Uptime, PageSpeed/CWV, SEO, SSL/TLS, and Broken Link monitoring pipelines.
 
 ---
 

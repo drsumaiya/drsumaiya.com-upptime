@@ -49,6 +49,16 @@ TARGETS = [
         "check_dmarc": True,
         "dmarc_host": "_dmarc.hifz.iqs.org.in",
         "dkim_selectors": []
+    },
+    {
+        "name": "Crecomy",
+        "domain": "crecomy.com",
+        "slug": "crecomy",
+        "check_mx": False,
+        "check_spf": False,
+        "check_dmarc": True,
+        "dmarc_host": "_dmarc.crecomy.com",
+        "dkim_selectors": []
     }
 ]
 

@@ -35,6 +35,13 @@ TARGETS = [
         "robots_url": "https://hifz.iqs.org.in/robots.txt",
         "sitemap_url": "https://hifz.iqs.org.in/sitemap.xml",
         "slug": "iqs-hifz"
+    },
+    {
+        "name": "Crecomy",
+        "domain": "https://crecomy.com",
+        "robots_url": "https://crecomy.com/robots.txt",
+        "sitemap_url": "https://www.crecomy.com/sitemap.xml",
+        "slug": "crecomy"
     }
 ]
 

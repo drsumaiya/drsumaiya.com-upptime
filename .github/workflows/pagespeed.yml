@@ -27,6 +27,10 @@ jobs:
             url: https://hifz.iqs.org.in/
             slug: iqs-hifz
 
+          - name: Crecomy
+            url: https://crecomy.com/
+            slug: crecomy
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6

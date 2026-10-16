@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-10-16 09:10:31 UTC",
+  "timestamp": "2026-10-16 15:36:06 UTC",
   "has_critical_error": false,
   "results": [
     {
       "site": "DrSumaiya.com",
       "domain": "drsumaiya.com",
       "slug": "dr-sumaiya-com",
-      "timestamp": "2026-10-16 09:10:31 UTC",
+      "timestamp": "2026-10-16 15:36:06 UTC",
       "mx": {
         "status": "pass",
         "records": [
@@ -53,7 +53,7 @@
       "site": "IQS",
       "domain": "iqs.org.in",
       "slug": "iqs",
-      "timestamp": "2026-10-16 09:10:31 UTC",
+      "timestamp": "2026-10-16 15:36:06 UTC",
       "mx": {
         "status": "pass",
         "records": [
@@ -107,7 +107,41 @@
       "site": "IQS - Hifz Focus",
       "domain": "hifz.iqs.org.in",
       "slug": "iqs-hifz",
-      "timestamp": "2026-10-16 09:10:31 UTC",
+      "timestamp": "2026-10-16 15:36:06 UTC",
+      "mx": {
+        "status": "skipped",
+        "records": [],
+        "errors": [],
+        "warnings": []
+      },
+      "spf": {
+        "status": "skipped",
+        "record": null,
+        "errors": [],
+        "warnings": []
+      },
+      "dmarc": {
+        "status": "pass",
+        "record": "v=DMARC1; p=none; rua=mailto:rua@dmarc.brevo.com",
+        "policy": "none",
+        "errors": [],
+        "warnings": []
+      },
+      "dkim": {
+        "status": "skipped",
+        "selectors_tested": [],
+        "errors": [],
+        "warnings": []
+      },
+      "is_ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "site": "Crecomy",
+      "domain": "crecomy.com",
+      "slug": "crecomy",
+      "timestamp": "2026-10-16 15:36:06 UTC",
       "mx": {
         "status": "skipped",
         "records": [],

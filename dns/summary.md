@@ -1,5 +1,5 @@
 # 📬 Email Deliverability & DNS Health Report
-> Last updated: `2026-10-16 09:10:31 UTC`
+> Last updated: `2026-10-16 15:36:06 UTC`
 
 Automated daily audit of **SPF**, **DMARC**, **MX**, and **DKIM** DNS records for domain reputation and mailbox inbox placement.
 
@@ -8,6 +8,7 @@ Automated daily audit of **SPF**, **DMARC**, **MX**, and **DKIM** DNS records fo
 | **DrSumaiya.com** (`drsumaiya.com`) | ✅ Valid (2) | ✅ Valid | ✅ `p=none` | ➖ N/A | 🟩 Healthy | DMARC record does not declare 'rua=' (aggregate feedback reports). |
 | **IQS** (`iqs.org.in`) | ✅ Valid (2) | ✅ Valid | ✅ `p=none` | ✅ Valid (1) | 🟩 Healthy | DMARC record does not declare 'rua=' (aggregate feedback reports). |
 | **IQS - Hifz Focus** (`hifz.iqs.org.in`) | ➖ N/A | ➖ N/A | ✅ `p=none` | ➖ N/A | 🟩 Healthy | All deliverability records verified. |
+| **Crecomy** (`crecomy.com`) | ➖ N/A | ➖ N/A | ✅ `p=none` | ➖ N/A | 🟩 Healthy | All deliverability records verified. |
 
 ### Diagnostic Requirements:
 * **SPF**: Confirms single valid `v=spf1` record, ensures authorized mail servers are included, and rejects `+all`.
