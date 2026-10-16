@@ -18,6 +18,11 @@
       name: "IQS - Hifz Focus",
       slug: "iqs-hifz",
       url: "https://hifz.iqs.org.in/"
+    },
+    {
+      name: "Crecomy",
+      slug: "crecomy",
+      url: "https://crecomy.com/"
     }
   ];
 
