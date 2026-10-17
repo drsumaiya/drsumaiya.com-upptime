@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-10-16 15:35:56 UTC",
+  "timestamp": "2026-10-17 09:02:20 UTC",
   "has_critical_error": false,
   "results": [
     {
       "site": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
-      "timestamp": "2026-10-16 15:35:56 UTC",
+      "timestamp": "2026-10-17 09:02:20 UTC",
       "robots": {
         "status": 200,
         "valid": true,
@@ -51,7 +51,7 @@
     {
       "site": "IQS",
       "slug": "iqs",
-      "timestamp": "2026-10-16 15:35:56 UTC",
+      "timestamp": "2026-10-17 09:02:20 UTC",
       "robots": {
         "status": 200,
         "valid": true,
@@ -64,7 +64,7 @@
         "status": 200,
         "valid": true,
         "has_leading_whitespace": false,
-        "child_sitemaps_count": 6,
+        "child_sitemaps_count": 7,
         "urls_count": 0,
         "child_sitemaps_probed": [
           {
@@ -93,7 +93,7 @@
     {
       "site": "IQS - Hifz Focus",
       "slug": "iqs-hifz",
-      "timestamp": "2026-10-16 15:35:56 UTC",
+      "timestamp": "2026-10-17 09:02:20 UTC",
       "robots": {
         "status": 200,
         "valid": true,
@@ -119,7 +119,7 @@
     {
       "site": "Crecomy",
       "slug": "crecomy",
-      "timestamp": "2026-10-16 15:35:56 UTC",
+      "timestamp": "2026-10-17 09:02:20 UTC",
       "robots": {
         "status": 200,
         "valid": true,
