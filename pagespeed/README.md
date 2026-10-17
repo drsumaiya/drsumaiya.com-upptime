@@ -2,15 +2,57 @@
 
 Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse](https://pagespeed.web.dev/).
 
-## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
+## Crecomy — [`https://crecomy.com/`](https://crecomy.com/)
 
-> Last updated: `2026-10-16T10:29:11Z`
+> Last updated: `2026-10-17T10:02:07Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 95 |
+| Performance | 54 |
+| Accessibility | 92 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+**Core Web Vitals (Mobile)**
+| Metric | Value |
+| --- | --- |
+| First Contentful Paint | 3.1 s |
+| Largest Contentful Paint | 8.2 s |
+| Total Blocking Time | 380 ms |
+| Cumulative Layout Shift | 0 |
+| Speed Index | 7.1 s |
+
+### 🖥️ Desktop
+
+| Category | Score |
+| --- | --- |
+| Performance | 84 |
+| Accessibility | 92 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+**Core Web Vitals (Desktop)**
+| Metric | Value |
+| --- | --- |
+| First Contentful Paint | 0.7 s |
+| Largest Contentful Paint | 1.3 s |
+| Total Blocking Time | 160 ms |
+| Cumulative Layout Shift | 0.008 |
+| Speed Index | 3.3 s |
+
+---
+
+## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
+
+> Last updated: `2026-10-17T09:59:59Z`
+
+### 📱 Mobile
+
+| Category | Score |
+| --- | --- |
+| Performance | 94 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -18,11 +60,11 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 2.0 s |
-| Largest Contentful Paint | 2.7 s |
+| First Contentful Paint | 1.5 s |
+| Largest Contentful Paint | 2.5 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 2.5 s |
+| Speed Index | 5.0 s |
 
 ### 🖥️ Desktop
 
@@ -37,22 +79,22 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 0.5 s |
-| Largest Contentful Paint | 0.6 s |
+| Largest Contentful Paint | 0.7 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.015 |
-| Speed Index | 0.9 s |
+| Speed Index | 0.7 s |
 
 ---
 
 ## IQS - Hifz Focus — [`https://hifz.iqs.org.in/`](https://hifz.iqs.org.in/)
 
-> Last updated: `2026-10-16T10:29:10Z`
+> Last updated: `2026-10-17T09:59:59Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 79 |
+| Performance | 60 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -60,11 +102,11 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 2.6 s |
-| Largest Contentful Paint | 4.5 s |
-| Total Blocking Time | 60 ms |
-| Cumulative Layout Shift | 0.078 |
-| Speed Index | 2.6 s |
+| First Contentful Paint | 6.1 s |
+| Largest Contentful Paint | 8.9 s |
+| Total Blocking Time | 0 ms |
+| Cumulative Layout Shift | 0 |
+| Speed Index | 6.1 s |
 
 ### 🖥️ Desktop
 
@@ -88,7 +130,7 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-10-16T10:29:14Z`
+> Last updated: `2026-10-17T09:59:52Z`
 
 ### 📱 Mobile
 
@@ -103,7 +145,7 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.3 s |
-| Largest Contentful Paint | 2.4 s |
+| Largest Contentful Paint | 2.3 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.019 |
 | Speed Index | 2.3 s |
@@ -120,11 +162,11 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.6 s |
-| Largest Contentful Paint | 0.8 s |
+| First Contentful Paint | 0.7 s |
+| Largest Contentful Paint | 0.7 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.003 |
-| Speed Index | 0.6 s |
+| Speed Index | 0.7 s |
 
 ---
 
