@@ -1,12 +1,12 @@
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-10-17T09:59:52Z`
+> Last updated: `2026-10-18T10:13:02Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 95 |
+| Performance | 96 |
 | Accessibility | 91 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -14,11 +14,11 @@
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 2.3 s |
-| Largest Contentful Paint | 2.3 s |
+| First Contentful Paint | 2.0 s |
+| Largest Contentful Paint | 2.4 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.019 |
-| Speed Index | 2.3 s |
+| Speed Index | 2.0 s |
 
 ### 🖥️ Desktop
 
@@ -32,10 +32,10 @@
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.7 s |
-| Largest Contentful Paint | 0.7 s |
+| First Contentful Paint | 0.8 s |
+| Largest Contentful Paint | 0.8 s |
 | Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.003 |
-| Speed Index | 0.7 s |
+| Cumulative Layout Shift | 0.005 |
+| Speed Index | 0.8 s |
 
 ---
