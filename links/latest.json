@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-16T15:35:18.509074+00:00",
-  "timestamp_human": "2026-10-16 15:35:18 UTC",
-  "total_checked": 237,
+  "timestamp": "2026-10-18T03:10:10.149916+00:00",
+  "timestamp_human": "2026-10-18 03:10:10 UTC",
+  "total_checked": 325,
   "total_broken": 0,
   "overall_clean": true,
   "results": [
@@ -13,7 +13,7 @@
       "successful": 88,
       "failed": 0,
       "timeouts": 0,
-      "redirects": 2,
+      "redirects": 1,
       "excludes": 18,
       "is_clean": true,
       "broken_links": []
@@ -22,11 +22,11 @@
       "site": "IQS",
       "slug": "iqs",
       "url": "https://iqs.org.in",
-      "total_checked": 101,
-      "successful": 86,
+      "total_checked": 102,
+      "successful": 87,
       "failed": 0,
       "timeouts": 0,
-      "redirects": 11,
+      "redirects": 13,
       "excludes": 10,
       "is_clean": true,
       "broken_links": []
@@ -48,12 +48,12 @@
       "site": "Crecomy",
       "slug": "crecomy",
       "url": "https://crecomy.com",
-      "total_checked": 0,
-      "successful": 0,
+      "total_checked": 87,
+      "successful": 85,
       "failed": 0,
       "timeouts": 0,
-      "redirects": 0,
-      "excludes": 0,
+      "redirects": 40,
+      "excludes": 2,
       "is_clean": true,
       "broken_links": []
     }

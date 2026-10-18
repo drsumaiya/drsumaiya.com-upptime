@@ -1,14 +1,14 @@
 # 🛡️ Broken Link & 404 Sentinel Report
-> Last updated: `2026-10-16 15:35:18 UTC`
+> Last updated: `2026-10-18 03:10:10 UTC`
 
 Automated weekly deep-crawl and stress-test of internal navigation and external outbound hyperlinks across all live properties.
 
 | Site | Status | Links Audited | Broken Links | Health Status |
 | :--- | :---: | :---: | :---: | :--- |
 | [DrSumaiya.com](https://drsumaiya.com) | ✅ Clean | 118 | 0 | 🟩 Healthy |
-| [IQS](https://iqs.org.in) | ✅ Clean | 101 | 0 | 🟩 Healthy |
+| [IQS](https://iqs.org.in) | ✅ Clean | 102 | 0 | 🟩 Healthy |
 | [IQS - Hifz Focus](https://hifz.iqs.org.in) | ✅ Clean | 18 | 0 | 🟩 Healthy |
-| [Crecomy](https://crecomy.com) | ✅ Clean | 0 | 0 | 🟩 Healthy |
+| [Crecomy](https://crecomy.com) | ✅ Clean | 87 | 0 | 🟩 Healthy |
 
 > 🎉 **All Clear**: Every crawled internal page and outbound link resolved successfully with no 404s or dead endpoints.
 

@@ -1,15 +1,15 @@
 {
-  "total": 101,
-  "unique": 57,
-  "successful": 86,
+  "total": 102,
+  "unique": 58,
+  "successful": 87,
   "unknown": 0,
   "unsupported": 5,
   "timeouts": 0,
-  "redirects": 11,
+  "redirects": 13,
   "remaps": 0,
   "excludes": 10,
   "errors": 0,
-  "cached": 31,
+  "cached": 34,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -18,33 +18,18 @@
   "excluded_map": {
     "https://iqs.org.in/": [
       {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "url": "tel:+917208660987",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2013,
-          "column": 10
+          "line": 2332,
+          "column": 37
         },
         "duration": {
           "secs": 0,
-          "nanos": 3516
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20would%20like%20to%20visit%20the%20IQS%20Frazer%20Town%20campus.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2056,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 16475
+          "nanos": 541
         }
       },
       {
@@ -54,57 +39,27 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2073,
+          "line": 2082,
           "column": 609
         },
         "duration": {
           "secs": 0,
-          "nanos": 90
+          "nanos": 170
         }
       },
       {
-        "url": "tel:+917208660987",
+        "url": "mailto:salam@iqs.org.in?subject=Strict%20Copyright%20and%20Permissions%20Inquiry%20-%20IQS",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2055,
-          "column": 10
+          "line": 2332,
+          "column": 116
         },
         "duration": {
           "secs": 0,
-          "nanos": 300
-        }
-      },
-      {
-        "url": "tel:+917208660987",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2323,
-          "column": 37
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 551
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2055,
-          "column": 107
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 91
+          "nanos": 201
         }
       },
       {
@@ -123,33 +78,63 @@
         }
       },
       {
+        "url": "mailto:salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2061,
+          "column": 107
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 161
+        }
+      },
+      {
         "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20am%20interested%20in%20courses%20at%20IQS%20Bangalore.",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 1993,
+          "line": 1999,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 12268
+          "nanos": 16691
         }
       },
       {
-        "url": "mailto:salam@iqs.org.in?subject=Strict%20Copyright%20and%20Permissions%20Inquiry%20-%20IQS",
+        "url": "tel:+917208660987",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2323,
-          "column": 116
+          "line": 2061,
+          "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 110
+          "nanos": 871
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2019,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 15899
         }
       },
       {
@@ -164,14 +149,29 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 1162
+          "nanos": 1112
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20would%20like%20to%20visit%20the%20IQS%20Frazer%20Town%20campus.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2065,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 27201
         }
       }
     ]
   },
   "duration": {
-    "secs": 12,
-    "nanos": 511969314
+    "secs": 9,
+    "nanos": 951851395
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/38110740216?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/39092619558?check_suite_focus=true)
