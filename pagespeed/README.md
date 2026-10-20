@@ -4,13 +4,13 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## Crecomy — [`https://crecomy.com/`](https://crecomy.com/)
 
-> Last updated: `2026-10-19T11:50:13Z`
+> Last updated: `2026-10-20T10:50:22Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 59 |
+| Performance | 35 |
 | Accessibility | 92 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -19,16 +19,16 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 3.1 s |
-| Largest Contentful Paint | 7.2 s |
-| Total Blocking Time | 170 ms |
+| Largest Contentful Paint | 8.7 s |
+| Total Blocking Time | 1,800 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 11.8 s |
+| Speed Index | 7.8 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 86 |
+| Performance | 73 |
 | Accessibility | 92 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -37,16 +37,16 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 0.7 s |
-| Largest Contentful Paint | 1.7 s |
-| Total Blocking Time | 140 ms |
+| Largest Contentful Paint | 1.8 s |
+| Total Blocking Time | 330 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 2.2 s |
+| Speed Index | 2.3 s |
 
 ---
 
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-10-19T11:49:08Z`
+> Last updated: `2026-10-20T10:47:58Z`
 
 ### 📱 Mobile
 
@@ -61,16 +61,16 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 1.5 s |
-| Largest Contentful Paint | 2.5 s |
+| Largest Contentful Paint | 2.4 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 2.7 s |
+| Speed Index | 2.2 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 100 |
+| Performance | 95 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -82,19 +82,19 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Largest Contentful Paint | 0.7 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.015 |
-| Speed Index | 0.9 s |
+| Speed Index | 2.1 s |
 
 ---
 
 ## IQS - Hifz Focus — [`https://hifz.iqs.org.in/`](https://hifz.iqs.org.in/)
 
-> Last updated: `2026-10-19T11:49:22Z`
+> Last updated: `2026-10-20T10:48:10Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 64 |
+| Performance | 78 |
 | Accessibility | 84 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -102,17 +102,17 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 **Core Web Vitals (Mobile)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 4.6 s |
-| Largest Contentful Paint | 8.0 s |
-| Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0 |
-| Speed Index | 4.6 s |
+| First Contentful Paint | 2.6 s |
+| Largest Contentful Paint | 4.5 s |
+| Total Blocking Time | 130 ms |
+| Cumulative Layout Shift | 0.078 |
+| Speed Index | 2.6 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 94 |
+| Performance | 96 |
 | Accessibility | 84 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -122,7 +122,7 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | --- | --- |
 | First Contentful Paint | 0.7 s |
 | Largest Contentful Paint | 1.1 s |
-| Total Blocking Time | 140 ms |
+| Total Blocking Time | 20 ms |
 | Cumulative Layout Shift | 0.08 |
 | Speed Index | 0.7 s |
 
@@ -130,13 +130,13 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-10-19T11:49:04Z`
+> Last updated: `2026-10-20T10:47:50Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 91 |
+| Performance | 96 |
 | Accessibility | 91 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -145,7 +145,7 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.1 s |
-| Largest Contentful Paint | 3.2 s |
+| Largest Contentful Paint | 2.3 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.019 |
 | Speed Index | 2.1 s |
@@ -154,7 +154,7 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 | Category | Score |
 | --- | --- |
-| Performance | 99 |
+| Performance | 100 |
 | Accessibility | 94 |
 | Best Practices | 96 |
 | SEO | 100 |
