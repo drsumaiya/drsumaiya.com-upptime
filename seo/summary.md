@@ -1,12 +1,12 @@
 # 🤖 Search Engine Indexing & SEO Health Report
-> Last updated: `2026-10-22 09:52:07 UTC`
+> Last updated: `2026-10-23 09:45:57 UTC`
 
 Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sitemaps.
 
 | Site | robots.txt | Sitemap | Indexing Status | Details |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | ❌ Failed | ❌ Broken | 🟥 Degraded | robots.txt fetch failed: <urlopen error [Errno 101] Network is unreachable> Sitemap fetch / parse failed: <urlopen error [Errno 101] Network is unreachable> |
-| **IQS** | ❌ Failed | ❌ Broken | 🟥 Degraded | robots.txt fetch failed: <urlopen error [Errno 101] Network is unreachable> Sitemap fetch / parse failed: <urlopen error [Errno 101] Network is unreachable> |
+| **DrSumaiya.com** | ✅ OK | ✅ Valid (3 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
+| **IQS** | ✅ OK | ✅ Valid (7 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
 | **IQS - Hifz Focus** | ✅ OK | ✅ Valid (23 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
 | **Crecomy** | ✅ OK | ✅ Valid (28 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
 
