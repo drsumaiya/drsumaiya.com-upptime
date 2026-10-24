@@ -1,6 +1,6 @@
 ## IQS - Hifz Focus — [`https://hifz.iqs.org.in/`](https://hifz.iqs.org.in/)
 
-> Last updated: `2026-10-23T10:51:45Z`
+> Last updated: `2026-10-24T10:06:40Z`
 
 ### 📱 Mobile
 
@@ -15,8 +15,8 @@
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 6.4 s |
-| Largest Contentful Paint | 9.1 s |
-| Total Blocking Time | 20 ms |
+| Largest Contentful Paint | 9.0 s |
+| Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0 |
 | Speed Index | 6.4 s |
 
@@ -24,7 +24,7 @@
 
 | Category | Score |
 | --- | --- |
-| Performance | 96 |
+| Performance | 97 |
 | Accessibility | 84 |
 | Best Practices | 100 |
 | SEO | 83 |
