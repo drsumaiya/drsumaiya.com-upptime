@@ -1,15 +1,15 @@
 {
-  "total": 102,
-  "unique": 58,
-  "successful": 87,
+  "total": 104,
+  "unique": 59,
+  "successful": 88,
   "unknown": 0,
   "unsupported": 5,
   "timeouts": 0,
   "redirects": 13,
   "remaps": 0,
-  "excludes": 10,
+  "excludes": 11,
   "errors": 0,
-  "cached": 34,
+  "cached": 35,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -18,18 +18,33 @@
   "excluded_map": {
     "https://iqs.org.in/": [
       {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2047,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 1011
+        }
+      },
+      {
         "url": "tel:+917208660987",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2332,
+          "line": 2360,
           "column": 37
         },
         "duration": {
           "secs": 0,
-          "nanos": 541
+          "nanos": 461
         }
       },
       {
@@ -39,42 +54,12 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2082,
-          "column": 609
+          "line": 1269,
+          "column": 31
         },
         "duration": {
           "secs": 0,
-          "nanos": 170
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in?subject=Strict%20Copyright%20and%20Permissions%20Inquiry%20-%20IQS",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2332,
-          "column": 116
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 201
-        }
-      },
-      {
-        "url": "mailto: salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 1243,
-          "column": 7
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 130
+          "nanos": 190
         }
       },
       {
@@ -84,12 +69,27 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2061,
+          "line": 2089,
           "column": 107
         },
         "duration": {
           "secs": 0,
-          "nanos": 161
+          "nanos": 270
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in?subject=Strict%20Copyright%20and%20Permissions%20Inquiry%20-%20IQS",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2360,
+          "column": 116
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 170
         }
       },
       {
@@ -99,12 +99,27 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 1999,
+          "line": 2027,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 16691
+          "nanos": 14287
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20found%20IQS%20via%20AI%20Search%20and%20would%20like%20course%20guidance.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2448,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 2214
         }
       },
       {
@@ -114,27 +129,12 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2061,
+          "line": 2089,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 871
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2019,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 15899
+          "nanos": 1292
         }
       },
       {
@@ -144,12 +144,12 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 1228,
-          "column": 7
+          "line": 1254,
+          "column": 51
         },
         "duration": {
           "secs": 0,
-          "nanos": 1112
+          "nanos": 631
         }
       },
       {
@@ -159,19 +159,34 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2065,
+          "line": 2093,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 27201
+          "nanos": 12562
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2110,
+          "column": 617
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 261
         }
       }
     ]
   },
   "duration": {
-    "secs": 9,
-    "nanos": 951851395
+    "secs": 20,
+    "nanos": 443472646
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/39092619558?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/40157810133?check_suite_focus=true)

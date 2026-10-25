@@ -5,11 +5,11 @@
   "unknown": 0,
   "unsupported": 0,
   "timeouts": 0,
-  "redirects": 40,
+  "redirects": 41,
   "remaps": 0,
   "excludes": 2,
   "errors": 0,
-  "cached": 39,
+  "cached": 38,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -17,21 +17,6 @@
   "redirect_map": {},
   "excluded_map": {
     "https://crecomy.com/": [
-      {
-        "url": "https://linkedin.com/",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 76,
-          "column": 215701
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 27722
-        }
-      },
       {
         "url": "https://x.com/",
         "status": {
@@ -44,14 +29,29 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 40296
+          "nanos": 11327
+        }
+      },
+      {
+        "url": "https://linkedin.com/",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 76,
+          "column": 215701
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 24878
         }
       }
     ]
   },
   "duration": {
-    "secs": 14,
-    "nanos": 501533081
+    "secs": 17,
+    "nanos": 767134403
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/39092619558?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/40157810133?check_suite_focus=true)
