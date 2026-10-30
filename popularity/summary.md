@@ -1,62 +1,63 @@
 # 📈 Daily Page Views & Content Popularity Report
-*Audit Timestamp: `2026-10-29 07:20:41 UTC` • Automated telemetry via Origin Stats Engine*
+*Audit Timestamp: `2026-10-30 07:23:10 UTC` • Automated telemetry via Origin Stats Engine*
 
 | Monitored Property | Health Status | 24h Views | 7-Day Views | Top Performing Article (24h) |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | 🟢 Live | **131** | 773 | [Breastfeeding Guidelines for New Moms: Latch, Supply & ...](https://drsumaiya.com/post/breastfeeding-guidelines-for-new-moms/) (72 views) |
-| **IQS** | 🟢 Live | **85** | 1,055 | [The Concept of Bid‘ah: Islam’s Shield Against Religious...](https://iqs.org.in/blog/2026/10/26/concept-of-bidah-preservation-islam/) (34 views) |
+| **DrSumaiya.com** | 🟢 Live | **51** | 788 | [Breastfeeding Guidelines for New Moms: Latch, Supply & ...](https://drsumaiya.com/post/breastfeeding-guidelines-for-new-moms/) (7 views) |
+| **IQS** | 🟢 Live | **72** | 965 | [The Concept of Bid‘ah: Islam’s Shield Against Religious...](https://iqs.org.in/blog/2026/10/26/concept-of-bidah-preservation-islam/) (22 views) |
 
 ## 🏆 DrSumaiya.com — Top Performing Content
 
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Breastfeeding Guidelines for New Moms: Latch, Supply & Diet | **72** | [Read Post](https://drsumaiya.com/post/breastfeeding-guidelines-for-new-moms/) |
-| **#2** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **8** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
-| **#3** | 7 Types of Stool: Bristol Stool Chart Explained by a Doctor (2026) | **5** | [Read Post](https://drsumaiya.com/post/7-types-of-stool-and-what-each-one-says-about-your-gut/) |
-| **#4** | Choosing the Right Salt: A Registered Dietitian's Complete Guide | **3** | [Read Post](https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/) |
-| **#5** | Top 10 Healthspan Supplements: What Actually Works (Doctors Guide 2026) | **3** | [Read Post](https://drsumaiya.com/post/top-10-supplements-for-enhancing-health-span/) |
-| **#6** | The Science of Sunnah Foods: Clinical Phytochemistry & Health Guide (2026) | **2** | [Read Post](https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/) |
-| **#7** | 10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally | **2** | [Read Post](https://drsumaiya.com/post/10-foods-to-boost-your-fertility/) |
-| **#8** | CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide | **2** | [Read Post](https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/) |
-| **#9** | Counting Every Calorie and Still Not Losing Weight? How Gut Microbes Change the Equation | **2** | [Read Post](https://drsumaiya.com/post/gut-microbiome-calorie-absorption-weight-loss/) |
-| **#10** | Beet the Odds: A Therapeutic Superfood Backed by Science | **1** | [Read Post](https://drsumaiya.com/post/beet-the-odds-a-therapeutic-superfood-backed-by-science/) |
+| **#1** | Breastfeeding Guidelines for New Moms: Latch, Supply & Diet | **7** | [Read Post](https://drsumaiya.com/post/breastfeeding-guidelines-for-new-moms/) |
+| **#2** | Choosing the Right Rice for Blood Sugar Management: A Dietitian’s Perspective | **4** | [Read Post](https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/) |
+| **#3** | Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide | **3** | [Read Post](https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/) |
+| **#4** | Monthly Grocery Costs in Bangalore: How to Eat Nutritiously on Any Budget in 2025 | **2** | [Read Post](https://drsumaiya.com/post/monthly-grocery-costs-in-bangalore-how-to-eat-nutritiously-on-any-budget-in-2025/) |
+| **#5** | 15 High-GI Indian Foods That Spike Blood Sugar: Doctor-Reviewed Swaps (2026) | **2** | [Read Post](https://drsumaiya.com/post/foods-that-spike-blood-glucose-what-to-avoid-for-better-health/) |
+| **#6** | 30 Proven Tips to Lose 5 Kgs in a Month for Busy Professionals | **2** | [Read Post](https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/) |
+| **#7** | Top 10 Healthspan Supplements: What Actually Works (Doctors Guide 2026) | **2** | [Read Post](https://drsumaiya.com/post/top-10-supplements-for-enhancing-health-span/) |
+| **#8** | Free "Why Is My Calorie Deficit Failing?" Gut & Food Structure Clinical Audit | **1** | [Read Post](https://drsumaiya.com/post/free-gut-calorie-absorption-audit-c0268/) |
+| **#9** | Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works | **1** | [Read Post](https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/) |
+| **#10** | Optimum Health Series II: Effects of Glucose Spikes on Human Health | **1** | [Read Post](https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Home page | **6** | [Visit Page](http://drsumaiya.com/) |
-| **#2** | About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru | **4** | [Visit Page](https://drsumaiya.com/about/) |
-| **#3** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **3** | [Visit Page](https://drsumaiya.com/) |
-| **#4** | Patient History Form | **1** | [Visit Page](https://drsumaiya.com/form/) |
-| **#5** | Services | **1** | [Visit Page](https://drsumaiya.com/services/) |
-| **#6** | Contact | **1** | [Visit Page](https://drsumaiya.com/contact/) |
-| **#7** | Blog | **1** | [Visit Page](https://drsumaiya.com/blog/) |
+| **#1** | Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic | **8** | [Visit Page](https://drsumaiya.com/) |
+| **#2** | Cholesterol nutrition consultation | **2** | [Visit Page](https://drsumaiya.com/services/high-cholesterol-nutrition-consultation/) |
+| **#3** | Plans and Pricing | **2** | [Visit Page](https://drsumaiya.com/plans-pricing/) |
+| **#4** | About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru | **1** | [Visit Page](https://drsumaiya.com/about/) |
+| **#5** | Weight-management nutrition consultation | **1** | [Visit Page](https://drsumaiya.com/services/weight-management-nutrition-consultation/) |
+| **#6** | IBS nutrition consultation | **1** | [Visit Page](https://drsumaiya.com/services/ibs-nutrition-consultation/) |
 
 ## 🏆 IQS — Top Performing Content
 
 ### 📝 Top Blog Posts (Last 24 Hours)
 | Rank | Blog Post Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | The Concept of Bid‘ah: Islam’s Shield Against Religious Corruption | **34** | [Read Post](https://iqs.org.in/blog/2026/10/26/concept-of-bidah-preservation-islam/) |
+| **#1** | The Concept of Bid‘ah: Islam’s Shield Against Religious Corruption | **22** | [Read Post](https://iqs.org.in/blog/2026/10/26/concept-of-bidah-preservation-islam/) |
 | **#2** | Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide) | **18** | [Read Post](https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/) |
-| **#3** | The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye | **4** | [Read Post](https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/) |
-| **#4** | Biography of Imam Al-Tibrizi: Author of Mishkatul Masabeeh | **4** | [Read Post](https://iqs.org.in/blog/2026/03/26/biography-of-imam-al-tibrizi-author-of-mishkatul-masabeeh/) |
-| **#5** | The Unapologetic Athari Creed: Belief of the First Muslims | **3** | [Read Post](https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/) |
-| **#6** | Muslim Ladies Prayer Places in Bengaluru | **2** | [Read Post](https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/) |
-| **#7** | Surah Al-Kahf: Unveiling the Deception of the Dunya | **2** | [Read Post](https://iqs.org.in/blog/2026/04/11/surah-al-kahf-unveiling-the-deception-of-the-dunya/) |
-| **#8** | The Islamic Obligation of Niqab: Understanding Face Covering in Islam | **1** | [Read Post](https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/) |
-| **#9** | The Sacred Bond of Marriage in Islam: A Path to Peace and Blessings | **1** | [Read Post](https://iqs.org.in/blog/2023/11/05/the-sacred-bond-of-marriage-in-islam-a-path-to-peace-and-blessings/) |
-| **#10** | Exploring Palindromes in the Quran: A Linguistic Miracle | **1** | [Read Post](https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/) |
+| **#3** | Lessons from Surah al-Kahf: Understanding the Trial of Power | **4** | [Read Post](https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/) |
+| **#4** | Muslim Ladies Prayer Places in Bengaluru | **4** | [Read Post](https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/) |
+| **#5** | The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye | **3** | [Read Post](https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/) |
+| **#6** | Mutawatir Hadiths | **3** | [Read Post](https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/) |
+| **#7** | Ultimate Guide to Ruqya: Quranic Healing & Sunnah Practices for Spiritual Protection | **3** | [Read Post](https://iqs.org.in/blog/2025/08/03/ultimate-guide-to-ruqya-quranic-healing-sunnah-practices-for-spiritual-protection/) |
+| **#8** | Smoking, Selling and Trading Cigarettes & Bidis: The Islamic Ruling that Smoking Is Not Merely a Bad Habit — It Is a Matter of Halal and Haram | **1** | [Read Post](https://iqs.org.in/blog/2026/10/04/smoking-selling-and-trading-cigarettes-bidis-the-islamic-ruling-that-smoking-is-not-merely-a-bad-habit-it-is-a-matter-of-halal-and-haram/) |
+| **#9** | The Pursuit of Duniya vs. Finding Allah SWT: A Reflection on True Fulfillment | **1** | [Read Post](https://iqs.org.in/blog/2024/06/13/chasing-dunya-vs-allah/) |
+| **#10** | Trust in Ar-Razzaq: How Nikah Unlocks the Doors to Sustenance | **1** | [Read Post](https://iqs.org.in/blog/2025/09/12/trust-in-ar-razzaq-how-nikah-unlocks-the-doors-to-sustenance/) |
 
 ### 📄 Top Pages & Intake Forms (Last 24 Hours)
 | Rank | Page Title | Views | URL |
 | :---: | :--- | :---: | :--- |
-| **#1** | Home - Main | **4** | [Visit Page](https://iqs.org.in/) |
-| **#2** | Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS | **2** | [Visit Page](https://iqs.org.in/ruqyah-bangalore/) |
-| **#3** | Faq | **1** | [Visit Page](https://iqs.org.in/faq-2/) |
-| **#4** | Hifz Quran Academy Bangalore | Full-Time & Online Memorization | IQS | **1** | [Visit Page](https://iqs.org.in/hifz-quran-bangalore/) |
-| **#5** | Sharia Ruqyah Consultation & Spiritual Counseling | **1** | [Visit Page](https://iqs.org.in/ruqya/) |
+| **#1** | About Us | Institute of Quran and Sunnah (IQS) | **2** | [Visit Page](https://iqs.org.in/about-us/) |
+| **#2** | Home - Main | **2** | [Visit Page](https://iqs.org.in/) |
+| **#3** | Home page | **1** | [Visit Page](https://iqs.org.in/) |
+| **#4** | Islamic Courses | **1** | [Visit Page](https://iqs.org.in/islamic-courses/) |
+| **#5** | Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS | **1** | [Visit Page](https://iqs.org.in/ruqyah-bangalore/) |
+| **#6** | Sharia Ruqyah Consultation & Spiritual Counseling | **1** | [Visit Page](https://iqs.org.in/ruqya/) |
+| **#7** | Is it Shirk? A Practical Guide to Identifying and Avoiding Shirk in Islam | **1** | [Visit Page](https://iqs.org.in/is-it-shirk/) |
 
 ---
 *Telemetry gathered automatically via Upptime Content Popularity Engine.*
