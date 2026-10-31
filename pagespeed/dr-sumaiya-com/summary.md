@@ -1,6 +1,6 @@
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-10-30T11:58:37Z`
+> Last updated: `2026-10-31T11:32:21Z`
 
 ### 📱 Mobile
 
@@ -16,9 +16,9 @@
 | --- | --- |
 | First Contentful Paint | 1.4 s |
 | Largest Contentful Paint | 1.4 s |
-| Total Blocking Time | 10 ms |
+| Total Blocking Time | 60 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 2.1 s |
+| Speed Index | 2.4 s |
 
 ### 🖥️ Desktop
 
@@ -34,8 +34,8 @@
 | --- | --- |
 | First Contentful Paint | 0.4 s |
 | Largest Contentful Paint | 0.4 s |
-| Total Blocking Time | 0 ms |
+| Total Blocking Time | 30 ms |
 | Cumulative Layout Shift | 0.015 |
-| Speed Index | 0.7 s |
+| Speed Index | 0.8 s |
 
 ---
