@@ -1,15 +1,15 @@
 {
-  "total": 104,
-  "unique": 59,
-  "successful": 88,
+  "total": 102,
+  "unique": 58,
+  "successful": 87,
   "unknown": 0,
   "unsupported": 5,
   "timeouts": 0,
-  "redirects": 13,
+  "redirects": 11,
   "remaps": 0,
-  "excludes": 11,
+  "excludes": 10,
   "errors": 0,
-  "cached": 35,
+  "cached": 32,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -18,18 +18,18 @@
   "excluded_map": {
     "https://iqs.org.in/": [
       {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
+        "url": "tel:+917208660987",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 2047,
+          "line": 2089,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 1011
+          "nanos": 461
         }
       },
       {
@@ -44,112 +44,22 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 461
+          "nanos": 320
         }
       },
       {
-        "url": "mailto: salam@iqs.org.in",
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20used%20the%20Course%20Finder%20and%20want%20to%20enquire%20about%20the%20recommended%20course.",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 1269,
-          "column": 31
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 190
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2089,
-          "column": 107
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 270
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in?subject=Strict%20Copyright%20and%20Permissions%20Inquiry%20-%20IQS",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2360,
-          "column": 116
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 170
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20am%20interested%20in%20courses%20at%20IQS%20Bangalore.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2027,
+          "line": 2047,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 14287
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20found%20IQS%20via%20AI%20Search%20and%20would%20like%20course%20guidance.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2448,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 2214
-        }
-      },
-      {
-        "url": "tel:+917208660987",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 2089,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 1292
-        }
-      },
-      {
-        "url": "mailto:salam@iqs.org.in;",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 1254,
-          "column": 51
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 631
+          "nanos": 18505
         }
       },
       {
@@ -164,7 +74,37 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 12562
+          "nanos": 29365
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in?subject=Strict%20Copyright%20and%20Permissions%20Inquiry%20-%20IQS",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2360,
+          "column": 116
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 110
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in;",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1254,
+          "column": 51
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 532
         }
       },
       {
@@ -179,14 +119,59 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 261
+          "nanos": 310
+        }
+      },
+      {
+        "url": "mailto: salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 1269,
+          "column": 31
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 150
+        }
+      },
+      {
+        "url": "mailto:salam@iqs.org.in",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2089,
+          "column": 107
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 221
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Assalamu%20Alaikum,%20I%20am%20interested%20in%20courses%20at%20IQS%20Bangalore.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 2027,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 19746
         }
       }
     ]
   },
   "duration": {
-    "secs": 20,
-    "nanos": 443472646
+    "secs": 16,
+    "nanos": 8567142
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/40157810133?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/41273551325?check_suite_focus=true)
