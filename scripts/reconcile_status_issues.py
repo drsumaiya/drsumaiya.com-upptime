@@ -18,6 +18,7 @@ import glob
 import re
 import urllib.request
 import urllib.error
+import urllib.parse
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -67,15 +68,27 @@ def load_tracked_endpoints():
     return endpoints
 
 
+def normalize_url(url: str) -> str:
+    """Ensure URL host and scheme are lowercase to prevent SNI case-sensitivity TLS alert failures."""
+    try:
+        parsed = urllib.parse.urlsplit(url)
+        return urllib.parse.urlunsplit(
+            (parsed.scheme.lower(), parsed.netloc.lower(), parsed.path, parsed.query, parsed.fragment)
+        )
+    except Exception:
+        return url
+
+
 def probe_endpoint(url: str, max_retries: int = 3, timeout: int = 15):
     """
     Perform a multi-probe health check against the URL.
     Returns (is_up: bool, status_code: int, latency_ms: int, error_msg: str).
     """
+    norm_url = normalize_url(url)
     for attempt in range(1, max_retries + 1):
         start_time = time.time()
         req = urllib.request.Request(
-            url,
+            norm_url,
             headers={
                 "User-Agent": USER_AGENT,
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

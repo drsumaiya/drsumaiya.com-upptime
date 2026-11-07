@@ -5,7 +5,7 @@ user-agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML
 
 sites:
   - name: DrSumaiya.com
-    url: https://DrSumaiya.com
+    url: https://drsumaiya.com
   - name: DrSumaiya - Inquiry Form
     url: https://drsumaiya.com/inquiry-form/
   - name: DrSumaiya - Booking Form
