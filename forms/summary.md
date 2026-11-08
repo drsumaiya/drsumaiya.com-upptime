@@ -1,14 +1,14 @@
 # 📋 Lead Intake & Form Health Summary
 
-**Last Probe Run:** `2026-11-08 12:56:02 UTC`  
-**Total Targets:** 4 | **Passed:** 4 | **Failed:** 0
+**Last Probe Run:** `2026-11-08 18:42:23 UTC`  
+**Total Targets:** 4 | **Passed:** 3 | **Failed:** 1
 
 | Form Target | Page Status | Submission Route | Assets Verified | Health |
 | :--- | :---: | :---: | :---: | :---: |
-| [DrSumaiya - Consultation Inquiry Form](https://drsumaiya.com/inquiry-form/) | HTTP 200 (632.51ms) | `OPTIONS` 200 | 3 assets | 🟢 **PASS** |
-| [DrSumaiya - Patient History Form](https://drsumaiya.com/form/) | HTTP 200 (471.64ms) | Iframe HTTP 200 | 1 assets | 🟢 **PASS** |
-| [IQS - Admissions & Course Inquiry Form](https://iqs.org.in/inquiry/) | HTTP 200 (418.43ms) | `OPTIONS` 200 | 0 assets | 🟢 **PASS** |
-| [Hifz Focus - Student Onboarding Form](https://hifz.iqs.org.in/onboarding) | HTTP 200 (146.98ms) | Client-side | 6 assets | 🟢 **PASS** |
+| [DrSumaiya - Consultation Inquiry Form](https://drsumaiya.com/inquiry-form/) | HTTP 200 (453.17ms) | `OPTIONS` 301 | 3 assets | 🔴 **FAIL** |
+| [DrSumaiya - Patient History Form](https://drsumaiya.com/form/) | HTTP 200 (565.68ms) | Iframe HTTP 200 | 1 assets | 🟢 **PASS** |
+| [IQS - Admissions & Course Inquiry Form](https://iqs.org.in/inquiry/) | HTTP 200 (437.73ms) | `OPTIONS` 200 | 0 assets | 🟢 **PASS** |
+| [Hifz Focus - Student Onboarding Form](https://hifz.iqs.org.in/onboarding) | HTTP 200 (179.45ms) | Client-side | 6 assets | 🟢 **PASS** |
 
 ## Detailed Target Breakdown
 
@@ -16,7 +16,10 @@
 - **URL:** https://drsumaiya.com/inquiry-form/
 - **DOM Container Status:** `PASS`
 - **Inputs Checked:** `PASS`
-- **REST Submission Route:** `https://drsumaiya.com/wp-json/nutricare/v1/submit` (OPTIONS -> HTTP 200, Allow: `POST`)
+- **REST Submission Route:** `https://drsumaiya.com/wp-json/nutricare/v1/submit` (OPTIONS -> HTTP 301, Allow: ``)
+
+> [!CAUTION]
+> - ⚠️ Submission endpoint https://drsumaiya.com/wp-json/nutricare/v1/submit failed probe: HTTP 301 (Allow: '')
 
 ### DrSumaiya - Patient History Form
 - **URL:** https://drsumaiya.com/form/
