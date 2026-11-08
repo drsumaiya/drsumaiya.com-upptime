@@ -18,21 +18,6 @@
   "excluded_map": {
     "https://crecomy.com/": [
       {
-        "url": "https://linkedin.com/",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 76,
-          "column": 215701
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 30816
-        }
-      },
-      {
         "url": "https://x.com/",
         "status": {
           "text": "Excluded",
@@ -44,14 +29,29 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 13670
+          "nanos": 17155
+        }
+      },
+      {
+        "url": "https://linkedin.com/",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 76,
+          "column": 215701
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 36998
         }
       }
     ]
   },
   "duration": {
-    "secs": 12,
-    "nanos": 304766604
+    "secs": 11,
+    "nanos": 186975200
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/41273551325?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/42447537980?check_suite_focus=true)
