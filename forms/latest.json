@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T18:42:23.757699+00:00",
+  "last_updated": "2026-11-08T23:28:26.085976+00:00",
   "total_targets": 4,
   "passed": 3,
   "failed": 1,
@@ -16,7 +16,7 @@
         "page": {
           "url": "https://drsumaiya.com/inquiry-form/",
           "status_code": 200,
-          "latency_ms": 453.17,
+          "latency_ms": 361.89,
           "status": "PASS",
           "error": null
         },
@@ -37,7 +37,7 @@
           "url": "https://drsumaiya.com/wp-json/nutricare/v1/submit",
           "method": "OPTIONS",
           "status_code": 301,
-          "latency_ms": 306.86,
+          "latency_ms": 312.06,
           "allow_header": "",
           "status": "FAIL",
           "error": "HTTP 301: Moved Permanently"
@@ -47,7 +47,7 @@
             "url": "https://drsumaiya.com/wp-content/plugins/badgeplugin/assets/css/badge-styles.css",
             "status_code": 200,
             "bytes": 1118,
-            "latency_ms": 346.02,
+            "latency_ms": 63.9,
             "status": "PASS",
             "error": null
           },
@@ -55,7 +55,7 @@
             "url": "https://drsumaiya.com/wp-content/plugins/drsumaiyacoreplugin/assets/css/portal-common.css",
             "status_code": 200,
             "bytes": 5598,
-            "latency_ms": 347.86,
+            "latency_ms": 313.49,
             "status": "PASS",
             "error": null
           },
@@ -63,7 +63,7 @@
             "url": "https://drsumaiya.com/wp-content/plugins/leadformplugin/basic_form_styling.css",
             "status_code": 200,
             "bytes": 9796,
-            "latency_ms": 333.74,
+            "latency_ms": 63.93,
             "status": "PASS",
             "error": null
           }
@@ -80,7 +80,7 @@
         "page": {
           "url": "https://drsumaiya.com/form/",
           "status_code": 200,
-          "latency_ms": 565.68,
+          "latency_ms": 306.01,
           "status": "PASS",
           "error": null
         },
@@ -95,7 +95,7 @@
         "iframe_target": {
           "url": "https://docs.google.com/forms/d/e/1FAIpQLSdOnU6NJUiOTLHouIEhRpnqIUiNV40TfUqFLdtuflvUulLkAg/viewform?embedded=true",
           "status_code": 200,
-          "latency_ms": 477.06,
+          "latency_ms": 258.96,
           "disallowed_content_found": null,
           "status": "PASS",
           "error": null
@@ -105,7 +105,7 @@
             "url": "https://drsumaiya.com/wp-content/plugins/leadformplugin/basic_form_styling.css",
             "status_code": 200,
             "bytes": 9796,
-            "latency_ms": 101.48,
+            "latency_ms": 69.39,
             "status": "PASS",
             "error": null
           }
@@ -122,7 +122,7 @@
         "page": {
           "url": "https://iqs.org.in/inquiry/",
           "status_code": 200,
-          "latency_ms": 437.73,
+          "latency_ms": 428.21,
           "status": "PASS",
           "error": null
         },
@@ -143,7 +143,7 @@
           "url": "https://iqs.org.in/wp-json/iqs/v1/inquiry",
           "method": "OPTIONS",
           "status_code": 200,
-          "latency_ms": 824.43,
+          "latency_ms": 877.21,
           "allow_header": "POST",
           "status": "PASS",
           "error": null
@@ -161,7 +161,7 @@
         "page": {
           "url": "https://hifz.iqs.org.in/onboarding",
           "status_code": 200,
-          "latency_ms": 179.45,
+          "latency_ms": 80.02,
           "status": "PASS",
           "error": null
         },
@@ -182,7 +182,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/09dt24qk2jal7.js",
             "status_code": 200,
             "bytes": 27821,
-            "latency_ms": 120.77,
+            "latency_ms": 76.39,
             "status": "PASS",
             "error": null
           },
@@ -190,7 +190,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0cz1d0mv5g_q7.js",
             "status_code": 200,
             "bytes": 112594,
-            "latency_ms": 99.38,
+            "latency_ms": 66.63,
             "status": "PASS",
             "error": null
           },
@@ -198,7 +198,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0id6aevbwms6i.js",
             "status_code": 200,
             "bytes": 129047,
-            "latency_ms": 162.38,
+            "latency_ms": 39.85,
             "status": "PASS",
             "error": null
           },
@@ -206,7 +206,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0m8u1mcp360_w.js",
             "status_code": 200,
             "bytes": 28284,
-            "latency_ms": 180.94,
+            "latency_ms": 181.35,
             "status": "PASS",
             "error": null
           },
@@ -214,7 +214,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0nbjnie27g2st.js",
             "status_code": 200,
             "bytes": 40907,
-            "latency_ms": 188.87,
+            "latency_ms": 70.36,
             "status": "PASS",
             "error": null
           },
@@ -222,7 +222,7 @@
             "url": "https://hifz.iqs.org.in/_next/static/chunks/0ts59z7z3lj6i.js",
             "status_code": 200,
             "bytes": 38939,
-            "latency_ms": 86.9,
+            "latency_ms": 30.4,
             "status": "PASS",
             "error": null
           }
