@@ -1,19 +1,19 @@
 {
   "name": "Crecomy",
   "url": "https://crecomy.com/",
-  "timestamp": "2026-11-08T12:38:07Z",
+  "timestamp": "2026-11-09T14:55:53Z",
   "auditStatus": "success",
   "mobile": {
-    "performance": 86,
+    "performance": 70,
     "accessibility": 92,
     "bestPractices": 100,
     "seo": 100,
     "coreWebVitals": {
       "firstContentfulPaint": "2.3 s",
       "largestContentfulPaint": "2.3 s",
-      "totalBlockingTime": "100 ms",
+      "totalBlockingTime": "660 ms",
       "cumulativeLayoutShift": "0",
-      "speedIndex": "9.8 s"
+      "speedIndex": "10.7 s"
     }
   },
   "desktop": {
@@ -24,9 +24,9 @@
     "coreWebVitals": {
       "firstContentfulPaint": "0.6 s",
       "largestContentfulPaint": "0.6 s",
-      "totalBlockingTime": "90 ms",
+      "totalBlockingTime": "50 ms",
       "cumulativeLayoutShift": "0",
-      "speedIndex": "2.0 s"
+      "speedIndex": "2.3 s"
     }
   }
 }
