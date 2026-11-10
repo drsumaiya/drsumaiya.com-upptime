@@ -1,19 +1,19 @@
 {
   "name": "IQS",
   "url": "https://iqs.org.in/",
-  "timestamp": "2026-11-09T14:54:34Z",
+  "timestamp": "2026-11-10T14:07:17Z",
   "auditStatus": "success",
   "mobile": {
-    "performance": 100,
+    "performance": 98,
     "accessibility": 91,
     "bestPractices": 100,
     "seo": 100,
     "coreWebVitals": {
       "firstContentfulPaint": "1.3 s",
-      "largestContentfulPaint": "1.3 s",
+      "largestContentfulPaint": "2.3 s",
       "totalBlockingTime": "0 ms",
       "cumulativeLayoutShift": "0.019",
-      "speedIndex": "1.3 s"
+      "speedIndex": "2.0 s"
     }
   },
   "desktop": {
@@ -26,7 +26,7 @@
       "largestContentfulPaint": "0.6 s",
       "totalBlockingTime": "0 ms",
       "cumulativeLayoutShift": "0.003",
-      "speedIndex": "0.5 s"
+      "speedIndex": "0.7 s"
     }
   }
 }
