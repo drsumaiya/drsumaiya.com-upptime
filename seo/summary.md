@@ -1,11 +1,11 @@
 # 🤖 Search Engine Indexing & SEO Health Report
-> Last updated: `2026-11-11 12:28:09 UTC`
+> Last updated: `2026-11-12 13:33:50 UTC`
 
 Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sitemaps.
 
 | Site | robots.txt | Sitemap | Indexing Status | Details |
 | :--- | :---: | :---: | :---: | :--- |
-| **DrSumaiya.com** | ✅ OK | ✅ Valid (3 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
+| **DrSumaiya.com** | ✅ OK | ✅ Valid (4 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
 | **IQS** | ✅ OK | ✅ Valid (7 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
 | **IQS - Hifz Focus** | ✅ OK | ✅ Valid (23 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
 | **Crecomy** | ✅ OK | ✅ Valid (28 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
