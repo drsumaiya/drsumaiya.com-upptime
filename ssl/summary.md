@@ -1,17 +1,17 @@
 # 🔒 SSL/TLS Certificate Health & Expiry Report
-> Last updated: `2026-11-12 12:12:16 UTC`
+> Last updated: `2026-11-13 11:52:24 UTC`
 
 Automated daily audit of TLS certificates, expiration countdowns, SAN coverage, and cipher suites.
 
 | Site | Hostname | Status | Days Left | Expires On | Issuer | TLS | Details |
 | :--- | :--- | :---: | :---: | :--- | :--- | :---: | :--- |
-| **DrSumaiya.com** | `drsumaiya.com` | 🟩 Healthy | **89.6d** | 2027-02-10 | Let's Encrypt (YE1) | TLSv1.3 | Certificate valid and trusted. |
-| **DrSumaiya - Status** | `status.drsumaiya.com` | 🟩 Healthy | **70.2d** | 2027-01-21 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
-| **IQS** | `iqs.org.in` | 🟩 Healthy | **88.3d** | 2027-02-08 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
-| **IQS - Hifz Focus** | `hifz.iqs.org.in` | 🟩 Healthy | **40.6d** | 2026-12-23 | Google Trust Services (WR3) | TLSv1.3 | Certificate valid and trusted. |
-| **Hifz Focus App** | `hifzfocus.com` | 🟩 Healthy | **38.1d** | 2026-12-20 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
-| **Crecomy** | `crecomy.com` | 🟩 Healthy | **45.2d** | 2026-12-27 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
-| **Crecomy - WWW** | `www.crecomy.com` | 🟩 Healthy | **47.7d** | 2026-12-30 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
+| **DrSumaiya.com** | `drsumaiya.com` | 🟩 Healthy | **88.6d** | 2027-02-10 | Let's Encrypt (YE1) | TLSv1.3 | Certificate valid and trusted. |
+| **DrSumaiya - Status** | `status.drsumaiya.com` | 🟩 Healthy | **69.2d** | 2027-01-21 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
+| **IQS** | `iqs.org.in` | 🟩 Healthy | **87.3d** | 2027-02-08 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
+| **IQS - Hifz Focus** | `hifz.iqs.org.in` | 🟩 Healthy | **39.6d** | 2026-12-23 | Google Trust Services (WR3) | TLSv1.3 | Certificate valid and trusted. |
+| **Hifz Focus App** | `hifzfocus.com` | 🟩 Healthy | **37.1d** | 2026-12-20 | Let's Encrypt (YE2) | TLSv1.3 | Certificate valid and trusted. |
+| **Crecomy** | `crecomy.com` | 🟩 Healthy | **44.2d** | 2026-12-27 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
+| **Crecomy - WWW** | `www.crecomy.com` | 🟩 Healthy | **46.8d** | 2026-12-30 | Let's Encrypt (YR1) | TLSv1.3 | Certificate valid and trusted. |
 
 ### Diagnostic Thresholds:
 * **🚨 Critical Alert (`<= 7 days` or expired):** Immediate action required. Potential outage imminent.
