@@ -1,12 +1,12 @@
 ## IQS - Hifz Focus — [`https://hifz.iqs.org.in/`](https://hifz.iqs.org.in/)
 
-> Last updated: `2026-11-13T13:46:25Z`
+> Last updated: `2026-11-14T12:50:42Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 86 |
+| Performance | 83 |
 | Accessibility | 84 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -15,10 +15,10 @@
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 0.9 s |
-| Largest Contentful Paint | 4.1 s |
+| Largest Contentful Paint | 4.4 s |
 | Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.078 |
-| Speed Index | 1.4 s |
+| Speed Index | 2.8 s |
 
 ### 🖥️ Desktop
 
@@ -32,10 +32,10 @@
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.2 s |
+| First Contentful Paint | 0.3 s |
 | Largest Contentful Paint | 1.1 s |
-| Total Blocking Time | 20 ms |
+| Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.08 |
-| Speed Index | 0.7 s |
+| Speed Index | 0.5 s |
 
 ---
