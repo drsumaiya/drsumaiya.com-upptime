@@ -1,15 +1,15 @@
 {
-  "total": 109,
-  "unique": 60,
-  "successful": 86,
+  "total": 111,
+  "unique": 61,
+  "successful": 87,
   "unknown": 0,
-  "unsupported": 3,
+  "unsupported": 4,
   "timeouts": 0,
-  "redirects": 1,
+  "redirects": 4,
   "remaps": 0,
   "excludes": 20,
   "errors": 0,
-  "cached": 29,
+  "cached": 31,
   "success_map": {},
   "error_map": {},
   "timeout_map": {},
@@ -18,183 +18,18 @@
   "excluded_map": {
     "https://drsumaiya.com/": [
       {
-        "url": "https://wa.me/917208660987",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 261,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 8236
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20book%20a%20clinical%20consultation.",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 279,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 24536
-        }
-      },
-      {
-        "url": "https://www.facebook.com/DrSumaiyaRD/",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 259,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 15630
-        }
-      },
-      {
-        "url": "tel:+918296129098",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 174,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 190
-        }
-      },
-      {
-        "url": "https://in.linkedin.com/in/dr-sumaiya-petiwala-19972b21",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 258,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 24005
-        }
-      },
-      {
-        "url": "tel:+917208660987",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 181,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 150
-        }
-      },
-      {
         "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20consultation",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 168,
+          "line": 46,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 751
-        }
-      },
-      {
-        "url": "tel:+918296129098",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 266,
-          "column": 12
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 411
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20book%20a%20consultation",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 268,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 2524
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20diet%20consultation",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 233,
-          "column": 36
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 932
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20consultation",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 45,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 4538
-        }
-      },
-      {
-        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20consultation",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 182,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 1283
+          "nanos": 1191
         }
       },
       {
@@ -209,22 +44,37 @@
         },
         "duration": {
           "secs": 0,
-          "nanos": 130
+          "nanos": 81
         }
       },
       {
-        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20book%20a%20clinical%20consultation.",
+        "url": "tel:+917208660987",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 36,
+          "line": 187,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 17102
+          "nanos": 80
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 264,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 1112
         }
       },
       {
@@ -234,42 +84,102 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 147,
+          "line": 236,
           "column": 36
         },
         "duration": {
           "secs": 0,
-          "nanos": 13796
+          "nanos": 471
         }
       },
       {
-        "url": "tel:+917208660987",
+        "url": "tel:+918296129098",
         "status": {
           "text": "Excluded",
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 265,
-          "column": 12
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 320
-        }
-      },
-      {
-        "url": "tel:+917208660987",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 173,
+          "line": 177,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 601
+          "nanos": 60
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20book%20a%20clinical%20consultation.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 37,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 11307
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20diet%20consultation",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 150,
+          "column": 36
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 9705
+        }
+      },
+      {
+        "url": "tel:+917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 176,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 1121
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20book%20a%20consultation",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 271,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 991
+        }
+      },
+      {
+        "url": "tel:+917208660987",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 268,
+          "column": 12
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 240
         }
       },
       {
@@ -279,27 +189,12 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 188,
+          "line": 185,
           "column": 10
         },
         "duration": {
           "secs": 0,
-          "nanos": 972
-        }
-      },
-      {
-        "url": "https://www.instagram.com/drsumaiyasnutricare/",
-        "status": {
-          "text": "Excluded",
-          "details": "This is due to your 'exclude' values"
-        },
-        "span": {
-          "line": 256,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 19827
+          "nanos": 15002
         }
       },
       {
@@ -309,19 +204,124 @@
           "details": "This is due to your 'exclude' values"
         },
         "span": {
-          "line": 260,
+          "line": 263,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 321
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20book%20a%20clinical%20consultation.",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 282,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 25379
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20consultation",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 171,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 571
+        }
+      },
+      {
+        "url": "https://www.instagram.com/drsumaiyasnutricare/",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 259,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 29434
+        }
+      },
+      {
+        "url": "https://www.facebook.com/DrSumaiyaRD/",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 262,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 4727
+        }
+      },
+      {
+        "url": "tel:+918296129098",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 269,
+          "column": 12
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 80
+        }
+      },
+      {
+        "url": "https://wa.me/917208660987?text=Hi%20Dr.%20Sumaiya%2C%20I%20would%20like%20to%20inquire%20about%20a%20consultation",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 191,
           "column": 10
         },
         "duration": {
           "secs": 0,
           "nanos": 591
         }
+      },
+      {
+        "url": "https://in.linkedin.com/in/dr-sumaiya-petiwala-19972b21",
+        "status": {
+          "text": "Excluded",
+          "details": "This is due to your 'exclude' values"
+        },
+        "span": {
+          "line": 261,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 26129
+        }
       }
     ]
   },
   "duration": {
-    "secs": 8,
-    "nanos": 726618586
+    "secs": 12,
+    "nanos": 4107677
   },
   "detailed_stats": false
-}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/42447537980?check_suite_focus=true)
+}[Full Github Actions output](https://github.com/drsumaiya/drsumaiya.com-upptime/actions/runs/43678870008?check_suite_focus=true)
