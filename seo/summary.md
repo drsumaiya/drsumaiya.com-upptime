@@ -1,5 +1,5 @@
 # 🤖 Search Engine Indexing & SEO Health Report
-> Last updated: `2026-11-15 12:31:41 UTC`
+> Last updated: `2026-11-16 13:23:49 UTC`
 
 Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sitemaps.
 
@@ -8,7 +8,7 @@ Automated daily audit of `robots.txt` directives (de-indexing guard) and XML Sit
 | **DrSumaiya.com** | ✅ OK | ✅ Valid (4 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
 | **IQS** | ✅ OK | ✅ Valid (7 sub-sitemaps) | 🟩 Healthy | All directives & sitemaps verified. |
 | **IQS - Hifz Focus** | ✅ OK | ✅ Valid (23 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
-| **Crecomy** | ✅ OK | ✅ Valid (28 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
+| **Crecomy** | ✅ OK | ✅ Valid (30 URLs) | 🟩 Healthy | All directives & sitemaps verified. |
 
 ### Diagnostic Rules:
 * **Robots.txt De-Indexing Guard**: Verifies that `Disallow: /` is NOT present for `User-agent: *`.
