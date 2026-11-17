@@ -1,12 +1,12 @@
 ## Crecomy — [`https://crecomy.com/`](https://crecomy.com/)
 
-> Last updated: `2026-11-16T14:33:08Z`
+> Last updated: `2026-11-17T15:22:42Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 81 |
+| Performance | 79 |
 | Accessibility | 92 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -16,15 +16,15 @@
 | --- | --- |
 | First Contentful Paint | 2.4 s |
 | Largest Contentful Paint | 2.4 s |
-| Total Blocking Time | 250 ms |
+| Total Blocking Time | 370 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 8.7 s |
+| Speed Index | 7.0 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 95 |
+| Performance | 92 |
 | Accessibility | 92 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -32,10 +32,10 @@
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.8 s |
-| Largest Contentful Paint | 0.8 s |
-| Total Blocking Time | 10 ms |
+| First Contentful Paint | 0.6 s |
+| Largest Contentful Paint | 0.6 s |
+| Total Blocking Time | 100 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 2.0 s |
+| Speed Index | 2.7 s |
 
 ---
