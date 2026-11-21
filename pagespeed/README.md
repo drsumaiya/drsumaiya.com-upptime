@@ -4,13 +4,13 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 
 ## Crecomy — [`https://crecomy.com/`](https://crecomy.com/)
 
-> Last updated: `2026-11-20T14:46:17Z`
+> Last updated: `2026-11-21T14:02:22Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 86 |
+| Performance | 80 |
 | Accessibility | 92 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -20,15 +20,15 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | --- | --- |
 | First Contentful Paint | 2.4 s |
 | Largest Contentful Paint | 2.4 s |
-| Total Blocking Time | 60 ms |
+| Total Blocking Time | 280 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 9.0 s |
+| Speed Index | 9.7 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 96 |
+| Performance | 93 |
 | Accessibility | 92 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -38,21 +38,21 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | --- | --- |
 | First Contentful Paint | 0.6 s |
 | Largest Contentful Paint | 0.6 s |
-| Total Blocking Time | 70 ms |
+| Total Blocking Time | 140 ms |
 | Cumulative Layout Shift | 0 |
-| Speed Index | 1.9 s |
+| Speed Index | 2.1 s |
 
 ---
 
 ## DrSumaiya.com — [`https://drsumaiya.com/`](https://drsumaiya.com/)
 
-> Last updated: `2026-11-20T14:45:12Z`
+> Last updated: `2026-11-21T14:00:53Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 68 |
+| Performance | 94 |
 | Accessibility | 93 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -61,16 +61,16 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 1.1 s |
-| Largest Contentful Paint | 3.0 s |
-| Total Blocking Time | 170 ms |
-| Cumulative Layout Shift | 0.69 |
-| Speed Index | 2.8 s |
+| Largest Contentful Paint | 2.9 s |
+| Total Blocking Time | 130 ms |
+| Cumulative Layout Shift | 0.004 |
+| Speed Index | 2.5 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 100 |
+| Performance | 80 |
 | Accessibility | 96 |
 | Best Practices | 100 |
 | SEO | 92 |
@@ -80,21 +80,21 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | --- | --- |
 | First Contentful Paint | 0.3 s |
 | Largest Contentful Paint | 0.8 s |
-| Total Blocking Time | 0 ms |
-| Cumulative Layout Shift | 0.017 |
-| Speed Index | 0.6 s |
+| Total Blocking Time | 20 ms |
+| Cumulative Layout Shift | 0.41 |
+| Speed Index | 1.1 s |
 
 ---
 
 ## IQS - Hifz Focus — [`https://hifz.iqs.org.in/`](https://hifz.iqs.org.in/)
 
-> Last updated: `2026-11-20T14:45:26Z`
+> Last updated: `2026-11-21T14:00:57Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 70 |
+| Performance | 65 |
 | Accessibility | 84 |
 | Best Practices | 100 |
 | SEO | 83 |
@@ -103,40 +103,40 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 2.3 s |
-| Largest Contentful Paint | 7.2 s |
-| Total Blocking Time | 110 ms |
+| Largest Contentful Paint | 7.7 s |
+| Total Blocking Time | 250 ms |
 | Cumulative Layout Shift | 0.078 |
-| Speed Index | 3.8 s |
+| Speed Index | 4.2 s |
 
 ### 🖥️ Desktop
 
 | Category | Score |
 | --- | --- |
-| Performance | 94 |
-| Accessibility | 84 |
+| Performance | 97 |
+| Accessibility | 88 |
 | Best Practices | 100 |
 | SEO | 83 |
 
 **Core Web Vitals (Desktop)**
 | Metric | Value |
 | --- | --- |
-| First Contentful Paint | 0.3 s |
+| First Contentful Paint | 0.2 s |
 | Largest Contentful Paint | 1.1 s |
-| Total Blocking Time | 140 ms |
+| Total Blocking Time | 0 ms |
 | Cumulative Layout Shift | 0.08 |
-| Speed Index | 0.6 s |
+| Speed Index | 0.4 s |
 
 ---
 
 ## IQS — [`https://iqs.org.in/`](https://iqs.org.in/)
 
-> Last updated: `2026-11-20T14:45:13Z`
+> Last updated: `2026-11-21T14:00:47Z`
 
 ### 📱 Mobile
 
 | Category | Score |
 | --- | --- |
-| Performance | 94 |
+| Performance | 93 |
 | Accessibility | 91 |
 | Best Practices | 100 |
 | SEO | 100 |
@@ -145,10 +145,10 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | Metric | Value |
 | --- | --- |
 | First Contentful Paint | 1.3 s |
-| Largest Contentful Paint | 3.0 s |
-| Total Blocking Time | 80 ms |
+| Largest Contentful Paint | 3.2 s |
+| Total Blocking Time | 30 ms |
 | Cumulative Layout Shift | 0.019 |
-| Speed Index | 1.8 s |
+| Speed Index | 1.4 s |
 
 ### 🖥️ Desktop
 
@@ -164,9 +164,9 @@ Automated daily performance tracking via [Google PageSpeed Insights / Lighthouse
 | --- | --- |
 | First Contentful Paint | 0.3 s |
 | Largest Contentful Paint | 0.7 s |
-| Total Blocking Time | 20 ms |
-| Cumulative Layout Shift | 0.005 |
-| Speed Index | 0.7 s |
+| Total Blocking Time | 0 ms |
+| Cumulative Layout Shift | 0.003 |
+| Speed Index | 0.6 s |
 
 ---
 
