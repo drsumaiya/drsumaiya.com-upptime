@@ -1,161 +1,112 @@
 {
-  "timestamp": "2026-11-20 08:45:18 UTC",
+  "timestamp": "2026-11-21 08:28:05 UTC",
   "sites": [
     {
       "name": "DrSumaiya.com",
       "slug": "dr-sumaiya-com",
       "domain": "https://drsumaiya.com",
       "status": "online",
-      "timestamp": "2026-11-20 08:45:18 UTC",
-      "views_24h": 50,
-      "views_7d": 1046,
+      "timestamp": "2026-11-21 08:28:05 UTC",
+      "views_24h": 56,
+      "views_7d": 1054,
       "pages_24h": [
+        {
+          "post_id": 1373,
+          "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
+          "url": "https://drsumaiya.com/",
+          "type": "page",
+          "views": 12
+        },
+        {
+          "post_id": 2534,
+          "title": "Inquiry Form",
+          "url": "https://drsumaiya.com/inquiry-form/",
+          "type": "page",
+          "views": 6
+        },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 6
+          "views": 4
         },
         {
           "post_id": 1839,
           "title": "Patient History Form",
           "url": "https://drsumaiya.com/form/",
           "type": "page",
+          "views": 3
+        },
+        {
+          "post_id": 1943,
+          "title": "Plans and Pricing",
+          "url": "https://drsumaiya.com/plans-pricing/",
+          "type": "page",
+          "views": 2
+        },
+        {
+          "post_id": 1399,
+          "title": "About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru",
+          "url": "https://drsumaiya.com/about/",
+          "type": "page",
           "views": 1
         },
         {
-          "post_id": 2534,
-          "title": "Inquiry Form",
-          "url": "https://drsumaiya.com/inquiry-form/",
+          "post_id": 5018,
+          "title": "Weight-management nutrition consultation",
+          "url": "https://drsumaiya.com/services/weight-management-nutrition-consultation/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 1868,
+          "title": "Blog",
+          "url": "https://drsumaiya.com/blog/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 5016,
+          "title": "Fatty-liver nutrition consultation",
+          "url": "https://drsumaiya.com/services/fatty-liver-nutrition-consultation/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 5022,
+          "title": "Cholesterol nutrition consultation",
+          "url": "https://drsumaiya.com/services/high-cholesterol-nutrition-consultation/",
           "type": "page",
           "views": 1
         }
       ],
       "posts_24h": [
         {
-          "post_id": 3955,
-          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
-          "type": "post",
-          "views": 5
-        },
-        {
           "post_id": 1866,
           "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
           "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
           "type": "post",
-          "views": 4
+          "views": 3
         },
         {
-          "post_id": 4081,
-          "title": "Thai Herbal Inhaler (Hong Thai): Safe Recipe, Real Benefits & Doctors Guide (2026)",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 1641,
-          "title": "PCOS Diet Plan For Insulin Resistance & Weight Loss (2026)",
-          "url": "https://drsumaiya.com/post/the-role-of-weight-loss-and-healthy-lifestyle-in-managing-pcos/",
+          "post_id": 3906,
+          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
+          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
           "type": "post",
           "views": 3
         },
         {
-          "post_id": 1620,
-          "title": "The Science of Sunnah Foods: Clinical Phytochemistry & Health Guide (2026)",
-          "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
           "type": "post",
           "views": 2
         },
         {
-          "post_id": 5053,
-          "title": "The \"Cortisol Belly\" Supplement Myth: What Magnesium Glycinate Can (and Absolutely Cannot) Do for Your Stress & Midsection",
-          "url": "https://drsumaiya.com/post/magnesium-glycinate-for-cortisol-and-sleep/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1598,
-          "title": "How to Reset Your Circadian Rhythm for Deep Sleep: Clinical Nutrition & Lifestyle Protocol",
-          "url": "https://drsumaiya.com/post/life-style-changes-for-sleep-disturbance/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4104,
-          "title": "Eating for Weight Loss: Nourish, Dont Starve & Doctors Clinical Protocol (2026)",
-          "url": "https://drsumaiya.com/post/eating-for-weight-loss-nourish-dont-starve/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4149,
-          "title": "When Healthy Eating Becomes the Stranger!",
-          "url": "https://drsumaiya.com/post/when-healthy-eating-becomes-the-stranger/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 5059,
-          "title": "\"Just Tired\" or Postpartum Thyroiditis? Why New Mothers Struggle With Stubborn Weight Retention & How to Reset Safely",
-          "url": "https://drsumaiya.com/post/postpartum-thyroiditis-weight-retention-and-fatigue/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1689,
-          "title": "Fat Loss and Not Weight Loss",
-          "url": "https://drsumaiya.com/post/fat-loss-and-not-weight-loss/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1587,
-          "title": "The Surprising Power of Quality Sleep: 11 Science-Backed Benefits for Weight Loss & Metabolism (2026)",
-          "url": "https://drsumaiya.com/post/11-benefits-of-having-a-quality-sleep/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1723,
-          "title": "30 Proven Tips to Lose 5 Kg in a Month for Busy Professionals: Indian Diet & Lifestyle Guide (2026)",
-          "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4172,
-          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
-          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1591,
-          "title": "Green Chili vs. Red Chili in Indian Cooking: Clinical Nutrition, Capsaicin & Gut Health Guide",
-          "url": "https://drsumaiya.com/post/chillies/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4323,
-          "title": "Scientific Analysis of Postpartum and Newborn Massage (Malish): Pros, Cons & Precautions",
-          "url": "https://drsumaiya.com/post/scientific-analysis-of-postpartum-and-newborn-massage-malish-pros-cons-precautions/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1603,
-          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
+          "post_id": 5273,
+          "title": "Hypothyroidism Diet Plan: TSH Optimization, Metabolic Reset & How Dr. Sumaiya Helps (2026)",
+          "url": "https://drsumaiya.com/post/hypothyroidism-diet-plan-india-tsh-metabolic-reset/",
           "type": "post",
           "views": 1
         },
@@ -167,23 +118,79 @@
           "views": 1
         },
         {
-          "post_id": 3906,
-          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
-          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
+          "post_id": 4958,
+          "title": "Eating Home-Cooked Food Yet Battling High Cholesterol? What New Indian Genetic Research Reveals About Your Daily Rice & Roti",
+          "url": "https://drsumaiya.com/post/indian-diet-for-high-cholesterol-and-diabetes/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4963,
-          "title": "TSH \"Normal\" But Still Bloated & Exhausted? The Hidden Thyroid-SIBO Connection Sabotaging Your Gut and Medication",
-          "url": "https://drsumaiya.com/post/hypothyroidism-bloating-and-gut-health/",
+          "post_id": 5053,
+          "title": "The \"Cortisol Belly\" Supplement Myth: What Magnesium Glycinate Can (and Absolutely Cannot) Do for Your Stress & Midsection",
+          "url": "https://drsumaiya.com/post/magnesium-glycinate-for-cortisol-and-sleep/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 1642,
-          "title": "How to Read Food Labels in India: Palm Oil, Hidden Sugars & Doctors Guide (2026)",
-          "url": "https://drsumaiya.com/post/decode-your-food-labels-the-power-of-whole-food-ingredients/",
+          "post_id": 3732,
+          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
+          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 5263,
+          "title": "Clinical vs. Preclinical Obesity: What BMI Misses, Waist Ratios & Diet Plan (2026)",
+          "url": "https://drsumaiya.com/post/clinical-vs-preclinical-obesity-waist-to-height-ratio-diet/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1725,
+          "title": "6 Evidence-Based Reasons to Include Red Meat in Your Diet",
+          "url": "https://drsumaiya.com/post/regularly-include-red-meat-in-your-diet/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 5265,
+          "title": "Fatty Pancreas & Multi-Organ Fat Reversal: Diet Chart, Fasting Glucose & Clinical Protocol (2026)",
+          "url": "https://drsumaiya.com/post/fatty-pancreas-steatosis-liver-reversal-diet-plan/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1732,
+          "title": "ICMR-NIN Dietary Guidelines for Indians 2024: 17 Key Takeaways & Doctors Protocol (2026)",
+          "url": "https://drsumaiya.com/post/key-takeaways-from-the-dietary-guidelines-for-indians-2024/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3911,
+          "title": "Khapli Atta (Emmer Wheat): Blood Sugar Benefits & Doctors Protocol (2026)",
+          "url": "https://drsumaiya.com/post/the-ultimate-guide-to-khapli-atta-ancient-grain-for-modern-health/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4020,
+          "title": "Top 20 Best Dietitians & Nutritionists in Bangalore (2026 Guide)",
+          "url": "https://drsumaiya.com/post/best-dietitians-nutritionists-in-bangalore/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4625,
+          "title": "Grade 1 Fatty Liver (NAFLD) Reversal: Clinical Indian Diet Protocol & SGPT/ALT Guide",
+          "url": "https://drsumaiya.com/post/grade-1-fatty-liver-diet-chart-indian-protocol/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1628,
+          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
+          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
           "type": "post",
           "views": 1
         },
@@ -195,180 +202,89 @@
           "views": 1
         },
         {
-          "post_id": 4039,
-          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
-          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
+          "post_id": 1685,
+          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
+          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 5055,
-          "title": "Trying to Heal Your Gut but Burning Your Esophagus? Why Fermented Foods & Dahi Can Trigger Severe Acid Reflux",
-          "url": "https://drsumaiya.com/post/fermented-foods-acid-reflux-and-gerd/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1688,
-          "title": "My Reviews and Testimonials Collection",
-          "url": "https://drsumaiya.com/post/my-review-and-testimonial-collection/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4122,
-          "title": "The Truth About Ozempic for Weight Loss: Risks, Rebound & Doctors Protocol (2026)",
-          "url": "https://drsumaiya.com/post/the-truth-about-ozempic-for-weight-loss-risks-lawsuits-and-what-you-must-know/",
+          "post_id": 5042,
+          "title": "Healthy Eating on Vacation: 15 Practical Indian Diet Tips for Blood Sugar, Gut & Weight (2026)",
+          "url": "https://drsumaiya.com/post/healthy-eating-on-vacation-15-practical-tips/",
           "type": "post",
           "views": 1
         }
       ],
       "all_items_24h": [
         {
-          "post_id": 0,
-          "title": "Home page",
-          "url": "http://drsumaiya.com/",
-          "type": "home",
-          "views": 6
-        },
-        {
-          "post_id": 3955,
-          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
-          "type": "post",
-          "views": 5
-        },
-        {
-          "post_id": 1866,
-          "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
-          "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 4081,
-          "title": "Thai Herbal Inhaler (Hong Thai): Safe Recipe, Real Benefits & Doctors Guide (2026)",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 1641,
-          "title": "PCOS Diet Plan For Insulin Resistance & Weight Loss (2026)",
-          "url": "https://drsumaiya.com/post/the-role-of-weight-loss-and-healthy-lifestyle-in-managing-pcos/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1620,
-          "title": "The Science of Sunnah Foods: Clinical Phytochemistry & Health Guide (2026)",
-          "url": "https://drsumaiya.com/post/12-foods-that-our-beloved-prophetmuhammad-%d8%b5%d9%84-%d8%a7%d9%84%d9%84%d9%87-%d8%b9%d9%84%d9%8a%d9%87-%d9%88%d8%b3%d9%84%d9%85-liked-their-benefits/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 5053,
-          "title": "The \"Cortisol Belly\" Supplement Myth: What Magnesium Glycinate Can (and Absolutely Cannot) Do for Your Stress & Midsection",
-          "url": "https://drsumaiya.com/post/magnesium-glycinate-for-cortisol-and-sleep/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 1598,
-          "title": "How to Reset Your Circadian Rhythm for Deep Sleep: Clinical Nutrition & Lifestyle Protocol",
-          "url": "https://drsumaiya.com/post/life-style-changes-for-sleep-disturbance/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4104,
-          "title": "Eating for Weight Loss: Nourish, Dont Starve & Doctors Clinical Protocol (2026)",
-          "url": "https://drsumaiya.com/post/eating-for-weight-loss-nourish-dont-starve/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4149,
-          "title": "When Healthy Eating Becomes the Stranger!",
-          "url": "https://drsumaiya.com/post/when-healthy-eating-becomes-the-stranger/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 5059,
-          "title": "\"Just Tired\" or Postpartum Thyroiditis? Why New Mothers Struggle With Stubborn Weight Retention & How to Reset Safely",
-          "url": "https://drsumaiya.com/post/postpartum-thyroiditis-weight-retention-and-fatigue/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1689,
-          "title": "Fat Loss and Not Weight Loss",
-          "url": "https://drsumaiya.com/post/fat-loss-and-not-weight-loss/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1839,
-          "title": "Patient History Form",
-          "url": "https://drsumaiya.com/form/",
+          "post_id": 1373,
+          "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
+          "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 1587,
-          "title": "The Surprising Power of Quality Sleep: 11 Science-Backed Benefits for Weight Loss & Metabolism (2026)",
-          "url": "https://drsumaiya.com/post/11-benefits-of-having-a-quality-sleep/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1723,
-          "title": "30 Proven Tips to Lose 5 Kg in a Month for Busy Professionals: Indian Diet & Lifestyle Guide (2026)",
-          "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4172,
-          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
-          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1591,
-          "title": "Green Chili vs. Red Chili in Indian Cooking: Clinical Nutrition, Capsaicin & Gut Health Guide",
-          "url": "https://drsumaiya.com/post/chillies/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4323,
-          "title": "Scientific Analysis of Postpartum and Newborn Massage (Malish): Pros, Cons & Precautions",
-          "url": "https://drsumaiya.com/post/scientific-analysis-of-postpartum-and-newborn-massage-malish-pros-cons-precautions/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1603,
-          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
-          "type": "post",
-          "views": 1
+          "views": 12
         },
         {
           "post_id": 2534,
           "title": "Inquiry Form",
           "url": "https://drsumaiya.com/inquiry-form/",
           "type": "page",
+          "views": 6
+        },
+        {
+          "post_id": 0,
+          "title": "Home page",
+          "url": "http://drsumaiya.com/",
+          "type": "home",
+          "views": 4
+        },
+        {
+          "post_id": 1839,
+          "title": "Patient History Form",
+          "url": "https://drsumaiya.com/form/",
+          "type": "page",
+          "views": 3
+        },
+        {
+          "post_id": 1866,
+          "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
+          "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 3906,
+          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
+          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 1943,
+          "title": "Plans and Pricing",
+          "url": "https://drsumaiya.com/plans-pricing/",
+          "type": "page",
+          "views": 2
+        },
+        {
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 1399,
+          "title": "About Dr. Sumaiya Petiwala | Doctor & Registered Dietitian Bengaluru",
+          "url": "https://drsumaiya.com/about/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 5273,
+          "title": "Hypothyroidism Diet Plan: TSH Optimization, Metabolic Reset & How Dr. Sumaiya Helps (2026)",
+          "url": "https://drsumaiya.com/post/hypothyroidism-diet-plan-india-tsh-metabolic-reset/",
+          "type": "post",
           "views": 1
         },
         {
@@ -379,24 +295,101 @@
           "views": 1
         },
         {
-          "post_id": 3906,
-          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
-          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
+          "post_id": 4958,
+          "title": "Eating Home-Cooked Food Yet Battling High Cholesterol? What New Indian Genetic Research Reveals About Your Daily Rice & Roti",
+          "url": "https://drsumaiya.com/post/indian-diet-for-high-cholesterol-and-diabetes/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4963,
-          "title": "TSH \"Normal\" But Still Bloated & Exhausted? The Hidden Thyroid-SIBO Connection Sabotaging Your Gut and Medication",
-          "url": "https://drsumaiya.com/post/hypothyroidism-bloating-and-gut-health/",
+          "post_id": 5018,
+          "title": "Weight-management nutrition consultation",
+          "url": "https://drsumaiya.com/services/weight-management-nutrition-consultation/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 5053,
+          "title": "The \"Cortisol Belly\" Supplement Myth: What Magnesium Glycinate Can (and Absolutely Cannot) Do for Your Stress & Midsection",
+          "url": "https://drsumaiya.com/post/magnesium-glycinate-for-cortisol-and-sleep/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 1642,
-          "title": "How to Read Food Labels in India: Palm Oil, Hidden Sugars & Doctors Guide (2026)",
-          "url": "https://drsumaiya.com/post/decode-your-food-labels-the-power-of-whole-food-ingredients/",
+          "post_id": 3732,
+          "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
+          "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
           "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 5263,
+          "title": "Clinical vs. Preclinical Obesity: What BMI Misses, Waist Ratios & Diet Plan (2026)",
+          "url": "https://drsumaiya.com/post/clinical-vs-preclinical-obesity-waist-to-height-ratio-diet/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1725,
+          "title": "6 Evidence-Based Reasons to Include Red Meat in Your Diet",
+          "url": "https://drsumaiya.com/post/regularly-include-red-meat-in-your-diet/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 5265,
+          "title": "Fatty Pancreas & Multi-Organ Fat Reversal: Diet Chart, Fasting Glucose & Clinical Protocol (2026)",
+          "url": "https://drsumaiya.com/post/fatty-pancreas-steatosis-liver-reversal-diet-plan/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1732,
+          "title": "ICMR-NIN Dietary Guidelines for Indians 2024: 17 Key Takeaways & Doctors Protocol (2026)",
+          "url": "https://drsumaiya.com/post/key-takeaways-from-the-dietary-guidelines-for-indians-2024/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 3911,
+          "title": "Khapli Atta (Emmer Wheat): Blood Sugar Benefits & Doctors Protocol (2026)",
+          "url": "https://drsumaiya.com/post/the-ultimate-guide-to-khapli-atta-ancient-grain-for-modern-health/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4020,
+          "title": "Top 20 Best Dietitians & Nutritionists in Bangalore (2026 Guide)",
+          "url": "https://drsumaiya.com/post/best-dietitians-nutritionists-in-bangalore/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4625,
+          "title": "Grade 1 Fatty Liver (NAFLD) Reversal: Clinical Indian Diet Protocol & SGPT/ALT Guide",
+          "url": "https://drsumaiya.com/post/grade-1-fatty-liver-diet-chart-indian-protocol/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1628,
+          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
+          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 1868,
+          "title": "Blog",
+          "url": "https://drsumaiya.com/blog/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 5016,
+          "title": "Fatty-liver nutrition consultation",
+          "url": "https://drsumaiya.com/services/fatty-liver-nutrition-consultation/",
+          "type": "page",
           "views": 1
         },
         {
@@ -407,30 +400,23 @@
           "views": 1
         },
         {
-          "post_id": 4039,
-          "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
-          "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
+          "post_id": 5022,
+          "title": "Cholesterol nutrition consultation",
+          "url": "https://drsumaiya.com/services/high-cholesterol-nutrition-consultation/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 1685,
+          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
+          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 5055,
-          "title": "Trying to Heal Your Gut but Burning Your Esophagus? Why Fermented Foods & Dahi Can Trigger Severe Acid Reflux",
-          "url": "https://drsumaiya.com/post/fermented-foods-acid-reflux-and-gerd/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 1688,
-          "title": "My Reviews and Testimonials Collection",
-          "url": "https://drsumaiya.com/post/my-review-and-testimonial-collection/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4122,
-          "title": "The Truth About Ozempic for Weight Loss: Risks, Rebound & Doctors Protocol (2026)",
-          "url": "https://drsumaiya.com/post/the-truth-about-ozempic-for-weight-loss-risks-lawsuits-and-what-you-must-know/",
+          "post_id": 5042,
+          "title": "Healthy Eating on Vacation: 15 Practical Indian Diet Tips for Blood Sugar, Gut & Weight (2026)",
+          "url": "https://drsumaiya.com/post/healthy-eating-on-vacation-15-practical-tips/",
           "type": "post",
           "views": 1
         }
@@ -441,105 +427,98 @@
           "title": "Dr. Sumaiya Petiwala | Doctor & Dietitian in Bangalore | Nutrition Clinic",
           "url": "https://drsumaiya.com/",
           "type": "page",
-          "views": 142
+          "views": 163
         },
         {
           "post_id": 0,
           "title": "Home page",
           "url": "http://drsumaiya.com/",
           "type": "home",
-          "views": 88
+          "views": 90
         },
         {
           "post_id": 3732,
           "title": "Meal Sequencing for Blood Sugar & Digestion: The Clinical Eating Order Guide",
           "url": "https://drsumaiya.com/post/meal-sequencing-the-smart-way-to-eat-for-better-blood-sugar-control-digestion-and-satiety/",
           "type": "post",
-          "views": 83
+          "views": 85
         },
         {
           "post_id": 1866,
           "title": "Choosing the Right Rice for Blood Sugar Management: A Dietitian\u2019s Perspective",
           "url": "https://drsumaiya.com/post/choosing-the-right-rice-for-blood-sugar-management-a-dietitian-s-perspective/",
           "type": "post",
-          "views": 54
+          "views": 50
         },
         {
           "post_id": 1868,
           "title": "Blog",
           "url": "https://drsumaiya.com/blog/",
           "type": "page",
-          "views": 39
-        },
-        {
-          "post_id": 5160,
-          "title": "Resistant Starch for Insulin Resistance & Fatty Liver: Dose Targets, HOMA-IR & Meal Plan (2026)",
-          "url": "https://drsumaiya.com/post/resistant-starch-dose-insulin-resistance-fatty-liver-diet/",
-          "type": "post",
-          "views": 34
+          "views": 37
         },
         {
           "post_id": 4039,
           "title": "10 Best Fertility Foods to Boost Egg Quality & Improve Conception Naturally",
           "url": "https://drsumaiya.com/post/10-foods-to-boost-your-fertility/",
           "type": "post",
-          "views": 33
+          "views": 34
         },
         {
           "post_id": 1943,
           "title": "Plans and Pricing",
           "url": "https://drsumaiya.com/plans-pricing/",
           "type": "page",
-          "views": 26
-        },
-        {
-          "post_id": 4081,
-          "title": "Thai Herbal Inhaler (Hong Thai): Safe Recipe, Real Benefits & Doctors Guide (2026)",
-          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
-          "type": "post",
-          "views": 24
-        },
-        {
-          "post_id": 5053,
-          "title": "The \"Cortisol Belly\" Supplement Myth: What Magnesium Glycinate Can (and Absolutely Cannot) Do for Your Stress & Midsection",
-          "url": "https://drsumaiya.com/post/magnesium-glycinate-for-cortisol-and-sleep/",
-          "type": "post",
-          "views": 22
-        },
-        {
-          "post_id": 4351,
-          "title": "Motivational Interviewing in Clinical Practice",
-          "url": "https://drsumaiya.com/post/motivational-interviewing-in-clinical-practice/",
-          "type": "post",
-          "views": 22
-        },
-        {
-          "post_id": 3955,
-          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
-          "type": "post",
-          "views": 19
-        },
-        {
-          "post_id": 1839,
-          "title": "Patient History Form",
-          "url": "https://drsumaiya.com/form/",
-          "type": "page",
-          "views": 17
-        },
-        {
-          "post_id": 1723,
-          "title": "30 Proven Tips to Lose 5 Kg in a Month for Busy Professionals: Indian Diet & Lifestyle Guide (2026)",
-          "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
-          "type": "post",
-          "views": 17
+          "views": 31
         },
         {
           "post_id": 2534,
           "title": "Inquiry Form",
           "url": "https://drsumaiya.com/inquiry-form/",
           "type": "page",
-          "views": 17
+          "views": 23
+        },
+        {
+          "post_id": 5053,
+          "title": "The \"Cortisol Belly\" Supplement Myth: What Magnesium Glycinate Can (and Absolutely Cannot) Do for Your Stress & Midsection",
+          "url": "https://drsumaiya.com/post/magnesium-glycinate-for-cortisol-and-sleep/",
+          "type": "post",
+          "views": 23
+        },
+        {
+          "post_id": 4351,
+          "title": "Motivational Interviewing in Clinical Practice",
+          "url": "https://drsumaiya.com/post/motivational-interviewing-in-clinical-practice/",
+          "type": "post",
+          "views": 23
+        },
+        {
+          "post_id": 5160,
+          "title": "Resistant Starch for Insulin Resistance & Fatty Liver: Dose Targets, HOMA-IR & Meal Plan (2026)",
+          "url": "https://drsumaiya.com/post/resistant-starch-dose-insulin-resistance-fatty-liver-diet/",
+          "type": "post",
+          "views": 21
+        },
+        {
+          "post_id": 4081,
+          "title": "Thai Herbal Inhaler (Hong Thai): Safe Recipe, Real Benefits & Doctors Guide (2026)",
+          "url": "https://drsumaiya.com/post/hong-thai-herbal-inhaler-recipe-disclosed-traditional-thai-relief-at-home/",
+          "type": "post",
+          "views": 21
+        },
+        {
+          "post_id": 1839,
+          "title": "Patient History Form",
+          "url": "https://drsumaiya.com/form/",
+          "type": "page",
+          "views": 20
+        },
+        {
+          "post_id": 3955,
+          "title": "Choosing the Right Salt: A Registered Dietitian's Complete Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-salt-a-registered-dietitians-complete-guide/",
+          "type": "post",
+          "views": 18
         },
         {
           "post_id": 5010,
@@ -549,32 +528,25 @@
           "views": 14
         },
         {
-          "post_id": 4344,
-          "title": "7 Types of Stool: Bristol Stool Chart Explained by a Doctor (2026)",
-          "url": "https://drsumaiya.com/post/7-types-of-stool-and-what-each-one-says-about-your-gut/",
+          "post_id": 1723,
+          "title": "30 Proven Tips to Lose 5 Kg in a Month for Busy Professionals: Indian Diet & Lifestyle Guide (2026)",
+          "url": "https://drsumaiya.com/post/30-proven-tips-to-lose-5-kgs-in-a-month-for-busy-professionals/",
           "type": "post",
           "views": 13
         },
         {
-          "post_id": 5042,
-          "title": "Healthy Eating on Vacation: 15 Practical Indian Diet Tips for Blood Sugar, Gut & Weight (2026)",
-          "url": "https://drsumaiya.com/post/healthy-eating-on-vacation-15-practical-tips/",
+          "post_id": 4344,
+          "title": "7 Types of Stool: Bristol Stool Chart Explained by a Doctor (2026)",
+          "url": "https://drsumaiya.com/post/7-types-of-stool-and-what-each-one-says-about-your-gut/",
           "type": "post",
-          "views": 11
-        },
-        {
-          "post_id": 5150,
-          "title": "The \"Sarcopenic Liver\" Trap: Why Low Muscle Mass Causes Fatty Liver & Fibrosis (November 2026 Study)",
-          "url": "https://drsumaiya.com/post/sarcopenic-liver-low-muscle-mass-fatty-liver-indian-diet/",
-          "type": "post",
-          "views": 10
+          "views": 12
         },
         {
           "post_id": 5014,
           "title": "Diabetes nutrition consultation",
           "url": "https://drsumaiya.com/services/diabetes-nutrition-consultation/",
           "type": "page",
-          "views": 10
+          "views": 12
         },
         {
           "post_id": 5051,
@@ -584,11 +556,32 @@
           "views": 10
         },
         {
-          "post_id": 5159,
-          "title": "Erythritol & \"Sugar-Free\" Sweeteners in Diabetes: Kidney Risk, eGFR Decline & Safe Swaps (2026)",
-          "url": "https://drsumaiya.com/post/erythritol-sugar-free-sweeteners-diabetes-kidney-risk/",
+          "post_id": 5042,
+          "title": "Healthy Eating on Vacation: 15 Practical Indian Diet Tips for Blood Sugar, Gut & Weight (2026)",
+          "url": "https://drsumaiya.com/post/healthy-eating-on-vacation-15-practical-tips/",
           "type": "post",
           "views": 9
+        },
+        {
+          "post_id": 5018,
+          "title": "Weight-management nutrition consultation",
+          "url": "https://drsumaiya.com/services/weight-management-nutrition-consultation/",
+          "type": "page",
+          "views": 9
+        },
+        {
+          "post_id": 1680,
+          "title": "A Beginner's Guide to Nutrition, Cardio, Strength Training, and Supplementation",
+          "url": "https://drsumaiya.com/post/body-building-tips-for-beginners/",
+          "type": "post",
+          "views": 8
+        },
+        {
+          "post_id": 5104,
+          "title": "How Much Protein Do You Need? A Practical Guide to Vegetarian and Non-Vegetarian Indian Meals (2026)",
+          "url": "https://drsumaiya.com/post/how-much-protein-do-you-need-indian-diet-guide/",
+          "type": "post",
+          "views": 8
         },
         {
           "post_id": 1399,
@@ -605,37 +598,23 @@
           "views": 8
         },
         {
-          "post_id": 5018,
-          "title": "Weight-management nutrition consultation",
-          "url": "https://drsumaiya.com/services/weight-management-nutrition-consultation/",
-          "type": "page",
-          "views": 8
-        },
-        {
-          "post_id": 1680,
-          "title": "A Beginner's Guide to Nutrition, Cardio, Strength Training, and Supplementation",
-          "url": "https://drsumaiya.com/post/body-building-tips-for-beginners/",
+          "post_id": 4715,
+          "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
+          "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
           "type": "post",
           "views": 8
         },
         {
-          "post_id": 1731,
-          "title": "The Vital Role of Dietitians in Optimizing Health",
-          "url": "https://drsumaiya.com/post/the-role-of-a-dietitian-in-patient-care/",
+          "post_id": 5263,
+          "title": "Clinical vs. Preclinical Obesity: What BMI Misses, Waist Ratios & Diet Plan (2026)",
+          "url": "https://drsumaiya.com/post/clinical-vs-preclinical-obesity-waist-to-height-ratio-diet/",
           "type": "post",
-          "views": 7
+          "views": 8
         },
         {
-          "post_id": 4114,
-          "title": "Why Do You Still Crave Sweets After a Meal? The Hidden Link to Insulin Resistance",
-          "url": "https://drsumaiya.com/post/why-do-you-still-crave-sweets-after-a-meal-the-hidden-link-to-insulin-resistance/",
-          "type": "post",
-          "views": 7
-        },
-        {
-          "post_id": 5104,
-          "title": "How Much Protein Do You Need? A Practical Guide to Vegetarian and Non-Vegetarian Indian Meals (2026)",
-          "url": "https://drsumaiya.com/post/how-much-protein-do-you-need-indian-diet-guide/",
+          "post_id": 1603,
+          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
+          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
           "type": "post",
           "views": 7
         },
@@ -647,11 +626,53 @@
           "views": 7
         },
         {
-          "post_id": 5263,
-          "title": "Clinical vs. Preclinical Obesity: What BMI Misses, Waist Ratios & Diet Plan (2026)",
-          "url": "https://drsumaiya.com/post/clinical-vs-preclinical-obesity-waist-to-height-ratio-diet/",
+          "post_id": 5265,
+          "title": "Fatty Pancreas & Multi-Organ Fat Reversal: Diet Chart, Fasting Glucose & Clinical Protocol (2026)",
+          "url": "https://drsumaiya.com/post/fatty-pancreas-steatosis-liver-reversal-diet-plan/",
           "type": "post",
           "views": 7
+        },
+        {
+          "post_id": 4958,
+          "title": "Eating Home-Cooked Food Yet Battling High Cholesterol? What New Indian Genetic Research Reveals About Your Daily Rice & Roti",
+          "url": "https://drsumaiya.com/post/indian-diet-for-high-cholesterol-and-diabetes/",
+          "type": "post",
+          "views": 7
+        },
+        {
+          "post_id": 5159,
+          "title": "Erythritol & \"Sugar-Free\" Sweeteners in Diabetes: Kidney Risk, eGFR Decline & Safe Swaps (2026)",
+          "url": "https://drsumaiya.com/post/erythritol-sugar-free-sweeteners-diabetes-kidney-risk/",
+          "type": "post",
+          "views": 6
+        },
+        {
+          "post_id": 4020,
+          "title": "Top 20 Best Dietitians & Nutritionists in Bangalore (2026 Guide)",
+          "url": "https://drsumaiya.com/post/best-dietitians-nutritionists-in-bangalore/",
+          "type": "post",
+          "views": 6
+        },
+        {
+          "post_id": 1685,
+          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
+          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
+          "type": "post",
+          "views": 6
+        },
+        {
+          "post_id": 4114,
+          "title": "Why Do You Still Crave Sweets After a Meal? The Hidden Link to Insulin Resistance",
+          "url": "https://drsumaiya.com/post/why-do-you-still-crave-sweets-after-a-meal-the-hidden-link-to-insulin-resistance/",
+          "type": "post",
+          "views": 6
+        },
+        {
+          "post_id": 1402,
+          "title": "Contact",
+          "url": "https://drsumaiya.com/contact/",
+          "type": "page",
+          "views": 6
         },
         {
           "post_id": 1620,
@@ -661,16 +682,9 @@
           "views": 6
         },
         {
-          "post_id": 4715,
-          "title": "CoQ10: Clinical Benefits, Ubiquinol vs. Ubiquinone, Dosing & Safety Guide",
-          "url": "https://drsumaiya.com/post/coq10-benefits-best-forms-dosing-and-side-effects/",
-          "type": "post",
-          "views": 6
-        },
-        {
-          "post_id": 5265,
-          "title": "Fatty Pancreas & Multi-Organ Fat Reversal: Diet Chart, Fasting Glucose & Clinical Protocol (2026)",
-          "url": "https://drsumaiya.com/post/fatty-pancreas-steatosis-liver-reversal-diet-plan/",
+          "post_id": 1724,
+          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
+          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
           "type": "post",
           "views": 6
         },
@@ -682,16 +696,9 @@
           "views": 6
         },
         {
-          "post_id": 4958,
-          "title": "Eating Home-Cooked Food Yet Battling High Cholesterol? What New Indian Genetic Research Reveals About Your Daily Rice & Roti",
-          "url": "https://drsumaiya.com/post/indian-diet-for-high-cholesterol-and-diabetes/",
-          "type": "post",
-          "views": 6
-        },
-        {
-          "post_id": 3863,
-          "title": "Rain Therapy: The Science of Rainy Day Mood & Doctors Protocol (2026)",
-          "url": "https://drsumaiya.com/post/rain-therapy-the-science-behind-why-rainy-days-boost-your-mood/",
+          "post_id": 1731,
+          "title": "The Vital Role of Dietitians in Optimizing Health",
+          "url": "https://drsumaiya.com/post/the-role-of-a-dietitian-in-patient-care/",
           "type": "post",
           "views": 5
         },
@@ -703,9 +710,9 @@
           "views": 5
         },
         {
-          "post_id": 1586,
-          "title": "15 High-GI Indian Foods That Spike Blood Sugar: Doctor-Reviewed Swaps (2026)",
-          "url": "https://drsumaiya.com/post/foods-that-spike-blood-glucose-what-to-avoid-for-better-health/",
+          "post_id": 5150,
+          "title": "The \"Sarcopenic Liver\" Trap: Why Low Muscle Mass Causes Fatty Liver & Fibrosis (November 2026 Study)",
+          "url": "https://drsumaiya.com/post/sarcopenic-liver-low-muscle-mass-fatty-liver-indian-diet/",
           "type": "post",
           "views": 5
         },
@@ -717,45 +724,24 @@
           "views": 5
         },
         {
-          "post_id": 4020,
-          "title": "Top 20 Best Dietitians & Nutritionists in Bangalore (2026 Guide)",
-          "url": "https://drsumaiya.com/post/best-dietitians-nutritionists-in-bangalore/",
+          "post_id": 1586,
+          "title": "15 High-GI Indian Foods That Spike Blood Sugar: Doctor-Reviewed Swaps (2026)",
+          "url": "https://drsumaiya.com/post/foods-that-spike-blood-glucose-what-to-avoid-for-better-health/",
           "type": "post",
           "views": 5
         },
         {
-          "post_id": 1685,
-          "title": "Effective Nutrition and Lifestyle Tips to Combat Dark Circles and Under-Eye Pigmentation",
-          "url": "https://drsumaiya.com/post/effective-nutrition-and-lifestyle-tips-to-combat-dark-circles-and-under-eye-pigmentation/",
+          "post_id": 1727,
+          "title": "Breastfeeding Guidelines for New Moms: Latch, Supply & Diet",
+          "url": "https://drsumaiya.com/post/breastfeeding-guidelines-for-new-moms/",
           "type": "post",
-          "views": 5
+          "views": 4
         },
         {
-          "post_id": 1402,
-          "title": "Contact",
-          "url": "https://drsumaiya.com/contact/",
+          "post_id": 5016,
+          "title": "Fatty-liver nutrition consultation",
+          "url": "https://drsumaiya.com/services/fatty-liver-nutrition-consultation/",
           "type": "page",
-          "views": 5
-        },
-        {
-          "post_id": 4620,
-          "title": "Almond Flour vs. Coconut Flour for Diabetes & PCOS: Glycemic Comparison & Roti Guide",
-          "url": "https://drsumaiya.com/post/almond-flour-vs-coconut-flour-for-diabetes-and-pcos/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 1591,
-          "title": "Green Chili vs. Red Chili in Indian Cooking: Clinical Nutrition, Capsaicin & Gut Health Guide",
-          "url": "https://drsumaiya.com/post/chillies/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 3964,
-          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
-          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
-          "type": "post",
           "views": 4
         },
         {
@@ -766,65 +752,37 @@
           "views": 4
         },
         {
-          "post_id": 1727,
-          "title": "Breastfeeding Guidelines for New Moms: Latch, Supply & Diet",
-          "url": "https://drsumaiya.com/post/breastfeeding-guidelines-for-new-moms/",
+          "post_id": 5273,
+          "title": "Hypothyroidism Diet Plan: TSH Optimization, Metabolic Reset & How Dr. Sumaiya Helps (2026)",
+          "url": "https://drsumaiya.com/post/hypothyroidism-diet-plan-india-tsh-metabolic-reset/",
           "type": "post",
           "views": 4
         },
         {
-          "post_id": 1603,
-          "title": "Best Wheat for Diabetes: Glycemic Index & Khapli Atta Guide",
-          "url": "https://drsumaiya.com/post/choosing-the-right-wheat-for-blood-sugar-management-a-dietitians-perspective/",
+          "post_id": 4963,
+          "title": "TSH \"Normal\" But Still Bloated & Exhausted? The Hidden Thyroid-SIBO Connection Sabotaging Your Gut and Medication",
+          "url": "https://drsumaiya.com/post/hypothyroidism-bloating-and-gut-health/",
           "type": "post",
           "views": 4
         },
         {
-          "post_id": 1724,
-          "title": "Transforming Health and Lives: Real Success Stories from Dr. Sumaiya's NutriCare Clinic",
-          "url": "https://drsumaiya.com/post/transforming-health-and-lives-real-success-stories-from-dr-sumaiyas-nutricare-clinic/",
+          "post_id": 3906,
+          "title": "Flower Power: 10 Floral Ingredients That Beautify and Heal Skin",
+          "url": "https://drsumaiya.com/post/flower-power-10-floral-ingredients-that-beautify-and-heal-skin/",
           "type": "post",
           "views": 4
         },
         {
-          "post_id": 5071,
-          "title": "Taking Shatavari for PCOS & Irregular Periods? Why a New October 2026 Indian Clinical Review Says You Should Pause",
-          "url": "https://drsumaiya.com/post/shatavari-for-pcos-periods-and-fertility/",
+          "post_id": 1615,
+          "title": "The Physiology of Weight Loss: Water Weight, Metabolic Adaptation & Breaking Plateaus",
+          "url": "https://drsumaiya.com/post/your-weight-loss-journey/",
           "type": "post",
           "views": 3
         },
         {
-          "post_id": 1625,
-          "title": "Top 10 Healthspan Supplements: What Actually Works (Doctors Guide 2026)",
-          "url": "https://drsumaiya.com/post/top-10-supplements-for-enhancing-health-span/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 5017,
-          "title": "Thyroid nutrition consultation",
-          "url": "https://drsumaiya.com/services/thyroid-nutrition-consultation/",
-          "type": "page",
-          "views": 3
-        },
-        {
-          "post_id": 1628,
-          "title": "Optimum Health Series II: Effects of Glucose Spikes on Human Health",
-          "url": "https://drsumaiya.com/post/optimum-health-series-ii-effects-of-glucose-spikes-on-human-health/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 1709,
-          "title": "Mass Gainers in India: Benefits, Hidden Sugars & Doctors Healthy Bulking Guide (2026)",
-          "url": "https://drsumaiya.com/post/the-ultimate-guide-to-mass-gainers-benefits-risks-and-how-to-choose-the-right-one/",
-          "type": "post",
-          "views": 3
-        },
-        {
-          "post_id": 4172,
-          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
-          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
+          "post_id": 3964,
+          "title": "Overcoming the Hard Gainer Challenge: Effective Weight Gain Strategies When Nothing Else Works",
+          "url": "https://drsumaiya.com/post/overcoming-the-hard-gainer-challenge-effective-weight-gain-strategies-when-nothing-else-works/",
           "type": "post",
           "views": 3
         },
@@ -843,6 +801,13 @@
           "views": 3
         },
         {
+          "post_id": 4172,
+          "title": "You Love Oats. But Have You Met Its Nutritional Competitor?",
+          "url": "https://drsumaiya.com/post/you-love-oats-but-have-you-met-its-nutritional-competitor/",
+          "type": "post",
+          "views": 3
+        },
+        {
           "post_id": 4339,
           "title": "Iron Absorption and Factors Affecting It: The Complete Evidence-Based Guide Part 1",
           "url": "https://drsumaiya.com/post/iron-absorption-and-factors-affecting-it-the-complete-evidence-based-guide-part-1/",
@@ -855,6 +820,27 @@
           "url": "https://drsumaiya.com/post/eating-for-better-sleep-how-certain-foods-and-nutrients-can-help-promote-better-sleep/",
           "type": "post",
           "views": 3
+        },
+        {
+          "post_id": 1646,
+          "title": "How to Measure and Slowdown Aging: Essential Tests and Recommendations",
+          "url": "https://drsumaiya.com/post/how-to-measure-aging/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 1721,
+          "title": "Why You Should Eat the Rainbow: The Surprising Benefits of Colorful Eating",
+          "url": "https://drsumaiya.com/post/why-you-should-eat-the-rainbow-the-surprising-benefits-of-colorful-eating/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 5003,
+          "title": "Are \"Zero-Calorie\" Sweeteners Sabotaging Your Gut & Medications? What the 2026 Cambridge Study Found About 39 Sugar Substitutes",
+          "url": "https://drsumaiya.com/post/artificial-sweeteners-gut-microbiome-side-effects/",
+          "type": "post",
+          "views": 3
         }
       ]
     },
@@ -863,10 +849,24 @@
       "slug": "iqs",
       "domain": "https://iqs.org.in",
       "status": "online",
-      "timestamp": "2026-11-20 08:45:18 UTC",
-      "views_24h": 42,
-      "views_7d": 439,
+      "timestamp": "2026-11-21 08:28:05 UTC",
+      "views_24h": 41,
+      "views_7d": 468,
       "pages_24h": [
+        {
+          "post_id": 6734,
+          "title": "Admissions & Course Inquiry | Institute of Quran and Sunnah",
+          "url": "https://iqs.org.in/inquiry/",
+          "type": "page",
+          "views": 5
+        },
+        {
+          "post_id": 361,
+          "title": "Islamic Courses",
+          "url": "https://iqs.org.in/islamic-courses/",
+          "type": "page",
+          "views": 2
+        },
         {
           "post_id": 1153,
           "title": "Home - Main",
@@ -875,16 +875,9 @@
           "views": 2
         },
         {
-          "post_id": 6747,
-          "title": "Sharia Ruqyah Consultation & Spiritual Counseling",
-          "url": "https://iqs.org.in/ruqya/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 6748,
-          "title": "IQS Academic Prospectus & Course Brochure",
-          "url": "https://iqs.org.in/brochure/",
+          "post_id": 6731,
+          "title": "Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS",
+          "url": "https://iqs.org.in/ruqyah-bangalore/",
           "type": "page",
           "views": 1
         }
@@ -895,96 +888,54 @@
           "title": "Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide)",
           "url": "https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/",
           "type": "post",
-          "views": 8
+          "views": 6
         },
         {
-          "post_id": 4873,
-          "title": "Mutawatir Hadiths: Definition, Conditions, Types & Examples | Complete Islamic Guide",
-          "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
+          "post_id": 3993,
+          "title": "Exploring Palindromes in the Quran: A Linguistic Miracle",
+          "url": "https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/",
           "type": "post",
-          "views": 5
-        },
-        {
-          "post_id": 3291,
-          "title": "The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye",
-          "url": "https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
-          "type": "post",
-          "views": 5
-        },
-        {
-          "post_id": 6591,
-          "title": "The Unapologetic Athari Creed: Belief of the First Muslims",
-          "url": "https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 3465,
-          "title": "Why You Must Avoid Abbreviations like \"Md\" or \"Mohd\" for the Name \"Muhammad\"",
-          "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 5137,
-          "title": "The Islamic Obligation of Niqab: Understanding Face Covering in Islam",
-          "url": "https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 6552,
-          "title": "How to Bring Peace & Barakah into Your Home",
-          "url": "https://iqs.org.in/blog/2025/11/30/how-to-bring-peace-barakah-into-your-home/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3808,
-          "title": "Marriage and General Counseling Service",
-          "url": "https://iqs.org.in/blog/2024/06/05/marriage-and-general-counseling-service/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4219,
-          "title": "The Worldly Benefits of Charity: 20 Reasons to Give Generously",
-          "url": "https://iqs.org.in/blog/2024/08/03/the-worldly-benefits-of-charity-20-reasons-to-give-generously/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4212,
-          "title": "Difference Between Performing and Establishing Prayer in Islam",
-          "url": "https://iqs.org.in/blog/2024/07/28/difference-performing-establishing-prayer-islam/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4225,
-          "title": "25 Timeless Lessons Adults Can Learn from Children for Personal and Spiritual Growth",
-          "url": "https://iqs.org.in/blog/2024/08/06/adults-can-learn-from-children/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 6782,
-          "title": "Smoking, Selling and Trading Cigarettes & Bidis: The Islamic Ruling that Smoking Is Not Merely a Bad Habit \u2014 It Is a Matter of Halal and Haram",
-          "url": "https://iqs.org.in/blog/2026/10/04/smoking-selling-and-trading-cigarettes-bidis-the-islamic-ruling-that-smoking-is-not-merely-a-bad-habit-it-is-a-matter-of-halal-and-haram/",
-          "type": "post",
-          "views": 1
+          "views": 3
         },
         {
           "post_id": 5125,
           "title": "Muslim Ladies Prayer Places in Bengaluru",
           "url": "https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/",
           "type": "post",
-          "views": 1
+          "views": 2
         },
         {
-          "post_id": 3077,
-          "title": "Healing the Heart: The Qur'an, Sadaqah, and Nurturing the Soul",
-          "url": "https://iqs.org.in/blog/2023/09/27/healing-the-heart-the-quran-sadaqah-and-nurturing-the-soul/",
+          "post_id": 4253,
+          "title": "Men, Lust, and the Importance of Modesty in Islam",
+          "url": "https://iqs.org.in/blog/2024/12/18/men-lust-and-the-importance-of-modesty-in-islam/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 2597,
+          "title": "Ruqya Sciences",
+          "url": "https://iqs.org.in/blog/services/ruqya-sciences/",
+          "type": "services",
+          "views": 2
+        },
+        {
+          "post_id": 3291,
+          "title": "The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye",
+          "url": "https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 5484,
+          "title": "Dargah Worship and Grave Veneration: A Clear Path to Idolatry (Shirk) | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2025/04/28/dargah-worship-a-path-to-idolatry/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 5123,
+          "title": "Ramadhan: More Than a Month\u2014A Whole Lifestyle",
+          "url": "https://iqs.org.in/blog/2025/04/03/ramadhan-more-than-a-month-a-whole-lifestyle/",
           "type": "post",
           "views": 1
         },
@@ -996,37 +947,72 @@
           "views": 1
         },
         {
-          "post_id": 3955,
-          "title": "Understanding Halal and Haram in Digital Spaces: A Comprehensive Guide for Muslims",
-          "url": "https://iqs.org.in/blog/2024/06/24/understanding-halal-and-haram-in-digital-spaces-a-comprehensive-guide-for-muslims/",
+          "post_id": 3562,
+          "title": "Announcing Advanced Islamic Studies Program",
+          "url": "https://iqs.org.in/blog/2024/03/28/announcing-advanced-islamic-studies-program/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 6448,
-          "title": "The Guided Youth: Islamic Studies Course for Teenagers at Institute of Qur'an and Sunnah",
-          "url": "https://iqs.org.in/blog/2025/06/30/the-guided-youth-islamic-studies-course-for-teenagers-at-institute-of-quran-and-sunnah/",
+          "post_id": 3836,
+          "title": "Superstitions in Islam: The Meaning of Bad Omens (Tiyarah) & How to Overcome Them | Complete Theological Guide",
+          "url": "https://iqs.org.in/blog/2024/06/07/the-importance-of-avoiding-superstitions-in-islam/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 3993,
-          "title": "Exploring Palindromes in the Quran: A Linguistic Miracle",
-          "url": "https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/",
+          "post_id": 3465,
+          "title": "Why You Must Avoid Abbreviations like \"Md\" or \"Mohd\" for the Name \"Muhammad\"",
+          "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 6510,
-          "title": "The believer is simple and generous",
-          "url": "https://iqs.org.in/blog/2025/09/14/the-believer-is-simple-and-generous/",
+          "post_id": 3702,
+          "title": "Embracing Abundance \u2013 The Benefits of Larger Families from an Islamic and Societal Perspective",
+          "url": "https://iqs.org.in/blog/2024/04/20/embracing-abundance-the-benefits-of-larger-families-from-an-islamic-and-societal-perspective/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4183,
-          "title": "Lessons from Surah al-Kahf: Understanding the Trial of Power",
-          "url": "https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/",
+          "post_id": 6597,
+          "title": "Biography of Imam Al-Tibrizi: Author of Mishkatul Masabeeh",
+          "url": "https://iqs.org.in/blog/2026/03/26/biography-of-imam-al-tibrizi-author-of-mishkatul-masabeeh/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 6743,
+          "title": "When AI Can Think, What Is the Human Being For? | Islam's Answer",
+          "url": "https://iqs.org.in/blog/2026/09/14/when-ai-can-think-what-is-the-human-being-for/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4707,
+          "title": "The 33-Year Ramadan Cycle: A Journey Through Seasons",
+          "url": "https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4873,
+          "title": "Mutawatir Hadiths: Definition, Conditions, Types & Examples | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 2939,
+          "title": "Beginners Course in Islamic Studies",
+          "url": "https://iqs.org.in/courses/beginners-course-in-islamic-studies/",
+          "type": "lp_course",
+          "views": 1
+        },
+        {
+          "post_id": 5165,
+          "title": "The Forgotten Sunnah: Why Islam Warns Against Image-Making and Photography",
+          "url": "https://iqs.org.in/blog/2025/04/10/why-islam-warns-against-image-making/",
           "type": "post",
           "views": 1
         }
@@ -1037,33 +1023,61 @@
           "title": "Salat al-Istikhara: How to Perform the Prayer for Guidance (Step-by-Step Sunnah Guide)",
           "url": "https://iqs.org.in/blog/2025/09/16/salat-al-istikhara-how-to-perform-the-prayer-for-guidance-step-by-step-sunnah-guide/",
           "type": "post",
-          "views": 8
+          "views": 6
         },
         {
-          "post_id": 4873,
-          "title": "Mutawatir Hadiths: Definition, Conditions, Types & Examples | Complete Islamic Guide",
-          "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
-          "type": "post",
+          "post_id": 6734,
+          "title": "Admissions & Course Inquiry | Institute of Quran and Sunnah",
+          "url": "https://iqs.org.in/inquiry/",
+          "type": "page",
           "views": 5
+        },
+        {
+          "post_id": 3993,
+          "title": "Exploring Palindromes in the Quran: A Linguistic Miracle",
+          "url": "https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 5125,
+          "title": "Muslim Ladies Prayer Places in Bengaluru",
+          "url": "https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 4253,
+          "title": "Men, Lust, and the Importance of Modesty in Islam",
+          "url": "https://iqs.org.in/blog/2024/12/18/men-lust-and-the-importance-of-modesty-in-islam/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 361,
+          "title": "Islamic Courses",
+          "url": "https://iqs.org.in/islamic-courses/",
+          "type": "page",
+          "views": 2
+        },
+        {
+          "post_id": 2597,
+          "title": "Ruqya Sciences",
+          "url": "https://iqs.org.in/blog/services/ruqya-sciences/",
+          "type": "services",
+          "views": 2
         },
         {
           "post_id": 3291,
           "title": "The Ancient Islamic Remedy of Sidr Leaves for Protection Against Black Magic and Evil Eye",
           "url": "https://iqs.org.in/blog/2023/11/12/the-ancient-islamic-remedy-of-sidr-leaves-for-protection-against-black-magic-and-evil-eye/",
           "type": "post",
-          "views": 5
-        },
-        {
-          "post_id": 6591,
-          "title": "The Unapologetic Athari Creed: Belief of the First Muslims",
-          "url": "https://iqs.org.in/blog/2026/03/24/the-athari-creed-how-the-early-muslims-understood-allah/",
-          "type": "post",
           "views": 2
         },
         {
-          "post_id": 3465,
-          "title": "Why You Must Avoid Abbreviations like \"Md\" or \"Mohd\" for the Name \"Muhammad\"",
-          "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
+          "post_id": 5484,
+          "title": "Dargah Worship and Grave Veneration: A Clear Path to Idolatry (Shirk) | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2025/04/28/dargah-worship-a-path-to-idolatry/",
           "type": "post",
           "views": 2
         },
@@ -1075,79 +1089,9 @@
           "views": 2
         },
         {
-          "post_id": 5137,
-          "title": "The Islamic Obligation of Niqab: Understanding Face Covering in Islam",
-          "url": "https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 6552,
-          "title": "How to Bring Peace & Barakah into Your Home",
-          "url": "https://iqs.org.in/blog/2025/11/30/how-to-bring-peace-barakah-into-your-home/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 6747,
-          "title": "Sharia Ruqyah Consultation & Spiritual Counseling",
-          "url": "https://iqs.org.in/ruqya/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 3808,
-          "title": "Marriage and General Counseling Service",
-          "url": "https://iqs.org.in/blog/2024/06/05/marriage-and-general-counseling-service/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4219,
-          "title": "The Worldly Benefits of Charity: 20 Reasons to Give Generously",
-          "url": "https://iqs.org.in/blog/2024/08/03/the-worldly-benefits-of-charity-20-reasons-to-give-generously/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 4212,
-          "title": "Difference Between Performing and Establishing Prayer in Islam",
-          "url": "https://iqs.org.in/blog/2024/07/28/difference-performing-establishing-prayer-islam/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 6748,
-          "title": "IQS Academic Prospectus & Course Brochure",
-          "url": "https://iqs.org.in/brochure/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 4225,
-          "title": "25 Timeless Lessons Adults Can Learn from Children for Personal and Spiritual Growth",
-          "url": "https://iqs.org.in/blog/2024/08/06/adults-can-learn-from-children/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 6782,
-          "title": "Smoking, Selling and Trading Cigarettes & Bidis: The Islamic Ruling that Smoking Is Not Merely a Bad Habit \u2014 It Is a Matter of Halal and Haram",
-          "url": "https://iqs.org.in/blog/2026/10/04/smoking-selling-and-trading-cigarettes-bidis-the-islamic-ruling-that-smoking-is-not-merely-a-bad-habit-it-is-a-matter-of-halal-and-haram/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 5125,
-          "title": "Muslim Ladies Prayer Places in Bengaluru",
-          "url": "https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/",
-          "type": "post",
-          "views": 1
-        },
-        {
-          "post_id": 3077,
-          "title": "Healing the Heart: The Qur'an, Sadaqah, and Nurturing the Soul",
-          "url": "https://iqs.org.in/blog/2023/09/27/healing-the-heart-the-quran-sadaqah-and-nurturing-the-soul/",
+          "post_id": 5123,
+          "title": "Ramadhan: More Than a Month\u2014A Whole Lifestyle",
+          "url": "https://iqs.org.in/blog/2025/04/03/ramadhan-more-than-a-month-a-whole-lifestyle/",
           "type": "post",
           "views": 1
         },
@@ -1159,37 +1103,79 @@
           "views": 1
         },
         {
-          "post_id": 3955,
-          "title": "Understanding Halal and Haram in Digital Spaces: A Comprehensive Guide for Muslims",
-          "url": "https://iqs.org.in/blog/2024/06/24/understanding-halal-and-haram-in-digital-spaces-a-comprehensive-guide-for-muslims/",
+          "post_id": 3562,
+          "title": "Announcing Advanced Islamic Studies Program",
+          "url": "https://iqs.org.in/blog/2024/03/28/announcing-advanced-islamic-studies-program/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 6448,
-          "title": "The Guided Youth: Islamic Studies Course for Teenagers at Institute of Qur'an and Sunnah",
-          "url": "https://iqs.org.in/blog/2025/06/30/the-guided-youth-islamic-studies-course-for-teenagers-at-institute-of-quran-and-sunnah/",
+          "post_id": 6731,
+          "title": "Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS",
+          "url": "https://iqs.org.in/ruqyah-bangalore/",
+          "type": "page",
+          "views": 1
+        },
+        {
+          "post_id": 3836,
+          "title": "Superstitions in Islam: The Meaning of Bad Omens (Tiyarah) & How to Overcome Them | Complete Theological Guide",
+          "url": "https://iqs.org.in/blog/2024/06/07/the-importance-of-avoiding-superstitions-in-islam/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 3993,
-          "title": "Exploring Palindromes in the Quran: A Linguistic Miracle",
-          "url": "https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/",
+          "post_id": 3465,
+          "title": "Why You Must Avoid Abbreviations like \"Md\" or \"Mohd\" for the Name \"Muhammad\"",
+          "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 6510,
-          "title": "The believer is simple and generous",
-          "url": "https://iqs.org.in/blog/2025/09/14/the-believer-is-simple-and-generous/",
+          "post_id": 3702,
+          "title": "Embracing Abundance \u2013 The Benefits of Larger Families from an Islamic and Societal Perspective",
+          "url": "https://iqs.org.in/blog/2024/04/20/embracing-abundance-the-benefits-of-larger-families-from-an-islamic-and-societal-perspective/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4183,
-          "title": "Lessons from Surah al-Kahf: Understanding the Trial of Power",
-          "url": "https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/",
+          "post_id": 6597,
+          "title": "Biography of Imam Al-Tibrizi: Author of Mishkatul Masabeeh",
+          "url": "https://iqs.org.in/blog/2026/03/26/biography-of-imam-al-tibrizi-author-of-mishkatul-masabeeh/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 6743,
+          "title": "When AI Can Think, What Is the Human Being For? | Islam's Answer",
+          "url": "https://iqs.org.in/blog/2026/09/14/when-ai-can-think-what-is-the-human-being-for/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4707,
+          "title": "The 33-Year Ramadan Cycle: A Journey Through Seasons",
+          "url": "https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 4873,
+          "title": "Mutawatir Hadiths: Definition, Conditions, Types & Examples | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 2939,
+          "title": "Beginners Course in Islamic Studies",
+          "url": "https://iqs.org.in/courses/beginners-course-in-islamic-studies/",
+          "type": "lp_course",
+          "views": 1
+        },
+        {
+          "post_id": 5165,
+          "title": "The Forgotten Sunnah: Why Islam Warns Against Image-Making and Photography",
+          "url": "https://iqs.org.in/blog/2025/04/10/why-islam-warns-against-image-making/",
           "type": "post",
           "views": 1
         }
@@ -1207,7 +1193,14 @@
           "title": "Home - Main",
           "url": "https://iqs.org.in/",
           "type": "page",
-          "views": 36
+          "views": 39
+        },
+        {
+          "post_id": 5137,
+          "title": "The Islamic Obligation of Niqab: Understanding Face Covering in Islam",
+          "url": "https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/",
+          "type": "post",
+          "views": 24
         },
         {
           "post_id": 3291,
@@ -1217,79 +1210,72 @@
           "views": 21
         },
         {
-          "post_id": 5137,
-          "title": "The Islamic Obligation of Niqab: Understanding Face Covering in Islam",
-          "url": "https://iqs.org.in/blog/2025/04/05/the-islamic-obligation-of-niqab-understanding-face-covering-in-islam/",
-          "type": "post",
-          "views": 19
-        },
-        {
-          "post_id": 4873,
-          "title": "Mutawatir Hadiths: Definition, Conditions, Types & Examples | Complete Islamic Guide",
-          "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
-          "type": "post",
-          "views": 15
-        },
-        {
           "post_id": 6734,
           "title": "Admissions & Course Inquiry | Institute of Quran and Sunnah",
           "url": "https://iqs.org.in/inquiry/",
           "type": "page",
-          "views": 14
-        },
-        {
-          "post_id": 5125,
-          "title": "Muslim Ladies Prayer Places in Bengaluru",
-          "url": "https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/",
-          "type": "post",
-          "views": 14
-        },
-        {
-          "post_id": 361,
-          "title": "Islamic Courses",
-          "url": "https://iqs.org.in/islamic-courses/",
-          "type": "page",
-          "views": 12
-        },
-        {
-          "post_id": 3993,
-          "title": "Exploring Palindromes in the Quran: A Linguistic Miracle",
-          "url": "https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/",
-          "type": "post",
-          "views": 12
-        },
-        {
-          "post_id": 6479,
-          "title": "Ultimate Guide to Ruqya: Quranic Healing & Sunnah Practices for Spiritual Protection",
-          "url": "https://iqs.org.in/blog/2025/08/03/ultimate-guide-to-ruqya-quranic-healing-sunnah-practices-for-spiritual-protection/",
-          "type": "post",
-          "views": 11
+          "views": 20
         },
         {
           "post_id": 6731,
           "title": "Sharia Ruqyah Center Bangalore | Authentic Islamic Spiritual Healing | IQS",
           "url": "https://iqs.org.in/ruqyah-bangalore/",
           "type": "page",
-          "views": 11
+          "views": 16
+        },
+        {
+          "post_id": 5125,
+          "title": "Muslim Ladies Prayer Places in Bengaluru",
+          "url": "https://iqs.org.in/blog/2025/04/03/muslim-ladies-prayer-places-in-bengaluru/",
+          "type": "post",
+          "views": 15
+        },
+        {
+          "post_id": 3993,
+          "title": "Exploring Palindromes in the Quran: A Linguistic Miracle",
+          "url": "https://iqs.org.in/blog/2024/07/05/exploring-palindromes-in-the-quran-a-linguistic-miracle/",
+          "type": "post",
+          "views": 15
+        },
+        {
+          "post_id": 361,
+          "title": "Islamic Courses",
+          "url": "https://iqs.org.in/islamic-courses/",
+          "type": "page",
+          "views": 15
+        },
+        {
+          "post_id": 4873,
+          "title": "Mutawatir Hadiths: Definition, Conditions, Types & Examples | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2025/04/05/mutawatir-hadiths/",
+          "type": "post",
+          "views": 13
         },
         {
           "post_id": 3465,
           "title": "Why You Must Avoid Abbreviations like \"Md\" or \"Mohd\" for the Name \"Muhammad\"",
           "url": "https://iqs.org.in/blog/2023/12/02/avoid-use-of-abbreviations-like-md-or-mohd-for-the-name-muhammad/",
           "type": "post",
-          "views": 11
+          "views": 12
         },
         {
           "post_id": 6747,
           "title": "Sharia Ruqyah Consultation & Spiritual Counseling",
           "url": "https://iqs.org.in/ruqya/",
           "type": "page",
-          "views": 8
+          "views": 11
         },
         {
-          "post_id": 3836,
-          "title": "Superstitions in Islam: The Meaning of Bad Omens (Tiyarah) & How to Overcome Them | Complete Theological Guide",
-          "url": "https://iqs.org.in/blog/2024/06/07/the-importance-of-avoiding-superstitions-in-islam/",
+          "post_id": 2597,
+          "title": "Ruqya Sciences",
+          "url": "https://iqs.org.in/blog/services/ruqya-sciences/",
+          "type": "services",
+          "views": 7
+        },
+        {
+          "post_id": 6479,
+          "title": "Ultimate Guide to Ruqya: Quranic Healing & Sunnah Practices for Spiritual Protection",
+          "url": "https://iqs.org.in/blog/2025/08/03/ultimate-guide-to-ruqya-quranic-healing-sunnah-practices-for-spiritual-protection/",
           "type": "post",
           "views": 6
         },
@@ -1308,25 +1294,18 @@
           "views": 6
         },
         {
-          "post_id": 6561,
-          "title": "Authentic Islamic Books on Marriage and the Duties of a Muslim Husband(Qur\u2019an and Authentic Sunnah Only)",
-          "url": "https://iqs.org.in/blog/2026/01/26/authentic-islamic-books-on-marriage-and-the-duties-of-a-muslim-husbandquran-and-authentic-sunnah-only/",
+          "post_id": 5135,
+          "title": "Why Terms Like \"Mohammedan\" Are Considered Inappropriate in Islamic Discourse | Theological & Historical Guide",
+          "url": "https://iqs.org.in/blog/2025/04/04/why-terms-like-mohammedan-are-considered-inappropriate-in-islamic-discourse/",
           "type": "post",
-          "views": 5
-        },
-        {
-          "post_id": 6782,
-          "title": "Smoking, Selling and Trading Cigarettes & Bidis: The Islamic Ruling that Smoking Is Not Merely a Bad Habit \u2014 It Is a Matter of Halal and Haram",
-          "url": "https://iqs.org.in/blog/2026/10/04/smoking-selling-and-trading-cigarettes-bidis-the-islamic-ruling-that-smoking-is-not-merely-a-bad-habit-it-is-a-matter-of-halal-and-haram/",
-          "type": "post",
-          "views": 5
+          "views": 6
         },
         {
           "post_id": 4253,
           "title": "Men, Lust, and the Importance of Modesty in Islam",
           "url": "https://iqs.org.in/blog/2024/12/18/men-lust-and-the-importance-of-modesty-in-islam/",
           "type": "post",
-          "views": 5
+          "views": 6
         },
         {
           "post_id": 6591,
@@ -1343,45 +1322,17 @@
           "views": 5
         },
         {
-          "post_id": 5135,
-          "title": "Why Terms Like \"Mohammedan\" Are Considered Inappropriate in Islamic Discourse | Theological & Historical Guide",
-          "url": "https://iqs.org.in/blog/2025/04/04/why-terms-like-mohammedan-are-considered-inappropriate-in-islamic-discourse/",
+          "post_id": 3836,
+          "title": "Superstitions in Islam: The Meaning of Bad Omens (Tiyarah) & How to Overcome Them | Complete Theological Guide",
+          "url": "https://iqs.org.in/blog/2024/06/07/the-importance-of-avoiding-superstitions-in-islam/",
           "type": "post",
-          "views": 5
+          "views": 4
         },
         {
-          "post_id": 4575,
-          "title": "Latest Blog",
-          "url": "https://iqs.org.in/latest-blog/",
+          "post_id": 324,
+          "title": "Contact Us",
+          "url": "https://iqs.org.in/contact-us/",
           "type": "page",
-          "views": 4
-        },
-        {
-          "post_id": 3893,
-          "title": "Why Every Muslim Must Aspire to Become an Alim: The Imperative of Seeking Knowledge",
-          "url": "https://iqs.org.in/blog/2024/06/16/why-every-muslim-must-aspire-to-become-an-alim-the-imperative-of-seeking-knowledge/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 6748,
-          "title": "IQS Academic Prospectus & Course Brochure",
-          "url": "https://iqs.org.in/brochure/",
-          "type": "page",
-          "views": 4
-        },
-        {
-          "post_id": 4183,
-          "title": "Lessons from Surah al-Kahf: Understanding the Trial of Power",
-          "url": "https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/",
-          "type": "post",
-          "views": 4
-        },
-        {
-          "post_id": 4707,
-          "title": "The 33-Year Ramadan Cycle: A Journey Through Seasons",
-          "url": "https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/",
-          "type": "post",
           "views": 4
         },
         {
@@ -1399,17 +1350,38 @@
           "views": 4
         },
         {
-          "post_id": 6815,
-          "title": "The Concept of Bid\u2018ah: Islam\u2019s Shield Against Religious Corruption",
-          "url": "https://iqs.org.in/blog/2026/10/26/concept-of-bidah-preservation-islam/",
+          "post_id": 4707,
+          "title": "The 33-Year Ramadan Cycle: A Journey Through Seasons",
+          "url": "https://iqs.org.in/blog/2025/03/05/the-33-year-ramadan-cycle-a-journey-through-seasons/",
+          "type": "post",
+          "views": 4
+        },
+        {
+          "post_id": 5484,
+          "title": "Dargah Worship and Grave Veneration: A Clear Path to Idolatry (Shirk) | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2025/04/28/dargah-worship-a-path-to-idolatry/",
+          "type": "post",
+          "views": 4
+        },
+        {
+          "post_id": 0,
+          "title": "Home page",
+          "url": "https://iqs.org.in/",
+          "type": "home",
+          "views": 3
+        },
+        {
+          "post_id": 4183,
+          "title": "Lessons from Surah al-Kahf: Understanding the Trial of Power",
+          "url": "https://iqs.org.in/blog/2024/07/20/lessons-from-surah-al-kahf-trial-of-power/",
           "type": "post",
           "views": 3
         },
         {
-          "post_id": 324,
-          "title": "Contact Us",
-          "url": "https://iqs.org.in/contact-us/",
-          "type": "page",
+          "post_id": 6561,
+          "title": "Authentic Islamic Books on Marriage and the Duties of a Muslim Husband(Qur\u2019an and Authentic Sunnah Only)",
+          "url": "https://iqs.org.in/blog/2026/01/26/authentic-islamic-books-on-marriage-and-the-duties-of-a-muslim-husbandquran-and-authentic-sunnah-only/",
+          "type": "post",
           "views": 3
         },
         {
@@ -1420,9 +1392,30 @@
           "views": 3
         },
         {
+          "post_id": 3264,
+          "title": "The Sacred Bond of Marriage in Islam: A Path to Peace and Blessings",
+          "url": "https://iqs.org.in/blog/2023/11/05/the-sacred-bond-of-marriage-in-islam-a-path-to-peace-and-blessings/",
+          "type": "post",
+          "views": 3
+        },
+        {
           "post_id": 5050,
           "title": "The Path of the Pious Predecessors: Understanding the Methodology of the Salaf",
           "url": "https://iqs.org.in/blog/2025/03/28/understanding-salaf/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 6782,
+          "title": "Smoking, Selling and Trading Cigarettes & Bidis: The Islamic Ruling that Smoking Is Not Merely a Bad Habit \u2014 It Is a Matter of Halal and Haram",
+          "url": "https://iqs.org.in/blog/2026/10/04/smoking-selling-and-trading-cigarettes-bidis-the-islamic-ruling-that-smoking-is-not-merely-a-bad-habit-it-is-a-matter-of-halal-and-haram/",
+          "type": "post",
+          "views": 3
+        },
+        {
+          "post_id": 6552,
+          "title": "How to Bring Peace & Barakah into Your Home",
+          "url": "https://iqs.org.in/blog/2025/11/30/how-to-bring-peace-barakah-into-your-home/",
           "type": "post",
           "views": 3
         },
@@ -1434,13 +1427,6 @@
           "views": 3
         },
         {
-          "post_id": 6552,
-          "title": "How to Bring Peace & Barakah into Your Home",
-          "url": "https://iqs.org.in/blog/2025/11/30/how-to-bring-peace-barakah-into-your-home/",
-          "type": "post",
-          "views": 3
-        },
-        {
           "post_id": 5119,
           "title": "The Five Medicines of the Heart: Ancient Wisdom for Modern Spiritual Health",
           "url": "https://iqs.org.in/blog/2025/04/02/the-five-medicines-of-the-heart-ancient-wisdom-for-modern-spiritual-health/",
@@ -1448,53 +1434,18 @@
           "views": 3
         },
         {
-          "post_id": 4190,
-          "title": "Full-Time Hifz Program: Complete Quran Memorization with IQS & Hifz Focus\u2122",
-          "url": "https://iqs.org.in/blog/2024/07/20/full-time-hifz-program/",
+          "post_id": 3808,
+          "title": "Marriage and General Counseling Service",
+          "url": "https://iqs.org.in/blog/2024/06/05/marriage-and-general-counseling-service/",
           "type": "post",
-          "views": 2
+          "views": 3
         },
         {
-          "post_id": 6666,
-          "title": "The Correct Dua and Method of Qurbani According to Islam, Qurbani Ki Dua Aur Sunnah Tareeqa | Complete Islamic Guide",
-          "url": "https://iqs.org.in/blog/2026/05/27/the-correct-dua-and-method-of-qurbani-according-to-islam-qurbani-ki-dua-aur-sunnah-tareeqa-complete-islamic-guide/",
+          "post_id": 6743,
+          "title": "When AI Can Think, What Is the Human Being For? | Islam's Answer",
+          "url": "https://iqs.org.in/blog/2026/09/14/when-ai-can-think-what-is-the-human-being-for/",
           "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 0,
-          "title": "Home page",
-          "url": "https://iqs.org.in/",
-          "type": "home",
-          "views": 2
-        },
-        {
-          "post_id": 6555,
-          "title": "When \u2018Good Intentions\u2019 Turn Into an Accusation Against Revelation",
-          "url": "https://iqs.org.in/blog/2026/01/01/when-good-intentions-turn-into-an-accusation-against-revelation/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 2597,
-          "title": "Ruqya Sciences",
-          "url": "https://iqs.org.in/blog/services/ruqya-sciences/",
-          "type": "services",
-          "views": 2
-        },
-        {
-          "post_id": 6613,
-          "title": "Surah Al-Kahf: Unveiling the Deception of the Dunya",
-          "url": "https://iqs.org.in/blog/2026/04/11/surah-al-kahf-unveiling-the-deception-of-the-dunya/",
-          "type": "post",
-          "views": 2
-        },
-        {
-          "post_id": 6820,
-          "title": "Waswas, Evil Eye or Anxiety? Authentic Sharia Ruqya Guide | IQS",
-          "url": "https://iqs.org.in/blog/2026/11/08/waswas-evil-eye-or-anxiety-authentic-sharia-ruqya-guide-iqs/",
-          "type": "post",
-          "views": 2
+          "views": 3
         },
         {
           "post_id": 6719,
@@ -1511,16 +1462,16 @@
           "views": 2
         },
         {
-          "post_id": 6611,
-          "title": "Glad Tidings to the Strangers: Who Are the Ghuraba in Islam?",
-          "url": "https://iqs.org.in/blog/2026/04/04/glad-tidings-to-the-strangers-who-are-the-ghuraba/",
+          "post_id": 3893,
+          "title": "Why Every Muslim Must Aspire to Become an Alim: The Imperative of Seeking Knowledge",
+          "url": "https://iqs.org.in/blog/2024/06/16/why-every-muslim-must-aspire-to-become-an-alim-the-imperative-of-seeking-knowledge/",
           "type": "post",
           "views": 2
         },
         {
-          "post_id": 3264,
-          "title": "The Sacred Bond of Marriage in Islam: A Path to Peace and Blessings",
-          "url": "https://iqs.org.in/blog/2023/11/05/the-sacred-bond-of-marriage-in-islam-a-path-to-peace-and-blessings/",
+          "post_id": 6611,
+          "title": "Glad Tidings to the Strangers: Who Are the Ghuraba in Islam?",
+          "url": "https://iqs.org.in/blog/2026/04/04/glad-tidings-to-the-strangers-who-are-the-ghuraba/",
           "type": "post",
           "views": 2
         },
@@ -1539,9 +1490,37 @@
           "views": 2
         },
         {
+          "post_id": 3533,
+          "title": "Unraveling Fabrications: 50 Myths and Misattributed Traditions in Islamic",
+          "url": "https://iqs.org.in/blog/2024/02/06/unraveling-fabrications-50-myths-and-misattributed-traditions-in-islamic/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 6748,
+          "title": "IQS Academic Prospectus & Course Brochure",
+          "url": "https://iqs.org.in/brochure/",
+          "type": "page",
+          "views": 2
+        },
+        {
           "post_id": 6503,
           "title": "Trust in Ar-Razzaq: How Nikah Unlocks the Doors to Sustenance",
           "url": "https://iqs.org.in/blog/2025/09/12/trust-in-ar-razzaq-how-nikah-unlocks-the-doors-to-sustenance/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 3967,
+          "title": "Lying: A Prohibited Act in Islam",
+          "url": "https://iqs.org.in/blog/2024/06/25/lying-a-prohibited-act-in-islam/",
+          "type": "post",
+          "views": 2
+        },
+        {
+          "post_id": 6815,
+          "title": "The Concept of Bid\u2018ah: Islam\u2019s Shield Against Religious Corruption",
+          "url": "https://iqs.org.in/blog/2026/10/26/concept-of-bidah-preservation-islam/",
           "type": "post",
           "views": 2
         },
@@ -1553,37 +1532,37 @@
           "views": 2
         },
         {
-          "post_id": 3808,
-          "title": "Marriage and General Counseling Service",
-          "url": "https://iqs.org.in/blog/2024/06/05/marriage-and-general-counseling-service/",
+          "post_id": 6584,
+          "title": "Shawwal Fasting Timetable Bangalore 1447H 2026 | Sehri & Iftar",
+          "url": "https://iqs.org.in/blog/2026/03/21/shawwal-fasting-timetable-bangalore-1447h-2026-sehri-iftar/",
           "type": "post",
           "views": 2
         },
         {
-          "post_id": 6521,
-          "title": "Proven Tips to Memorize the Qur\u2019an and How Hifz Focus Can Help",
-          "url": "https://iqs.org.in/blog/2025/09/23/proven-tips-to-memorize-the-quran-and-how-hifz-focus-can-help/",
+          "post_id": 3607,
+          "title": "Dua's to make On Day of Arafah and\u00a0 the nights of Ramadan",
+          "url": "https://iqs.org.in/blog/2024/04/02/duas-to-make-in-the-nights-of-ramadan-and-in-the-last-ten-nights/",
           "type": "post",
-          "views": 1
+          "views": 2
         },
         {
-          "post_id": 6496,
-          "title": "Islam's Merciful 'Emergency Exit': Why Allowing Divorce is a Strength, Not a Weakness.",
-          "url": "https://iqs.org.in/blog/2025/09/03/islams-merciful-emergency-exit-why-allowing-divorce-is-a-strength-not-a-weakness/",
-          "type": "post",
-          "views": 1
+          "post_id": 4312,
+          "title": "Is it Shirk? A Practical Guide to Identifying and Avoiding Shirk in Islam",
+          "url": "https://iqs.org.in/is-it-shirk/",
+          "type": "page",
+          "views": 2
         },
         {
-          "post_id": 4236,
-          "title": "The Conditions and Pillars of Salah: Complete Guide to a Valid Islamic Prayer (Shuroot, Arkan & Wajibat)",
-          "url": "https://iqs.org.in/blog/2024/08/11/conditions-pillars-valid-salah/",
-          "type": "post",
-          "views": 1
+          "post_id": 278,
+          "title": "Offered Services",
+          "url": "https://iqs.org.in/service-style-2/",
+          "type": "page",
+          "views": 2
         },
         {
-          "post_id": 6812,
-          "title": "The Five Fortresses Method (Al-Husun Al-Khamsah): Systematic Quran Memorization & Unbreakable Retention",
-          "url": "https://iqs.org.in/blog/2026/10/17/hifz-five-fortresses-method-quran-retention/",
+          "post_id": 4190,
+          "title": "Full-Time Hifz Program: Complete Quran Memorization with IQS & Hifz Focus\u2122",
+          "url": "https://iqs.org.in/blog/2024/07/20/full-time-hifz-program/",
           "type": "post",
           "views": 1
         },
@@ -1595,23 +1574,30 @@
           "views": 1
         },
         {
-          "post_id": 4541,
-          "title": "Faq",
-          "url": "https://iqs.org.in/faq-2/",
-          "type": "page",
-          "views": 1
-        },
-        {
-          "post_id": 3533,
-          "title": "Unraveling Fabrications: 50 Myths and Misattributed Traditions in Islamic",
-          "url": "https://iqs.org.in/blog/2024/02/06/unraveling-fabrications-50-myths-and-misattributed-traditions-in-islamic/",
+          "post_id": 6613,
+          "title": "Surah Al-Kahf: Unveiling the Deception of the Dunya",
+          "url": "https://iqs.org.in/blog/2026/04/11/surah-al-kahf-unveiling-the-deception-of-the-dunya/",
           "type": "post",
           "views": 1
         },
         {
-          "post_id": 4618,
-          "title": "Ramadan 2025 (1446 AH): Timetable, Duas, and Tips",
-          "url": "https://iqs.org.in/blog/2025/03/01/ramadan-2025-1446-ah-timetable-duas-and-tips/",
+          "post_id": 6811,
+          "title": "The Complete Guide to Tajweed Errors: Lahn Jali vs. Lahn Khafi",
+          "url": "https://iqs.org.in/blog/2026/10/17/tajweed-error-categories-lahn-jali-vs-khafi/",
+          "type": "post",
+          "views": 1
+        },
+        {
+          "post_id": 2630,
+          "title": "Hifz Quran Memorization",
+          "url": "https://iqs.org.in/courses/hifz-quran-memorization-course/",
+          "type": "lp_course",
+          "views": 1
+        },
+        {
+          "post_id": 6666,
+          "title": "The Correct Dua and Method of Qurbani According to Islam, Qurbani Ki Dua Aur Sunnah Tareeqa | Complete Islamic Guide",
+          "url": "https://iqs.org.in/blog/2026/05/27/the-correct-dua-and-method-of-qurbani-according-to-islam-qurbani-ki-dua-aur-sunnah-tareeqa-complete-islamic-guide/",
           "type": "post",
           "views": 1
         }
