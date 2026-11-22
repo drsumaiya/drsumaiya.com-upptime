@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-15T04:56:56.794397+00:00",
-  "timestamp_human": "2026-11-15 04:56:56 UTC",
-  "total_checked": 318,
+  "timestamp": "2026-11-22T05:15:54.106964+00:00",
+  "timestamp_human": "2026-11-22 05:15:54 UTC",
+  "total_checked": 320,
   "total_broken": 0,
   "overall_clean": true,
   "results": [
@@ -48,11 +48,11 @@
       "site": "Crecomy",
       "slug": "crecomy",
       "url": "https://crecomy.com",
-      "total_checked": 87,
-      "successful": 85,
+      "total_checked": 89,
+      "successful": 87,
       "failed": 0,
       "timeouts": 0,
-      "redirects": 41,
+      "redirects": 43,
       "excludes": 2,
       "is_clean": true,
       "broken_links": []
